@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="13">
+            <Title>Build Times</Title>
+            <Text>Notes:
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
+In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
+Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
+Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
+The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
+
+
+
+This run was the first time trial of Visual Studio NOT running in Parallels.
+Visual Studio
+Release Mode
+Boost Version 1.61.0
+With roughly 8gigs of RAM available.
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Time:  3:26
+Executable size: 2.77MB
+
+
+This run was the first time trial of Visual Studio running in Parallels.
+Visual Studio
+Running in Parallels VM
+Release Mode
+Boost Version 1.61.0
+With roughly 4gigs of RAM available.
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  4:40
+Executable size: 2.77MB
+
+
+This run was the first time trial of LLVM.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target is x86_64-apple-darwin16.4.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-30 (code was before the includes overhaul of 2017-3-29)
+Build Time:  2:39
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  2:26
+Executable size: 5.0MB
+
+
+These time trials were performed because LLVM version was updated to 8.1.0.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.1.0 (clang-802.0.38)
+Target is x86_64-apple-darwin16.5.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
+Executable size: 4.9MB</Text>
+        </Document>
+        <Document ID="3">
+            <Title>Credits</Title>
+            <Text>Game Design by
+Ziesche Til Newman
+
+Programming by
+Ziesche Til  Newman
+
+Special thanks to Laurent Gomila for the excellent SFML (Simple Fast Multimedia Library), which is licensed under the terms and conditions of the zlib/png license.  This project came together very quickly thanks to the completeness and simplicity of this library.
+
+Art by
+Ziesche Til Newman
+
+Rune Symbols and Other Designs by
+Angela Diegel
+
+Inferno Animation by
+Wrath Games Studio 
+http://wrathgames.com/blog
+Found at OpenGameArt.org
+Under the Attribution 3.0 Unported (CC BY 3.0) License 
+See https://creativecommons.org/licenses/by/3.0/ for details
+
+Flames Animation by
+Soluna Software
+Found at OpenGameArt.org
+Under the Public Domain Dedication CC0 1.0 Universal License
+(no copyright)
+See https://creativecommons.org/publicdomain/zero/1.0/
+
+Candle Flame Animation by
+Para
+Found at OpenGameArt.org
+Under the Public Domain Dedication CC0 1.0 Universal License
+(no copyright)
+See https://creativecommons.org/publicdomain/zero/1.0/
+
+Smoke Animation by
+MrBeast
+Found at OpenGameArt.org
+Under the Public Domain Dedication CC0 1.0 Universal License
+(no copyright)
+See https://creativecommons.org/publicdomain/zero/1.0/
+
+Fire Animation by
+Martin Clink
+www.nyrthos.com
+Found at OpenGameArt.org
+
+User Interface Art by
+Ziesche Til Newman
+and...
+Lamoot’s RPG GUI Construction kit v1.0 
+Found at OpenGameArt.org
+Under the Attribution 3.0 Unported (CC BY 3.0) License 
+See https://creativecommons.org/licenses/by/3.0/ for details
+
+Theme Music by
+</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Conditions</Title>
+            <Text>Good - No ailments.
+
+Unconscious - Alive, but unresponsive, and vulnerable to attack.
+
+Dazed - Temporarily unable to act, and vulnerable to attack.
+
+Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.
+
+Diseased - Ill with a disease that drains health over time and prevents healing.
+
+Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.
+
+Stone - Turned to stone. dead.
+
+Dead - Beyond the skill of most healers.
+</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns:
+
+Mudgate
+Thornberry
+Trolleyville
+Bridgeway
+Riverton
+
+
+
+Inns:
+
+Oak Room Inn
+Barrow Inn
+Black Candle Inn
+Aven’s Rest Inn
+</Text>
+        </Document>
+        <Document ID="4">
+            <Title>Races</Title>
+            <Text>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
+
+Gnome - Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like them, but they make excellent Thieves, and parties without a Thief on their side will regret it.
+
+Pixie - The Pixie is a tiny winged creature from the ancient world, but a few are still known to exist.  Their obvious lack of strength is more than made up for by their other significant advantages, including speed to keep their fragile bodies away from the melee.  They are the most intelligent race, making excellent Sorcerers and Clerics.  Pixies speak their own language, and sing so well they even make good Bards.
+
+Wolfen - The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
+
+Dragon - The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
+
+Troll
+Goblin
+Orc
+Newt
+Spider
+Bog
+CaveCrawler
+Hydra
+LizardWalker
+Minotaur
+Ogre
+Plant
+Shade
+Werebear
+Skeleton
+Beetle
+Boar
+Demon
+Griffin
+Halfling
+Lion
+LionBoar
+Naga
+Serpent
+Ramonaut
+Cobra
+Werebear
+Wereboar
+Werecat
+Werewolf
+Werebat
+Pug
+Wyvern
+Giant
+Ghoul
+</Text>
+        </Document>
+        <Document ID="11">
+            <Title>Titles</Title>
+            <Text>	 BattlesSurvived,    	//(knights only)
+            HealthGiven,        	//(clerics only)
+            HealthTraded,       	//(clerics only)
+	 DodgedStanding,   //(all roles)
+            DodgedFlying,       	//(all roles)
+            BeastRoars,         	//(beasts only)
+	 LocksPicked,        	//(all roles)
+	 SongsPlayed,        //(bards only)
+	 SpiritsLifted,      	//(bards only)
+            BackstabsHits,      	//(thieves only)
+            ProjectileHits,     	//(all roles)
+            SpellsCast,         	//(all except knights)
+	 EnemiesFaced,      //(all roles)
+	 TurnsInFlight,      	//(all roles)
+	 MoonHowls,          	//(wolfens only)
+	 PackActions,        	//(wolfens only)
+	 BeastMindLinks,   	//(beastmasters only)
+	 MeleeHits,          	//(all roles)
+	 BreathAttackHits,   //(dragons only)
+
+
+
+Protector Of Thornberry
+Standing bravely against the Goblin hoards alongside the Thornberry town guards has earned you this title.  The townsfolk will recognize you and may even give you favorable prices and other benefits.
+
+
+After dodging many melee attacks, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
+DODGER_SPTR;		Your dodging skills are just starting to develop through initial experiences in combat.
+FASTFOOT_SPTR;       	Your feet are significantly faster.
+NIMBLEFOOT_SPTR;	You are more dexterous and light on your feet.
+SWIFTFOOT_SPTR;    	Your ability to dodge on foot is significantly increased.
+MELEEMOVER_SPTR;    	You have learned the rhythm of melee combat after long experience.
+MELEEGRACE_SPTR;	Your melee dodging skills have become graceful.
+MELEEDANCER_SPTR; 	Watching you fight is like watching a dancer.
+MELEESHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you were.
+
+
+After dodging many attacks while flying, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
+SKYDODGER_SPTR;	Your dodging skills are just starting to develop through initial experiences in combat.
+FASTWING_SPTR;		Your wings move significantly faster.
+NIMBLEWING_SPTR;	You are more dexterous in the air.
+SWIFTWING_SPTR;	Your ability to dodge in flight is significantly increased.
+SKYMOVER_SPTR;	You have learned the rhythm of aerial combat after long experience.
+GRACEWING_SPTR;	Your aerial dodging skills have become graceful.
+SKYDANCER_SPTR;	You fight in the air with the grace of a dancer.
+SKYSHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you used to be.
+
+
+After successfully sneaking up behind enemies and stabbing them in the back, you have earned this Title and your skills have increased, making future backstab attacks easier.
+SNEAK_SPTR;			The members of your party name you Sneak after backstabbing enemies.
+STALKER_SPTR;			Your skills have progressed to the level of a Stalker.
+CREEPER_SPTR;			Your ability to get behind enemies has creeped out your fellow party members.
+SAVAGE_SPTR;			Your backstabbing skills have passed creepy and officially become savage.
+HOMICIDAL_SPTR;		Your fellow party members consider your mind deranged, obsessed with killing.
+BLOODTHIRSTY_SPTR;		You are beyond skilled at backstabbing.  You are now hungry for the feel of your blade piercing flesh.
+SHADOWWALKER_SPTR;	Enemies watching you become spooked, often looking behind at their shadow expecting to find you there.
+ASSASSIN_SPTR;			You have reached the pinnacle of achievement in the arts of stabbing enemies in the back, making you an assassin.
+
+
+You have earned this Title after surviving many battles, and your skills are increased as a reward.
+(HP-Str-Acc-Lvl)
+10     Knight of the Clashing Blade 5-1-1-0	You have transitioned from an untested Knight to a Knight who has been tested in battle.
+100   Knight of a Hundred Battles 10-2-2-0	You have survived a hundred battles.
+200   Knight of the Piercing Blade 20-3-3-0	Your blade has become known as piercing.
+500   Knight of the Undaunted Blade 25-4-4-0	Your blade has become known as undaunted.
+1000 Knight of a Thousand Battles 30-5-5-1.  	You have survived a thousand battles.
+2000 Knight of the Feared Blade 35-6-6-1	Your blade has become known and feared.
+3000 Knight of the Realm 40-7-7-1		You have become a Knight of the Realm.
+5000 Knight of Etan 50-10-10-2			You have reached the ultimate rank of Knighthood.
+
+
+HealthGiven
+You have earned this Title by providing healing to others, and your skills have increased as a reward.
+(HP-Int-Lvl)
+50 	Mender			2-1-0		You are a mender of general wounds.
+200 	Healer				5-2-0		You have become known as a Healer.
+500	Blessed Hands		10-3-0		Your skilled hands are gentle and precise.
+1000	Witch Doctor			15-4-1		Mysterious magical arts are now a part of even your most basic healing.
+2000	Light of the Cure		20-5-1		Your hands glow when mending wounds.
+3000  Divine Touch			25-6-1		Your practice has reached the height of purity.
+5000	White Sage			35-7-1		You are now a member of the Order of the White Sage.
+10000 Cleric of the Covenant	50-10-2	You have reached the highest Title of Clerical healing, becoming a member of the Covenant.
+
+
+You have earned this Title by engaging in the selfless practice of trading your own health for the health of others, and your skills have increased as a reward.
+(Cha-Int-HP-Lvl)
+50 	Hands of Charity		(1-1-2  -0)	Your hands are seen as special by the party, known for the charitable giving of health.
+100	Hands of Love		(2-2-4  -0)	Your unbiased love for others in need has earned you this Title.
+200	Hands of Devotion		(3-3-8  -0)	Your devotion to others in need has earned you this Title.
+400	Hands of Nobility		(4-4-12-0)	Your hands are seen as more than just healing, but noble.
+800	Hands of Sacrifice		(5-5-16-0)	Your self-sacrificing nature has earned you this Title.
+1500	The Selfless Hand		(6-6-20-1)	You are known for a selfless devotion to those in need.
+2500	The Incorruptible Hand	(7-7-24-1)	Your healing motives are pure and righteous.
+4000	The Bleeding Palm		(10-10-30-2)	You have earned the highest Title possible for giving your own health to others.  You are a member of the order of the Bleeding Palm.
+
+
+You have earned this Title by roaring at enemies in combat and making them retreat, and your skills have increased as a reward.
+(Str-HP-Lvl)
+10	HowlingStray			(1-2-0)	You have become known as a howling stray creature.
+30	HowlingBully 		(2-4-0)	Your roar bullies enemies around the battlefield.
+50	HowlingWildling		(3-8-0)	You are now a willing, howling during battle.
+100	SnarlingCreature		(4-12-0)	Your enemies see you as a snarling creature.
+200	SnarlingBeast		(5-16-0)	You have grown into a true snarling beast of a creature.
+400	SnarlingFiend		(6-20-0)	Your roar is known far and wide, earning you the reputation as a fiend.
+1000	RagingMonster		(8-24-1)	You have become a raging monster.
+2000	RagingHorror		(10-30-2)	You have become a raging horror.
+
+
+You have earned this Title by picking locks successfully, and your skills have increased as a reward.
+(Lck-Spd-HP-Lvl)
+10	Prowler		(1-1-2-0)	Your fellow party members see you as sneaky and suspect.
+50	PickPocket		(2-2-4-0)	You have become ruthless and swift of hand.
+100	CatBurglar		(3-3-8-0)	You have become known for your burgling skills.
+200	Clincher		(4-4-12-0)	You have earned the Title of Clincher among your fellow thieves.
+500	Picker			(5-5-16-0)	You are an experienced lock picker.
+1000	SafeCracker		(6-6-20-1)	You are an official safe cracker.
+2000	LockTickler		(8-8-30-1)	You have an almost unreal ability to tickle locks open.
+5000	LockBane		(10-10-50-2)	You have reached the height of lock picking ability.
+
+
+SongsPlayed
+You have earned this Title by playing many songs, and your skills have increased as a reward.
+(Cha-Int-Lck-HP-Lvl)
+10	Versifier		(1-1-1-5-0)		You have become known for your singing, even if you fumble at times.
+50	Player			(2-2-1-10-0)		You are skilled enough to be considered a player of all instruments.
+100	Balladeer		(3-3-2-15-0)		You have become skilled with basic songs.
+200	Minstrel		(4-4-2-20-0)		You are a fine singer and composer of lyrics.
+500	Instrumentalist	(5-5-3-25-0)		Your playing of instruments has reached a professional level.
+1000	Soloist		(6-6-3-30-1)		Your have become renewed for your ability to play solos.
+2000	Artiste			(8-8-5-50-1)		You are an artist extraordinaire. 
+5000	Virtuoso		(10-10-10-60-2)	You have reached the height of musical talent.
+
+
+SpiritsLifted
+You have earned this Title by lifting the spirits of your fellow party members during battle, and your skills have increased as a reward.
+(Cha-Int-Lck-HP-Lvl)
+50	BardOfTheTrippingToes		(1-1-0-2-0)		Your fumbling dances lift the parties spirits.
+100	BardOfTheMerryMelody		(2-2-0-4-0)		Your happy tunes are a welcome and uplifting to your fellow party members.
+200	BardOfTheWhimsicalWord	(3-3-1-8-0)		You have become skilled at impromptu rhyming. 
+500	BardOfTheCarolingChorus	(4-4-1-12-0)		Your singing ability has reached respectable status.
+1000	BardOfTheBouncingBallad	(5-5-2-16-0)		Your ballads are inspiriting and invigorating.
+2000	BardOfTheDancingDitty		(6-6-2-20-0)		Your swift-footed dancing livens up your music and the party.
+3000	BardOfTheEnchantedEar		(7-7-3-24-1)		Magic is now a part of your music and enchants all that hear you.
+5000	BardOfTheAracneAria		(10-10-5-50-2)	You have reached the height of music making and can easily lift the spirits of the party.
+
+
+Projectile Hits
+You have earned this Title by hitting the enemy you targeted with a projectile weapon, and your skills have increased as a reward.
+(Acc-Lck-Str-Lvl)
+20	Targeter		(1-1-1-0)	Your targeting abilities are starting to develop.
+50	SteadfastFlyer	(2-2-1-0)	Your aim with projectiles has become steadfast. 
+100	DeadEye		(3-3-2-0)	You have earned the nickname Dead-Eye by your fellow party members.
+500	DeadCenter		(4-4-2-0)	When your projectiles hit, they always seems to hit the center of their mark.
+1000	SureSail		(5-5-3-0)	Your skills with all projectile weapons has become professional.
+2000	SureShot		(6-6-3-0)	Your ability to hit critically with projectile weapons has significantly increased.
+3000	PerfectHit		(8-8-4-0)	Your aim with projectile weapons is legendary.
+5000	EnchantedAim	(10-10-5-1)	Your use of projectile weapons is now magical, hitting your mark with a touch of the arcane.
+
+
+Spells Cast
+You have earned this Title by successfully casting many spells, and your skills have increased as a reward.
+(Int-Lck-HP-Lvl)
+20	Magus	(1-1-2-0)		Your spell casting skills are just starting to develop.
+50	Charmer	(2-2-4-0)		You can readily charm enemies with your craft.
+100	Diviner	(3-3-8-0)		Your magic now comes from a pure place inside you.
+200	Enchanter	(4-4-12-0)		You have reached the status of an Enchanter.
+500	Conjurer	(5-5-16-0)		You can now summon other creatures with your powers.
+1000	Shaman	(6-6-20-1)		You have unlocked the strange powers of voodoo.
+2000	Wizard	(8-8-30-1)		The party now considers you a full-fledged Wizard.
+5000	Warlock	(10-10-50-2)		You have reached the ultimate level of spell casting skill.
+
+
+EnemiesFaced
+You have earned this Title by facing many enemies in mortal combat, and your skills have increased as a reward.
+(Str-Int-Lck-HP-Lvl)
+20 	Undaunted	(0-0-1-5-0)		
+50	Daring		(1-1-2-10-0)
+100	Bold		(2-2-3-15-0)
+200	Brave		(3-3-4–20-0)
+500	Valorous	(4-4-5-25-0)
+1000	Valiant	(5-5-6-30-0)
+2000	Lionhearted	(6-6-8-35-0)
+3000	Heroic		(8-8-10-40-1)
+5000	Fearless	(10-10-10-50-2)
+
+
+MoonHowls
+You have earned this Title through many moon howls, and your skills have increased as a reward.
+(Str-Lck-HP-Lvl)
+10	PawOfTheLunarPup		(1-1-5-0)
+20	PawOfTheYoungHowler		(2-2-10-0)
+50	PawOfTheNightSky			(3-3-15-0)
+100	PawOfTheMidnightWail		(4-4-20-0)
+200	PawOfTheTwilightMoon		(5-5-25-1)
+300	PawOfTheCelestialCry		(6-6-30-1)
+400	PawOfTheGlowingOrb		(8-8-40-1)
+500	PawOfTheCrescentLegion		(10-10-50-2)
+
+
+TurnsInFlight
+You have earned this Title by spending many turns flying in the air, and your skills have increased as a reward.
+(Spd-Lck-Lvl)
+50	WindGlider		(1-1-0)
+100	LightFeather		(2-2-0)
+200	FreeFlyer		(3-3-0)
+500	SteadyWing		(4-4-0)
+1000	EverSoar		(5-5-0)
+2000	SkySail		(6-6-1)
+3000	Aerialist		(8-8-1)
+5000	FeatherDancer	(10-10-2)
+
+
+PackActions
+You have earned this Title after completing many Wolfen Pack actions during combat, and your skills have increased as a reward.
+(Str-Spd-HP-Lvl)
+20	PackFollower	(1-1-5-0)
+50	PackMember		(2-2-10-0)
+100	PackTasker		(3-3-15-0)
+200	PackCharger		(4-4-20-0)
+300	PackNobel		(5-5-25-0)
+400	PackLeader		(6-6-30-0)
+500	PackAlpha		(8-8-40-1)
+1000 	PackElder		(10-10-50-2)
+
+
+BeastMindLinks
+You have earned this Title after successfully linking your mind with a beast, and your skills have increased as a reward.
+(Int-Lck-HP-Lvl)
+20	CritterClairvoyant		(1-1-5-0)
+50	AnimalAnimator		(2-2-10-0)
+100	FriendOfTheFeral		(3-3-15-0)
+200	WillOfTheWild		(4-4-20-0)
+300	CreatureChanneler		(5-5-25-0)
+400	BeastTaskmaster		(6-6-30-1)
+500	MonsterManipulator		(8-8-40-1)
+1000	MammalianMaster		(10-10-50-2)
+
+
+MeleeHits
+You have earned this Title after successfully hitting enemies in combat, and your skills have increased as a reward.
+(Acc-Str-HP-Lvl)
+20	Brawler				(1-1-5-0)
+50	WildSwing				(2-2-10-0)
+100	HavocSmasher			(3-3-15-0)
+200	SureStroke				(4-4-20-0)
+500	Warrior				(5-5-25-0)
+1000	EverMark				(6-6-30-1)
+2000	MeleeMaster				(7-7-40-1)
+3000	SteadyStriker			(8-8-50-1)
+5000	OrderOfTheSteadyBlade		(10-10-80-2)
+
+
+FlyingAttackHits
+You have earned this Title after successfully attacking enemies while flying, and your skills have increased as a reward.
+(Str-Acc-Int-HP-Lvl)
+20	DragonOfTheUnblinkingEye		(1-1-0-5-0)
+50	DragonOfTheCurlingClaw			(2-2-1-10-0)
+100	DragonOfTheDaggerTooth			(3-3-2-15-0)
+200	DragonOfTheForebodingGaze		(4-4-3-20-0)
+500	DragonOfTheUnbreakableScale		(5-5-4-25-0)
+1000	DragonOfTheDreadedBreath		(6-6-5-30-1)
+2000	DragonOfTheArcaneWing			(8-8-8-40-1)
+5000	DragonOfTheNightmareSky		(10-10-10-50-2)
+</Text>
+        </Document>
+        <Document ID="9">
+            <Title>CharacterCreationHelp</Title>
+            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+
+If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
+
+Classic
+
+Knight
+Archer
+Bard
+Thief
+Cleric
+Sorcerer
+
+
+
+Pet
+
+Knight
+Beastmaster
+Dragon or Wolfen
+Bard
+Thief
+Cleric
+
+
+
+Wing
+
+Beastmaster
+Firebrand Dragon
+Sylavin Dragon
+Sorcerer or Bard
+Thief
+Cleric
+
+
+
+Howler
+
+Beastmaster
+Wolfen
+Wolfen
+Wolfen
+Thief
+Cleric
+
+
+To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+</Text>
+        </Document>
+        <Document ID="5">
+            <Title>Roles</Title>
+            <Text>Beastmaster -  Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
+
+Sorcerer - The Sorcerer is a role that is completely devoted to magic.  They specialize in all the arcane arts except for healing.  They are useless with weapons, and may be weak in the beginning, but in higher ranks they are a dominating presence to be reckoned with.  A Sorcerer’s primary attribute is intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
+
+Cleric - The Cleric is religious leader, focused on the magic of nature and all the various healing arts.  They are almost as devoted to magic as the Sorcerer, and over time will learn powerful spells of all kinds.  Most groups of adventurers find the restorative powers of the Cleric to be essential.  Having considerable charm also makes the Cleric ideal for negotiations, bartering, and diplomacy.  Primary attributes are charm and intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
+
+Knight - Your adventures will be fraught with battle, and a Knight will serve your party well.  They may not be the brightest of companions, but they make up for it by keeping your party safe.  Knights can use the widest variety of weapons and armor.  They are the only role that gains no magical abilities as they progress in rank.  All roles have the opportunity to be granted titles that provide special bonuses and abilities, and Knights have more titles to be earned than any other role.  A Knight’s primary attributes are strength and accuracy, but consider speed as well to assist in dodging attacks.
+
+Archer - The Archer’s best friends are his bow, and his accuracy using it.  While an Archer can swing a sword if they need to, they get special bonuses for using projectile weapons, such as slings, blowpipes, and of course, the bow and arrow.  Having an Archer is essential for the many flying enemies you will face.  The primary attributes of an Archer are accuracy and strength, but don’t discount speed and luck when using a bow...
+
+Bard - The Bard is a jack of many trades.  They may not be the fastest, but they weave the arts of a Cleric, the spells of a Sorcerer, and sometimes even the brawn of a Knight into one role.  Most of their skill lies in magical song that aids their fellow adventurers and hampers would be dangers.  Due to their talents being spread out, Bards may not be powerful in the beginning, and inexperienced players may struggle to guide them in the early ranks.  Intelligence and Charm are most important to a Bard, but also consider strength if you want them to be warriors as well.
+
+Thief - They are deplorable criminals, but every group of adventurers benefits from a Thief in their midst.  There will be locked doors and chests to pick open, and the need to steal back what is taken.  Some adventures are simply not available to a party without a Thief.  Luck and Speed are the Thief’s primary attributes, but also consider intelligence for the magic that will come with higher rank.
+
+Wolfen - There is only one possible role for a Wolfen, and that is to be their loyal but vicious selves.  They grow into powerful beasts that crave the magic of moon and starlight.  Their growl will strike fear into all, and send the weaker fleeing for their lives.  But it is never wise to run from a Wolfen, because they love to chase down, trip, and devour enemies with valuables.  Consider strength and speed when crafting a Wolfen, but don’t forget intelligence for the magic that comes with higher rank.  Also consider the many advantages of having multiple Wolfens in your party.  A pack of Wolfens work together...
+
+Firebrand - Firebrands are the classic bright red fire breathers of dragon legend.  There is magic in the fire that escapes their mouths, and it can do far more than just burn, such as destroying an enemy’s weapons and armor.  As rank increases, Firebrand dragons will also learn a few spells of their own.  Primary attributes are strength and intelligence.  While they will eventually learn to fly, consider a high speed attribute to dodge attacks.
+
+Sylavin -  The Sylavin dragon is a more thoughtful creature than the Firebrand.  They can do more damage to a single opponent, but lack the ability to attack multiple foes at once.  They are blue-green in color, and breathe a toxic stream of freezing mist instead of fire.  They learn powerful breath attacks slower than the Firebrand, but learn to fly faster.  Sylavin dragons learn many unusual powers as rank increases, and are more versatile than the Firebrands.  Primary attributes are intelligence and strength, but as with any dragon, speed is useful for dodging attacks.
+</Text>
+        </Document>
+        <Document ID="12">
+            <Title>Code Notes</Title>
+            <Text>	“Do as I say, not as I do.”
+
+
+I have fallen into the bad habit of using boost::shared_ptr for everything.
+This is bad for performance because shared_ptr wraps it’s increment/decrement atomically so multi-threading is safe, but I don’t need that because the game engine is single-threaded.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem is actually not so bad, since the Stage system automatically acquires/releases most resources at Stage construction/destruction time, and not during normal time-critical frame-rate sensitive looping.  However, this still should be changed to use shared_ptr only sparingly when ownership is actually shared, such as when a Stage keeps a member shared_ptr and also stores it in the EntityList with EntityAdd().  These places should acquire a new shared_ptr to inc the ref count, then use raw pointers or references to pass everything around.  For example, the many manager classes should perform this inc/deliver-raw-ptr behavior.  There is one advantage that should be mentioned when using pointers of any kind everywhere, and that is the ease of eliminating includes to make builds faster.  I should also change from using boost::shared_ptr to the std::shared_ptr since I’m working in C++14.
+
+Update:  2017-3-27
+I went ahead and changed all boost::shared_ptr to std::shared_ptr.
+
+
+All of my factories should be returning unique_ptrs instead, or keeping unique_ptrs and returning raw const pointers.
+I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
+
+
+I need to start using make_shared() and make_unique().
+I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
+
+
+I need to use “using” instead of “typedef”
+I’ll change my behavior now, and will change existing code as I stumble upon it.
+
+
+I need to use auto for stack vars and non-virtual function return types.
+I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
+
+
+I have not been using brace initialization, and I should.
+The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.  
+
+
+I have places in the code where class functions return references to local members causing dangling.
+These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.
+
+
+I used a trailing underscore to indicate a member variable instead of the prefix m_.
+I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative one.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on.
+
+
+I made function names start with a capital letter.
+I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative one.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on.
+
+
+My singletons are not thread safe.
+All my singletons, and there are many, use shared_ptrs and the generic singleton::Instance() function which has the line { if (instance_.get() == nullptr) } -which is not thread safe because two threads could race to find the value of .get().  This was a design decision early on since the engine is single-threaded.  The idea was to prefer simplicity.  This is also not much of an issue because a reference to almost all of my singletons are kept in main.cpp to prevent resources from thrashing.  Hmm.  I was forced to say ‘almost all’ instead of all.  Maybe I should work on that…
+
+
+I miss-use singletons.
+I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother doing all of that work, and continue to use the singletons as I have been.  The smell isn’t that bad. </Text>
+        </Document>
+        <Document ID="6">
+            <Title>Attributes</Title>
+            <Text>Strength - Simply a measure of how strong you are.  How strong an adventurer is primarily determines how much damage is dealt during combat, but strength also effects many other things.  For example, strength determines how much you can carry, what kinds of weapons you can use, and how much health you start out with.  The Strength attribute is primarily a concern for Knights and Archers, but also for Beastmasters and Bards if they are not Pixies.
+
+Accuracy - How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you craft for fighting.
+
+Luck - Luck is applied in almost every endeavor, but Thieves are primarily focused on Luck in their underhanded trade.  Spell casters also benefit from Luck.
+
+Charm - How pleasant looking and diplomatic a character is.  Having higher Charm in a party as a whole will make non-combat encounters more likely.  Charm is also useful in everyday negotiations, such as buying and selling goods.  Clerics and Bards need Charm far more than any other roles.
+
+Speed - How fast and dexterous the adventurer is.  This attribute will help with avoiding melee attacks, but is also important for a Thief’s slight of hand.
+
+Intelligence - A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
+</Text>
+        </Document>
+        <Document ID="10">
+            <Title>Introduction</Title>
+            <Text>The world of Etan suffers.
+
+It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
+
+There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
+
+After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
+
+The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>

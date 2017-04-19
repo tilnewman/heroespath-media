@@ -1,0 +1,12 @@
+Found at:
+www.lostgarden.com/2006/07/more-free-game-graphics.html
+
+Daniel Cook
+www.lostgarden.com
+
+License(s):
+As always, these tiles are free to be used in whatever projects you desire. (I need to get a copyleft license available at some point.) If you do use the graphics, drop me a note. I love hearing about projects.
+Posted on OpenGameArt.org as CC-BY 3.0
+
+I fixed pixel position problems, repacked the tiles into smaller textures, and then used them in my maps.
+zTn

@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<title>HeroesPath</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+	body {background-color: #bac0c7}
+    p.binderItem {margin: 10.0px 0.0px 0.0px 05.0px; font-family:Calligraph810 BT, Cochin, Times, Courier, Arial, serif; font-size:14.0px;}
+    .page {border: 1px solid #727272; background: #fff}
+    hr {
+      border-top: 1px dashed #000;
+      border-bottom: 0px solid #fff;
+      color: #fff;
+      background-color: #fff;
+      height: 0px;
+  </style>
+</head>
+
+<body>
+
+<table border="0" width="100%" cellspacing="3">
+<tr>
+<td>
+
+<table class="page" width="100%" cellspacing="10" cellpadding="2">
+<tr>
+<td valign="top">
+
+<ul>
+<li>
+<p class="binderItem"><strong>Credits</strong><br/>Game Design by<br/>
+Ziesche Til Newman<br/>
+<br/>
+Programming by<br/>
+Ziesche Til  Newman<br/>
+<br/>
+Special thanks to Laurent Gomila for the excellent SFML (Simple Fast Multimedia Library), which is licensed under the terms and conditions of the zlib/png license.  This project came together very quickly thanks to the completeness and simplicity of this library.<br/>
+<br/>
+Art by<br/>
+Ziesche Til Newman<br/>
+<br/>
+Rune Symbols and Other Designs by<br/>
+Angela Diegel<br/>
+<br/>
+Inferno Animation by<br/>
+Wrath Games Studio <br/>
+http://wrathgames.com/blog<br/>
+Found at OpenGameArt...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Races</strong><br/>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.<br/>
+<br/>
+Gnome - Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like th...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Roles</strong><br/>Beastmaster -  Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Se...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Introduction</strong><br/>The world of Etan suffers.<br/>
+<br/>
+It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.<br/>
+<br/>
+There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where <hu...</p>
+</li>
+<li>
+<p class="binderItem"><strong>CharacterCreationHelp</strong><br/>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.<br/>
+<br/>
+If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note ...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Towns</strong><br/>Towns:<br/>
+<br/>
+Mudgate<br/>
+Thornberry<br/>
+Trolleyville<br/>
+Bridgeway<br/>
+Riverton<br/>
+<br/>
+<br/>
+<br/>
+Inns:<br/>
+<br/>
+Oak Room Inn<br/>
+Barrow Inn<br/>
+Black Candle Inn<br/>
+Aven’s Rest Inn</p>
+</li>
+<li>
+<p class="binderItem"><strong>Attributes</strong><br/>Strength - Simply a measure of how strong you are.  How strong an adventurer is primarily determines how much damage is dealt during combat, but strength also effects many other things.  For example, strength determines how much you can carry, what kinds of weapons you can use, and how much health you start out with.  The Strength attribute is primarily a concern for Knights and Archers, but also for Beastmasters and Bards if they are not Pixies.<br/>
+<br/>
+Accuracy - How carefully and successfully a char...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Conditions</strong><br/>Good - No ailments.<br/>
+<br/>
+Unconscious - Alive, but unresponsive, and vulnerable to attack.<br/>
+<br/>
+Dazed - Temporarily unable to act, and vulnerable to attack.<br/>
+<br/>
+Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.<br/>
+<br/>
+Diseased - Ill with a disease that drains health over time and prevents healing.<br/>
+<br/>
+Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.<br/>
+<br/>
+Stone - Turned to stone. dead.<br/>
+<br/>
+Dead - Beyond the skill of most healers.</p>
+</li>
+<li>
+<p class="binderItem"><strong>Titles</strong><br/>  BattlesSurvived,     //(knights only)<br/>
+            HealthGiven,         //(clerics only)<br/>
+            HealthTraded,        //(clerics only)<br/>
+  DodgedStanding,   //(all roles)<br/>
+            DodgedFlying,        //(all roles)<br/>
+            BeastRoars,          //(beasts only)<br/>
+  LocksPicked,         //(all roles)<br/>
+  SongsPlayed,        //(bards only)<br/>
+  SpiritsLifted,       //(bards only)<br/>
+            BackstabsHits,       //(thieves only)<br/>
+            ProjectileHits,      //(all roles)<br/>
+            SpellsCas...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Code Notes</strong><br/> “Do as I say, not as I do.”<br/>
+<br/>
+<br/>
+I have fallen into the bad habit of using boost::shared_ptr for everything.<br/>
+This is bad for performance because shared_ptr wraps it’s increment/decrement atomically so multi-threading is safe, but I don’t need that because the game engine is single-threaded.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem is...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Build Times</strong><br/>Notes:<br/>
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.<br/>
+In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.<br/>
+Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.<br/>
+Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.<br/>
+Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.<br/>
+The overhaul to reduce include files shortened build times ...</p>
+</li>
+</ul>
+
+</td>
+<td width="8">
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

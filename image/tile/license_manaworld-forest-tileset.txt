@@ -1,0 +1,10 @@
+Found at OpenGameArt.org
+
+The mana world:Forest Tileset
+Author: Saphy. Len Pabin
+(Submitted by Leonard Pabin)
+
+License(s): 
+GPL 2.0
+
+I took misc images from the tileset, added shading, and then used them in my maps.
