@@ -1,65 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="13">
-            <Title>Build Times</Title>
-            <Text>Notes:
-All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
-In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
-Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
-Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
-Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
-The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
+        <Document ID="10">
+            <Title>Introduction</Title>
+            <Text>The world of Etan suffers.
 
+It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
 
+There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
 
-This run was the first time trial of Visual Studio NOT running in Parallels.
-Visual Studio
-Release Mode
-Boost Version 1.61.0
-With roughly 8gigs of RAM available.
-On 2017-3-31 (after includes overhaul of 2017-3-29)
-Build Time:  3:26
-Executable size: 2.77MB
+After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
 
-
-This run was the first time trial of Visual Studio running in Parallels.
-Visual Studio
-Running in Parallels VM
-Release Mode
-Boost Version 1.61.0
-With roughly 4gigs of RAM available.
-On 2017-3-30 (after includes overhaul of 2017-3-29)
-Build Time:  4:40
-Executable size: 2.77MB
-
-
-This run was the first time trial of LLVM.
-GCC front-end to Clang, which is a font-end to LLVM
-Apple LLVM version 8.0.0 (clang-800.0.42.1)
-Target is x86_64-apple-darwin16.4.0
-With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
-Boost Version 1.62.0
--O4
-time make -j8
-On 2017-3-30 (code was before the includes overhaul of 2017-3-29)
-Build Time:  2:39
-On 2017-3-30 (after includes overhaul of 2017-3-29)
-Build Time:  2:26
-Executable size: 5.0MB
-
-
-These time trials were performed because LLVM version was updated to 8.1.0.
-GCC front-end to Clang, which is a font-end to LLVM
-Apple LLVM version 8.1.0 (clang-802.0.38)
-Target is x86_64-apple-darwin16.5.0
-With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
-Boost Version 1.62.0
--O4
-time make -j8
-On 2017-3-31 (after includes overhaul of 2017-3-29)
-Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
-Executable size: 4.9MB</Text>
+The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
         </Document>
         <Document ID="3">
             <Title>Credits</Title>
@@ -119,94 +71,6 @@ Under the Attribution 3.0 Unported (CC BY 3.0) License
 See https://creativecommons.org/licenses/by/3.0/ for details
 
 Theme Music by
-</Text>
-        </Document>
-        <Document ID="7">
-            <Title>Conditions</Title>
-            <Text>Good - No ailments.
-
-Unconscious - Alive, but unresponsive, and vulnerable to attack.
-
-Dazed - Temporarily unable to act, and vulnerable to attack.
-
-Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.
-
-Diseased - Ill with a disease that drains health over time and prevents healing.
-
-Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.
-
-Stone - Turned to stone. dead.
-
-Dead - Beyond the skill of most healers.
-</Text>
-        </Document>
-        <Document ID="8">
-            <Title>Towns</Title>
-            <Text>Towns:
-
-Mudgate
-Thornberry
-Trolleyville
-Bridgeway
-Riverton
-
-
-
-Inns:
-
-Oak Room Inn
-Barrow Inn
-Black Candle Inn
-Aven’s Rest Inn
-</Text>
-        </Document>
-        <Document ID="4">
-            <Title>Races</Title>
-            <Text>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
-
-Gnome - Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like them, but they make excellent Thieves, and parties without a Thief on their side will regret it.
-
-Pixie - The Pixie is a tiny winged creature from the ancient world, but a few are still known to exist.  Their obvious lack of strength is more than made up for by their other significant advantages, including speed to keep their fragile bodies away from the melee.  They are the most intelligent race, making excellent Sorcerers and Clerics.  Pixies speak their own language, and sing so well they even make good Bards.
-
-Wolfen - The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
-
-Dragon - The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
-
-Troll
-Goblin
-Orc
-Newt
-Spider
-Bog
-CaveCrawler
-Hydra
-LizardWalker
-Minotaur
-Ogre
-Plant
-Shade
-Werebear
-Skeleton
-Beetle
-Boar
-Demon
-Griffin
-Halfling
-Lion
-LionBoar
-Naga
-Serpent
-Ramonaut
-Cobra
-Werebear
-Wereboar
-Werecat
-Werewolf
-Werebat
-Pug
-Wyvern
-Giant
-Ghoul
 </Text>
         </Document>
         <Document ID="11">
@@ -476,56 +340,53 @@ You have earned this Title after successfully attacking enemies while flying, an
 5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
         </Document>
-        <Document ID="9">
-            <Title>CharacterCreationHelp</Title>
-            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+        <Document ID="4">
+            <Title>Races</Title>
+            <Text>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
 
-If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
+Gnome - Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like them, but they make excellent Thieves, and parties without a Thief on their side will regret it.
 
-Classic
+Pixie - The Pixie is a tiny winged creature from the ancient world, but a few are still known to exist.  Their obvious lack of strength is more than made up for by their other significant advantages, including speed to keep their fragile bodies away from the melee.  They are the most intelligent race, making excellent Sorcerers and Clerics.  Pixies speak their own language, and sing so well they even make good Bards.
 
-Knight
-Archer
-Bard
-Thief
-Cleric
-Sorcerer
+Wolfen - The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
 
+Dragon - The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
 
-
-Pet
-
-Knight
-Beastmaster
-Dragon or Wolfen
-Bard
-Thief
-Cleric
-
-
-
-Wing
-
-Beastmaster
-Firebrand Dragon
-Sylavin Dragon
-Sorcerer or Bard
-Thief
-Cleric
-
-
-
-Howler
-
-Beastmaster
-Wolfen
-Wolfen
-Wolfen
-Thief
-Cleric
-
-
-To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+Troll
+Goblin
+Orc
+Newt
+Spider
+Bog
+CaveCrawler
+Hydra
+LizardWalker
+Minotaur
+Ogre
+Plant
+Shade
+Werebear
+Skeleton
+Beetle
+Boar
+Demon
+Griffin
+Halfling
+Lion
+LionBoar
+Naga
+Serpent
+Ramonaut
+Cobra
+Werebear
+Wereboar
+Werecat
+Werewolf
+Werebat
+Pug
+Wyvern
+Giant
+Ghoul
 </Text>
         </Document>
         <Document ID="5">
@@ -617,17 +478,222 @@ Speed - How fast and dexterous the adventurer is.  This attribute will help with
 Intelligence - A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
 </Text>
         </Document>
-        <Document ID="10">
-            <Title>Introduction</Title>
-            <Text>The world of Etan suffers.
+        <Document ID="13">
+            <Title>Build Times</Title>
+            <Text>Notes:
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
+In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
+Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
+Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
+The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
 
-It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
 
-There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
 
-After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
+This run was the first time trial of Visual Studio NOT running in Parallels.
+Visual Studio
+Release Mode
+Boost Version 1.61.0
+With roughly 8gigs of RAM available.
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Time:  3:26
+Executable size: 2.77MB
 
-The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
+
+This run was the first time trial of Visual Studio running in Parallels.
+Visual Studio
+Running in Parallels VM
+Release Mode
+Boost Version 1.61.0
+With roughly 4gigs of RAM available.
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  4:40
+Executable size: 2.77MB
+
+
+This run was the first time trial of LLVM.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target is x86_64-apple-darwin16.4.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-30 (code was before the includes overhaul of 2017-3-29)
+Build Time:  2:39
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  2:26
+Executable size: 5.0MB
+
+
+These time trials were performed because LLVM version was updated to 8.1.0.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.1.0 (clang-802.0.38)
+Target is x86_64-apple-darwin16.5.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
+Executable size: 4.9MB</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Conditions</Title>
+            <Text>Good - No ailments.
+
+Unconscious - Alive, but unresponsive, and vulnerable to attack.
+
+Dazed - Temporarily unable to act, and vulnerable to attack.
+
+Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.
+
+Diseased - Ill with a disease that drains health over time and prevents healing.
+
+Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.
+
+Stone - Turned to stone. dead.
+
+Dead - Beyond the skill of most healers.
+</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns:
+
+Mudgate
+Thornberry
+Trolleyville
+Bridgeway
+Riverton
+
+
+
+Inns:
+
+Oak Room Inn
+Barrow Inn
+Black Candle Inn
+Aven’s Rest Inn
+</Text>
+        </Document>
+        <Document ID="14">
+            <Title>Spells</Title>
+            <Text>Sparks
+Sprays a single enemy with a shower of molten sparks causing minimal damage.
+This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.
+
+
+Bandage
+Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.
+This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is learned, there is little reason to ever use this spell again.
+
+
+Sleep
+Puts a single enemy into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.
+
+
+Blanket
+Puts multiple enemies into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.  Which enemies are effected is random, but the number and likelihood of success both increase with Rank, so this spell remains useful for the whole game.
+
+
+Awaken
+Revives a single character from unconsciousness or sleep.
+Only affects one character.  This can be used to wake a character from either a natural or magical sleep.
+
+
+Wake Horn
+Blasts a magical 
+
+
+Trip
+Knocks a single enemy off of their feet and rolls them onto their back, reducing their stats and forcing them to waste a turn getting back up. 
+Only affects one enemy.  Some creatures take more than one turn to get up once flipped onto their back.
+
+
+Lift
+Returns a single tripped character to their feet without having to waste a turn getting up.
+Some creatures take more than one turn to get back on their feet, so this spell is more useful to some races than others.
+
+
+Daze
+Causes a single enemy to become dazed, reducing their stats, for one or more turns.
+It can take multiple turns to wake from being dazed naturally without intervening.
+
+
+Frighten
+Scares a single enemy, reducing their stats.
+It can take multiple turns to recover from being scared.
+
+
+Clear Mind
+Removes the Dazed and or Frightened condition from a single character.
+It can take multiple turns for a creature to recover from being Dazed or Frightened without intervening.
+
+
+Poison
+Poisons a single enemy, causing a reduction of stats and the loss of a small amount of health each turn.
+Some creatures can poison your characters just by attacking them during combat, such as poisonous snakes and Sylavin dragons.
+
+
+Antidote
+Cures the poisoned condition from a single character.
+This spell works whether the poisoning was natural or magical.
+</Text>
+        </Document>
+        <Document ID="9">
+            <Title>CharacterCreationHelp</Title>
+            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+
+If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
+
+Classic
+
+Knight
+Archer
+Bard
+Thief
+Cleric
+Sorcerer
+
+
+
+Pet
+
+Knight
+Beastmaster
+Dragon or Wolfen
+Bard
+Thief
+Cleric
+
+
+
+Wing
+
+Beastmaster
+Firebrand Dragon
+Sylavin Dragon
+Sorcerer or Bard
+Thief
+Cleric
+
+
+
+Howler
+
+Beastmaster
+Wolfen
+Wolfen
+Wolfen
+Thief
+Cleric
+
+
+To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+</Text>
         </Document>
     </Documents>
 </SearchIndexes>
