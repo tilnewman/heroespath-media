@@ -1,0 +1,34 @@
+Tree Collection v2.6
+Bleed's Game Art
+http://remusprites.carbonmade.com/
+Found at OpenGameArt.org
+CC-BY 3.0
+http://creativecommons.org/licenses/by/3.0/
+The tree image shadows were changed, and then used to make map tiles.
+
+Daniel Cook’s Map Tiles
+www.lostgarden.com/2006/07/more-free-game-graphics.html
+Found at OpenGameArt.org
+CC-BY 3.0
+http://creativecommons.org/licenses/by/3.0/
+Image pixel position problems were fixed, repacked into smaller textures, and then used as map tiles.
+
+The mana world:Forest Tileset
+Saphy, Len Pabin
+Submitted by Leonard Pabin to OpenGameArt.org
+GPL 2.0
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Some images were taken from the tileset, shading was added, and the results were used as map tiles.
+
+Whispers of Avalon: Grassland Tileset
+Submitted by Leonard Pabin to OpenGameArt.org
+CC-BY 3.0
+http://creativecommons.org/licenses/by/3.0/
+GPL 3.0
+http://www.gnu.org/licenses/gpl-3.0.en.html
+GPL 2.0
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+The tree images were taken, shading was added, and the results used as map tiles.
+
+201-5-13
+zTn
