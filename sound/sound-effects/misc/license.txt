@@ -1,8 +1,21 @@
 magic1.ogg
-This audio file by jomellejager is licensed under CC-BY-3.0 and was found on freesound.org.
+Submitted to freesound.org by JomelleJager under the CC-BY-3.0 license.
 http://www.freesound.org/people/JomelleJager/sounds/252681/
+
+lockpick.ogg
+Submitted to OpenGameArt.org by Reemax under the CC-BY-3.0 license.
+
+lockpick-fail.ogg
+Submitted to OpenGameArt.org by Reemax under the CC-BY-3.0 license.
+
+
+File Modification Notice:
+The original audio files were trimmed, faded in/out, normalized, and converted to the ogg file format.
+
+
+Link to the CC-BY-3.0 license:
 http://creativecommons.org/licenses/by/3.0/
-The original audio file was trimmed.
+
 
 2017-5-9
 zTn

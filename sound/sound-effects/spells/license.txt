@@ -1,0 +1,140 @@
+spacey-gong.ogg
+Submitted to OpenGameArt.org as levelup.flac by qubodup under the CC-BY-3.0 license.
+
+magic—glitter-a.ogg, magic—glitter-b.ogg
+Submitted to OpenGameArt.org as magic-wand-gitter.flac by qubodup under the CC-BY-3.0 license.
+
+spacey-glitter.ogg
+Submitted to OpenGameArt.org as spell3.wav by bart under the CC-BY-3.0 license.
+
+short—tada-a.ogg
+Submitted to OpenGameArt.org as spell2.wav by bart under the CC-BY-3.0 license.
+
+short-tada-b.ogg
+Submitted to OpenGameArt.org as spell1_0.wav by bart under the CC-BY-3.0 license.
+
+whoosh-a.ogg
+Submitted to OpenGameArt.org as foom_0.wav by bart under the CC-BY-3.0 license.
+
+whoosh-b.ogg
+Submitted to OpenGameArt.org as whoosh2.wav by bart under the CC-BY-SA-3.0 license.
+
+whoosh-c.ogg
+Submitted to OpenGameArt.org as whoosh1.wav by bart under the CC-BY-SA-3.0 license.
+
+rough-plunge.ogg
+Submitted to OpenGameArt.org as qubodup-ccbysa3-elementalSpell-opengameart2.wav by qubodup under the CC-BY-SA-3.0 license.
+
+spacey-wind.ogg
+Submitted to OpenGameArt.org as “echo-whoosh 0.5.wav” by Arthur under the CC-BY-SA-3.0 license.
+
+windy-shimmer.ogg
+Submitted to OpenGameArt.org as short “wind sound.wav” by relaxin in the Public Domain.  (CC0 1.0)  (No Copyright)
+
+teleport-a.ogg, teleport-b.ogg, teleport-c.ogg
+Submitted to OpenGameArt.org as “teleport spell.wav” by bart under the CC-BY-SA-3.0 license.
+
+shudder.ogg
+Submitted to OpenGameArt.org as teleport.wav by Ogrebane in the Public Domain. (CC0 1.0) (No Copyright)
+
+Slide-whoosh.ogg
+Submitted to OpenGameArt.org as Slide_Soft_00.wav by “Little Robot Sound Factory” under the CC-BY-3.0 license.
+
+choinging.ogg
+Submitted to OpenGameArt.org as spell_00.wav by “Little Robot Sound Factory” under the CC-BY-3.0 license.
+
+chitter-boom.ogg
+Submitted to OpenGameArt.org as spell_02.wav by “Little Robot Sound Factory” under the CC-BY-3.0 license.
+
+rolling-fire-rush.ogg
+Submitted to OpenGameArt.org as spell_03.wav by “Little Robot Sound Factory” under the CC-BY-3.0 license.
+
+Ahh-tada-a.ogg, ahh-tada-b.ogg
+Submitted to OpenGameArt.org as blessing.ogg and blessing2.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+Low-burr.ogg
+Submitted to OpenGameArt.org as curse.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+tinker-charm.ogg
+Submitted to OpenGameArt.org as enchant.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+buam.ogg
+Submitted to OpenGameArt.org as enchant2.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+soft-sparks.ogg
+Submitted to OpenGameArt.org as freeze2.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+magic-glitter-c.ogg
+Submitted to OpenGameArt.org as heal.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+electric-bouncer-a.ogg, electric-bouncer-b.ogg
+Submitted to OpenGameArt.org as magicfail.ogg and magicfail2.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+fright.ogg
+Submitted to OpenGameArt.org as spell.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+Water-dive.ogg
+Submitted to OpenGameArt.org as water.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+boingiong-a.ogg
+Submitted to OpenGameArt.org as zap2d.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+boingiong-b.ogg
+Submitted to OpenGameArt.org as zap2f.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+warble-warp.ogg
+Submitted to OpenGameArt.org as zap2g.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+buam.ogg
+Submitted to OpenGameArt.org as zap6a.ogg by “p0ss” under the CC-BY-SA-3.0 license.
+
+deep-pulse-a.ogg, deep-pulse-a.ogg, deep-pulse-a.ogg
+Submitted to OpenGameArt.org as healspell1.aif, healspell2.aif, healspell3.aif by “DoKashiteru” under the CC-BY-3.0 license.
+
+echoy-shimmer.ogg
+Submitted to OpenGameArt.org as “Shallow Bubbles.wav” by Écrivain under the Public Domain. (CC0 1.0) (No Copyright)
+
+ahh-bong-a.ogg, ahh-bong-b.ogg
+Submitted to OpenGameArt.org as echo/1.wav and echo/2.wav by Écrivain under the Public Domain. (CC0 1.0) (No Copyright)
+
+sliding-shimmer-a.ogg, sliding-shimmer-b.ogg
+Submitted to OpenGameArt.org as misc/1/1/1.wav and misc/1/2/1.wav by Écrivain under the Public Domain. (CC0 1.0) (No Copyright)
+
+hum-long.ogg
+Submitted to OpenGameArt.org as misc/2/2.wav by Écrivain under the Public Domain. (CC0 1.0) (No Copyright)
+
+crumbling-echo.ogg
+Submitted to freesound.org as slow.wav by “Autistic Lucario” under the CC-BY-3.0 license.
+
+boom-with-dirt.ogg
+Submitted to freesound.org as dragon-land.wav by “Cyberkineticfilms” under the CC-BY-3.0 license.
+
+gong-a.ogg
+Submitted to freesound.org as magic-gong.wav by “Gezortenplotz” under the CC-BY-3.0 license.
+
+Magic-glitter-d.ogg, boom-slow-fiery.ogg, teleport-d.ogg, echo-shine.ogg
+Submitted to freesound.org by various contributors under the Public Domain. (CC0 1.0) (No Copyright)
+
+
+Real Names:
+‘bart’ is Bart Kelsey.
+‘qubodup’ is Iwan Gabovitch of http://qubodup.net, qubodup@gmail.com.
+
+
+Link to the CC0 1.0 Universal license:
+http://creativecommons.org/publicdomain/zero/1.0/
+
+
+Link to the CC-BY-3.0 license:
+http://creativecommons.org/licenses/by/3.0/
+
+
+Link to the CC-BY-SA-3.0 License:
+http://creativecommons.org/licenses/by-sa/3.0/
+
+
+File Modification Notice:
+All files were trimmed begin/end, faded in/out, normalized, and converted into the ogg audio file format.
+
+2017-5-19
+zTn
