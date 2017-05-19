@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-05-19 14:15:40 -0700" ModID="D9FE853F-600C-4738-86D1-5C518C605E88">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-05-19 14:29:59 -0700" ModID="DAEEC940-0A86-4CFA-AAE8-2126B426F42C">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 19:11:28 -0700" Modified="2016-09-30 19:11:28 -0700">
             <Title>Draft</Title>
@@ -127,7 +127,7 @@
                         <TextSelection>1231,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem ID="15" UUID="F3EBE114-3F65-46C1-BFBF-1F63049B2B69" Type="Text" Created="2017-05-19 12:55:30 -0700" Modified="2017-05-19 14:15:40 -0700">
+                <BinderItem ID="15" UUID="F3EBE114-3F65-46C1-BFBF-1F63049B2B69" Type="Text" Created="2017-05-19 12:55:30 -0700" Modified="2017-05-19 14:29:59 -0700">
                     <Title>Image Files</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -186,7 +186,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 18:49:05 -0800" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="427" Characters="2362" Date="2017-05-19 12:55:25 -0700"></PreviousSession>
+        <PreviousSession Words="506" Characters="2800" Date="2017-05-19 12:55:25 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
