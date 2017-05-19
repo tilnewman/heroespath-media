@@ -13,6 +13,38 @@ After a raiding party decimated the city guard and nearly had their way with the
 
 The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
         </Document>
+        <Document ID="15">
+            <Title>Image Files</Title>
+            <Text>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:
+
+
+OptiPNG
+This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black &amp; white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to strip all metadata from the file.  I think using this as a first step is wise.
+
+optipng.exe -o7 -strip all -i0 *.gif
+
+
+PNGReWrite
+There is also pngrewrite.  That app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line options for pngrewrite.  Here is a window batch file that can be used to batch change all PNGs in a directory:
+
+for %%X in (*.png) do (pngrewrite.exe %%X %%X)
+
+
+PNGWolf
+The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the batch file to use for pngwolf:
+
+for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
+
+
+Photoshop
+The version of Photoshop I have has the ‘Export for Web’ feature still built-in, but it is label ‘Legacy’.  Still, it works better than any other export options I could find.  Set it for PNG-8, grayscale, 16 colors, dither smooth, no metadata, and the file size is very small.  After doing this to all creature GIFs (starting at 2,911,202 bytes), the result was a total of 1,604,504 bytes.  Not bad.  About half the size.
+
+The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble…
+
+
+Conclusions
+PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
+        </Document>
         <Document ID="3">
             <Title>Credits</Title>
             <Text>Game Design by
