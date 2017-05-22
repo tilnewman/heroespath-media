@@ -122,11 +122,32 @@ Dead - Beyond the skill of most healers.</p>
             SpellsCas...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Code Notes</strong><br/> “Do as I say, not as I do.”<br/>
+<p class="binderItem"><strong>Spells</strong><br/>Sparks<br/>
+Sprays a single enemy with a shower of molten sparks causing minimal damage.<br/>
+This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.<br/>
 <br/>
 <br/>
-I have fallen into the bad habit of using boost::shared_ptr for everything.<br/>
-This is bad for performance because shared_ptr wraps it’s increment/decrement atomically so multi-threading is safe, but I don’t need that because the game engine is single-threaded.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem is...</p>
+Bandage<br/>
+Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.<br/>
+This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is...</p>
+</li>
+<li>
+<p class="binderItem"><strong>dev</strong></p>
+</li>
+<hr/>
+<ul>
+<li>
+<p class="binderItem"><strong>source code tools</strong><br/>CPPCheck<br/>
+This is a great tool.  Use it.  Simple, comprehensive, and doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/“.  Note the space between the “-j” and the “7”, unlike make.<br/>
+<br/>
+</p>
+</li>
+<li>
+<p class="binderItem"><strong>Image Files</strong><br/>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:<br/>
+<br/>
+<br/>
+OptiPNG<br/>
+This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black & white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to s...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Build Times</strong><br/>Notes:<br/>
@@ -138,22 +159,13 @@ Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.<br/>
 The overhaul to reduce include files shortened build times ...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Spells</strong><br/>Sparks<br/>
-Sprays a single enemy with a shower of molten sparks causing minimal damage.<br/>
-This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.<br/>
+<p class="binderItem"><strong>Code Notes</strong><br/>“Do as I say, not as I do.”<br/>
 <br/>
 <br/>
-Bandage<br/>
-Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.<br/>
-This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is...</p>
+I have fallen into the bad habit of using boost::shared_ptr for everything.<br/>
+This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious s...</p>
 </li>
-<li>
-<p class="binderItem"><strong>Image Files</strong><br/>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:<br/>
-<br/>
-<br/>
-OptiPNG<br/>
-This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black & white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to s...</p>
-</li>
+</ul>
 </ul>
 
 </td>
