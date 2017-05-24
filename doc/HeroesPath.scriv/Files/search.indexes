@@ -13,6 +13,58 @@ After a raiding party decimated the city guard and nearly had their way with the
 
 The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
         </Document>
+        <Document ID="19">
+            <Title>Maps</Title>
+            <Text>Use the Tiled app:  http://www.mapeditor.org/
+
+Start a new map with these options:
+	Orthogonal
+	CSV
+	Right Down
+
+	Width: 40
+	Height: 40
+	or
+	Width: 20
+	Height:20
+
+#x# of tiles is up to you depending on how big you want the map.  There is no limit.  You can change your mind later and resize the map at any time.
+
+When saving your map, always use the .tmx file type.  This will save in XML with CSV data fields.
+
+Use layers carefully, and save often.  Tiled will not save automatically.
+
+Chose a name for your layers that includes the following keywords so the game engine knows what to do with them: (not case sensitive)
+	ground - everything that the player is drawn on top of
+	object - everything that is drawn on top of the player
+	collision - contains rectangles that define where the player cannot walk
+	shadow - contains only shadows cast by objects (and drawn on top of the player)
+
+For example, a map may have the following layer names:
+	ground
+	ground
+	ground grass
+	dirt patches on ground
+	ground stone path
+	tree objects
+	all other objects
+	collisions
+	shadows
+
+NOTE:  Multiple layers with the same name works fine.
+
+Tileset images that contain the keyword "shadow" in their name will be altered by the game engine.  They will be erased except for the shadows themselves.  So collect shadow tiles together in their own Tileset images, and use only them to place shadow tiles on the map.
+
+The RGB color (75, 99, 127) is the default background color.  ALL Tileset images that contain that color  will have it changed to transparent by the game engine.
+
+The layers will be drawn in order from bottom to the top as listed in the Tiled app.
+
+The tiles will be drawn in order until the first is encountered that came from an image that contained the keyword 'object', and then the player will be drawn before that tile.
+
+Because of this, it is wise to draw tiles on layers exclusively.  That is, give each layer a singular purpose and a fitting name with the appropriate keyword, then choose a tileset image for that layer and only place tiles from that tilset on that layer.  For example, don't place tiles from an 'objects' image on a layer named 'ground'.  In such a case, when the game engine reaches the object tile, it will start drawing all subsequent tiles on top of the player, even if they are ground tiles.  So keep layers exclusive to tile images.
+
+</Text>
+        </Document>
         <Document ID="15">
             <Title>Image Files</Title>
             <Text>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:
@@ -44,66 +96,6 @@ The real question is how much more compressed this can get if the best of the ab
 
 Conclusions
 PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
-        </Document>
-        <Document ID="3">
-            <Title>Credits</Title>
-            <Text>Game Design by
-Ziesche Til Newman
-
-Programming by
-Ziesche Til  Newman
-
-Special thanks to Laurent Gomila for the excellent SFML (Simple Fast Multimedia Library), which is licensed under the terms and conditions of the zlib/png license.  This project came together very quickly thanks to the completeness and simplicity of this library.
-
-Art by
-Ziesche Til Newman
-
-Rune Symbols and Other Designs by
-Angela Diegel
-
-Inferno Animation by
-Wrath Games Studio 
-http://wrathgames.com/blog
-Found at OpenGameArt.org
-Under the Attribution 3.0 Unported (CC BY 3.0) License 
-See https://creativecommons.org/licenses/by/3.0/ for details
-
-Flames Animation by
-Soluna Software
-Found at OpenGameArt.org
-Under the Public Domain Dedication CC0 1.0 Universal License
-(no copyright)
-See https://creativecommons.org/publicdomain/zero/1.0/
-
-Candle Flame Animation by
-Para
-Found at OpenGameArt.org
-Under the Public Domain Dedication CC0 1.0 Universal License
-(no copyright)
-See https://creativecommons.org/publicdomain/zero/1.0/
-
-Smoke Animation by
-MrBeast
-Found at OpenGameArt.org
-Under the Public Domain Dedication CC0 1.0 Universal License
-(no copyright)
-See https://creativecommons.org/publicdomain/zero/1.0/
-
-Fire Animation by
-Martin Clink
-www.nyrthos.com
-Found at OpenGameArt.org
-
-User Interface Art by
-Ziesche Til Newman
-and...
-Lamoot’s RPG GUI Construction kit v1.0 
-Found at OpenGameArt.org
-Under the Attribution 3.0 Unported (CC BY 3.0) License 
-See https://creativecommons.org/licenses/by/3.0/ for details
-
-Theme Music by
-</Text>
         </Document>
         <Document ID="11">
             <Title>Titles</Title>
@@ -372,6 +364,53 @@ You have earned this Title after successfully attacking enemies while flying, an
 5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
         </Document>
+        <Document ID="16">
+            <Title>Static Analysis</Title>
+            <Text>Visual Studio
+I added the following extra warning flags to each project in the solution:
+/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 
+
+The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.
+
+
+
+CPPCheck
+This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/“.  Note the space between the “-j” and the “7”, unlike make.
+
+
+
+Valgrind
+The undisputed heavyweight champion of runtime analysis.  Use it.
+
+Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.
+
+Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.
+
+Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:
+cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/
+
+Here is the command line for running Valgrind:
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind-suppressions.txt -v ./HeroesPath
+
+Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
+
+
+
+PVS-Studio
+This is a big pro tool and no mistake, but they are not free for open-source projects anymore…far from it.  I was able to use the try and did find some bugs with it, but they don’t even post their pricing on their website so I’m not holding my breath.
+
+
+
+Flint++
+Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
+
+
+
+
+
+
+</Text>
+        </Document>
         <Document ID="4">
             <Title>Races</Title>
             <Text>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
@@ -445,19 +484,22 @@ Sylavin -  The Sylavin dragon is a more thoughtful creature than the Firebrand. 
 </Text>
         </Document>
         <Document ID="12">
-            <Title>Code Notes</Title>
-            <Text>	“Do as I say, not as I do.”
+            <Title>Code Problems</Title>
+            <Text>“Do as I say, not as I do.”
 
 
 I have fallen into the bad habit of using boost::shared_ptr for everything.
-This is bad for performance because shared_ptr wraps it’s increment/decrement atomically so multi-threading is safe, but I don’t need that because the game engine is single-threaded.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem is actually not so bad, since the Stage system automatically acquires/releases most resources at Stage construction/destruction time, and not during normal time-critical frame-rate sensitive looping.  However, this still should be changed to use shared_ptr only sparingly when ownership is actually shared, such as when a Stage keeps a member shared_ptr and also stores it in the EntityList with EntityAdd().  These places should acquire a new shared_ptr to inc the ref count, then use raw pointers or references to pass everything around.  For example, the many manager classes should perform this inc/deliver-raw-ptr behavior.  There is one advantage that should be mentioned when using pointers of any kind everywhere, and that is the ease of eliminating includes to make builds faster.  I should also change from using boost::shared_ptr to the std::shared_ptr since I’m working in C++14.
+This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
 
 Update:  2017-3-27
-I went ahead and changed all boost::shared_ptr to std::shared_ptr.
+I went ahead and changed all boost::shared_ptr to std::shared_ptr, but there are still too many in use.
 
 
-All of my factories should be returning unique_ptrs instead, or keeping unique_ptrs and returning raw const pointers.
+All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.
 I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
+
+Update, 2017-5-20:
+I went ahead and fixed this in all of the factory classes, which in my case are not really factories by ‘warehouses’.
 
 
 I need to start using make_shared() and make_unique().
@@ -465,7 +507,7 @@ I’ll change my behavior now, but there are too many to change in the wild, and
 
 
 I need to use “using” instead of “typedef”
-I’ll change my behavior now, and will change existing code as I stumble upon it.
+I’ll change my behavior now, and will change existing code as I stumble upon it.  As of May 2017, I think all uses have been replaced.
 
 
 I need to use auto for stack vars and non-virtual function return types.
@@ -473,27 +515,43 @@ I’ll change my behavior now, but there are too many to change in the wild, and
 
 
 I have not been using brace initialization, and I should.
-The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.  
+The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.
 
 
 I have places in the code where class functions return references to local members causing dangling.
-These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.
+These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.
 
 
 I used a trailing underscore to indicate a member variable instead of the prefix m_.
-I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative one.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on.
+I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
 
 
 I made function names start with a capital letter.
-I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative one.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on.
+I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
 
 
-My singletons are not thread safe.
-All my singletons, and there are many, use shared_ptrs and the generic singleton::Instance() function which has the line { if (instance_.get() == nullptr) } -which is not thread safe because two threads could race to find the value of .get().  This was a design decision early on since the engine is single-threaded.  The idea was to prefer simplicity.  This is also not much of an issue because a reference to almost all of my singletons are kept in main.cpp to prevent resources from thrashing.  Hmm.  I was forced to say ‘almost all’ instead of all.  Maybe I should work on that…
+My singletons use shared_ptr.
+All my singletons use shared_ptrs for the instance pointer.  This was a (flawed) design decision made early on when I was shared_ptr happy.  I should take the time to change this.
 
 
-I miss-use singletons.
-I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother doing all of that work, and continue to use the singletons as I have been.  The smell isn’t that bad. </Text>
+I miss-use the singleton pattern.
+I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.  The smell isn’t that bad.
+
+
+I set no limit on line lengths.
+I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I’ll try and change my style from here on out to limit to 100 characters per line.
+
+
+I haven’t been consisted with my usage of brackets.
+I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
+
+
+Use of float instead of double.
+No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
+</Text>
+        </Document>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="6">
             <Title>Attributes</Title>
@@ -570,24 +628,8 @@ On 2017-3-31 (after includes overhaul of 2017-3-29)
 Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
 Executable size: 4.9MB</Text>
         </Document>
-        <Document ID="7">
-            <Title>Conditions</Title>
-            <Text>Good - No ailments.
-
-Unconscious - Alive, but unresponsive, and vulnerable to attack.
-
-Dazed - Temporarily unable to act, and vulnerable to attack.
-
-Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.
-
-Diseased - Ill with a disease that drains health over time and prevents healing.
-
-Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.
-
-Stone - Turned to stone. dead.
-
-Dead - Beyond the skill of most healers.
-</Text>
+        <Document ID="18">
+            <Title>game design</Title>
         </Document>
         <Document ID="8">
             <Title>Towns</Title>
@@ -678,6 +720,10 @@ This spell works whether the poisoning was natural or magical.
 Poison Cloud
 Attempts to poison a number of enemies, reducing their stats and causing a small amount of damage each turn.  The number of creatures effected depends on the caster’s intelligence and Rank.
 Some creatures breathe a poisonous cloud that can effect your characters in the same way as this spell.</Text>
+        </Document>
+        <Document ID="20">
+            <Title>source code tools</Title>
+            <Text>source code tools</Text>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>

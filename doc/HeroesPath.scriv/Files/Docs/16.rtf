@@ -4,8 +4,47 @@
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 \cb1 \ul \ulc0 \CocoaLigature0 CPPCheck\ulnone \
+\f0\fs20 \cf0 \ul \ulc0 \CocoaLigature0 Visual Studio\
+\ulnone I added the following extra warning flags to each project in the solution:\
+/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 \
+\
+The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.\
+\
+\ul \
+\
+CPPCheck\ulnone \
 This is a great tool.  Use it.  Simple, comprehensive, and it doesn\'92t give false positives.  Use it in MacOS natively, as easy as \'93brew install cppcheck\'94, then \'93cppcheck -j 7  --enable=all ../heroespath-src/\'93.  Note the space between the \'93-j\'94 and the \'937\'94, unlike make.\
+\
+\
+\
+\ul Valgrind\ulnone \
+The undisputed heavyweight champion of runtime analysis.  Use it.\
+\
+Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.\
+\
+Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.\
+\
+Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:\
+cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/\
+\
+Here is the command line for running Valgrind:\
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind-suppressions.txt -v ./HeroesPath\
+\
+Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.\
+\
+\
+\
+\ul PVS-Studio\ulnone \
+This is a big pro tool and no mistake, but they are not free for open-source projects anymore\'85far from it.  I was able to use the try and did find some bugs with it, but they don\'92t even post their pricing on their website so I\'92m not holding my breath.\
+\
+\
+\
+\ul Flint++\ulnone \
+Facebook\'92s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.\
+\
+\
+\
+\
 \
 \
 }

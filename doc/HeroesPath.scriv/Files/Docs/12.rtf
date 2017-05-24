@@ -61,4 +61,12 @@ I have used singletons whenever I needed a \'91manager-of-resources\'92 or \'91c
 \
 \ul I set no limit on line lengths.\ulnone \
 I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I\'92ll try and change my style from here on out to limit to 100 characters per line.\
+\
+\
+\ul I haven\'92t been consisted with my usage of brackets.\ulnone \
+I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I\'92ll put them back as I find them.\
+\
+\
+\ul Use of float instead of double.\ulnone \
+No, I didn\'92t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.\
 }

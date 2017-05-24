@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Calligraphic810BT-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\f0\fs22 \cf0 Use the Tiled app:  http://www.mapeditor.org/\
+\
+Start a new map with these options:\
+	Orthogonal\
+	CSV\
+	Right Down\
+\
+	Width: 40\
+	Height: 40\
+	or\
+	Width: 20\
+	Height:20\
+\
+#x# of tiles is up to you depending on how big you want the map.  There is no limit.  You can change your mind later and resize the map at any time.\
+\
+When saving your map, always use the .tmx file type.  This will save in XML with CSV data fields.\
+\
+Use layers carefully, and save often.  Tiled will not save automatically.\
+\
+Chose a name for your layers that includes the following keywords so the game engine knows what to do with them: (not case sensitive)\
+	ground - everything that the player is drawn on top of\
+	object - everything that is drawn on top of the player\
+	collision - contains rectangles that define where the player cannot walk\
+	shadow - contains only shadows cast by objects (and drawn on top of the player)\
+\
+For example, a map may have the following layer names:\
+	ground\
+	ground\
+	ground grass\
+	dirt patches on ground\
+	ground stone path\
+	tree objects\
+	all other objects\
+	collisions\
+	shadows\
+\
+NOTE:  Multiple layers with the same name works fine.\
+\
+Tileset images that contain the keyword "shadow" in their name will be altered by the game engine.  They will be erased except for the shadows themselves.  So collect shadow tiles together in their own Tileset images, and use only them to place shadow tiles on the map.\
+\
+The RGB color (75, 99, 127) is the default background color.  ALL Tileset images that contain that color  will have it changed to transparent by the game engine.\
+\
+The layers will be drawn in order from bottom to the top as listed in the Tiled app.\
+\
+The tiles will be drawn in order until the first is encountered that came from an image that contained the keyword 'object', and then the player will be drawn before that tile.\
+\
+Because of this, it is wise to draw tiles on layers exclusively.  That is, give each layer a singular purpose and a fitting name with the appropriate keyword, then choose a tileset image for that layer and only place tiles from that tilset on that layer.  For example, don't place tiles from an 'objects' image on a layer named 'ground'.  In such a case, when the game engine reaches the object tile, it will start drawing all subsequent tiles on top of the player, even if they are ground tiles.  So keep layers exclusive to tile images.\
+\
+}

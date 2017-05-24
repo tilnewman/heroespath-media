@@ -1,0 +1,13 @@
+All files are named to identify the author, title of the original work, and the license it is released under.
+“combatintro_<author name>_<title>_<license>.ogg”
+All files were found posted on OpenGameArt.org by the name given in the <title> field of the filename.
+
+Licenses:
+CC-BY-3.0
+http://creativecommons.org/licenses/by/3.0/
+
+CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+
+2017-5-20
+zTn

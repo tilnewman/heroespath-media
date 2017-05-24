@@ -28,25 +28,10 @@
 
 <ul>
 <li>
-<p class="binderItem"><strong>Credits</strong><br/>Game Design by<br/>
-Ziesche Til Newman<br/>
-<br/>
-Programming by<br/>
-Ziesche Til  Newman<br/>
-<br/>
-Special thanks to Laurent Gomila for the excellent SFML (Simple Fast Multimedia Library), which is licensed under the terms and conditions of the zlib/png license.  This project came together very quickly thanks to the completeness and simplicity of this library.<br/>
-<br/>
-Art by<br/>
-Ziesche Til Newman<br/>
-<br/>
-Rune Symbols and Other Designs by<br/>
-Angela Diegel<br/>
-<br/>
-Inferno Animation by<br/>
-Wrath Games Studio <br/>
-http://wrathgames.com/blog<br/>
-Found at OpenGameArt...</p>
+<p class="binderItem"><strong>game design</strong></p>
 </li>
+<hr/>
+<ul>
 <li>
 <p class="binderItem"><strong>Races</strong><br/>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.<br/>
 <br/>
@@ -91,23 +76,6 @@ Aven’s Rest Inn</p>
 Accuracy - How carefully and successfully a char...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Conditions</strong><br/>Good - No ailments.<br/>
-<br/>
-Unconscious - Alive, but unresponsive, and vulnerable to attack.<br/>
-<br/>
-Dazed - Temporarily unable to act, and vulnerable to attack.<br/>
-<br/>
-Poisoned - Poison has infected the bloodstream draining health over time and preventing healing.<br/>
-<br/>
-Diseased - Ill with a disease that drains health over time and prevents healing.<br/>
-<br/>
-Tripped - Knocked down and vulnerable to attack.  Must spend a turn getting back up.<br/>
-<br/>
-Stone - Turned to stone. dead.<br/>
-<br/>
-Dead - Beyond the skill of most healers.</p>
-</li>
-<li>
 <p class="binderItem"><strong>Titles</strong><br/>  BattlesSurvived,     //(knights only)<br/>
             HealthGiven,         //(clerics only)<br/>
             HealthTraded,        //(clerics only)<br/>
@@ -131,16 +99,24 @@ Bandage<br/>
 Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.<br/>
 This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is...</p>
 </li>
+</ul>
+<hr/>
 <li>
 <p class="binderItem"><strong>dev</strong></p>
 </li>
 <hr/>
 <ul>
 <li>
-<p class="binderItem"><strong>source code tools</strong><br/>CPPCheck<br/>
-This is a great tool.  Use it.  Simple, comprehensive, and doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/“.  Note the space between the “-j” and the “7”, unlike make.<br/>
+<p class="binderItem"><strong>Static Analysis</strong><br/>Visual Studio<br/>
+I added the following extra warning flags to each project in the solution:<br/>
+/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 <br/>
 <br/>
-</p>
+The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.<br/>
+<br/>
+<br/>
+<br/>
+CPPCheck<br/>
+This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enab...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Image Files</strong><br/>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:<br/>
@@ -159,11 +135,33 @@ Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.<br/>
 The overhaul to reduce include files shortened build times ...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Code Notes</strong><br/>“Do as I say, not as I do.”<br/>
+<p class="binderItem"><strong>Code Problems</strong><br/>“Do as I say, not as I do.”<br/>
 <br/>
 <br/>
 I have fallen into the bad habit of using boost::shared_ptr for everything.<br/>
 This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious s...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Maps</strong><br/>Use the Tiled app:  http://www.mapeditor.org/<br/>
+<br/>
+Start a new map with these options:<br/>
+ Orthogonal<br/>
+ CSV<br/>
+ Right Down<br/>
+<br/>
+ Width: 40<br/>
+ Height: 40<br/>
+ or<br/>
+ Width: 20<br/>
+ Height:20<br/>
+<br/>
+#x# of tiles is up to you depending on how big you want the map.  There is no limit.  You can change your mind later and resize the map at any time.<br/>
+<br/>
+When saving your map, always use the .tmx file type.  This will save in XML with CSV data fields.<br/>
+<br/>
+Use layers carefully, and save often.  Tiled will not save automatically.<br/>
+<br/>
+Chose a name ...</p>
 </li>
 </ul>
 </ul>

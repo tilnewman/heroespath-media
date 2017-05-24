@@ -1,7 +1,9 @@
-OpenGameArt.org
-Ezwa (Submitted by qubodup)
-“6 Short Water Splashes”
-CC0
+material-hit-liquid.ogg
+Posted to OpenGameArt.org by qubodup, crediting Ezwa as the original creator, as “6 Short Water Splashes” under the Public Domain.  (CC0 1.0) (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
 
-material-hit-liquid-1.ogg
-material-hit-liquid-2.ogg
+All other files posted to OpenGameArt.org by various authors under the Public Domain.  (CC0 1.0) (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
+
+2017-5-20
+zTn
