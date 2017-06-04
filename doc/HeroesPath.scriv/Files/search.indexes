@@ -397,7 +397,10 @@ Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but 
 
 
 PVS-Studio
-This is a big pro tool and no mistake, but they are not free for open-source projects anymore…far from it.  I was able to use the try and did find some bugs with it, but they don’t even post their pricing on their website so I’m not holding my breath.
+I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:
+
+~/src/heroespath-build-vs find . -name *.suppress -exec cp {} ~/src/heroespath-src/pvs-studio-suppressions/ \;
+(and then check-in the newly updated suppressions files in ~/src/heroespath-src)
 
 
 
