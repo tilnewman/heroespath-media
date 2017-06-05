@@ -97,6 +97,13 @@ The real question is how much more compressed this can get if the best of the ab
 Conclusions
 PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
         </Document>
+        <Document ID="21">
+            <Title>Audio</Title>
+            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
+
+The OGG file format is used for all audio, with the quality set to 8 of 10.
+ </Text>
+        </Document>
         <Document ID="11">
             <Title>Titles</Title>
             <Text>	 BattlesSurvived,    	//(knights only)
