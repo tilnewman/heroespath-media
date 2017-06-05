@@ -1,4 +1,6 @@
-theme-violin.flac
+theme-violin.ogg
 This file is a recording of original work created for zTn, who releases it under the Public Domain. (CC0 1.0) (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
+
 2017-5-20
 zTn

@@ -1,6 +1,6 @@
 Posted to OpenGameArt.org by Kenney Vleugels (www.kenney.nl) under the public domain. (CC0) (No Copyright)
 http://creativecommons.org/publicdomain/zero/1.0/
-The original files were trimmed and converted to a different file format.
+The original files were trimmed, normalized to -3db, and converted to the OGG file format.
 
 2017-5-9
 zTn
