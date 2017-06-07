@@ -65,6 +65,13 @@ Because of this, it is wise to draw tiles on layers exclusively.  That is, give 
 
 </Text>
         </Document>
+        <Document ID="21">
+            <Title>Audio</Title>
+            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
+
+The OGG file format is used for all audio, with the quality set to 8 of 10.
+ </Text>
+        </Document>
         <Document ID="15">
             <Title>Image Files</Title>
             <Text>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:
@@ -96,13 +103,6 @@ The real question is how much more compressed this can get if the best of the ab
 
 Conclusions
 PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
-        </Document>
-        <Document ID="21">
-            <Title>Audio</Title>
-            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
-
-The OGG file format is used for all audio, with the quality set to 8 of 10.
- </Text>
         </Document>
         <Document ID="11">
             <Title>Titles</Title>
@@ -470,6 +470,36 @@ Giant
 Ghoul
 </Text>
         </Document>
+        <Document ID="22">
+            <Title>Bard Songs</Title>
+            <Text>For the beta, the only instrument available to Bards will be a special Lute whose back can be struck like a drum.  This allows me to have sound effects for Songs that are either short acoustic plucking guitar notes or a short bongo-like drum roll.
+
+
+Rally Rhythm -“undaunted” condition
+
+Inspirit Resonance -regain mana
+
+Rousing Notes -awaken/un-daze/conscious/
+
+Trip Drums
+
+Sleep Melody
+Attempts to sleep all enemies during combat.
+How many enemies are slept depends on the Bard’s Charm, Intelligence, and Rank.
+
+
+
+Carol
+Chant
+Anthem
+Aria
+Ballad
+Ditty
+Lullaby
+Lyric
+Tune
+</Text>
+        </Document>
         <Document ID="5">
             <Title>Roles</Title>
             <Text>Beastmaster -  Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
@@ -571,7 +601,7 @@ Accuracy - How carefully and successfully a character aims weapons in combat.  T
 
 Luck - Luck is applied in almost every endeavor, but Thieves are primarily focused on Luck in their underhanded trade.  Spell casters also benefit from Luck.
 
-Charm - How pleasant looking and diplomatic a character is.  Having higher Charm in a party as a whole will make non-combat encounters more likely.  Charm is also useful in everyday negotiations, such as buying and selling goods.  Clerics and Bards need Charm far more than any other roles.
+Charm - How pleasant looking and diplomatic a character is.  Having higher Charm in a party as a whole will make beneficial, non-combat, encounters more likely.  Charm is also useful in everyday negotiations, such as buying and selling goods.  Clerics and Bards need Charm far more than any other roles.
 
 Speed - How fast and dexterous the adventurer is.  This attribute will help with avoiding melee attacks, but is also important for a Thief’s slight of hand.
 
