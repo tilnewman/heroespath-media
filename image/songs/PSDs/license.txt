@@ -1,4 +1,8 @@
-All images are original work by zTn, released under the Public Domain. (CC0 1.0) (No Copyright)
+rallydrum.psd
+Based on an icon by Skoll, originally named “fist.svg”, found on game-icons.net under the CC-BY-3.0 license.
+http://creativecommons.org/licenses/by/3.0/
+
+All other images are original work by zTn, released under the Public Domain. (CC0 1.0) (No Copyright)
 http://creativecommons.org/publicdomain/zero/1.0/
 
 2017-6-8
