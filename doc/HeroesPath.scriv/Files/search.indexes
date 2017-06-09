@@ -619,6 +619,47 @@ Speed - How fast and dexterous the adventurer is.  This attribute will help with
 Intelligence - A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
 </Text>
         </Document>
+        <Document ID="23">
+            <Title>Conditions</Title>
+            <Text>Good
+No ailments.
+
+Unconscious
+Alive, but unresponsive, and vulnerable to attack.
+
+Dazed
+Temporarily unable to act, and vulnerable to attack.
+
+Poisoned
+Poison has infected the bloodstream draining health over time.
+
+Tripped
+Knocked down and vulnerable to attack.  Must spend a turn getting back up.
+
+Stone
+Turned to stone.
+
+Dead
+Dead, and beyond the skill of most healers.
+
+AsleepNatural
+In a calm natural sleep that can be interrupted by being hit or even when hearing a beast roar.
+
+AsleepMagical
+In a deep magical sleep that cannot be interrupted by hearing beast roars or even by being hit.
+
+Panicked
+Crippled with fear.  Stats are significantly reduced.
+
+Daunted
+Discouraged and disheartened.  Minor reductions to some stats.
+
+Bold
+Emboldened  and heartened.  Moderate increases to stats.
+
+Heroic
+Fearless and invigorated.  All stats are significantly increased.</Text>
+        </Document>
         <Document ID="13">
             <Title>Build Times</Title>
             <Text>Notes:
