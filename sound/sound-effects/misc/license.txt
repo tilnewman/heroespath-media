@@ -1,3 +1,11 @@
+drum-blip1.ogg
+drum-blip2.ogg
+drum-blip3.ogg
+drum-blip4.ogg
+drum-blip5.ogg
+drum-blip6.ogg
+All of these files were based on samples from a single file Submitted to freesound.org by satoration as “bongo vintage reverb” under the CC-BY-3.0 license.
+
 magic1.ogg
 Submitted to freesound.org by JomelleJager under the CC-BY-3.0 license.
 http://www.freesound.org/people/JomelleJager/sounds/252681/
