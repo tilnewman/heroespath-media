@@ -1,0 +1,20 @@
+rousingrhythm.ogg
+rallydrum.ogg
+Based on a sample from a single file submitted to freesound.org by satoration as “bongo vintage reverb” under the CC-BY-3.0 license.
+http://creativecommons.org/licenses/by/3.0/
+
+tripbeat.ogg
+Based on a sample from a single file submitted to freesound.org by warhawk as “bongos” under the Public Domain.  (CC0 1.0) (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
+
+lullaby.ogg
+spiritresonance.ogg
+panicstrings.ogg
+Based on a sample from a single file submitted to freesound.org under the Public Domain.  (CC0 1.0) (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
+
+File Modification Notice:
+The original audio files were trimmed, faded in/out, normalized, and converted to the ogg file format.
+
+2017-6-10
+zTn
