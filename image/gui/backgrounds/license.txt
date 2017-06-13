@@ -1,12 +1,14 @@
 Some of these images (paper-background2.png and paper-background3.png) are based on free textures from darkwood67:
 http://darkwood67.deviantart.com/gallery/
 http://darkwood67.deviantart.com/art/brown-age-136811979
+The images were color reduced and optimized for size.
 
 wood.png is from RPG GUI contruction kit v1.0
 Made by Lamoot, released under CC-BY 3.0, all images used in the process are self made or from public domain sources.
 Found at OpenGameArt.org
 http://creativecommons.org/licenses/by/3.0/
 The images were cropped and saved into a new PNG file by zTn.
+The image was color reduced and optimized for size.
 
 All other images created by zTn and are released under the CC-BY-3.0 license.
 http://creativecommons.org/licenses/by/3.0/
