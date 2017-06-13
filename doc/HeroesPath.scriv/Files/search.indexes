@@ -471,7 +471,7 @@ Ghoul
 </Text>
         </Document>
         <Document ID="22">
-            <Title>Bard Songs</Title>
+            <Title>Songs</Title>
             <Text>For the beta, the only instrument available to Bards will be a special Lute whose back can be struck like a drum.  This allows me to have sound effects for Songs that are either short acoustic plucking guitar notes or a short bongo-like drum roll.
 
 
@@ -483,8 +483,8 @@ Spirit Resonance
 All magical party members gain Mana through magical music.
 How much Mana is gained depends on the Bard’s Charm, Intelligence, and Rank.
 
-Rooster Rhythm
-Rouses and wakes party members, removing the Natural Sleep, Dazed, and Unconscious Conditions.
+Rousing Rhythm
+Wakes party members from Natural Sleep, and removes the Dazed and Unconscious Conditions.
 The chance that a Condition is removed depends on the Bard’s Charm, Intelligence, and Rank.
 
 Trip Beat
