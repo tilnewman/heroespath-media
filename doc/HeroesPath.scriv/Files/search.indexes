@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="25">
+            <Title>manual</Title>
+        </Document>
+        <Document ID="18">
+            <Title>game design</Title>
+        </Document>
         <Document ID="10">
             <Title>Introduction</Title>
             <Text>The world of Etan suffers.
@@ -12,6 +18,12 @@ There is trouble from below as well.  Raiders and vicious beasts, once rare, are
 After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
 
 The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
+        </Document>
+        <Document ID="26">
+            <Title>hints</Title>
+            <Text>If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
+
+</Text>
         </Document>
         <Document ID="19">
             <Title>Maps</Title>
@@ -64,45 +76,6 @@ The tiles will be drawn in order until the first is encountered that came from a
 Because of this, it is wise to draw tiles on layers exclusively.  That is, give each layer a singular purpose and a fitting name with the appropriate keyword, then choose a tileset image for that layer and only place tiles from that tilset on that layer.  For example, don't place tiles from an 'objects' image on a layer named 'ground'.  In such a case, when the game engine reaches the object tile, it will start drawing all subsequent tiles on top of the player, even if they are ground tiles.  So keep layers exclusive to tile images.
 
 </Text>
-        </Document>
-        <Document ID="21">
-            <Title>Audio</Title>
-            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
-
-The OGG file format is used for all audio, with the quality set to 8 of 10.
- </Text>
-        </Document>
-        <Document ID="15">
-            <Title>Image Files</Title>
-            <Text>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:
-
-
-OptiPNG
-This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black &amp; white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to strip all metadata from the file.  I think using this as a first step is wise.
-
-optipng.exe -o7 -strip all -i0 *.gif
-
-
-PNGReWrite
-There is also pngrewrite.  That app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line options for pngrewrite.  Here is a window batch file that can be used to batch change all PNGs in a directory:
-
-for %%X in (*.png) do (pngrewrite.exe %%X %%X)
-
-
-PNGWolf
-The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the batch file to use for pngwolf:
-
-for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
-
-
-Photoshop
-The version of Photoshop I have has the ‘Export for Web’ feature still built-in, but it is label ‘Legacy’.  Still, it works better than any other export options I could find.  Set it for PNG-8, grayscale, 16 colors, dither smooth, no metadata, and the file size is very small.  After doing this to all creature GIFs (starting at 2,911,202 bytes), the result was a total of 1,604,504 bytes.  Not bad.  About half the size.
-
-The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble…
-
-
-Conclusions
-PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
         </Document>
         <Document ID="11">
             <Title>Titles</Title>
@@ -371,55 +344,213 @@ You have earned this Title after successfully attacking enemies while flying, an
 5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
         </Document>
-        <Document ID="16">
-            <Title>Static Analysis</Title>
-            <Text>Visual Studio
-I added the following extra warning flags to each project in the solution:
-/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 
-
-The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.
+        <Document ID="12">
+            <Title>Code Problems</Title>
+            <Text>“Do as I say, not as I do.”
 
 
+I have fallen into the bad habit of using boost::shared_ptr for everything.
+This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
 
-CPPCheck
-This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/src“.  Note the space between the “-j” and the “7”, unlike make.
-
-
-
-Valgrind
-The undisputed heavyweight champion of runtime analysis.  Use it.
-
-Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.
-
-Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.
-
-Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:
-cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src
-
-Here is the command line for running Valgrind:
-valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath
-
-Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
+Update:  2017-3-27
+I went ahead and changed all boost::shared_ptr to std::shared_ptr, but there are still too many in use.
 
 
+All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.
+I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
 
-PVS-Studio
-I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:
-
-~/src/heroespath-build-vs find . -name *.suppress -exec cp {} ~/src/heroespath-src/pvs-studio-suppressions/ \;
-(and then check-in the newly updated suppressions files in ~/src/heroespath-src)
-
+Update, 2017-5-20:
+I went ahead and fixed this in all of the factory classes, which in my case are not really factories by ‘warehouses’.
 
 
-Flint++
-Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
+I need to start using make_shared() and make_unique().
+I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
 
 
+I need to use “using” instead of “typedef”
+I’ll change my behavior now, and will change existing code as I stumble upon it.  As of May 2017, I think all uses have been replaced.
 
 
+I need to use auto for stack vars and non-virtual function return types.
+I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
 
 
+I have not been using brace initialization, and I should.
+The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.
+
+
+I have places in the code where class functions return references to local members causing dangling.
+These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.
+
+
+I used a trailing underscore to indicate a member variable instead of the prefix m_.
+I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
+
+
+I made function names start with a capital letter.
+I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
+
+
+My singletons use shared_ptr.
+All my singletons use shared_ptrs for the instance pointer.  This was a (flawed) design decision made early on when I was shared_ptr happy.  I should take the time to change this.
+
+
+I miss-use the singleton pattern.
+I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.  The smell isn’t that bad.
+
+
+I set no limit on line lengths.
+I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I’ll try and change my style from here on out to limit to 100 characters per line.
+
+
+I haven’t been consisted with my usage of brackets.
+I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
+
+
+Use of float instead of double.
+No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
 </Text>
+        </Document>
+        <Document ID="20">
+            <Title>source code tools</Title>
+            <Text>source code tools</Text>
+        </Document>
+        <Document ID="13">
+            <Title>Build Times</Title>
+            <Text>Notes:
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
+In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
+Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
+Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
+The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
+
+
+
+This run was the first time trial of Visual Studio NOT running in Parallels.
+Visual Studio
+Release Mode
+Boost Version 1.61.0
+With roughly 8gigs of RAM available.
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Time:  3:26
+Executable size: 2.77MB
+
+
+This run was the first time trial of Visual Studio running in Parallels.
+Visual Studio
+Running in Parallels VM
+Release Mode
+Boost Version 1.61.0
+With roughly 4gigs of RAM available.
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  4:40
+Executable size: 2.77MB
+
+
+This run was the first time trial of LLVM.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target is x86_64-apple-darwin16.4.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-30 (code was before the includes overhaul of 2017-3-29)
+Build Time:  2:39
+On 2017-3-30 (after includes overhaul of 2017-3-29)
+Build Time:  2:26
+Executable size: 5.0MB
+
+
+These time trials were performed because LLVM version was updated to 8.1.0.
+GCC front-end to Clang, which is a font-end to LLVM
+Apple LLVM version 8.1.0 (clang-802.0.38)
+Target is x86_64-apple-darwin16.5.0
+With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
+Boost Version 1.62.0
+-O4
+time make -j8
+On 2017-3-31 (after includes overhaul of 2017-3-29)
+Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
+Executable size: 4.9MB</Text>
+        </Document>
+        <Document ID="21">
+            <Title>Audio</Title>
+            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
+
+The OGG file format is used for all audio, with the quality set to 8 of 10.
+ </Text>
+        </Document>
+        <Document ID="14">
+            <Title>Spells</Title>
+            <Text>Sparks
+Sprays a single enemy with a shower of molten sparks causing minimal damage.
+This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.
+
+
+Bandage
+Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.
+This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is learned, there is little reason to ever use this spell again.
+
+
+Sleep
+Puts a single enemy into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.
+
+
+Blanket
+Puts multiple enemies into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.  Which enemies are effected is random, but the number and likelihood of success both increase with Rank, so this spell remains useful for the whole game.
+
+
+Awaken
+Revives a single character from unconsciousness or sleep.
+Only affects one character.  This can be used to wake a character from either a natural or magical sleep.
+
+
+Wake Horn
+Blasts a magical 
+
+
+Trip
+Knocks a single enemy off of their feet and rolls them onto their back, reducing their stats and forcing them to waste a turn getting back up. 
+Only affects one enemy.  Some creatures take more than one turn to get up once flipped onto their back.
+
+
+Lift
+Returns a single tripped character to their feet without having to waste a turn getting up.
+Some creatures take more than one turn to get back on their feet, so this spell is more useful to some races than others.
+
+
+Daze
+Causes a single enemy to become dazed, reducing their stats, for one or more turns.
+It can take multiple turns to wake from being dazed naturally without intervening.
+
+
+Frighten
+Scares a single enemy, reducing their stats.
+It can take multiple turns to recover from being scared.
+
+
+Clear Mind
+Removes the Dazed and or Frightened condition from a single character.
+It can take multiple turns for a creature to recover from being Dazed or Frightened without intervening.
+
+
+Poison
+Poisons a single enemy, causing a reduction of stats and the loss of a small amount of health each turn.
+Some creatures can poison your characters just by attacking them during combat, such as poisonous snakes and Sylavin dragons.
+
+
+Antidote
+Cures the poisoned condition from a single character.
+This spell works whether the poisoning was natural or magical.
+
+
+Poison Cloud
+Attempts to poison a number of enemies, reducing their stats and causing a small amount of damage each turn.  The number of creatures effected depends on the caster’s intelligence and Rank.
+Some creatures breathe a poisonous cloud that can effect your characters in the same way as this spell.</Text>
         </Document>
         <Document ID="4">
             <Title>Races</Title>
@@ -511,6 +642,38 @@ Lyric
 Tune
 </Text>
         </Document>
+        <Document ID="15">
+            <Title>Image Files</Title>
+            <Text>Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:
+
+
+OptiPNG
+This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black &amp; white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to strip all metadata from the file.  I think using this as a first step is wise.
+
+optipng.exe -o7 -strip all -i0 *.gif
+
+
+PNGReWrite
+There is also pngrewrite.  That app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line options for pngrewrite.  Here is a window batch file that can be used to batch change all PNGs in a directory:
+
+for %%X in (*.png) do (pngrewrite.exe %%X %%X)
+
+
+PNGWolf
+The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the batch file to use for pngwolf:
+
+for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
+
+
+Photoshop
+The version of Photoshop I have has the ‘Export for Web’ feature still built-in, but it is label ‘Legacy’.  Still, it works better than any other export options I could find.  Set it for PNG-8, grayscale, 16 colors, dither smooth, no metadata, and the file size is very small.  After doing this to all creature GIFs (starting at 2,911,202 bytes), the result was a total of 1,604,504 bytes.  Not bad.  About half the size.
+
+The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble…
+
+
+Conclusions
+PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-500 bytes.  I’ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I’m not sure if I’ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.</Text>
+        </Document>
         <Document ID="5">
             <Title>Roles</Title>
             <Text>Beastmaster -  Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
@@ -533,76 +696,6 @@ Firebrand - Firebrands are the classic bright red fire breathers of dragon legen
 
 Sylavin -  The Sylavin dragon is a more thoughtful creature than the Firebrand.  They can do more damage to a single opponent, but lack the ability to attack multiple foes at once.  They are blue-green in color, and breathe a toxic stream of freezing mist instead of fire.  They learn powerful breath attacks slower than the Firebrand, but learn to fly faster.  Sylavin dragons learn many unusual powers as rank increases, and are more versatile than the Firebrands.  Primary attributes are intelligence and strength, but as with any dragon, speed is useful for dodging attacks.
 </Text>
-        </Document>
-        <Document ID="12">
-            <Title>Code Problems</Title>
-            <Text>“Do as I say, not as I do.”
-
-
-I have fallen into the bad habit of using boost::shared_ptr for everything.
-This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
-
-Update:  2017-3-27
-I went ahead and changed all boost::shared_ptr to std::shared_ptr, but there are still too many in use.
-
-
-All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.
-I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
-
-Update, 2017-5-20:
-I went ahead and fixed this in all of the factory classes, which in my case are not really factories by ‘warehouses’.
-
-
-I need to start using make_shared() and make_unique().
-I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
-
-
-I need to use “using” instead of “typedef”
-I’ll change my behavior now, and will change existing code as I stumble upon it.  As of May 2017, I think all uses have been replaced.
-
-
-I need to use auto for stack vars and non-virtual function return types.
-I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
-
-
-I have not been using brace initialization, and I should.
-The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.
-
-
-I have places in the code where class functions return references to local members causing dangling.
-These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.
-
-
-I used a trailing underscore to indicate a member variable instead of the prefix m_.
-I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
-
-
-I made function names start with a capital letter.
-I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
-
-
-My singletons use shared_ptr.
-All my singletons use shared_ptrs for the instance pointer.  This was a (flawed) design decision made early on when I was shared_ptr happy.  I should take the time to change this.
-
-
-I miss-use the singleton pattern.
-I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.  The smell isn’t that bad.
-
-
-I set no limit on line lengths.
-I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I’ll try and change my style from here on out to limit to 100 characters per line.
-
-
-I haven’t been consisted with my usage of brackets.
-I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
-
-
-Use of float instead of double.
-No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
-</Text>
-        </Document>
-        <Document ID="17">
-            <Title>dev</Title>
         </Document>
         <Document ID="6">
             <Title>Attributes</Title>
@@ -660,68 +753,55 @@ Emboldened  and heartened.  Moderate increases to stats.
 Heroic
 Fearless and invigorated.  All stats are significantly increased.</Text>
         </Document>
-        <Document ID="13">
-            <Title>Build Times</Title>
-            <Text>Notes:
-All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
-In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
-Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
-Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
-Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
-The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
+        <Document ID="16">
+            <Title>Static Analysis</Title>
+            <Text>Visual Studio
+I added the following extra warning flags to each project in the solution:
+/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 
+
+The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.
 
 
 
-This run was the first time trial of Visual Studio NOT running in Parallels.
-Visual Studio
-Release Mode
-Boost Version 1.61.0
-With roughly 8gigs of RAM available.
-On 2017-3-31 (after includes overhaul of 2017-3-29)
-Build Time:  3:26
-Executable size: 2.77MB
+CPPCheck
+This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/src“.  Note the space between the “-j” and the “7”, unlike make.
 
 
-This run was the first time trial of Visual Studio running in Parallels.
-Visual Studio
-Running in Parallels VM
-Release Mode
-Boost Version 1.61.0
-With roughly 4gigs of RAM available.
-On 2017-3-30 (after includes overhaul of 2017-3-29)
-Build Time:  4:40
-Executable size: 2.77MB
+
+Valgrind
+The undisputed heavyweight champion of runtime analysis.  Use it.
+
+Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.
+
+Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.
+
+Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:
+cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src
+
+Here is the command line for running Valgrind:
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath
+
+Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
 
 
-This run was the first time trial of LLVM.
-GCC front-end to Clang, which is a font-end to LLVM
-Apple LLVM version 8.0.0 (clang-800.0.42.1)
-Target is x86_64-apple-darwin16.4.0
-With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
-Boost Version 1.62.0
--O4
-time make -j8
-On 2017-3-30 (code was before the includes overhaul of 2017-3-29)
-Build Time:  2:39
-On 2017-3-30 (after includes overhaul of 2017-3-29)
-Build Time:  2:26
-Executable size: 5.0MB
+
+PVS-Studio
+I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:
+
+~/src/heroespath-build-vs find . -name *.suppress -exec cp {} ~/src/heroespath-src/pvs-studio-suppressions/ \;
+(and then check-in the newly updated suppressions files in ~/src/heroespath-src)
 
 
-These time trials were performed because LLVM version was updated to 8.1.0.
-GCC front-end to Clang, which is a font-end to LLVM
-Apple LLVM version 8.1.0 (clang-802.0.38)
-Target is x86_64-apple-darwin16.5.0
-With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
-Boost Version 1.62.0
--O4
-time make -j8
-On 2017-3-31 (after includes overhaul of 2017-3-29)
-Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
-Executable size: 4.9MB</Text>
-        </Document>
-        <Document ID="18">
-            <Title>game design</Title>
+
+Flint++
+Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
+
+
+
+
+
+
+</Text>
         </Document>
         <Document ID="8">
             <Title>Towns</Title>
@@ -743,79 +823,29 @@ Black Candle Inn
 Aven’s Rest Inn
 </Text>
         </Document>
-        <Document ID="14">
-            <Title>Spells</Title>
-            <Text>Sparks
-Sprays a single enemy with a shower of molten sparks causing minimal damage.
-This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.
+        <Document ID="24">
+            <Title>Armor Ratings</Title>
+            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
 
+clothesCloth=104
+clothesSoftLeather=120
+clothesHardLeather=136
 
-Bandage
-Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.
-This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is learned, there is little reason to ever use this spell again.
+armoredLesserSoftLeather=233
+armoredLesserSteel=532
+armoredLesserDiamond=682
 
+armoredGreaterSoftLeather=296
+armoredGreaterSteel=832
+armoredGreaterDiamond=1021
 
-Sleep
-Puts a single enemy into a natural sleep.
-Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.
+So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
 
-
-Blanket
-Puts multiple enemies into a natural sleep.
-Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.  Which enemies are effected is random, but the number and likelihood of success both increase with Rank, so this spell remains useful for the whole game.
-
-
-Awaken
-Revives a single character from unconsciousness or sleep.
-Only affects one character.  This can be used to wake a character from either a natural or magical sleep.
-
-
-Wake Horn
-Blasts a magical 
-
-
-Trip
-Knocks a single enemy off of their feet and rolls them onto their back, reducing their stats and forcing them to waste a turn getting back up. 
-Only affects one enemy.  Some creatures take more than one turn to get up once flipped onto their back.
-
-
-Lift
-Returns a single tripped character to their feet without having to waste a turn getting up.
-Some creatures take more than one turn to get back on their feet, so this spell is more useful to some races than others.
-
-
-Daze
-Causes a single enemy to become dazed, reducing their stats, for one or more turns.
-It can take multiple turns to wake from being dazed naturally without intervening.
-
-
-Frighten
-Scares a single enemy, reducing their stats.
-It can take multiple turns to recover from being scared.
-
-
-Clear Mind
-Removes the Dazed and or Frightened condition from a single character.
-It can take multiple turns for a creature to recover from being Dazed or Frightened without intervening.
-
-
-Poison
-Poisons a single enemy, causing a reduction of stats and the loss of a small amount of health each turn.
-Some creatures can poison your characters just by attacking them during combat, such as poisonous snakes and Sylavin dragons.
-
-
-Antidote
-Cures the poisoned condition from a single character.
-This spell works whether the poisoning was natural or magical.
-
-
-Poison Cloud
-Attempts to poison a number of enemies, reducing their stats and causing a small amount of damage each turn.  The number of creatures effected depends on the caster’s intelligence and Rank.
-Some creatures breathe a poisonous cloud that can effect your characters in the same way as this spell.</Text>
+2017-6-20
+</Text>
         </Document>
-        <Document ID="20">
-            <Title>source code tools</Title>
-            <Text>source code tools</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>

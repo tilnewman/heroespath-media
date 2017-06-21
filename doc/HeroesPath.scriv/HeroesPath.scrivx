@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-06-13 07:25:36 -0700" ModID="BA61318D-8127-4E81-AC7B-6CBD9EE769FA">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-06-21 10:01:51 -0700" ModID="EBD285E9-35FA-4A15-9B3A-C7AB48CC3250">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 19:11:28 -0700" Modified="2016-09-30 19:11:28 -0700">
             <Title>Draft</Title>
@@ -189,6 +189,38 @@
                                 <TextSelection>2365,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
+                        <BinderItem ID="24" UUID="B50A43F5-241E-4B50-B198-BCF5C5F572C2" Type="Text" Created="2017-06-20 13:43:41 -0700" Modified="2017-06-20 14:05:05 -0700">
+                            <Title>Armor Ratings</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>809,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="25" UUID="8615AF51-77F7-49B9-BD0E-FB36A7A3166A" Type="Folder" Created="2017-06-21 09:59:33 -0700" Modified="2017-06-21 09:59:54 -0700">
+                    <Title>manual</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="26" UUID="E86E6AF5-0296-4E49-A95C-CF524F8C3801" Type="Text" Created="2017-06-21 09:59:56 -0700" Modified="2017-06-21 10:01:51 -0700">
+                            <Title>hints</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>89,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
                     </Children>
                 </BinderItem>
             </Children>
@@ -252,7 +284,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 18:49:05 -0800" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2017-06-13 07:25:23 -0700"></PreviousSession>
+        <PreviousSession Words="15" Characters="89" Date="2017-06-21 09:59:14 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
