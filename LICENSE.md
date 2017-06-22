@@ -1,9 +1,16 @@
-# Heroes Path Game Resources Bundle License Information
-This is a collection of resource files required by the Heroes’ Path game.
+# The Heroes’ Path Resource Repository License Information
+This collection of files contains the images, sounds, music, fonts, documents, and all other resources required to run the Heroes’ Path game.
 
-The files are either original work by zTn (Ziesche Til Newman), or were collected under the terms of a public license, i.e. CC-BY 3.0 or other similar Creative Commons license.  Each subfolder contains a “license.txt” file that identifies the contents original author, original title (where applicable), license released under, the location it was found (where applicable), and a web link to info about the license.  There is also a subfolder named “licenses” that contains the full text of all licenses required by all resources in the bundle.
+All files are either in the Public Domain, under the open font license, or are under a version of the Creative Commons Attribution license.  This allows all files in this collection to be redistributed.  You are free to use, edit, and even redistribute these files, as long as the terms of each file’s license are obeyed.
 
-All works in this bundle are either original works by zTn released to the Public Domain under the Creative Commons 1.0 Universal License, or were obtained from other ‘open’ licenses allowing redistribution.  This allows me to release these files, and it also allows you to re-release them if desired, given you follow the terms of each resources specific license.  All files obtained under a specific license are re-released under that same license.
+Each subfolder containing files includes a “license.txt” that identifies the file’s original author, original title (where applicable), where online it was found (where applicable), which specific license it is released under, and a link to that license’s full text.  There is also a subfolder named “licenses” that contains the full text of all licenses used by all files in this collection.
 
+The licenses used in this collection are:
+ * open-font-license (OFL)
+ * creative-commons-public-domain-zero 1.0 (CC0-1.0)
+ * creative-commons-attribution-unported-3.0 (CC-BY-3.0)
+ * creative-commons-attribution-unported-4.0 (CC-BY-3.0)
+ * creative-commons-attribution-sharealike-unported 3.0 (CC-BY-SA-3.0)
+ 
 2017-5-20
 zTn
