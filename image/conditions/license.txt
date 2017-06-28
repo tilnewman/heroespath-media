@@ -2,11 +2,6 @@ undaunted.png
 An icon by Skoll, originally named “fist.svg”, found on game-icons.net under the CC-BY-3.0 license.
 http://creativecommons.org/licenses/by/3.0/
 
-tripped.png
-An icon by Lord, originally named “tripwire.svg”, found on game-icons.net under the CC-BY 3.0 license.
-http://lorcblog.blogspot.com
-http://creativecommons.org/licenses/by/3.0/
-
 frightened.gif
 An icon by Lorc, found on game-icons.net under the CC-BY-3.0 license.
 http://lorcblog.blogspot.com

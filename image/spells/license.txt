@@ -3,11 +3,6 @@ An icon by Lorc, originally named “laser-sparks.svg”, found on game-icons.ne
 http://lorcblog.blogspot.com
 http://creativecommons.org/licenses/by/3.0/
 
-trip.png
-An icon by Lorc, originally named “tripwire.svg”, found on game-icons.net under the CC-BY 3.0 license.
-http://lorcblog.blogspot.com
-http://creativecommons.org/licenses/by/3.0/
-
 frighten.png
 An icon by Lorc, found on game-icons.net under the CC-BY-3.0 license.
 http://lorcblog.blogspot.com
