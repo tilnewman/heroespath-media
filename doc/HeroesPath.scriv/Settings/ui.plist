@@ -8,8 +8,8 @@
 	</array>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {191, 788}}</string>
-		<string>{{192, 0}, {889, 788}}</string>
+		<string>{{0, 0}, {191, 787}}</string>
+		<string>{{192, 0}, {889, 787}}</string>
 	</array>
 	<key>binderState</key>
 	<array>
@@ -843,9 +843,9 @@
 		</array>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {711.20001, 567.20001}}</string>
+	<string>{{0, 0}, {711.20001, 566.40002}}</string>
 	<key>mainDocumentEditor.selectedRanges</key>
-	<string>{178, 0}</string>
+	<string>{859, 0}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>hasMultiplePages</key>
@@ -858,7 +858,7 @@
 		<false/>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>303 90 1081 810 0 0 1440 900 </string>
+	<string>303 91 1081 809 0 0 1440 900 </string>
 	<key>supportingDocumentEditor.navigationHistory</key>
 	<dict>
 		<key>CurrentIndex</key>

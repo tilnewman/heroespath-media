@@ -23,7 +23,19 @@ The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding
             <Title>hints</Title>
             <Text>If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
 
-Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.</Text>
+Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.
+
+When a creature is healed and regains all health, it removes the Dazed, Daunted, and Panic conditions.
+
+If a creature is hit with more than twice their maximum health, they will skip being unconscious and immediately die.
+
+If under a natural sleep during combat, being hit will wake the creature up.
+
+Being knocked unconscious removes many conditions, such as Dazed, Daunted, Panic, Tripped, along with magical and natural sleep.  Allowing a character to be knocked unconscious is dangerous because it leaves them open to being hit again and instantly killed, but if you know that you can heal them right away, then maybe it is worth it to be rid of so many adverse conditions.
+
+
+
+</Text>
         </Document>
         <Document ID="19">
             <Title>Maps</Title>
