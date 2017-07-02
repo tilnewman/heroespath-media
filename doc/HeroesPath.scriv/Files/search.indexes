@@ -20,22 +20,25 @@ After a raiding party decimated the city guard and nearly had their way with the
 The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
         </Document>
         <Document ID="26">
-            <Title>hints</Title>
-            <Text>If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
+            <Title>combat</Title>
+            <Text>Manual:
+During combat, each creature takes a turn in the order of who has the greatest Speed attribute.
+
+
+Hints:
+If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
 
 Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.
 
 When a creature is healed and regains all health, it removes the Dazed, Daunted, and Panic conditions.
 
-If a creature is hit with more than twice their maximum health, they will skip being unconscious and immediately die.
+If a creature is hit with more than twice their maximum health, they will immediately die.
 
 If under a natural sleep during combat, being hit will wake the creature up.
 
 Being knocked unconscious removes many conditions, such as Dazed, Daunted, Panic, Tripped, along with magical and natural sleep.  Allowing a character to be knocked unconscious is dangerous because it leaves them open to being hit again and instantly killed, but if you know that you can heal them right away, then maybe it is worth it to be rid of so many adverse conditions.
 
-
-
-</Text>
+It is easier to pounce on an enemy that is Dazed, and it always works if they are Tripped, Asleep, or Unconscious.</Text>
         </Document>
         <Document ID="19">
             <Title>Maps</Title>
@@ -355,6 +358,16 @@ You have earned this Title after successfully attacking enemies while flying, an
 2000	DragonOfTheArcaneWing			(8-8-8-40-1)
 5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
+        </Document>
+        <Document ID="27">
+            <Title>Combat Over</Title>
+            <Text>Win
+Victory!
+Congratulations, your party has incapacitated or killed all enemies on the field of battle, and emerged victorious.
+
+Lose
+Death Strikes!
+All of your characters have been incapacitated or killed.  The dangers of Etan have claimed another party of adventurers, but all is not lost.  Your last saved games remain and can be restarted at any time.  Click yes to restart from your last save, or click no to quit playing.</Text>
         </Document>
         <Document ID="12">
             <Title>Code Problems</Title>
