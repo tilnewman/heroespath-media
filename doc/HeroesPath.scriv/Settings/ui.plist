@@ -859,9 +859,9 @@
 		</array>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {711.20001, 566.40002}}</string>
+	<string>{{0, 0}, {711.20001, 200.00002}}</string>
 	<key>mainDocumentEditor.selectedRanges</key>
-	<string>{129, 0}</string>
+	<string>{13, 124}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>hasMultiplePages</key>
