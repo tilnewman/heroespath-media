@@ -24,19 +24,24 @@ The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding
             <Text>Manual:
 Each creature takes a turn in the order of who has the greatest Speed attribute.
 
-The Attack option will automatically choose a target enemy creature, usually whoever has the lowest health, while the Fight option allows you to specify which enemy creature to target.
+The Attack option will automatically choose a target enemy creature, usually whoever has the lowest relative health, while the Fight option allows you to specify which enemy creature to target.
+
+To select an enemy to fight, press the ‘F’ key and then click an enemy once.  Your characters are limited to fighting enemies near you, unless they are flying.
+
+To fly, press the ‘Y’ key, and an animation of a flapping wing will be displayed on the character who is flying.
 
 To see a summary view with detailed information about a creature on the battlefield, click on it once.
 
-Sometimes a character will have multiple weapons to choose from.  To switch between weapons, press the ‘C’ key.
+To switch to the Inventory, press ‘I’, or double-click one of your characters.  The Inventory Screen contains all the information about your characters.
 
-To switch to the Inventory, press ‘I’, or double-click one of your characters.
+Sometimes a character will have multiple weapons to choose from.  To switch between weapons, press the ‘C’ key.
 
 Pressing Enter or clicking the mouse can be used to skip past messages.  The Enter key will also automatically choose what your characters do during their turn, so be careful not to press it accidentally.  The Enter key will automatically attack, block, or skip a character’s turn, in that order, depending on which are possible.  Tap the Enter key repeatedly to speed up combat.
 
-If a character runs away, it will not receive experience from the battle.
+If a character runs away or dies, it will not receive experience from the battle, even if you win the fight.
 
-If a 
+Sometimes a creature cannot move past enemies on the battlefield if there are too many blocking the way, or if some of those creatures are taking the blocking action, but flying creatures can always advance or retreat.
+
 
 Hints:
 Whoever advances to meet an opponent is then at risk of being attacked by that opponent, so it is often wiser to wait and let your enemies advance upon you.
@@ -54,6 +59,11 @@ If a creature is hit with more than twice their maximum health, they will immedi
 If under a natural sleep during combat, being hit will wake the creature up.
 
 It is easier to pounce on an enemy that is Dazed, and it always works if they are Tripped, Asleep, or Unconscious.
+
+Be wary of situations where only one of your characters can be hit by multiple enemies, because a turn of bad luck could quickly kill the exposed character.  For example, if you have two dragon characters, perhaps they should refrain from flying so that the beastmaster character is not alone on the battlefield.
+
+The Lift spell removes the Tripped condition, but it will also removed the Pounced condition.
+
 </Text>
         </Document>
         <Document ID="19">
@@ -377,13 +387,16 @@ You have earned this Title after successfully attacking enemies while flying, an
         </Document>
         <Document ID="27">
             <Title>Combat Over</Title>
-            <Text>Win
-Victory!
+            <Text>Victory!
 Congratulations, your party has beaten all enemies on the field of battle and emerged victorious.  Will you search for loot?
 
-Lose
+
 Death Strikes!
-The dangers of Etan have claimed another party of adventurers.  All of your characters have been incapacitated or killed, but all is not lost.  Your saved games remain and can be loaded at any time.  Click YES to restart from your last save, or click NO to quit.</Text>
+The dangers of Etan have claimed another party of adventurers.  All of your characters have been incapacitated or killed, but all is not lost.  Your saved games remain and can be loaded at any time.  Click YES to restart from your last save, or click NO to quit.
+
+
+Defeat!
+You have run from battle, and as a consequence, you will earn no experience and loot no treasure.</Text>
         </Document>
         <Document ID="12">
             <Title>Code Problems</Title>
@@ -450,6 +463,37 @@ I was consistently using the Allman style, then, for some stupid reason, I switc
 
 Use of float instead of double.
 No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
+</Text>
+        </Document>
+        <Document ID="28">
+            <Title>Rank Class</Title>
+            <Text>As your characters advance into higher ranks, they also advance through general levels of skill called classes.  As you can see in the lists below, Wolfens reach Elder status sooner than Dragons, but in the end, dragons are more powerful.  As your beasts progress in class, you will notice their roars becoming stronger and louder.  Advances in class also bring bonuses to stats and new abilities.
+
+Humanoid:
+1-3 Novice
+4-6 Trainee
+7-12 Skilled
+13-25 Expert
+26-49 Master
+50+ GrandMaster
+
+Wolfen:
+1-2 Pup
+3-9 Juvenile
+10-19 Adult
+20-39 Noble
+40-79 Highborn
+80+ Elder
+
+Dragon:
+1-2 Hatchling
+3-9 Whelp
+10-19 Fledgling
+20-34 Juvenile
+35-54 Adult
+55-69 Wyrm
+71-99 Skycaster
+100+ Elder
 </Text>
         </Document>
         <Document ID="20">
@@ -604,42 +648,6 @@ Pixie - The Pixie is a tiny winged creature from the ancient world, but a few ar
 Wolfen - The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
 
 Dragon - The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
-
-Troll
-Goblin
-Orc
-Newt
-Spider
-Bog
-CaveCrawler
-Hydra
-LizardWalker
-Minotaur
-Ogre
-Plant
-Shade
-Werebear
-Skeleton
-Beetle
-Boar
-Demon
-Griffin
-Halfling
-Lion
-LionBoar
-Naga
-Serpent
-Ramonaut
-Cobra
-Werebear
-Wereboar
-Werecat
-Werewolf
-Werebat
-Pug
-Wyvern
-Giant
-Ghoul
 </Text>
         </Document>
         <Document ID="22">
