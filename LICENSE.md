@@ -7,10 +7,20 @@ Each subfolder containing files includes a “license.txt” that identifies the
 
 The licenses used in this collection are:
  * open-font-license (OFL)
+  - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
  * creative-commons-public-domain-zero 1.0 (CC0-1.0)
+  - http://creativecommons.org/publicdomain/zero/1.0/
+
  * creative-commons-attribution-unported-3.0 (CC-BY-3.0)
- * creative-commons-attribution-unported-4.0 (CC-BY-3.0)
+  - http://creativecommons.org/licenses/by/3.0/
+
+ * creative-commons-attribution-unported-4.0 (CC-BY-4.0)
+  - http://creativecommons.org/licenses/by/4.0/
+
  * creative-commons-attribution-sharealike-unported 3.0 (CC-BY-SA-3.0)
+  - http://creativecommons.org/licenses/by-sa/3.0/
+
  
 2017-5-20
 zTn
