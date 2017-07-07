@@ -1,0 +1,124 @@
+All files were posted to www.freesound.org.
+
+All files were modified. (trimmed, normalized, and faded)
+
+All files are either under the Public Domain (CC0 1.0) (No Copyright) or are under the CC-BY 3.0 license:
+http://creativecommons.org/publicdomain/zero/1.0/
+http://creativecommons.org/licenses/by/3.0/
+
+beast-1.ogg
+Posted by 1san as “groan-roar” under the CC-BY 3.0 license.
+beast-2.ogg
+Posted by mistersegev as “creepy-monster-roar” under the CC-BY 3.0 license.
+beast-3.ogg
+Posted by stephensaldanha as “creature-small-high-pitch-roar” under the CC-BY 3.0 license.
+beast-4.ogg
+Posted by tschapajew as “pain-scream-hard-3” under the CC-BY 3.0 license.
+beast-5.ogg
+Posted by tschapajew as “pain-scream-hard-3” under the CC-BY 3.0 license.
+beast-6.ogg
+Posted by noahpardo as “deep-exhale-echo” under the Public Domain.
+beast-7.ogg
+Posted by djchaos as “monster-death” under the CC-BY 3.0 license.
+beast-8a-groan.ogg
+Posted by dermotte as “roar-passive-aggressive” under the CC-BY 3.0 license.
+beast-8b-groan.ogg
+Posted by dermotte as “roar-subdued” under the CC-BY 3.0 license.
+beast-big-1.ogg
+Posted by mistersegev as “deep-monster-roar” under the CC-BY 3.0 license.
+beast-big-2.ogg
+Posted by zglar as “zombie-or-monster-or-lion-roar” under the CC-BY 3.0 license.
+beast-big-3-exhale.ogg
+Posted by qubodup as “lion-roar” under the CC-BY 3.0 license.
+beast-cave-troll-1.ogg
+Posted by ryansnook as “groan4” under the CC-BY 3.0 license.
+beast-cave-troll-2.ogg
+Posted by noahpardo as “deep-groan-3” under the Public Domain.
+beast-cave-troll-3.ogg
+Posted by noahpardo as “deep-groan-3” under the Public Domain.
+beast-huge-1a.ogg
+Posted by raventhornn as “roar-into-can-with-effects” under the Public Domain.
+beast-huge-1b.ogg
+Posted by raventhornn as “roar-into-can-with-effects” under the Public Domain.
+beast-raugh-1.ogg
+Posted by noahpardo as “deep-groan-2” under the Public Domain.
+beast-raugh-2.ogg
+Posted by noahpardo as “deep-groan-1” under the Public Domain.
+beast-raugh-3.ogg
+Posted by noahpardo as “deep-exhale-1” under the Public Domain.
+beast-small-raspy-1.ogg
+Posted by chobiboko as “roar” under the Public Domain.
+beast-small-raspy-2.ogg
+Posted by littlerobotsoundfactory as “goblin-03” under the CC-BY 3.0 license.
+beast-small-raspy-3.ogg
+Posted by spookymodem as “goblin-death” under the Public Domain.
+beast-small-raspy-4.ogg
+Posted by soundcollectah as “groan” under the Public Domain.
+beast-talker-1.ogg
+Posted by scorpion67890 as “mutant-scream” under the Public Domain.
+beast-talker-2-roar.ogg
+Posted by scorpion67890 as “cthulhu-roar” under the Public Domain.
+beast-wet.ogg
+Posted by jacobalcook as “creature-roar-1” under the CC-BY 3.0 license.
+creepy-1.ogg
+Posted by andromadax24 as “s-death-slith-05” under the CC-BY 3.0 license.
+creepy-2.ogg
+Posted by andromadax24 as “s-death-slith-10” under the CC-BY 3.0 license.
+creepy-3.ogg
+Posted by andromadax24 as “s-death-slith-12” under the CC-BY 3.0 license.
+creepy-4.ogg
+Posted by andromadax24 as “s-pain-slith-03” under the CC-BY 3.0 license.
+creepy-5.ogg
+Posted by andromadax24 as “s-pain-slith-16” under the CC-BY 3.0 license.
+creepy-6.ogg
+Posted by andromadax24 as “s-pain-slith-17” under the CC-BY 3.0 license.
+dragon-1a.ogg
+Posted by qubodup as “dragon-moan” under the CC-BY 3.0 license.
+
+dragon-1b.ogg
+Posted by qubodup as “dragon-moan” under the CC-BY 3.0 license.
+ghostly-1a.ogg
+ghostly-1b.ogg
+ghostly-1c.ogg
+howl-demon.ogg
+Posted by jamesabdulrahman as “dragon-roar” under the Public Domain.
+human-1.ogg
+Posted by artmasterrich as “male-hurt-04” under the Public Domain.
+human-2.ogg
+human-3.ogghuman-4.ogghuman-5.ogg
+Posted by waxsocks as “groans-and-screams” under the Public Domain.
+human-female-1.ogg
+Posted by splicesound as “young-boy-groans” under the Public Domain.
+human-female-2.ogg
+Posted by artmasterrich as “male-hurt-01” under the Public Domain.
+human-female-3.ogg
+Posted by waxsocks as “groans-and-screams” under the Public Domain.
+human-male-1.ogg
+Posted by artmasterrich as “male-death-04” under the Public Domain.
+human-male-2.ogg
+Posted by muses212 as “groans” under the Public Domain.
+human-male-3.ogg
+Posted by waxsocks as “groans-and-screams” under the Public Domain.
+human-male-4.ogg
+Posted by rdaly95 as “hero-death” under the CC-BY 3.0 license.
+human-male-5.ogg
+human-male-6.ogg
+human-male-7.ogg
+Posted by waxsocks as “groans-and-screams” under the Public Domain.
+lion.ogg
+Posted by columbia23 as “single-roar” under the CC-BY 3.0 license.
+snake-1.ogg
+snake-2.oggsnake-3.oggsnake-4.oggsnake-5.oggsnake-6.ogg
+Posted by columbia23 as “female-creature-hiss” under the CC-BY 3.0 license.
+spider-1.oggspider-2.oggspider-3.ogg
+Posted by columbia23 as “spider-voice” under the CC-BY 3.0 license.
+thing-1.ogg
+Posted by scorpion67890 as “cthulhu-roar” under the CC-BY 3.0 license.
+thing-2.ogg
+Posted by gneube as “zombie-roar-death sfx” under the CC-BY 3.0 license.
+thing-3.ogg
+Posted by indieground as “zombie-groan” under the Public Domain.
+
+
+2017-7-7
+zTn
