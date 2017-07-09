@@ -3,12 +3,8 @@ http://creativecommons.org/licenses/by/3.0/
 All files were trimmed, normalized, and faded.
 
 firebrand.ogg
-Posted by aetherspire as “monster-roar2”
-
-sylavin-1.ogg
-sylavin-2.ogg
+sylavin.ogg
 Both files came from the same single file osted by qubodup as “dragon-roar”
-
 
 2017-7-6
 zTn
