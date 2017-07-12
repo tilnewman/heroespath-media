@@ -36,7 +36,9 @@ To switch to the Inventory, press ‘I’, or double-click one of your character
 
 Sometimes a character will have multiple weapons to choose from.  To switch between weapons, press the ‘C’ key.
 
-Pressing Enter or clicking the mouse can be used to skip past messages.  The Enter key will also automatically choose what your characters do during their turn, so be careful not to press it accidentally.  The Enter key will automatically attack, block, or skip a character’s turn, in that order, depending on which are possible.  Tap the Enter key repeatedly to speed up combat.
+The Enter key will automatically attack, block, or skip a character’s turn, in that order, depending on which are possible.
+
+Pressing the spacebar or clicking the mouse can be used to skip past messages when you want to speed up combat.
 
 If a character runs away or dies, it will not receive experience from the battle, even if you win the fight.
 
