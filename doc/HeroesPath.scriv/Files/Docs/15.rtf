@@ -1,26 +1,24 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
 {\fonttbl\f0\fnil\fcharset0 Calligraphic810BT-Roman;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\f0\fs22 \cf0 Most of the images were originally saved in photoshop as GIFs, but I\'92ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  Use of tools to optimize my GIFs for file size have been successful:\
+\f0\fs22 \cf0 \ul \ulc0 Reducing PNG files:\ulnone \
+\
+Most of the images were originally saved in photoshop as GIFs, but I\'92ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I\'92ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been successful.  Below is an analysis of the tools follow by a conclusion for how to use them.\
 \
 \
 \ul OptiPNG\ulnone \
-This app is good, but grayscale and palette reduction features are not fully implemented making this too less than ideal for my black & white image content.  I do like the ability to guarantee the image is not interlaced, and the ability to strip all metadata from the file.  I think using this as a first step is wise.\
-\
-optipng.exe -o7 -strip all -i0 *.gif\
+This app is good, but grayscale and palette reduction features are not fully implemented making this useless for me.\
 \
 \
 \ul PNGReWrite\ulnone \
-There is also pngrewrite.  That app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line options for pngrewrite.  Here is a window batch file that can be used to batch change all PNGs in a directory:\
-\
-for %%X in (*.png) do (pngrewrite.exe %%X %%X)\
+This app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line tools for pngrewrite.  The little bit added to most files makes this not an option for me.\
 \
 \
 \ul PNGWolf\ulnone \
-The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the batch file to use for pngwolf:\
+The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That Windows app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Also, PNGWolf does not appear to be the best choice for a \'91first and only\'92 tool.  It works best after some other util does the initial shrink first.  Here is the windows batch file to use for pngwolf:\
 \
 for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)\
 \
@@ -31,5 +29,35 @@ The version of Photoshop I have has the \'91Export for Web\'92 feature still bui
 The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble\'85\
 \
 \
-\ul Conclusions\
-\ulnone PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop\'92s \'91Export for Web\'92 by 200-500 bytes.  I\'92ll definitely switch to using PNG files that are reduced to 16 color grayscale, but I\'92m not sure if I\'92ll get in the habit of using PNGWolf -maybe just for the big image collections: items and creatures.}
+\ul PNGQuant\ulnone \
+This command line util can be installed with \'93brew install pngquant\'94, and it can shrink files really well.  Running PNGWolf after it is a good idea, and can shave approx 200-2000 bytes further.  Beware never to use this util with quality settings less then 100 (perfect) as the first step in reducing a file\'92s size, because it will dither into pure white/transparent and create lots of little speckled pixels where there should not be.  Here is the command line usage that will replace the files if they end up smaller:  (Note the --strip option that will remove all metadata.)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 pngquant -s 1 -Q 100-100 --skip-if-larger --strip --ext .png -f *.png\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ul \ulc0 PNG Conclusions\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ulnone PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop\'92s \'91Export for Web\'92 by 200-2000 bytes, and it doesn\'92t do a good job as the \'91first and only tool\'92.  The process should be to first use Photoshop\'92s save as PNG-8, then use PNGQuant with the settings shown above, then use PNGWolf last to shave off the extra.\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ul \ulc0 Reducing JPG Files\ulnone \
+\
+Some photo-style full-color images are just better served by the JPG format, and Photoshop\'92s JPG compression leaves a lot to be desired.\
+\
+\ul TinyJPG\ulnone \
+This is a website, and it does reduce the number of colors in your original (lossy-compression) (technically), but the results look great.  It is meant for web image compression and works perfectly in that domain.  I think in most cases this is a solid choice for the \'91first step\'92 tool.\
+\
+\ul JPEGmini\ulnone \
+This tool has a free version that allows 20 compressions a day.  It\'92s a simple straightforward drag-and-drop app that does a good job.  Good, not great.  CodeKit beats it, by far.  Skip this tool.\
+\
+\ul CodeKit\ulnone \
+This app is really a web development tool that focuses on doing everything for you.  Shame.  If you take the time to turn off everything it tries to on the side, this can shrink JPG files remarkably.  The best part is, it\'92s lossless.\
+\
+\ul JPG Conclusions\ulnone \
+Use TinyJPG to shrink the palette and then use CodeKit to shrink even more.\
+}
