@@ -698,8 +698,8 @@ Tune
 </Text>
         </Document>
         <Document ID="15">
-            <Title>Image Files</Title>
-            <Text>Reducing PNG files:
+            <Title>Image Compression</Title>
+            <Text>Reducing PNG files
 
 Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I’ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been successful.  Below is an analysis of the tools follow by a conclusion for how to use them.
 
@@ -713,7 +713,7 @@ This app either adds a little to the file size compared to OptiPNG or reduces it
 
 
 PNGWolf
-The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That Windows app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Also, PNGWolf does not appear to be the best choice for a ‘first and only’ tool.  It works best after some other util does the initial shrink first.  Here is the windows batch file to use for pngwolf:
+Lossless PNG file compressor that only optimizes the filters, and does not strip metadata or reduce colors, etc.  It is really intended as a ‘last step’ in the compression process to squeeze the last few bytes out.  The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That Windows app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the windows batch file to use for pngwolf:
 
 for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
 
@@ -725,13 +725,21 @@ The real question is how much more compressed this can get if the best of the ab
 
 
 PNGQuant
-This command line util can be installed with “brew install pngquant”, and it can shrink files really well.  Running PNGWolf after it is a good idea, and can shave approx 200-2000 bytes further.  Beware never to use this util with quality settings less then 100 (perfect) as the first step in reducing a file’s size, because it will dither into pure white/transparent and create lots of little speckled pixels where there should not be.  Here is the command line usage that will replace the files if they end up smaller:  (Note the --strip option that will remove all metadata.)
+This command line util can be installed with “brew install pngquant”, and it can shrink files really well.  Running PNGWolf or FileOptimizer afterwards it is a good idea, shaving approx 200-20000 more bytes depending.  Beware never to set the quality (Q) setting to less then 100 (perfect) because it has a nasty habit of dithering poorly, adding speckles in the pure white/transparent areas where there should be none.  However, you CAN use this tool as an effective first-pass compressor to reduce the color count instead of Photoshop.  Here is the command line for that:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
+
+pngquant -s 1 --skip-if-larger --strip --ext .png -f &lt;insert color count here&gt; *.png
+
+Here is the command line for lossless compression:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
 
 pngquant -s 1 -Q 100-100 --skip-if-larger --strip --ext .png -f *.png
 
 
+FileOptimizer
+This is a windows only multi-format (HUGE list of supported file types) lossless compressor that uses a multi-pass approach.  For example, for PNGs, FileOptimizer employs PNGWolf, pngOut, Leanify, ECT, TruePNG, and many more.  It does the job of using all the apps I’ve described above (and many more) in the correct order, automatically.  This is a great app that does just what I need, in one step.  The only problems are (1) that it takes a LONG time on PNG files, and (2) the code is not parallelized so it doesn’t use all processors efficiently.  Still, it rocks and I’m tempted to let it run on the entire Heroes’ Path image set.  It is running away on the PC in my room on my entire photo library right now…
+
+
 PNG Conclusions
-PNGWolf appears to be the best PNG file size optimizer, but it only beats Photoshop’s ‘Export for Web’ by 200-2000 bytes, and it doesn’t do a good job as the ‘first and only tool’.  The process should be to first use Photoshop’s save as PNG-8, then use PNGQuant with the settings shown above, then use PNGWolf last to shave off the extra.
+Use PNGQuant for the lossy first-pass to reduce the color count to a desired value, and then FileOptimizer (which employs PNGWolf) to finish.
 
 
 
@@ -749,7 +757,7 @@ CodeKit
 This app is really a web development tool that focuses on doing everything for you.  Shame.  If you take the time to turn off everything it tries to on the side, this can shrink JPG files remarkably.  The best part is, it’s lossless.
 
 JPG Conclusions
-Use TinyJPG to shrink the palette and then use CodeKit to shrink even more.
+If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compressor, use FileOptimizer, or if you really want to move fast, CodeKit.
 </Text>
         </Document>
         <Document ID="5">
