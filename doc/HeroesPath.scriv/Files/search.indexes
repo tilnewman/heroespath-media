@@ -70,7 +70,7 @@ Cleric’s spell casting should be carefully considered.  On the one hand, you w
 
 Prioritize so that you first attack the enemies that are the greatest threats.  Eliminate spellcasters, archers, and high-ranking enemies first.
 
-</Text>
+If a particular enemy is curious or causing you problems, remember that you can click on it once and see a summary of its condition and equipment.</Text>
         </Document>
         <Document ID="19">
             <Title>Maps</Title>
@@ -567,10 +567,10 @@ Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
 Executable size: 4.9MB</Text>
         </Document>
         <Document ID="21">
-            <Title>Audio</Title>
+            <Title>Audio Compression</Title>
             <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
 
-The OGG file format is used for all audio, with the quality set to 8 of 10.
+The OGG file format is used for all audio, with the quality set to 5 of 10.
  </Text>
         </Document>
         <Document ID="14">
