@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="31">
+            <Title>Item Materials</Title>
+            <Text>There are many materials, but only 16 in what is called the “Core Set”.  (bone, 7 metals, 8 precious). (Need to figure out something cool based on those numbers.)  Only Core Set materials participate in items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.
+
+	(Cloth)
+	(Hide)
+	(Soft Leather)
+	(Hard Leather)
+	(Plant)
+	(Claw)
+	(Scale)
+	(Horn)B	Bone
+	(Tooth)
+	(Wood)M	TinM	BronzeM	Iron
+	(Stone)
+P	ObsidianM	SteelM	SilverP	AmethystP	EmeraldP	PearlP	RubyP	LapisP	SapphireM	GoldM	PlatinumP	Diamond
+</Text>
+        </Document>
+        <Document ID="32">
+            <Title>Herbs</Title>
+            <Text>Herbs
+Here are the 32 potions in order of rarity/significance/magic-effect.
+
+
+Blood Root
+Oak Nose
+Yellow Dot
+Maze Bloom
+Never Lilly
+Dragon Stem
+Elf Ear
+Winter Bloom
+Green Lock
+River Sprig
+Drowners Fern
+White Leaf
+Black Tail
+Kings Weed
+Pixie Cap
+Troll Sprout 
+Witch Stand
+Brown Tip
+Hag Sprout
+Jungle Dream
+War Pick
+Oger Vein
+Trick Tree
+Jester Shade
+Blade Bud
+Maiden Grass
+Garden Steel
+Wind Raker
+Three Thorn
+Cobbler’s Mint
+Love Lace
+Grave Bell
+</Text>
+        </Document>
         <Document ID="25">
             <Title>manual</Title>
         </Document>
@@ -18,6 +76,185 @@ There is trouble from below as well.  Raiders and vicious beasts, once rare, are
 After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
 
 The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
+        </Document>
+        <Document ID="33">
+            <Title>Potions</Title>
+            <Text>Potions
+Here are the 32 potions in order of rarity/significance/magic-effect.
+
+Healing/Poisonous
+Drink/Balm
+Clearing/Intoxicating
+Mana Increase/Decrease
+&lt;Stat&gt; Increase/Decrease
+
+
+
+Creature’s Cup
+Drink
+
+
+
+Brigand Brew
+Drink
++1 Str
+
+
+Barbarian’s Blend
+Balm
++5 Str
+Intox
+
+Mirky Mix
+Balm
+
+Clear
+
+Sister Spit
+Drink
+
+
+
+Brawler Brandy
+Drink
+
+Intox
+
+Swill Swig
+Drink
+
+
+
+Wet Willow
+Balm
+
+Clear
+
+Savage Soup
+Drink
+
+Intox
+
+Dazzling Dose
+Drink
++10 Mana
+Clear
+
+Gut Guzzle
+Drink
+
+
+
+Fester Ferment
+Drink
+
+Intox
+
+Toxic Tonic
+Drink
+
+
+
+Life Liquor
+Drink
+
+Intox
+
+Poetic Poison
+Drink
+
+
+
+Jester Juice
+Drink
+
+Intox
+
+Sinister Spirits
+Drink
+
+Intox
+
+Dungeon Dew
+Balm
+
+
+
+Gargoyle Gargle
+Drink
+
+
+
+Imp’s Infusion
+Balm
+
+Clear
+
+Dark Drown
+Drink
+
+
+
+Black Bitter
+Drink
+
+
+
+Dragon Drool
+Drink
+
+Clear
+
+Evil Elixir
+Drink
+
+Intox
+
+Devil’s Drop
+Drink
+
+
+
+Rigor Remedy
+Balm
+
+
+
+Demon Dance
+Drink
+
+Intox
+
+Torment Tincture
+Drink
+
+Intox
+
+Djinn Drink
+Drink
+
+Clear
+
+Ancient Antidote
+Drink
+
+Clear
+
+Never Nectar
+Drink
+
+Clear
+
+Edgar’s Extract
+Balm
+
+Clear
+
+
+
+
+
+</Text>
         </Document>
         <Document ID="26">
             <Title>combat</Title>
@@ -502,10 +739,6 @@ Dragon:
 100+ Elder
 </Text>
         </Document>
-        <Document ID="20">
-            <Title>source code tools</Title>
-            <Text>source code tools</Text>
-        </Document>
         <Document ID="13">
             <Title>Build Times</Title>
             <Text>Notes:
@@ -565,6 +798,73 @@ time make -j8
 On 2017-3-31 (after includes overhaul of 2017-3-29)
 Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
 Executable size: 4.9MB</Text>
+        </Document>
+        <Document ID="29">
+            <Title>Items</Title>
+            <Text>Should misc magic items have effects when held, equipped, or used?
+
+Think of a way that the 32 herbs and 32 potions are used together…mixed…
+
+—
+
+Lapis Dragonfly -Allows a player to fly during combat.
+Amethyst Scarab -When equipped…?
+Jade Turtle -When equipped, +10 armor rating.
+Crystal Vial -When used it removes all ill conditions.
+Dragon Tooth Whistle -When used it panics flying creatures.
+Dove’s Blood -When used it removes poisoned condition.
+Icicle Wand -When used it casts some cold based potion.
+Quartz Brooch -When equipped 
+Litch Hand -Can be used to cast the Curse spell, but it is not destroyed in the process.
+Pearl Choker -
+Obsidian Ankh -
+Platinum Cameo -
+Obsidian Dagger -When equipped backstab is much more likely
+
+Silver Tiara -When equipped +10 intelligence.
+Eagle Talon -When equipped +10 accuracy.
+Pearl Hourglass -When equipped +10 speed.
+Opal Pendant -When equipped +10 strength.
+Sapphire Pin -When equipped +10 luck.
+Silk Shawl -When equipped +10 charisma.
+
+Voodoo/Bloody/Macabre Effigy/Doll/Skull/Figurine/Scroll -Used when casting the spell “Curse”.
+
+Healing Balm -Use to heal minor wounds.
+Magic Balm -Use to heal moderate wounds and some conditions.
+Arcane Balm -Use to heal serious wounds and many conditions.
+
+&lt;Material&gt; &lt;race&gt; Figurine -Summons a &lt;race&gt; creature to fight for the party.  The material determines the rank of the summoned creature.
+
+
+&lt;Material&gt; Armor Ring (jeweled 14) -If equipped, increases Armor Rating by an amount determined by the material.
+
+&lt;Material&gt; Mana Amulet (23) -If equipped, material determined Mana increase.
+
+&lt;Material&gt; Fingerclaw (0) -If equipped, material determined combat damage increase.
+
+
+Knight’s &lt;Material&gt; Armband (0) -If equipped, material determined strength increase.
+
+Sorcerer’s &lt;Material&gt; Crown (12) -If equipped, material determined intelligence increase.
+
+Thief’s &lt;Material&gt; Key (11) -If equipped, material determined Luck increase.
+
+Cleric’s &lt;Material&gt; Mask (6), If equipped, material determined Charisma increase.
+
+Archer’s &lt;Material&gt; Feather (0), If equipped, material determined Accuracy increase.
+
+Sprinter’s &lt;Material&gt; Legtie (0), If equipped, material determined Speed increase.
+
+
+&lt;Gemstone&gt; Shard (7) - Used?  Equipped? Held? ???
+
+&lt;Gemstone&gt; Orb (9) - Used…but for what?
+
+&lt;Metal&gt; Goblet (8) -Used…but for what?
+
+&lt;Material&gt; Magic Mirror (10) -Used during combat on an enemy to see all details.
+</Text>
         </Document>
         <Document ID="21">
             <Title>Audio Compression</Title>
@@ -784,7 +1084,7 @@ Sylavin -  The Sylavin dragon is a more thoughtful creature than the Firebrand. 
 </Text>
         </Document>
         <Document ID="6">
-            <Title>Attributes</Title>
+            <Title>Stats</Title>
             <Text>Strength - Simply a measure of how strong you are.  How strong an adventurer is primarily determines how much damage is dealt during combat, but strength also effects many other things.  For example, strength determines how much you can carry, what kinds of weapons you can use, and how much health you start out with.  The Strength attribute is primarily a concern for Knights and Archers, but also for Beastmasters and Bards if they are not Pixies.
 
 Accuracy - How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you craft for fighting.
