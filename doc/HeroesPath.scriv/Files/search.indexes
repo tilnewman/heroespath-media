@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="31">
-            <Title>Item Materials</Title>
-            <Text>There are many materials, but only 16 in what is called the “Core Set”.  (bone, 7 metals, 8 precious). (Need to figure out something cool based on those numbers.)  Only Core Set materials participate in items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.
-
-	(Cloth)
-	(Hide)
-	(Soft Leather)
-	(Hard Leather)
-	(Plant)
-	(Claw)
-	(Scale)
-	(Horn)B	Bone
-	(Tooth)
-	(Wood)M	TinM	BronzeM	Iron
-	(Stone)
-P	ObsidianM	SteelM	SilverP	AmethystP	EmeraldP	PearlP	RubyP	LapisP	SapphireM	GoldM	PlatinumP	Diamond
-</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="32">
             <Title>Herbs</Title>
@@ -628,6 +613,14 @@ You have earned this Title after successfully attacking enemies while flying, an
 5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
         </Document>
+        <Document ID="34">
+            <Title>Items</Title>
+            <Text>Your cleric and sorcerer will need an item to cast spells.  They start out with simple wands with the minimal required enchantments, but there are other more powerful items that carry extra enchantments that provide bonuses to mana, stats, and to casting spells that could be resisted.  Here are some items that enable casting spells, in order of power and effect:  wand, shard, orb.  There are rare items that are even more powerful, some only available upon completion of quests, including petrified snakes, severed fingers and hands, horns, magic icicles, and more.
+
+All items are made with specific materials, but some materials are more desirable than others.  Some items carry bonuses, or a certain number of uses, that depend on the material.  Here is the list of the ‘core’ materials, in order of rarity and power, from least to most:  Bone, Tin, Bronze, Iron, Obsidian,Steel, Silver, Amethyst, Emerald, Pearl, Ruby, Lapis, Sapphire, Gold, Platinum, Diamond.  Often, items that have a number of uses determined by the material they are made with, can be used an infinite number of times if they are made of diamond.
+
+</Text>
+        </Document>
         <Document ID="27">
             <Title>Combat Over</Title>
             <Text>Victory!
@@ -801,70 +794,130 @@ Executable size: 4.9MB</Text>
         </Document>
         <Document ID="29">
             <Title>Items</Title>
-            <Text>Should misc magic items have effects when held, equipped, or used?
+            <Text>Unique Items
+Dragon’s Tooth Whistle -If used: panics flying creatures.
 
-Think of a way that the 32 herbs and 32 potions are used together…mixed…
+Dove’s Blood Vial -If used: removes all poison/disease type conditions.  Holds ten doses.
 
-—
+Crystal Spyglass -If held: reduced chance of being surprised.
 
-Lapis Dragonfly -Allows a player to fly during combat.
-Amethyst Scarab -When equipped…?
-Jade Turtle -When equipped, +10 armor rating.
-Crystal Vial -When used it removes all ill conditions.
-Dragon Tooth Whistle -When used it panics flying creatures.
-Dove’s Blood -When used it removes poisoned condition.
-Icicle Wand -When used it casts some cold based potion.
-Quartz Brooch -When equipped 
-Litch Hand -Can be used to cast the Curse spell, but it is not destroyed in the process.
-Pearl Choker -
-Obsidian Ankh -
-Platinum Cameo -
-Obsidian Dagger -When equipped backstab is much more likely
+Cyclops Eye -If used: reveals all info about an enemy creature, infinite uses
 
-Silver Tiara -When equipped +10 intelligence.
-Eagle Talon -When equipped +10 accuracy.
-Pearl Hourglass -When equipped +10 speed.
-Opal Pendant -When equipped +10 strength.
-Sapphire Pin -When equipped +10 luck.
-Silk Shawl -When equipped +10 charisma.
+Basilisk Tonge -If used: turns creatures to stone, combat only, infinite uses
 
-Voodoo/Bloody/Macabre Effigy/Doll/Skull/Figurine/Scroll -Used when casting the spell “Curse”.
+Griffin Feather -If held: Allows flying during combat, infinite uses
 
-Healing Balm -Use to heal minor wounds.
-Magic Balm -Use to heal moderate wounds and some conditions.
-Arcane Balm -Use to heal serious wounds and many conditions.
+Reaper Scythe -If attacked with succeeds: you gain health equal to one quarter of the damage you deal.
 
-&lt;Material&gt; &lt;race&gt; Figurine -Summons a &lt;race&gt; creature to fight for the party.  The material determines the rank of the summoned creature.
+Siren’s Conch -If used: casts the “Drown” spell
 
+Vampire’s Tooth Neckless -If equipped: Gain one-tenth the damage dealt during combat (from spells/weapons/anything)
 
-&lt;Material&gt; Armor Ring (jeweled 14) -If equipped, increases Armor Rating by an amount determined by the material.
+Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses
 
-&lt;Material&gt; Mana Amulet (23) -If equipped, material determined Mana increase.
+Bottle of Banshee Screams -If used: panics enemies, ten uses
 
-&lt;Material&gt; Fingerclaw (0) -If equipped, material determined combat damage increase.
+Shaman Rainmaker -If used: ?
 
+Warlock ?
 
-Knight’s &lt;Material&gt; Armband (0) -If equipped, material determined strength increase.
+Necromancer’s Scroll -
 
-Sorcerer’s &lt;Material&gt; Crown (12) -If equipped, material determined intelligence increase.
+Bandit’s ?
 
-Thief’s &lt;Material&gt; Key (11) -If equipped, material determined Luck increase.
+Chimera ?
 
-Cleric’s &lt;Material&gt; Mask (6), If equipped, material determined Charisma increase.
+Scorpion ?
 
-Archer’s &lt;Material&gt; Feather (0), If equipped, material determined Accuracy increase.
+Rouge Picks 
 
-Sprinter’s &lt;Material&gt; Legtie (0), If equipped, material determined Speed increase.
+Druid’s Leaf -If equipped: +12 mana
+
+Ghost’s Sheet -If equipped:  +12 armor rating
+
+Titan’s Helm -If equipped: +12 strength
+
+King’s Quiver -If equipped: +12 accuracy
+
+Nymph Neckless -If equipped: +12 charisma
+
+Leprechaun Clover -If equipped:  +12 luck
+
+Champion’s Legtie -If equipped: +12 speed
+
+Monk’s Ring -If equipped: +12 intelligence
 
 
-&lt;Gemstone&gt; Shard (7) - Used?  Equipped? Held? ???
 
-&lt;Gemstone&gt; Orb (9) - Used…but for what?
 
-&lt;Metal&gt; Goblet (8) -Used…but for what?
+Summoning Items
+&lt;Material&gt; &lt;Race&gt; Summoning Figurine -If used: summons a &lt;Race&gt; creature to fight for the party, combat only, material determines rank of the summoned creature.
 
-&lt;Material&gt; Magic Mirror (10) -Used during combat on an enemy to see all details.
-</Text>
+
+Material-Based Bonus Items
+&lt;Material&gt; Thief’s Dagger -If equipped: material based backstab bonus.  Actual weapon.
+
+&lt;Material&gt; Tuning Fork -If equipped: material based bonus to Songs taking effect.
+
+&lt;Material&gt; Ankh -If equipped: material based religious item find bonus.
+
+&lt;Material&gt; Saint Cameo -If equipped: material based magical item find bonus.
+
+&lt;Material&gt; Magnifying Glass -If used: reveals all info about an enemy creature, combat only, use count determined by material
+
+&lt;Material&gt; Turtle -When held: material based armor rating bonus.  (the catch is that it is heavy…)
+
+&lt;Material&gt; Armband (jeweled 14) -If equipped: material based armor rating bonus.
+
+&lt;Material&gt; Mana Amulet (23) -If equipped: material based Mana bonus.
+
+&lt;Material&gt; Fingerclaw (0) -If equipped: material based combat damage increase.
+
+
+Wands
+Petrified Snake -Wand, if equipped: allows casting, +5 mana
+
+Mummy Hand -Wand, if equipped:  allows casting, +5 mana
+
+&lt;Gemstone&gt; Shard (7) -Wand, if equipped: allows casting, material based mana bonus, material based cast effect chance bonus.
+
+&lt;Gemstone&gt; Orb (9) -Wand, if equipped: allows casting, DOUBLE material based mana bonus, DOUBLE material based cast effect chance bonus.
+
+Magic Icicle -Wand, if equipped:  allows casting, +10 mana, allows casting the “Freeze” spell and without consuming mana
+
+Golem Finger -Wand, if equipped: allows casting, +10 mana, allows casting spell “Turn to Stone” without consuming mana
+
+Unicorn Horn -Wand, cleric only, if equipped: +20 mana, allows casting the “Bless” spell without consuming objects or mana, TRIPLE cast effect chance bonus
+
+Devil Horn -Wand, sorcerer only, if equipped: allows casting, +20 mana, allows casting the “Curse” spell without consuming objects or mana, TRIPLE cast effect chance bonus
+
+Angel’s Braid -Wand, cleric only if equipped:  allows casting, +40 mana, allows casting the “Bless” spell without consuming objects or mana, QUADRUPLE cast effect chance bonus
+
+Litch Hand -Wand, sorcerer only, if equipped: allows casting, +40 mana, allows casting the “Curse” spell without consuming objects or mana, QUADRUPLE cast effect chance bonus
+
+
+Stat Bonus Items
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt; &lt;Brooch/Charm/Bracelet&gt; -If equipped: material based stat bonus.  *Only one brooch/charm can be equipped at a time, but bracelets are limited to the number of hands.
+
+
+Items used to cast Bless or Curse
+&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred or Damned/Grim/Voodoo/Bloody/Macabre&gt; Effigy/Doll/Figurine/Poem/Scroll -Allows/used-when casting the spell “Bless” or “Curse”, material determines use count.
+
+
+Healing Items
+&lt;Material&gt; Rejuvenation Goblet (8) -If used, drinking heals X and restores X mana, X is material based
+
+&lt;Material&gt; Healing Balm Pot -If used: restores minor health, use count based on material
+&lt;Material&gt; Magic Balm Pot -If used: restores moderate health and cures minor conditions, use count based on material
+&lt;Material&gt; Arcane Balm Pot -If used: restores major health and cures major conditions, use count based on material
+
+
+Musical Instruments
+Satyr’s Harp -Instrument, if equipped: allows playing songs, +10 mana
+
+&lt;Material&gt; Adorned Drumlute -Instrument, if equipped: allows playing songs, material based mana bonus,
+
+need more here</Text>
         </Document>
         <Document ID="21">
             <Title>Audio Compression</Title>
@@ -1192,24 +1245,37 @@ Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use 
 
 </Text>
         </Document>
-        <Document ID="8">
-            <Title>Towns</Title>
-            <Text>Towns:
+        <Document ID="31">
+            <Title>Item Materials</Title>
+            <Text>There are many materials, but only 16 in the “Core Set”.  (bone, 7 metal, 7 precious stone).  Only Core Set materials participate in providing bonus for items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.  Next to each core set material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of “Core Set” materials, and the number of uses possible is the bonus number assigned to that material.
 
-Mudgate
-Thornberry
-Trolleyville
-Bridgeway
-Riverton
-
-
-
-Inns:
-
-Oak Room Inn
-Barrow Inn
-Black Candle Inn
-Aven’s Rest Inn
+	(Cloth)
+	(Hide)
+	(Soft Leather)
+	(Hard Leather)
+	(Plant)
+	(Claw)
+	(Scale)
+	(Horn)
+B	Bone		1
+	(Tooth)
+	(Wood)
+M	Tin		2
+M	Bronze	3
+M	Iron		4
+	(Stone)		
+P	Obsidian	5
+M	Steel		6
+M	Silver		7
+P	Amethyst	8
+P	Emerald	9
+	(Pearl)
+P	Ruby		10
+P	Lapis		11
+P	Sapphire	12
+M	Gold		13
+M	Platinum	14
+P	Diamond	15
 </Text>
         </Document>
         <Document ID="24">
@@ -1233,8 +1299,25 @@ So a civilian in plain clothes will have about 100-150, a minimally armored crea
 2017-6-20
 </Text>
         </Document>
-        <Document ID="17">
-            <Title>dev</Title>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns:
+
+Mudgate
+Thornberry
+Trolleyville
+Bridgeway
+Riverton
+
+
+
+Inns:
+
+Oak Room Inn
+Barrow Inn
+Black Candle Inn
+Aven’s Rest Inn
+</Text>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
