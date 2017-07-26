@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="17">
-            <Title>dev</Title>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns:
+
+Mudgate
+Thornberry
+Trolleyville
+Bridgeway
+Riverton
+
+
+
+Inns:
+
+Oak Room Inn
+Barrow Inn
+Black Candle Inn
+Aven’s Rest Inn
+</Text>
         </Document>
         <Document ID="32">
             <Title>Herbs</Title>
@@ -242,7 +259,7 @@ Clear
 </Text>
         </Document>
         <Document ID="26">
-            <Title>combat</Title>
+            <Title>Combat</Title>
             <Text>Manual:
 Each creature takes a turn in the order of who has the greatest Speed attribute.
 
@@ -267,7 +284,7 @@ If a character runs away or dies, it will not receive experience from the battle
 Sometimes a creature cannot move past enemies on the battlefield if there are too many blocking the way, or if some of those creatures are taking the blocking action, but flying creatures can always advance or retreat.
 
 
-Hints:
+Hints
 Whoever advances to meet an opponent is then at risk of being attacked by that opponent, so it is often wiser to wait and let your enemies advance upon you.
 
 Tap the Enter key repeatedly to speed up combat.
@@ -615,9 +632,13 @@ You have earned this Title after successfully attacking enemies while flying, an
         </Document>
         <Document ID="34">
             <Title>Items</Title>
-            <Text>Your cleric and sorcerer will need an item to cast spells.  They start out with simple wands with the minimal required enchantments, but there are other more powerful items that carry extra enchantments that provide bonuses to mana, stats, and to casting spells that could be resisted.  Here are some items that enable casting spells, in order of power and effect:  wand, shard, orb.  There are rare items that are even more powerful, some only available upon completion of quests, including petrified snakes, severed fingers and hands, horns, magic icicles, and more.
+            <Text>All items are made with specific materials, but some materials are more desirable than others.  Some items carry bonuses, or a certain number of uses, that depend on the material.  Here is the list of the ‘core’ materials, in order of rarity and power, from least to most:  Bone, Tin, Bronze, Iron, Obsidian,Steel, Silver, Amethyst, Emerald, Pearl, Ruby, Lapis, Sapphire, Gold, Platinum, Diamond.  Often, items that have a number of uses determined by the material they are made with, can be used an infinite number of times if they are made of diamond.
 
-All items are made with specific materials, but some materials are more desirable than others.  Some items carry bonuses, or a certain number of uses, that depend on the material.  Here is the list of the ‘core’ materials, in order of rarity and power, from least to most:  Bone, Tin, Bronze, Iron, Obsidian,Steel, Silver, Amethyst, Emerald, Pearl, Ruby, Lapis, Sapphire, Gold, Platinum, Diamond.  Often, items that have a number of uses determined by the material they are made with, can be used an infinite number of times if they are made of diamond.
+Some items belong to a Set.  All items belonging to a Set have special bonuses that are granted for each item in the Set  owned after the first.  So once you start using at least two items in a Set, the bonuses start adding up.  The more items in a Set you have, the greater the bonuses.  There is also an extra bonus for having all the items in a Set.  Items belonging to a Set can be identified by “The” in their names.  For example, Thieves have a set called “Assassin”, and the Boots belonging to that Set are named “The Assassin’s Boots”.  The Assassin’s set has seven items to collect in all: Boots, Pants, Shirt, Gloves, Cloak, Dagger, and Lock Picks.  Choose wisely between using items belonging to a Set, versus using other powerful unique items.  Sometimes using other powerful unique items collectively is better than only using a few items from a Set.  In general, once a complete Set is owned, it provides more bonuses than any collection of other powerful unique items.
+
+Cleric’s and Sorcerer’s require a wand item to cast spells with.  When the game begins, they start out with simple wands that have the minimal required enchantment to cast spells, but there are other more powerful wand items with bonuses to mana, stats, and even to the chance that a spell is resisted.  Here are some items that enable casting spells, listed in order of rarity and desirability:  wand, shard, orb, scepter.  There are rare items that are even more powerful, some only available upon completion of quests.  The best wand items are part of a complete Set.
+
+Bard’s require a musical instrument in order to play magical songs.  There are many different musical instruments that can be found during your adventures.  Always use the most powerful musical instrument you can.   The best musical instrument items are part of a complete Set.
 
 </Text>
         </Document>
@@ -699,6 +720,13 @@ I was consistently using the Allman style, then, for some stupid reason, I switc
 
 Use of float instead of double.
 No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
+</Text>
+        </Document>
+        <Document ID="35">
+            <Title>When Combat Is Over</Title>
+            <Text>When Combat is Over
+
+When combat is over, your party will often find a stash of treasure left behind by the creatures you concurred in a chest or lockbox.  These are often locked, and if so, they often have traps waiting to spring that will harm or even kill.  You can choose which member of your party will attempt to pick the lock without setting off the trap.  You should choose whoever has the greatest luck, usually your Thief.  Your Thief should never be caught adventuring without their trusty Lock Picks.  There are many different Lock Pick items to be found in Etan, explore far and wide to find the best one you can.
 </Text>
         </Document>
         <Document ID="28">
@@ -794,94 +822,129 @@ Executable size: 4.9MB</Text>
         </Document>
         <Document ID="29">
             <Title>Items</Title>
-            <Text>Unique Items
+            <Text>Limits/Rules
+Item Set cumulative bonuses apply to every item owned in the set AFTER the first.  So cumulative bonuses are granted starting with the second item equipped.
+
+Only one Fingerclaw per hand (arm in the code) may be equipped at a time.
+
+Only one may be equipped at a time:
+	Whistle
+	Neckless
+	Beard
+	Leaf
+	Sheet (grouped with Cloak/Robe/etc)
+
+
+
+Unique Items
 Dragon’s Tooth Whistle -If used: panics flying creatures.
-
 Dove’s Blood Vial -If used: removes all poison/disease type conditions.  Holds ten doses.
-
-Crystal Spyglass -If held: reduced chance of being surprised.
-
 Cyclops Eye -If used: reveals all info about an enemy creature, infinite uses
-
 Basilisk Tonge -If used: turns creatures to stone, combat only, infinite uses
-
 Griffin Feather -If held: Allows flying during combat, infinite uses
-
 Reaper Scythe -If attacked with succeeds: you gain health equal to one quarter of the damage you deal.
-
 Siren’s Conch -If used: casts the “Drown” spell
-
 Vampire’s Tooth Neckless -If equipped: Gain one-tenth the damage dealt during combat (from spells/weapons/anything)
-
 Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses
-
 Bottle of Banshee Screams -If used: panics enemies, ten uses
+Wraith Talisman -If used: panics enemies, infinite uses
+Shaman Rainmaker -If used:  +10% mana, infinite uses
+Shark Tooth Neckless -If equipped: +15% combat damage
+Warhorse Marionette -If held: +4 strength, +4 speed, +4 armor rating
+Viper Fang Fingerclaw -If equipped: melee combat damage poisons
+Scorpion Stinger Fingerclaw -If equipped: melee combat damage poisons
+Berserker’s Beard -If equipped: +25% melee combat damage bonus
+Chimera Bone -If held: increased chance of finding magical items
+Hawk Eye -If held: reduced chance of being surprised
+Vulture Gizzard: If eaten: cures poison, one use
+20
 
-Shaman Rainmaker -If used: ?
+Rattlesnake Tail -If held: reduced chance of encounters
+Copper Troll -If held:  reduced chance of encounters
+Specter Chains -If held:  reduced chance of encounters
+Giant Owl Eye -If held:  reduced chance of encounters
+Regal Captain’s Flag -If held: increased chance of encounters
+Fanatic’s Flag -If held: increased chance of encounters
+Tribal Flag -If held: increased chance of encounters
+Hobgoblin Nose -If held: reduced chance of being surprised
+Royal Scout Spyglass -If held: reduced chance of being surprised
 
-Warlock ?
+Dried Turtle/Frog/Toad/Lizard/Salamander/Skink/Gecko/Iguana -If eaten: cures poison
+Horned Imp Tail -Whip, +20% damage
+Raven Claw -If held: +20% melee damage
+Crocodile Tooth -If held: +20% melee damage
+40
 
-Necromancer’s Scroll -
-
-Bandit’s ?
-
-Chimera ?
-
-Scorpion ?
-
-Rouge Picks 
-
-Druid’s Leaf -If equipped: +12 mana
-
+Druid’s Leaf -If equipped: +20% mana
 Ghost’s Sheet -If equipped:  +12 armor rating
+Specter Cloak -If equipped: +12 armor rating
 
-Titan’s Helm -If equipped: +12 strength
+&lt;Material&gt; Titan’s Foot Pin -If equipped: 10% + material based % strength bonus
+&lt;Material&gt; King’s Quiver Pin -If equipped: 10% + material based % accuracy bonus
+&lt;Material&gt; Jeweled Nymph Pin -If equipped: 10% + material based % charisma bonus
+&lt;Material&gt; Leprechaun Clover Pin -If equipped:  10% + material based % luck bonus
+&lt;Material&gt; Arcane Tome Pin -If equipped: 10% + material based % intelligence bonus
 
-King’s Quiver -If equipped: +12 accuracy
+&lt;Material&gt; Brawn Ring -If equipped: DOUBLE material based % strength bonus
+&lt;Material&gt; Target Ring -If equipped: DOUBLE material based % accuracy bonus
+&lt;Material&gt; Dryad Ring -If equipped: DOUBLE material based % charisma bonus
+&lt;Material&gt; Cat Ring -If equipped: DOUBLE material based % luck bonus
+&lt;Material&gt; Ferret Ring -If equipped: DOUBLE material based % speed bonus
+&lt;Material&gt; Sage Ring -If equipped: DOUBLE material based % intelligence bonus
 
-Nymph Neckless -If equipped: +12 charisma
+Sprinter’s Legtie -If equipped: +20% speed
+Mad Rat Juju -If held: +20% speed
+Weasel Totem -If held: +20% speed
+Crystal Cat -If held: +20% speed
 
-Leprechaun Clover -If equipped:  +12 luck
+Panther Paw -If held: +20% speed, +20% strength
 
-Champion’s Legtie -If equipped: +12 speed
+Ranger Longbow -If equipped: +20% accuracy, +20% speed, +20% strength
+252
 
-Monk’s Ring -If equipped: +12 intelligence
+Items used to cast Bless or Curse
+&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Nobel or Cult/Damned/Grim/Voodoo/Bloody/Macabre&gt; Effigy/Doll/Figurine -Allows/used-when casting the spell “Bless” or “Curse”, material based use count
+108
 
+Material-Based Bonus Items
+&lt;Material&gt; Thief’s Dagger -If equipped: material based backstab bonus.  Actual weapon.
+&lt;Material&gt; Tuning Fork -If equipped: material based bonus to Songs taking effect.
+&lt;Material&gt; Ankh -If equipped: material based religious item find bonus.
+&lt;Material&gt; Saint Cameo -If equipped: material based magical item find bonus.
+&lt;Material&gt; Magnifying Glass -If used: reveals all info about an enemy creature, combat only, material based use count
+&lt;Material&gt; Turtle -When held: material based armor rating bonus.  (the catch is that it is heavy…)
+&lt;Material&gt; Armband (jeweled 14) -If equipped: material based armor rating bonus.
+&lt;Material&gt; Mana Amulet (23) -If equipped: material based Mana bonus.
+&lt;Material&gt; Fingerclaw (0) -If equipped: material based combat damage increase.
+162
 
+Stat Bonus Items
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt; &lt;Brooch/Charm/Bracelet&gt; -If equipped: material based stat bonus.  *Only one brooch/charm can be equipped at a time, but bracelets are limited to the number of hands.
+324
 
+Healing Items
+&lt;Material&gt; Rejuvenation Goblet (8) -If used, drinking heals X and restores X mana, X is material based
+
+&lt;Material&gt; Healing Balm Pot -If used: restores minor health, use count based on material
+&lt;Material&gt; Magic Balm Pot -If used: restores moderate health and cures minor conditions, use count based on material
+&lt;Material&gt; Arcane Balm Pot -If used: restores major health and cures major conditions, use count based on material
+72
 
 Summoning Items
 &lt;Material&gt; &lt;Race&gt; Summoning Figurine -If used: summons a &lt;Race&gt; creature to fight for the party, combat only, material determines rank of the summoned creature.
 
-
-Material-Based Bonus Items
-&lt;Material&gt; Thief’s Dagger -If equipped: material based backstab bonus.  Actual weapon.
-
-&lt;Material&gt; Tuning Fork -If equipped: material based bonus to Songs taking effect.
-
-&lt;Material&gt; Ankh -If equipped: material based religious item find bonus.
-
-&lt;Material&gt; Saint Cameo -If equipped: material based magical item find bonus.
-
-&lt;Material&gt; Magnifying Glass -If used: reveals all info about an enemy creature, combat only, use count determined by material
-
-&lt;Material&gt; Turtle -When held: material based armor rating bonus.  (the catch is that it is heavy…)
-
-&lt;Material&gt; Armband (jeweled 14) -If equipped: material based armor rating bonus.
-
-&lt;Material&gt; Mana Amulet (23) -If equipped: material based Mana bonus.
-
-&lt;Material&gt; Fingerclaw (0) -If equipped: material based combat damage increase.
-
+Spider Eggsack -If used: summons a giant spider to fight for the party, 100 uses
+685
 
 Wands
 Petrified Snake -Wand, if equipped: allows casting, +5 mana
-
 Mummy Hand -Wand, if equipped:  allows casting, +5 mana
 
-&lt;Gemstone&gt; Shard (7) -Wand, if equipped: allows casting, material based mana bonus, material based cast effect chance bonus.
+&lt;Gemstone&gt; Shard (7) -Wand, if equipped: allows casting, HALF material based mana bonus, HALF material based cast effect chance bonus.
 
-&lt;Gemstone&gt; Orb (9) -Wand, if equipped: allows casting, DOUBLE material based mana bonus, DOUBLE material based cast effect chance bonus.
+&lt;Gemstone&gt; Orb (9) -Wand, if equipped: allows casting, material based mana bonus, material based cast effect chance bonus.
+
+&lt;Material&gt; Scepter(0) -Wand, if equipped: allows casting, DOUBLE material based mana bonus, DOUBLE material based cast effect chance bonus.
 
 Magic Icicle -Wand, if equipped:  allows casting, +10 mana, allows casting the “Freeze” spell and without consuming mana
 
@@ -894,30 +957,84 @@ Devil Horn -Wand, sorcerer only, if equipped: allows casting, +20 mana, allows c
 Angel’s Braid -Wand, cleric only if equipped:  allows casting, +40 mana, allows casting the “Bless” spell without consuming objects or mana, QUADRUPLE cast effect chance bonus
 
 Litch Hand -Wand, sorcerer only, if equipped: allows casting, +40 mana, allows casting the “Curse” spell without consuming objects or mana, QUADRUPLE cast effect chance bonus
-
-
-Stat Bonus Items
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt; &lt;Brooch/Charm/Bracelet&gt; -If equipped: material based stat bonus.  *Only one brooch/charm can be equipped at a time, but bracelets are limited to the number of hands.
-
-
-Items used to cast Bless or Curse
-&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred or Damned/Grim/Voodoo/Bloody/Macabre&gt; Effigy/Doll/Figurine/Poem/Scroll -Allows/used-when casting the spell “Bless” or “Curse”, material determines use count.
-
-
-Healing Items
-&lt;Material&gt; Rejuvenation Goblet (8) -If used, drinking heals X and restores X mana, X is material based
-
-&lt;Material&gt; Healing Balm Pot -If used: restores minor health, use count based on material
-&lt;Material&gt; Magic Balm Pot -If used: restores moderate health and cures minor conditions, use count based on material
-&lt;Material&gt; Arcane Balm Pot -If used: restores major health and cures major conditions, use count based on material
-
+40
 
 Musical Instruments
 Satyr’s Harp -Instrument, if equipped: allows playing songs, +10 mana
-
 &lt;Material&gt; Adorned Drumlute -Instrument, if equipped: allows playing songs, material based mana bonus,
+19
 
-need more here</Text>
+Thief Picks
+&lt;Metal&gt; Lock Picks -Thief Picks, if equipped:  allows lock picking, material based luck bonus, HALF material based speed bonus, QUARTER material based % backstab
+Bandit Lock Picks -Thief Picks, if equipped:  allows lock picking, +4 luck, +2 speed, 4% backstab
+Spy Lock Picks -Thief Picks, if equipped:  allows lock picking, +8 luck, +4 speed, 8% backstab 
+Rouge Lock Picks -Thief Picks, if equipped:  allows lock picking, +12 luck, +6 speed, 12% backstab 
+-
+The Shadow’s Lock Picks -Thief Picks, if equipped:  allows lock picking, +2 luck, +1 speed, 4% backstab
+The Assassin’s Lock Picks -Thief Picks, if equipped:  allows lock picking, +4 luck, +2 speed, 8% backstab
+The Neverwinter Lock Picks -Thief Picks, if equipped:  allows lock picking, +6 luck, +3 speed, 12% backstab
+The Tickler’s Lock Picks -Thief Picks, if equipped:  allows lock picking, +8 luck, +4 speed, 16% backstab
+14
+
+Thief Sets
+(7)Boots/Pants/Shirt/Gloves/Cloak/Dagger/Lock Picks
+The Assassin’s	-cumulative: +1 luck, +1 speed, +2% backstab, if complete: +4 luck, +2 speed, + %8 backstab
+The Neverwinter’s	-cumulative: +2 luck, +1 speed, +4% backstab, if complete: +8 luck, +4 speed, + %16 backstab
+The Tickler’s		-cumulative: +3 luck, +2 speed, +6% backstab, if complete: +16 luck, +8 speed, + %32 backstab
+21
+
+Sorcerer Sets
+(6)Boots/Pants/Shirt/Gloves/Robe/Wand
+The Magus -cumulative: +1 int, +2% effect, +2% resist, if complete: +4 int, +8% magic effect, +8% resist
+The Necromancer’s -cumulative: +2 int, +4% effect, +4% resist, if complete: +8 int, +16% magic effect, +16% resist
+The Warlock’s -cumulative: +4 int, +8% effect, +8% resist, if complete: +16 int, +32% magic effect, +32% resist
+18
+
+Cleric Sets
+(6)Boots/Pants/Shirt/Gloves/Robe/Wand
+The Sage’s -cumulative: +1 cha, +2% effect, +2% resist, if complete: +4 cha, +8% effect, +8% resist
+The Shaman’s -cumulative: +2 cha, +4% effect, +4% resist, if complete: +8 cha, +16% effect, +16% resist
+The Oracle’s -cumulative: +4 cha, +8% effect, +8% resist, if complete: +16 cha, +32% effect, +32% resist
+18
+
+Bard Sets
+(7)Boots/Pants/Shirt/Gloves/Vest/Sword/Instrument
+The Poet’s -cumulative: +1 cha, +1 int, +2% effect, +2% resist, if complete: +4 cha, +4 int, +8% effect, +8% resist
+The Minstrel’s -cumulative: +2 cha, +2 int, +5% effect, +4% resist, if complete: +8 cha, +8 int, +16% effect, +16% resist
+The Muse’s -cumulative: +4 cha, +4 int, +10% effect, +8% resist, if complete: +16 cha, +16 int, +16% effect, +16% resist
+21
+
+Knight Sets
+(8)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm/Aventail
+The Cavalier’s 	-cumulative: +1 str, +0 spd, +1% resist, if complete: +6 str, +2 spd, +2% resist
+The Champion’s 	-cumulative: +2 str, +1 spd, +2% resist, if complete: +8 str, +4 spd, +4% resist
+The Paladin’s		-cumulative: +3 str, +2 spd, +3% resist, if complete: +12 str, +8 spd, +8% resist
+The Rosewood	-cumulative: +4 str, +3 spd, +4% resist, if complete: +20 str, +16 spd, +16% resist
+32
+
+Archer Sets
+(6)Boots/Pants/Shirt/Bracers/Vest/(Projectile Weapon)
+The Hunter’s		-cumulative: +2 str, +0 spd, +1% resist, if complete: +6 str, +2 spd, +2% resist
+The Sure Shot	-cumulative: +3 str, +1 spd, +2% resist, if complete: +8 str, +4 spd, +4% resist
+The Marksman’s	-cumulative: +4 str, +2 spd, +3% resist, if complete: +12 str, +8 spd, +8% resist
+The Deadeye		-cumulative: +5 str, +3 spd, +4% resist, if complete: +20 str, +16 spd, +16% resist
+24
+
+Beastmaster Sets
+(8)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm/(Melee Weapon)
+The Channeler’s 	-cumulative: +1 str, +1 int, +0 spd, +1% resist, if complete: +6 str, +6 int, +2 spd, +2% resist
+The Taskmaster’s	-cumulative: +2 str, +2 int, +1 spd, +2% resist, if complete: +8 str, +8 int, +4 spd, +4% resist
+The Overseer’s	-cumulative: +3 str, +3 int, +2 spd, +3% resist, if complete: +12 str, +12 int, +8 spd, +8% resist
+The Ruler’s		-cumulative: +4 str, +3 int, +3 spd, +4% resist, if complete: +20 str, +20 int, +16 spd, +16% resist
+32
+
+
+
+
+
+
+
+</Text>
         </Document>
         <Document ID="21">
             <Title>Audio Compression</Title>
@@ -1247,35 +1364,36 @@ Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use 
         </Document>
         <Document ID="31">
             <Title>Item Materials</Title>
-            <Text>There are many materials, but only 16 in the “Core Set”.  (bone, 7 metal, 7 precious stone).  Only Core Set materials participate in providing bonus for items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.  Next to each core set material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of “Core Set” materials, and the number of uses possible is the bonus number assigned to that material.
+            <Text>There are many materials, but only 16 in the “Core Set”.  (bone, stone, obsidian, pearl, 7 metals, 7 gems).  Only Core Set materials participate in providing bonus for items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.  Next to each core set material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of “Core Set” materials, and the number of uses possible is the bonus number assigned to that material.
 
-	(Cloth)
-	(Hide)
-	(Soft Leather)
-	(Hard Leather)
-	(Plant)
-	(Claw)
-	(Scale)
-	(Horn)
+-	(Cloth)
+-	(Hide)
+-	(Soft Leather)
+-	(Hard Leather)
+-	(Plant)
+-	(Claw)
+-	(Scale)
+-	(Horn)
 B	Bone		1
-	(Tooth)
-	(Wood)
-M	Tin		2
-M	Bronze	3
-M	Iron		4
-	(Stone)		
-P	Obsidian	5
-M	Steel		6
-M	Silver		7
-P	Amethyst	8
-P	Emerald	9
-	(Pearl)
-P	Ruby		10
-P	Lapis		11
-P	Sapphire	12
-M	Gold		13
-M	Platinum	14
-P	Diamond	15
+-	(Tooth)
+-	(Wood)
+	Stone		2
+-	Obsidian	3
+M	Tin		4
+M	Bronze	5
+M	Iron		6
+M	Steel		7
+G   	Jade		8		
+G	Amethyst	9
+G	Emerald	10
+-	Pearl		11
+G	Ruby		12
+G	Lazuli	13
+M	Silver		14
+G	Sapphire	15
+M	Gold		16
+M	Platinum	17
+G	Diamond	18
 </Text>
         </Document>
         <Document ID="24">
@@ -1299,25 +1417,8 @@ So a civilian in plain clothes will have about 100-150, a minimally armored crea
 2017-6-20
 </Text>
         </Document>
-        <Document ID="8">
-            <Title>Towns</Title>
-            <Text>Towns:
-
-Mudgate
-Thornberry
-Trolleyville
-Bridgeway
-Riverton
-
-
-
-Inns:
-
-Oak Room Inn
-Barrow Inn
-Black Candle Inn
-Aven’s Rest Inn
-</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
