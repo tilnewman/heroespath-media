@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="17">
-            <Title>dev</Title>
+        <Document ID="24">
+            <Title>Armor Ratings</Title>
+            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
+
+clothesCloth=104
+clothesSoftLeather=120
+clothesHardLeather=136
+
+armoredLesserSoftLeather=233
+armoredLesserSteel=532
+armoredLesserDiamond=682
+
+armoredGreaterSoftLeather=296
+armoredGreaterSteel=832
+armoredGreaterDiamond=1021
+
+So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
+
+2017-6-20
+</Text>
         </Document>
         <Document ID="32">
             <Title>Herbs</Title>
@@ -823,6 +841,11 @@ Sanguine &lt;Material&gt; Relic -If held: 3x material based +% animal damage, 5x
 540
 
 
+Normal Equipment
+&lt;(weapons)&gt;(34/1) &lt;of Type&gt;(5)(170)
+&lt;(all armor)&gt;(34) &lt;of Type&gt;(5)(170)
+
+
 Named Equipment
 (apply only if equipped)
 Wicked 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;(136/1) +13% str, -18% lck, +13% curse effect, 1% critical
@@ -849,45 +872,50 @@ Thor’s		&lt;Broadsword/Great Helm/Pavis Shield/(typed armor)&gt;(18/6) +12% st
 Nile		&lt;Falcata/Buckler/Leather Helm/Plain Bracer&gt;(4/4) +12% str, 12% acc, +8% armor, (+20% melee poison), +16% curse resist, +1% critical
 47
 
-Charred	
-Burning	
-Fiery		
-Burnt
-Scald
-Searing
-Torrid
+Searing &lt;(weapons)&gt;(34/1)	-If equipped: +16% fire damage
+Burning &lt;(weapons)&gt;(34/1)	-If equipped: +33% fire damage
+Fiery &lt;(weapons)&gt;(34/1)		-If equipped: +66% fire damage
+102
 
-Frost
-Icy
-Frozen
+Charred &lt;(typical armor)&gt;(30/7) -If equipped: +8% fire resist
+30
 
-Dusk
-Gloom
-Dark
+Icy &lt;(weapons)&gt;(34/1)		-If equipped: +16% frost damage
+Winter &lt;(weapons)&gt;(34/1)	-If equipped: +33% frost damage
+Frigid &lt;(weapons)&gt;(34/1)		-If equipped: +66% frost damage
+102
 
-Dawn
-Glory
-Pure
-Sun
-Proud
+Chill &lt;(typical armor)&gt;(30/7)	-If equipped: +8% frost resist
+Frozen &lt;(typical armor)&gt;(30/7)	-If equipped: +13% frost resist
+Arctic &lt;(typical armor)&gt;(30/7)	-If equipped: +18% frost resist
+90
 
-Woe
-Hate
-Misery
-Moon
-Sorrow
-Twilight
-Scorn
-Sorrow
-Scorn
-Betrayer
+Proud &lt;(weapons)&gt;(34/1)		-If equipped: +16% honor damage
+Glory &lt;(weapons)&gt;(34/1)		-If equipped: +33% honor damage
+Pure &lt;(weapons)&gt;(34/1)		-If equipped: +66% honor damage
+102
 
-Chill
-Frigid
-Arctic
-Winter
+Light &lt;(all armor)&gt;(34/8)		-If equipped: +8% honor resist
+Dawn &lt;(all armor)&gt;(34/8)	-If equipped: +13% honor resist
+Sun &lt;(all armor)&gt;(34/8)		-If equipped: +18% honor resist
+102
 
+Gloom &lt;(weapons)&gt;(34/1)	-If equipped: +16% shadow damage
+Twilight &lt;(weapons)&gt;(34/1)	-If equipped: +33% shadow damage
+Dusk &lt;(weapons)&gt;(34/1)		-If equipped: +66% shadow damage
+102
 
+Sorrow &lt;(all armor)&gt;(34/8)	-If equipped: +10% shadow resist
+Woe &lt;(all armor)&gt;(34/8)		-If equipped: +20% shadow resist
+Misery &lt;(all armor)&gt;(34/8)	-If equipped: +30% shadow resist
+102
+
+Moon &lt;(all armor)&gt;(34/8) 	-If equipped: +18% health, +18% cha, +18% armor, +33% shadow resist, +33% curse resist
+
+Dark &lt;(weapons)&gt;(34/1)		If equipped: +66% shadow damage, +8% curse on melee, +4% critical, +18% str
+
+Betrayer &lt;(weapons)&gt;(34/1)	-If equipped: +80% shadow damage, +18% curse on melee, +8% critical, +33% str, -33%lck, -33% curse resist
+102
 
 
 Items used to cast Bless or Curse
@@ -1614,26 +1642,8 @@ Black Candle Inn
 Aven’s Rest Inn
 </Text>
         </Document>
-        <Document ID="24">
-            <Title>Armor Ratings</Title>
-            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
-
-clothesCloth=104
-clothesSoftLeather=120
-clothesHardLeather=136
-
-armoredLesserSoftLeather=233
-armoredLesserSteel=532
-armoredLesserDiamond=682
-
-armoredGreaterSoftLeather=296
-armoredGreaterSteel=832
-armoredGreaterDiamond=1021
-
-So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
-
-2017-6-20
-</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
