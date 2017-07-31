@@ -23,11 +23,11 @@ Only ONE may be equipped at a time:\
 \
 Duplicate items do not combine bonuses.\
 \
-+/- % Magic Chance is a percent adjustment to the chance that a spell/song/alchemy works or takes effect.  Note, that most sorcerer\'92s spells work every time, and so Magic Chance does no effect them, but most magical bard song\'92s effect on on creatures is not guaranteed to work every time, so Magic Chance is applied.\
+Magic/Bless/Curse Cast is the chance that a cast spell/song/alchemy is successful or not.  \ul Cast means: \'93from the perspective of the caster/sender\'94.\ulnone   Note, that most sorcerer\'92s spells work every time, and so Magic Cast does nothing, but most magical bard song\'92s do not always work, so Magic Cast is applied.\
 \
-+/- % Magic Effect is a percent adjustment to the amount of effect that a spell/song/alchemy has if it takes effect.  Even though there is a separate trait for Bless Effect and Curse Effect, Magic Effect still applies (and is combined) to Blessing and Cursing.\
+Magic/Bless/Curse Effect is the magnitude of effect created by the caster.  \ul Effect means:  \'93from the perspective of the creator/maker\'94.\ulnone \
 \
-***Does Bless/Curse Chance mean \'91chance to cast success\'92 or \'91chance effected by\'92?\'85Let\'92s say \'91chance to cast success\'92.  If you want to be less effected by Bless/Curse then -% Bless/Curse effect.  There is no Bless Resist.  If you want a trait to make Bless less likely to take effect, then you are out of luck.  The closest you can get is a negative percent adjustment to the Blessing\'92s effects, with -% Bless Effect.\
+Magic/Bless/Curse Resist is the magnitude of effect absorbed by the target.  \ul Resist means: \'93from the perspective of the target/receiver\'94.\ulnone   Magic Resist will not effect helpful magic.\
 \
 \
 
@@ -36,120 +36,172 @@ Duplicate items do not combine bonuses.\
 There are four item Types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  Only equipment (items that can be equipped) can be typed.  If an item\'92s name ends in one of the eight qualifying type names: \'93of <Fire/Frost Honor/Shadow>\'94, and it is equipped, then it confers Type based bonuses, specified below:\
 \
 If item is <Material>: for weapons: 10% + 5x material based +% <Type> damage, for armor: 4% + 1/1.5x material based +% <Type> resist\
-If item is NOT Material: for weapons +50% <Type> damage, for armor: +13% <Type> resist\
+If item is NOT Material: for weapons 50% <Type> damage, for armor: 13% <Type> resist\
 \
 \
 
 \fs36 Unique Items
 \fs22 \
 Dragon Tooth Whistle -If used: panics flying enemy creatures\
+Bottle of Banshee Screams -If held: -20% cha, -20% int, -6% encounter, if used: panics enemies, ten uses\
+Specter Chains -If held:  18% str, -6% encounter, if used:  panics enemies, infinite uses\
 Dove Blood Vial -If used: removes all poison/disease/dazed type conditions, ten uses\
-Basilisk Tonge -If held:  +%8% magic chance, +13% magic effect, if used: turns creatures to stone, combat only, one use\
-Griffin Feather -If held: +13% spd, +8% str, allows flying\
-Reaper Scythe -Actual weapon, if held: +8% curse resist, -24% curse effect, if attack with succeeds: gain health equal to 1/4 damage\
-Siren\'92s Conch -If held: +13% magic effect +13% cha, if used: casts the \'93Drown\'94 spell on target enemy\
-Vampire\'92s Tooth necklace -If equipped: +13% cha, gain health equal to 1/4 all damage, +13% curse resist \
+Basilisk Tonge -If held:  +8% magic cast, 13%/13% magic effect/resist, if used: turns creatures to stone, combat only, one use\
+Griffin Feather -If held: 16% spd, 10% str, 13% projectile damage, allows flying\
+Reaper Scythe -Actual weapon, if held: 33% curse effect/resist, if attack with succeeds: health gain 1/4 damage\
+Siren\'92s Conch -If held: 8%/13% magic cast/effect, 13% cha, if used: casts the \'93Drown\'94 spell on target enemy\
+Vampire\'92s Tooth necklace -If equipped: 13% cha, health gain 1/4 all damage, 28% curse resist \
 Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses\
-Bottle of Banshee Screams -If held: -20% cha, -20% int, -% encounter, if used: panics enemies, ten uses\
-Shark Tooth Necklace -If equipped: +8% str, +16% melee damage, -20% animal damage\
-Warhorse Marionette -If held: +18% str, +20% armor, -8% spd, +8% power, -16% int, very heavy\
-Hawk Eye -If held: +16% acc, +8% spd, +6% critical, -% surprised\
-Vulture Gizzard: If eaten: cures poison, one use\
-Imp Tail -Whip, if equipped: +20% damage, +13% spd\
-Raven Claw -If held and flying: +13% str, +13% acc, +18% damage\
-Cobra Tooth -If held and NOT flying: +16% melee damage , +36% poison\
-Mad Rat Juju -If held: -16% cha, -33% int, +33% spd, -18% animal damage\
-Panther Paw -If held: +18% spd, +13% str, -8% animal damage\
-Sprinter\'92s Legtie -If equipped: +20% spd, -8% str\
-Mendicant Ring -If equipped: +8% find coins, +13% find magic, +18% find religious\
-Monk\'92s Ring -If equipped: +6% magic chance, +13% magic effect, +18% int, -18% cha, -13% find coins, +13% curse resist, -24% curse effect\
-Priest\'92s Ring -If equipped:  +6% magic chance, +13% magic effect, +18% cha, +18% mana, -20% str, +13% bless chance, +24% bless effect\
-Chimera Bone -If held: +18% magic resist, -50% cha, -13% int, +8% find magic\
-Wraith Talisman -If held: -16% cha, +% find magic, +13% curse resist, if used: panics enemies, infinite uses\
-Rattlesnake Tail -If held: +16% spd, +% encounter\
-Copper Troll -If held:  +13% str, -16% cha, -% encounter\
-Specter Chains -If held:  -18% str, -% encounter, if used:  panics enemies\
-Giant Owl Eye -If held:  +16% acc, +8% spd, +6% critical, -% encounter\
-Regal Captain\'92s Flag -If held: +8% str, +8% cha, -% encounter, +% surprised, +8% magic resist\
-Fanatic\'92s Flag -If held: +13% str, +8% spd, -20% cha, +% encounter, +% surprised\
-Tribal Flag -If held: +16% cha, +% encounter, +% surprised\
-Hobgoblin Nose -If held: -26% cha, +13% lck, -% surprised, +13% effect, -13% magic resist\
-Royal Scout Spyglass -If held: +16% acc, -% surprised\
-Ghost Sheet -If equipped:  +10% armor, +10% magic resist, -6% spd, -2% encounter\
-Specter Robe -If equipped: +20% armor, +18% magic resist, -13% spd, -4% encounter\
-Shade Cloak -If equipped: +33% armor, +24% magic resist, -20% spd, -6% encounter\
-Berserker\'92s Beard -If held: -33% int, -16% cha, +25% melee damage, +% encounter, -18% resist\
-Crystal Cat -If held: +13% spd, +10% lck, -3% encounter\
-Weasel Totem -If held: +28% spd, +18% lck, -6% encounter\
-Wolfen Fur -If held: -28% animal damage, +16% spd, -16% cha, -13% int\
-Minotaur Hide -If held: -33% animal damage, +16% str, +6% power, -28% cha, -16% int\
-Bloody Dragon Scale -If held: -50% animal damage, +10% find coin, +10% find magic, -26% cha \
+Shark Tooth Necklace -If equipped: 13% str, 18% melee damage\
+Warhorse Marionette -If held: 18% str, 20% armor, -13% spd, 8% power, -16% int, very heavy\
+Hawk Eye -If held: 16% acc, 10% spd, 6% critical, +10% projectile damage, -6% surprised\
+Vulture Gizzard: If eaten: cures poison, three uses\
+Imp Tail -Whip, if equipped: 20% melee damage, 13% spd\
+Raven Claw -If held and flying: 13% str, 13% acc, 18% projectile damage\
+Cobra Tooth -If held and NOT flying: 16% melee damage , 36% poison\
+Mad Rat Juju -If held: 16% cha, 33% int, 33% spd, 18% animal damage\
+Panther Paw -If held: 18% spd, 13% str, -10% animal damage\
+Sprinter\'92s Legtie -If equipped: 22% spd, -8% str\
+Mendicant Ring -If equipped: -16% cha, 13% find coins, 8% find magic, 18% find religious\
+Monk\'92s Ring -If equipped: 6%/13% magic cast/resist, 18% int, 18% cha, 13% find coins, 28% curse resist\
+Priest\'92s Ring -If equipped:  8%/18% magic cast/resist, 18% cha, 18% mana, 20% str, 13% bless cast, 26% bless effect\
+Chimera Bone -If held: 18% magic resist, -50% cha, 13% int, 8% find magic\
+Rattlesnake Tail -If held: 16% spd, +8% encounter\
+Copper Troll -If held:  13% str, -16% cha, -6% encounter\
+Giant Owl Eye -If held:  16% acc, 8% spd, 6% critical, +8% projectile damage, -8% surprise\
+Regal Captain\'92s Flag -If held: 8% str, 8% cha, -6% encounter, +8% surprised, 8% magic resist\
+Fanatic\'92s Flag -If held: 13% str, 8% spd, -20% cha, +6% encounter, +8% surprised\
+Tribal Flag -If held: -16% cha, +6% encounter, +8% surprised\
+Hobgoblin Nose -If held: -26% cha, 13% lck, -12% surprised, 13% magic resist\
+Royal Scout Spyglass -If held: 16% acc, -12% surprised\
+Ghost Sheet -If equipped:  10% armor, 10% magic resist, -6% spd, -2% encounter\
+Specter Robe -If equipped: 20% armor, 18% magic resist, -13% spd, -4% encounter\
+Shade Cloak -If equipped: 33% armor, 26% magic resist, -20% spd, -6% encounter\
+Berserker\'92s Beard -If held: -33% int, -16% cha, 25% melee damage, +8% encounter, 18% magic resist\
+Crystal Cat -If held: 13% spd, 10% lck, -3% encounter\
+Weasel Totem -If held: 28% spd, 18% lck, -6% encounter\
+Wolfen Fur -If held: -28% animal damage, 16% spd, -16% cha, -13% int\
+Minotaur Hide -If held: -33% animal damage, 16% str, 6% power, -28% cha, -16% int\
+Bloody Dragon Scale -If held: -50% animal damage, 10% find coin, 10% find magic, -26% cha \
+\pard\pardeftab720\sl220
+\cf0 Islander Headdress -If equipped: 16% cha, 13% mana, 8%/18% magic cast/resist, 18% curse resist, +13% find religious, -8% encounter, 20% shadow resist\
 \pard\pardeftab720\sl360
-\cf0 42\
+\cf0 Hangman\'92s Knot -If held: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage\
+Rascal Mask -If equipped: 22% lck, 18% cha, 8% find magic, 16% find coin\
+Magic Horseshoe -If held: 18% lck, 4% find religious, 8% find magic, 16% find coin\
+Horn of the Horde -If equipped:  +13% str, -8% encounter, -8% surprise, if used: Daunts or Panics enemies\
+Bishop\'92s Hanky -If held: 8% lck, 13% int, 18% cha, 8%/16%/16% magic cast/effect/resist, 16%/28% bless cast/effect, 22% curse resist\
+Mourner\'92s Mask -If equipped: -33% cha, 16%/33%/50% curse cast/effect/resist, 28% shadow resist\
+Demon Diary -If held: 13% shadow damage, 33% shadow resist, 22%/33%/33% curse cast/effect/resist\
+\pard\pardeftab720\sl220
+\cf0 Burial Shroud -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist\
+\pard\pardeftab720\sl360
+\cf0 50\
+\pard\pardeftab720\sl220
+\cf0 \
+\pard\pardeftab720\sl360
+\cf0 Sepulture Decoration 	-If held: 33% shadow resist, 8% find magic, 13% find religious\
+Mortuary Ornament 	-If held: 66% shadow resist, 13% find magic, 26% find religious\
+Friar\'92s Chronicle		-If held: 33% bless cast, 6% shadow resist, 8% cha, 8% mana, 6% find religious, bless without items\
+Saint\'92s Journal		-If held: 33% bless effect, 8% shadow resist, 13% cha, 13% mana, 8% find religious, bless without items\
+Holy Epic			-If held: 66%/66% bless cast/effect, 16% shadow resist, 18% cha, 18% mana, 16% find religious, bless without items\
+\pard\pardeftab720\sl220
+\cf0 Funeral Record 		-If held: 33% curse cast, 4% shadow resist, -4% cha, 4% int, 4% find religious, 6% mana, curse without items\
+\pard\pardeftab720\sl360
+\cf0 Requiem Register		-If held: 33% curse effect, 6% shadow resist, -8% cha, 8% int, 6% find religious, 8% mana, curse without items\
+Macabre Manuscript 	-If held: 33% curse resist, 8% shadow resist, -16% cha, 16% int, 8% find religious, 10% mana, curse without items\
+Last Rites Scroll		-If held: 17%/17%/17% curse cast/effect/resist, 12% shadow resist, -22% cha, 22% int, 12% find religious, 16% mana, curse without items\
 \
+\pard\pardeftab720\sl360
+\cf0 Commander\'92s Cape <of Honor>(2) 	-If equipped: 13% str, 13% armor, 13% curse resist\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 General\'92s Cape <of Honor>(2) -If equipped: +16% str, +16% armor, -8% curse chance, +13% curse resist\
+\cf0 General\'92s Cape <of Honor>(2) 		-If equipped: 18% str, 16% armor, 24% curse resist\
+King\'92s Cape <of Honor>(2) 		-If equipped: 25% str, 22% armor, 33% curse resist\
 \
-Viper Fang Fingerclaw <of Fire/Frost/Shadow>(4) -If equipped: -16% cha, +200% fists damage, +22% melee poison\
-Scorpion Stinger Fingerclaw <of Fire/Frost/Shadow>(4) -If equipped: -16% cha, 4x fists damage, +16% melee poison\
+\pard\pardeftab720\sl360
+\cf0 Trickster Pouch 	-If equipped: 8% find coin, 4% find magic, 10% lck, 18% cha\
+Scoundrel Sack 	-If equipped: 13% find coin, 6% find magic, 15% lck, 6% backstab\
+Swindler\'92s Bag 	-If equipped: 18% find coin, 8% find magic, 20% lck, 4% critical\
+\
+Pixie Bell 			-If used: 10% mana, removes conditions dazed/asleep-natural\
+Crystal Chimes 		-If used: 15% mana, removes conditions dazed/asleep-natural/daunted\
+Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/daunted/panic, heavy\
+\pard\pardeftab720\sl220
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist, if used: panics enemies, infinite uses\
+\
+Viper Fang Fingerclaw <of Fire/Frost/Shadow>(4) -If equipped: -13% cha, +500% fists damage, 16% melee poison\
+Scorpion Stinger Fingerclaw <of Fire/Frost/Shadow>(4) -If equipped: -18% cha, +1000% fists damage, 22% melee poison\
 \pard\pardeftab720\sl360
 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 Evil Rabbit\'92s Foot -If held: -36% lck, +4% surprised, +6% encounter, -13% find magic, -80% bless chance, -666% bless effect, +666% curse effect, +100% animal damage\
+\cf0 Evil Rabbit\'92s Foot -If held: -36% lck, 4% surprised, 6% encounter, -13% find magic, -80%/-666%/666% bless cast/effect/resist, 80%/666%/666% curse cast/effect/resist, 100% animal damage\
 \
-Shaman Rainmaker -If held: +16% cha, +% of encounters, +13% find magic, +8% effect, +8% bless, if used:  +10% mana (of normal), infinite uses\
+Shaman Rainmaker -If held: 16% cha, +8% encounter, 13% find magic, 8%/18% magic cast/effect, 8% bless, if used: 10% mana, infinite uses\
+25\
+\
+\pard\pardeftab720\sl360
+\cf0 <Metal> War Trumpet(7) -If used: 3% + material based +% Panic enemies, then if not,  13% + material based +% Daunt enemies\
+7\
+\
+\pard\pardeftab720\sl220
+\cf0 <Gem> Jeweled Princess Veil <of Honor>(14) -If equipped: 4% + material based +% cha, 1/2x material based +% find magic\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 14\
 \
 Dried Turtle/Frog/Toad/Lizard/Salamander/Skink/Gecko/Iguana -If eaten: -10% mana, cures poison\
 20\
 \pard\pardeftab720\sl360
 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 <Metal or Gem> <Fist/Feather/Mask/Key/Hourglass/Crown> Charm -If equipped: 2x material based +% stat\
-<Metal or Gem> <Fist/Feather/Mask/Key/Hourglass/Crown> Bracelet -If equipped: 3x material based +% stat\
-<Metal or Gem> <Fist/Feather/Mask/Key/Hourglass/Crown> Brooch -If equipped: 4x material based +% stat\
-252\
+\cf0 <Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Charm  -If equipped: 3x material based +% stat\
+<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Bracelet -If equipped: 4x material based +% stat\
+<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Brooch  -If equipped: 5x material based +% stat\
+324\
+\
+<Gem> Jeweled Handbag -If equipped: 1/2x material based +% find magic and coins, 2x material based +% lck, \
+7\
 \
 \pard\pardeftab720\sl360
-\cf0 Bleeding <Material> Trophy -If held: 3x material based -% lck, 3x material based +% curse chance,  +5% + 4x material based +% curse effect, material based +% find magic, curse without items\
+\cf0 Bleeding <Material> Trophy -If held: 3x material based -% lck, 3x material based +% curse cast,  5% + 4x material based +% curse effect, material based +% find magic, curse without items\
 \
-Sanguine <Material> Relic -If held: 3x material based +% animal damage, 5x material based +% curse chance, 10% + 5x material based +% curse effect and resist, material based +% find religious, curse without items\
+Sanguine <Material> Relic -If held: 3x material based +% animal damage, 5x material based +% curse cast, 10% + 5x material based +% curse effect and resist, material based +% find religious, curse without items\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 <Metal or Gem> Druid Leaf -If equipped: 10% + 3x material based +% cha an int, 2x material based +% mana, 1/2x material based +% magic chance and find religious, material based +% magic effect, material based +% magic resist\
+\cf0 <Metal/Gem> Druid Leaf -If equipped: 10% + 3x material based +% cha an int, 2x material based +% mana, 1/2x material based +% magic cast and find religious, material based +% magic effect, material based +% magic resist\
 \
 <Material> Hobo Ring -If equipped: material based +% find coins, 1/4x material based +% find religious, 1/2x material based +% find magic\
 \
-<Material> Thief\'92s Dagger <of Fire/Frost/Shadow>(72) -Actual weapon, if equipped: material based +% backstab and lck\
-\
 <Metal> Tuning Fork -If equipped: bard only, material based +% effect and cha\
 \
-<Metal or Gem> Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse chance, 13% + 2x material based +% curse effect and resist\
+<Metal/Gem> Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist\
 \
-<Material> Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless chance, 10% + 2x material based +% bless effect\
+<Material> Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect\
 \
-<Metal or Gem> Cyclops Eye -If held: 1/2x material based +% critical, material based +% surprised, if used: reveals all info about an enemy creature, infinite uses\
+<Metal/Gem> Cyclops Eye -If held: 1/2x material based +% critical, material based -% surprised, if used: reveals all info about an enemy creature, infinite uses\
 139\
 \
 <Material> Magnifying Glass -If used: reveals all info about an enemy creature, combat only, material based use count\
-<Metal or Gem> Turtle Shell -If held: 3x material based +% armor, very heavy\
+<Metal/Gem> Turtle Shell -If held: 3x material based +% armor, very heavy\
 <Material> Jeweled Armband <of Type>(90) -If equipped: 2x material based +% armor,\
 <Material> Mana Amulet <of Type>(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect\
 <Material> Razor Fingerclaw <of Fire/Frost/Shadow>(72) -If equipped: 2x material based +% melee damage\
 284\
 \
-<Material> Titan\'92s Foot Pin -If equipped: 10% + material based +% str\
-<Material> King\'92s Quiver Pin -If equipped: 10% + material based +% acc\
-<Material> Jeweled Nymph Pin -If equipped: 10% + material based +% cha\
-<Material> Leprechaun Clover Pin -If equipped:  10% + material based +% lck\
-<Material> Arcane Tome Pin -If equipped: 10% + material based +% int\
+<Material> Titan\'92s Foot Pin 		-If equipped: 10% + material based +% str\
+<Material> King\'92s Quiver Pin 		-If equipped: 10% + material based +% acc\
+<Material> Jeweled Nymph Pin 		-If equipped: 10% + material based +% cha\
+<Material> Leprechaun Clover Pin 	-If equipped: 10% + material based +% lck\
+<Material> Arcane Tome Pin 		-If equipped: 10% + material based +% int\
 90\
 \
-<Material> Brawn Ring <of Type>(90) -If equipped: 2x material based +% str\
-<Material> Target Ring <of Type>(90) -If equipped: 2x material based +% acc\
-<Material> Dryad Ring <of Type>(90) -If equipped: 2x material based +% cha\
-<Material> Cat Ring <of Type>(90) -If equipped: 2x material based +% lck\
-<Material> Ferret Ring <of Type>(90) -If equipped: 2x material based +% spd\
-<Material> Sage Ring <of Type>(90) -If equipped: 2x material based +% int\
+<Material> Brawn Ring <of Type>(90) 	-If equipped: 2x material based +% str\
+<Material> Target Ring <of Type>(90) 	-If equipped: 2x material based +% acc\
+<Material> Dryad Ring <of Type>(90) 	-If equipped: 2x material based +% cha\
+<Material> Cat Ring <of Type>(90) 	-If equipped: 2x material based +% lck\
+<Material> Ferret Ring <of Type>(90) 	-If equipped: 2x material based +% spd\
+<Material> Sage Ring <of Type>(90) 	-If equipped: 2x material based +% int\
 540\
 \
 \
@@ -158,89 +210,135 @@ Sanguine <Material> Relic -If held: 3x material based +% animal damage, 5x mater
 \fs22 \
 <(weapons)>(34/1) <of Type>(5)(170)\
 <(all armor)>(34) <of Type>(5)(170)\
-\
+64\
 \
 
 \fs36 Named Equipment
 \fs18 \
 (apply only if equipped)
 \fs22 \
-Wicked 	<(weapons)><of Fire/Frost/Shadow>(136/1) +13% str, -18% lck, +13% curse effect, 1% critical\
-Fiendish 	<(weapons)><of Fire/Frost/Shadow>(136/1) +16% str, -33% lck, +18% curse effect, 2% critical\
-Infernal	<(weapons)><of Fire/Frost/Shadow>(136/1) +18% str, +20% acc, +26% curse effect, 4% critical, -33% lck\
-Raging 	<(weapons)><of Fire/Frost/Shadow>(136/1) +26% str, +15% acc, +33% curse effect, 6% critical, -33% cha, -33% int\
-Dancing 	<(weapons)><of Fire/Frost/Shadow>(136/1) +33% str, +18% spd, +50% curse effect, 8% critical, +16% armor, -16% acc\
-Diabolic 	<(weapons)><of Fire/Frost/Shadow>(136/1) +50% str, +16% acc, +16% spd, +100% curse effect, 10% critical, -33% cha, -33% lck, -33% int, +% encounter, +% surprise, +6% curse on damage\
-816\
+Wicked 	<(weapons)><of Fire/Frost/Shadow>(136/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise\
 \
-Honest 	<(all armor)><of Fire/Frost/Honor>(136/8) +1% acc, +1% armor, +4% bless effect\
-Noble		<(all armor)><of Fire/Frost/Honor>(136/8) +2% acc, +2% armor, +6% bless effect, -% surprise\
-Daring  	<(all armor)><of Fire/Frost/Honor>(136/8) +3% acc, +3% armor, +8% bless effect, -% surprise, +2% cha, +2% int\
-Elite		<(all armor)><of Fire/Frost/Honor>(136/8) +4% acc, +4% armor, +13% bless effect, -% surprise, +3% cha, +3% int, +8% curse resist\
-Valiant	<(all armor)><of Fire/Frost/Honor>(136/8) +5% acc, +5% armor, +16% bless effect, -% surprise, +4% cha, +4% int, +10% curse resist\
-Hero\'92s		<(all armor)><of Fire/Frost/Honor>(136/8) +6% acc, +6% armor, +18% bless effect, -% surprise, +5% cha, +5% int, +13% curse resist, +4% magic resist\
-816\
+Fiendish 	<(weapons)><of Fire/Frost/Shadow>(136/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise\
 \
-Warden\'92s	<Shortsword/Bascinet Helm/Buckler/(plain armor)>(6/6) +5% str, +5% armor, -% surprise\
-Prince\'92s	<Rapier/Mail Coif/Kite Shield/(Mail armor)/Cape>(7/7) +8% str, +8% armor\
-Ranger Sigil	<Cutlass/Kettle Helm/(Mail armor)/Cloak>(6/6) +6% str, 8% acc, +4% armor\
-Samurai\'92s	<Longsword/Leather Helm/(Scale armor)/Cape>(6/6) +10% str, +10% acc, +2% critical\
-Thor\'92s		<Broadsword/Great Helm/Pavis Shield/(typed armor)>(18/6) +12% str, +12% armor, +4% resist, +2% power\
-Nile		<Falcata/Buckler/Leather Helm/Plain Bracer>(4/4) +12% str, 12% acc, +8% armor, (+20% melee poison), +16% curse resist, +1% critical\
+Infernal	<(weapons)><of Fire/Frost/Shadow>(136/1) 18% str, -22% lck, -24% cha, -24% int, 8% curse on melee, 6% critical, -26% curse resist, +3% encounter, +3% surprise\
+\
+Raging 	<(weapons)><of Fire/Frost/Shadow>(136/1) 26% str, -24% lck, -28% cha, -28% int, 10% curse on melee, 8% critical, -33% curse resist, +4% encounter, +4% surprise\
+\
+Diabolic 	<(weapons)><of Fire/Frost/Shadow>(136/1) 33% str, -26% lck, -33% cha, -33% int, 13% curse on melee, 10% critical, -100% curse resist, +5% encounter, +5% surprise\
+680\
+\
+Dancing <(swords)><of Fire/Frost/Honor/Shadow>(55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc\
+55\
+\
+\pard\pardeftab720\sl360
+\cf0 Marauder <(swords)><of Fire/Frost/Shadow>(44/1) 16% str, 13% acc, 5% critical\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 44\
+\
+Honest 	<(all armor)><of Fire/Frost>(102/8) 1% acc, 1% armor, 4% bless effect, 8% shadow/honor resist\
+Noble		<(all armor)><of Fire/Frost>(102/8) 2% acc, 2% armor, 6% bless effect, -2% surprise, 13% shadow/honor resist\
+Daring  	<(all armor)><of Fire/Frost>(102/8) 3% acc, 3% armor, 8% bless effect, -2% surprise, 2% cha, 2% int, 18% shadow/honor resist\
+Elite		<(all armor)><of Fire/Frost>(102/8) 4% acc, 4% armor, 13% bless effect, -2% surprise, 3% cha, 3% int, 8% curse resist, 24% shadow/honor resist\
+Valiant	<(all armor)><of Fire/Frost>(102/8) 5% acc, 5% armor, 16% bless effect, -2% surprise, 4% cha, 4% int, 10% curse resist, 28% shadow/honor resist\
+Hero\'92s		<(all armor)><of Fire/Frost>(102/8) 6% acc, 6% armor, 18% bless effect, -2% surprise, 5% cha, 5% int, 13% curse resist, 4% magic resist, 33% shadow/honor resist\
+612\
+\
+\pard\pardeftab720\sl360
+\cf0 Army <(typical armor)><of Fire/Frost/Honor/Shadow>(150/7) 3% str, 3% spd, 3% armor\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 150\
+\
+\pard\pardeftab720\sl360
+\cf0 Gladiator <Buckler/Kite Shield/Great Helm/Bascinet Helm/Kettle Helm/Handaxe/Spear/Gladius/Shortsword/Falcata/Broadsword><of Fire/Frost/Honor/Shadow> -If equipped: 8% str, 6% spd\
+55\
+\
+Soldier\'92s <(weapons)><of Fire/Frost>(102/1) 		-If equipped: 18% str, 13% spd, 8% cha, 22% honor damage\
+Soldier\'92s <(typical armor)><of Fire/Frost>(90/7)	-If equipped: 4% armor\
+192\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 Warden\'92s	<Shortsword/Bascinet Helm/Buckler/(plain armor)>(6/6) 5% str, 5% armor, -3% surprise\
+Prince\'92s	<Rapier/Mail Coif/Kite Shield/(Mail armor)/Cape>(7/7) 8% str, 8% armor\
+Ranger Sigil	<Cutlass/Kettle Helm/(Mail armor)/Cloak>(6/6) 6% str, 8% acc, 4% armor\
+Samurai\'92s	<Longsword/Leather Helm/(Scale armor)/Cape>(6/6) 10% str, 10% acc, 2% critical\
+Thor\'92s		<Broadsword/Great Helm/Pavis Shield/(typed armor)>(18/6) 12% str, 12% armor, 4% resist, 2% power\
+Nile		<Falcata/Buckler/Leather Helm/Plain Bracer>(4/4) 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical\
 47\
 \
-Searing <(weapons)>(34/1)	-If equipped: +16% fire damage\
-Burning <(weapons)>(34/1)	-If equipped: +33% fire damage\
-Fiery <(weapons)>(34/1)		-If equipped: +66% fire damage\
+Searing <(weapons)>(34/1)	-If equipped: 16% fire damage\
+Burning <(weapons)>(34/1)	-If equipped: 33% fire damage\
+Fiery <(weapons)>(34/1)		-If equipped: 66% fire damage\
 102\
 \
-Charred <(typical armor)>(30/7) -If equipped: +8% fire resist\
+Charred <(typical armor)>(30/7) -If equipped: 8% fire resist\
 30\
 \
-Icy <(weapons)>(34/1)		-If equipped: +16% frost damage\
-Winter <(weapons)>(34/1)	-If equipped: +33% frost damage\
-Frigid <(weapons)>(34/1)		-If equipped: +66% frost damage\
+Icy <(weapons)>(34/1)		-If equipped: 16% frost damage\
+Winter <(weapons)>(34/1)	-If equipped: 33% frost damage\
+Frigid <(weapons)>(34/1)		-If equipped: 66% frost damage\
 102\
 \
-Chill <(typical armor)>(30/7)	-If equipped: +8% frost resist\
-Frozen <(typical armor)>(30/7)	-If equipped: +13% frost resist\
-Arctic <(typical armor)>(30/7)	-If equipped: +18% frost resist\
+Chill <(typical armor)>(30/7)	-If equipped: 8% frost resist\
+Frozen <(typical armor)>(30/7)	-If equipped: 13% frost resist\
+Arctic <(typical armor)>(30/7)	-If equipped: 18% frost resist\
 90\
 \
-Proud <(weapons)>(34/1)		-If equipped: +16% honor damage\
-Glory <(weapons)>(34/1)		-If equipped: +33% honor damage\
-Pure <(weapons)>(34/1)		-If equipped: +66% honor damage\
+Proud <(weapons)>(34/1)		-If equipped: 16% honor damage\
+Glory <(weapons)>(34/1)		-If equipped: 33% honor damage\
+Pure <(weapons)>(34/1)		-If equipped: 66% honor damage\
 102\
 \
-Light <(all armor)>(34/8)		-If equipped: +8% honor resist\
-Dawn <(all armor)>(34/8)	-If equipped: +13% honor resist\
-Sun <(all armor)>(34/8)		-If equipped: +18% honor resist\
+Light <(all armor)>(34/8)		-If equipped: 8% honor resist\
+Dawn <(all armor)>(34/8)	-If equipped: 13% honor resist\
+Sun <(all armor)>(34/8)		-If equipped: 18% honor resist\
 102\
 \
-Gloom <(weapons)>(34/1)	-If equipped: +16% shadow damage\
-Twilight <(weapons)>(34/1)	-If equipped: +33% shadow damage\
-Dusk <(weapons)>(34/1)		-If equipped: +66% shadow damage\
+Gloom <(weapons)>(34/1)	-If equipped: 16% shadow damage\
+Twilight <(weapons)>(34/1)	-If equipped: 33% shadow damage\
+Dusk <(weapons)>(34/1)		-If equipped: 66% shadow damage\
 102\
 \
-Sorrow <(all armor)>(34/8)	-If equipped: +10% shadow resist\
-Woe <(all armor)>(34/8)		-If equipped: +20% shadow resist\
-Misery <(all armor)>(34/8)	-If equipped: +30% shadow resist\
+Sorrow <(all armor)>(34/8)	-If equipped: 10% shadow resist\
+Woe <(all armor)>(34/8)		-If equipped: 20% shadow resist\
+Misery <(all armor)>(34/8)	-If equipped: 30% shadow resist\
 102\
 \
-Moon <(all armor)>(34/8) 	-If equipped: +18% health, +18% cha, +18% armor, +33% shadow resist, +33% curse resist\
+Moon <(all armor)>(34/8) 	-If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist\
 \
-Dark <(weapons)>(34/1)		If equipped: +66% shadow damage, +8% curse on melee, +4% critical, +18% str\
+Dark <(weapons)>(34/1)		If equipped: 66% shadow damage, 8% curse on melee, 4% critical, 18% str\
 \
-Betrayer <(weapons)>(34/1)	-If equipped: +80% shadow damage, +18% curse on melee, +8% critical, +33% str, -33%lck, -33% curse resist\
+Betrayer <(weapons)>(34/1)	-If equipped: 80% shadow damage, 18% curse on melee, 8% critical, 33% str, -33%lck, 33% curse resist\
 102\
+\
+Imposter\'92s Robe <of Fire/Frost/Shadow>(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise\
+Pickpocket Robe <of Fire/Frost/Shadow>(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise\
+Burglar\'92s Cloak <of Fire/Frost/Shadow>(4)        -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise\
+\pard\pardeftab720\sl360
+\cf0 Mountebank Cloak <of Fire/Frost/Shadow>(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha\
+Charlatan\'92s Vest <of Fire/Frost/Shadow>(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha\
+20\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 <Bone/Obsidian/Stone/Metal> Robber\'92s Knife <of Fire/Frost/Shadow>(40) -Actual weapon, if equipped: 1/2x material based +% lck\
+<Bone/Obsidian/Stone/Metal> Thug\'92s Knife <of Fire/Frost/Shadow>(40)    -Actual weapon, if equipped: 10% + 1/2x material based +% lck\
+<Bone/Obsidian/Stone/Metal> Knave\'92s Knife<of Fire/Frost/Shadow>(40)    -Actual weapon, if equipped: 20% + 1/2x material based +% lck\
+120\
+\
+<Bone/Obsidian/Stone/Metal> Mugger Dagger <of Fire/Frost/Shadow>(40) -Actual weapon, if equipped: 1/2x material based +% backstab\
+<Bone/Obsidian/Stone/Metal> Thief Dagger <of Fire/Frost/Shadow>(40)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck\
+<Bone/Obsidian/Stone/Metal> Pirate Dagger<of Fire/Frost/Shadow>(40)     -Actual weapon, if equipped: 8% + 1/2x material based +% backstab and find coin, 1/2x material based +% lck and find magic\
+120\
+\
+Focus <(projectile weapons)><of Fire/Frost/Honor/Shadow>(30) -If equipped: 18% acc, 13% str, 16% projectile damage\
 \
 \
 
 \fs36 Items used to cast Bless or Curse
 \fs22 \
 Allows/consumed when casting the spell \'93Bless\'94 or \'93Curse\'94, material based spell use count\
-Bless items have +3% encounter, +3% bless effect\
-Curse items have -3% lck, +3% curse effect\
+Bless items have 3% encounter, 3% bless effect\
+Curse items have -3% lck, 3% curse effect\
 <Material> Eyed <Graced/Holy/Hallowed/Divine/Sacred/Nobel> Effigy/Doll/Figurine/Statuette/Puppet/Bust\
 <Material> Eyed <Cult/Damned/Grim/Voodoo/Bloody/Macabre> Effigy/Doll/Figurine/Statuette/Puppet/Dried Head\
 72\
@@ -249,48 +347,48 @@ Curse items have -3% lck, +3% curse effect\
 
 \fs36 Healing Items
 \fs22 \
-<Material> Rejuvenation Goblet (8) -If used, 5x material based +% health and mana\
-<Material> Healing Balm Pot -If used: restores minor health, use count based on material\
-<Material> Magic Balm Pot -If used: restores moderate health and cures minor conditions, use count based on material\
-<Material> Arcane Balm Pot -If used: restores major health and cures major conditions, use count based on material\
+<Material> Rejuvenation Goblet (8) 	-If used, 5x material based +% health and mana\
+<Material> Healing Balm Pot 		-If used: restores minor health, use count based on material\
+<Material> Magic Balm Pot 		-If used: restores moderate health and cures minor conditions, use count based on material\
+<Material> Arcane Balm Pot 		-If used: restores major health and cures major conditions, use count based on material\
 72\
 \
 \
 
 \fs36 Summoning Items
 \fs22 \
-<Metal or Gem> <Race>(41) <Summoning Statue/(Egg/Embryo/Seed)> -If used: summons a <Race> creature to fight for the party, combat only, material determines rank of the summoned creature, heavy\
+<Stone/Obsidian/Metal/Gem> <Race>(41) <Summoning Statue/(Egg/Embryo/Seed)> -If used: summons a <Race> creature to fight for the party, combat only, material determines rank of the summoned creature, heavy\
 \
 \pard\pardeftab720\sl420
 \cf0 Spider Eggs -If used: summons a giant spider to fight for the party, 100 uses\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 1149\
+\cf0 1313\
 \
 \
 
 \fs36 Wands
 \fs22 \
-Petrified Snake -Wand, if equipped: +10% mana, +8% magic effect and resist, +33% poison on damage\
+Petrified Snake -Wand, if equipped: 10% mana, 8%/16% magic effect/resist, 33% poison on damage\
 \
-Mummy Hand -Wand, if equipped: +20% mana, +16% magic effect and resist, +33% panic on spell, +33% curse effect, -33% curse resist\
+Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist\
 \
-<Gem> Shard (7) -Wand, if equipped: 11% + 1/2x material based +% mana, 1/2x material based +% magic effect, 1/4x material based +% magic chance\
+<Gem> Shard (7) -Wand, if equipped: 11% + 1/2x material based +% mana, 1/2x material based +% magic effect, 1/4x material based +% magic cast\
 \
-<Gem> Orb (9) -Wand, if equipped: 12% + material based +% mana, material based +% magic effect, 1/2x material based +% magic chance\
+<Gem> Orb (9) -Wand, if equipped: 12% + material based +% mana, material based +% magic effect, 1/2x material based +% magic cast\
 \
-<Material> Scepter(25) -Wand, if equipped: 14% + 2x material based +% mana, 2x material based +% magic effect, material based +% magic chance\
+<Material> Scepter(25) -Wand, if equipped: 14% + 2x material based +% mana, 2x material based +% magic effect, material based +% magic cast\
 \
-Magic Icicle -Wand, if equipped: +18% mana, +18% magic effect, +13% magic chance, +50% Freeze spell chance, spell \'93Freeze\'94 without mana\
+Magic Icicle -Wand, if equipped: 18% mana, 18% magic effect, 13% magic cast, 50% Freeze spell chance, spell \'93Freeze\'94 without mana\
 \
-Golem Finger -Wand, if equipped: +24% mana, +13% magic effect, +18% magic chance, +50% Turn to Stone spell chance, spell \'93Turn to Stone\'94 without mana\
+Golem Finger -Wand, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50% Turn to Stone spell chance, spell \'93Turn to Stone\'94 without mana\
 \
-Unicorn Horn -Wand, cleric only, if equipped: +16% cha, +13% lck, +13% int, +26% find magic, +28% mana and magic effect and magic chance, +80% bless effect and chance, bless without items or mana, +28% shadow resist\
+Unicorn Horn -Wand, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist\
 \
-Devil Horn -Wand, sorcerer only, if equipped: +13% cha, +13% spd, +16% int, +26% find magic, +28% mana and magic effect and magic chance, +80% curse effect and chance and resist, curse without items or mana, +28% shadow damage\
+Devil Horn -Wand, sorcerer only, if equipped: -13% cha, 13% spd, 16% int, 26% find magic, 28% mana and magic effect, 14% magic cast, 80%/80% curse cast/effect, curse without items or mana, 28% shadow damage\
 \
-Frozen Angel Braid -Wand, cleric only if equipped: +26% cha, +20% lck, +33% find magic, -33% surprise, +33% mana and magic effect and magic chance, +100% bless chance, +100% bless effect, bless without items or mana, +80% frost resist, +50% shadow resist\
+Frozen Angel Braid -Wand, cleric only if equipped: 26% cha, 20% lck, 33% find magic, 33% mana and magic effect, 16% magic cast, 100%/100% bless cast/effect, bless without items or mana, 80% frost resist, 50% shadow resist\
 \
-Burning Litch Hand -Wand, sorcerer only, if equipped: +20% lck, +26% int, +33% find magic, +33% find coin, +33% mana and magic effect and magic chance, +100% curse chance, +100% curse effect, curse without items or mana, +80% fire resist, +20% fire damage, +50 shadow damage\
+Burning Litch Hand -Wand, sorcerer only, if equipped: -20% cha, -20% lck, 26% int, 33% find magic, 33% find coin, 33% mana and magic effect, 16% magic cast, 100%/100% curse cast/effect, curse without items or mana, 80% fire resist, 20% fire damage, 50% shadow damage\
 40\
 \
 \
@@ -299,44 +397,42 @@ Burning Litch Hand -Wand, sorcerer only, if equipped: +20% lck, +26% int, +33% f
 \fs22 \
 (Only the Drumlute has a normal variety.)\
 \
-<Gem> Jeweled Drumlute 	-Instrument, if equipped:12% + material based +% mana, material based +% magic chance and effect\
-<Metal> Reinforced Drumlute 	-Instrument, if equipped:13% + material based +% mana, material based +% magic chance and effect\
+<Gem> Jeweled Drumlute 	-Instrument, if equipped:12% + material based +% mana, material based +% magic cast and effect\
+<Metal> Reinforced Drumlute 	-Instrument, if equipped:13% + material based +% mana, material based +% magic cast and effect\
 \
-Bone Drumlute 			-Instrument, if equipped: +13% mana, +13% cha, +13% int, +18% harmful magic chance, +18% curse chance and effect\
+Bone Drumlute 			-Instrument, if equipped: 13% mana, 13% cha, 13% int, 18% harmful magic cast, 18%/18% curse cast/effect\
 \
-Pearl Studded Drumlute 		-Instrument, if equipped: +13% mana, +13% cha, +13% int, +18% helpful magic chance, +18% bless chance and effect\
+Pearl Studded Drumlute 		-Instrument, if equipped: 13% mana, 13% cha, 13% int, 18% helpful magic cast, 18%/18% bless cast/effect\
 \
-Obsidian Adorned Drumlute 	-Instrument, if equipped: +18% mana, +18% cha, +18% int, +28% harmful magic chance, +28% curse chance and effect, +18% find religious\
+Obsidian Adorned Drumlute 	-Instrument, if equipped: 18% mana, 18% cha, 18% int, 28% harmful magic cast, 28%/28% curse cast/effect, 18% find religious\
 \
-Reverend\'92s Recorder 		-Instrument, if equipped: +24% mana, +13% cha, +13% int, +16% helpful magic chance and effect, +25% bless chance and effect, +25% curse resist, bless without items, +18% shadow resist\
+Reverend\'92s Recorder 		-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% helpful magic cast/effect, 25%/25% bless cast/effect, 25% curse resist, bless without items, 18% shadow resist\
 \
-Villain\'92s Viol 				-Instrument, if equipped: +24% mana, +13% cha, +13% int, +16% harmful magic chance and effect, +25% curse chance and resist, curse without items, +18% shadow damage\
+Villain\'92s Viol 				-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% harmful magic cast/effect, 25%/25% curse cast/resist, curse without items, 18% shadow damage\
 \
-Puritan\'92s Pipe and Tabor 		-Instrument, if equipped: +28% mana, +18% cha, +18% int, +33% helpful magic chance and effect, +50% bless, bless without items\
+Puritan\'92s Pipe and Tabor 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items\
 \
-Hannibal\'92s Hurdy-Gurdy 		-Instrument, if equipped: +28% mana, +18% cha, +18% int, +33% harmful magic chance and effect, +50% curse, curse without items\
+Hannibal\'92s Hurdy-Gurdy 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast and effect, 50% curse, curse without items\
 \
-Satyr\'92s Lyre 				-Instrument, if equipped: +33% mana, +20% cha, +20% int, +50% magic chance and effect, +18% find magic, +18% find coin\
+Satyr\'92s Lyre 				-Instrument, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin\
 22\
 \
 \
 
 \fs36 Lock Picks
 \fs22 \
-<Bone or Obsidian or Metal or Gem> Lock Picks -Thief Picks, if equipped: 12% + material based +% lck, 11% + 1/2x material based +% spd, 1/2x material based % backstab\
+<Bone or Obsidian or Metal/Gem> Lock Picks -Lock Picks, if equipped: 12% + material based +% lck, 11% + 1/2x material based +% spd, 1/2x material based % backstab\
 \
-Pearl Studded Lock Picks 	-Thief Picks, if equipped: +16% lck, +13% spd, +6% backstab, +18% bless effect, +10% find magic, +10% find coin\
+Pearl Studded Lock Picks 	-Lock Picks, if equipped: 16% lck, 13% spd, 6% backstab, 18% bless effect, 10% find magic, 10% find coin\
 \
-Outlaw Lock Picks		-Thief Picks, if equipped: +13% lck, +13% spd, 2% backstab\
-Robber\'92s Lock Picks		-Thief Picks, if equipped: +16% lck, +16% spd, 4% backstab\
-Bandit Lock Picks 		-Thief Picks, if equipped: +18% lck, +18% spd, 6% backstab\
-Brigand Lock Picks 		-Thief Picks, if equipped: +24% lck, +20% spd, 8% backstab\
-Spy Lock Picks 		-Thief Picks, if equipped: +28% lck, +24% spd, 10% backstab \
-Rouge Lock Picks 		-Thief Picks, if equipped: +33% lck, +28% spd, 13% backstab\
-Pirate\'92s Lock Picks		-Thief Picks, if equipped: +33% lck, +33% spd, 16% backstab, +33% find coin\
-Ghost Finger Lock Picks	-Thief Picks, if equipped: +33% lck, +33% spd, 16% backstab, +50% curse resist\
-\
-*Could use a few more here, unique specialized sets\
+Outlaw Lock Picks		-Lock Picks, if equipped: 13% lck, 13% spd, 2% backstab\
+Robber\'92s Lock Picks		-Lock Picks, if equipped: 16% lck, 16% spd, 4% backstab\
+Bandit Lock Picks 		-Lock Picks, if equipped: 18% lck, 18% spd, 6% backstab\
+Brigand Lock Picks 		-Lock Picks, if equipped: 24% lck, 20% spd, 8% backstab\
+Spy Lock Picks 		-Lock Picks, if equipped: 28% lck, 24% spd, 10% backstab \
+Rogue Lock Picks 		-Lock Picks, if equipped: 33% lck, 28% spd, 13% backstab\
+Pirate\'92s Lock Picks		-Lock Picks, if equipped: 33% lck, 33% spd, 16% backstab, 33% find coin\
+Ghost Finger Lock Picks	-Lock Picks, if equipped: 33% lck, 33% spd, 16% backstab, 50% curse resist\
 25\
 \
 \
@@ -344,11 +440,11 @@ Ghost Finger Lock Picks	-Thief Picks, if equipped: +33% lck, +33% spd, 16% backs
 \fs36 Thief Sets
 \fs22 \
 (7)Boots/Pants/Shirt/Gloves/Cloak/Dagger/Lock Picks\
-The Assassin\'92s	-cumulative: +4% lck, +4% spd, +2% backstab, +2% find magic, if complete: +20% lck, +20% spd, +%5 backstab, +10% find magic, +13% find coin\
+The Assassin\'92s	-cumulative: 4% lck, 4% spd, 2% backstab, 2% find magic, if complete: 20% lck, 20% spd, +%5 backstab, 10% find magic, 13% find coin\
 \
-The Neverwinter\'92s	-cumulative: +8% lck, +6% spd, +4% backstab, +3% find magic, if complete: +33% lck, +33% spd, +10% backstab, +13% find magic, +18% find coin\
+The Neverwinter\'92s	-cumulative: 8% lck, 6% spd, 4% backstab, 3% find magic, if complete: 33% lck, 33% spd, 10% backstab, 13% find magic, 18% find coin\
 \
-The Tickler	     	-cumulative: +13% lck, +8% spd, +6% backstab, +4% find magic, if complete: +50% lck, +50% spd, +15% backstab, +18% find magic, +24% find coin\
+The Tickler	     	-cumulative: 13% lck, 8% spd, 6% backstab, 4% find magic, if complete: 50% lck, 50% spd, 15% backstab, 18% find magic, 24% find coin\
 21\
 \
 \
@@ -356,11 +452,11 @@ The Tickler	     	-cumulative: +13% lck, +8% spd, +6% backstab, +4% find magic, 
 \fs36 Sorcerer Sets
 \fs22 \
 (6)Boots/Pants/Shirt/Gloves/Robe/Wand\
-The Magus 		-cumulative: +4% int, +4% mana, +2% magic chance and effect and resist, +2% shadow damage, if complete: +20% int, +8% magic chance and effect and resist, +10% shadow damage, +18% mana\
+The Magus 		-cumulative: 4% int, 4% mana, 2% magic cast/effect/resist, 2% shadow damage, if complete: 20% int, 8% magic cast/effect/resist, 10% shadow damage, 18% mana\
 \
-The Necromancer\'92s -cumulative: +8% int, +6% mana, +4% magic chance and effect and resist, +4% shadow damage, if complete: +33% int, +16% magic chance and effect and resist, +20% shadow damage, +24% mana\
+The Necromancer\'92s -cumulative: 8% int, 6% mana, 4% magic cast/effect/resist, 4% shadow damage, if complete: 33% int, 16% magic cast/effect/resist, 20% shadow damage, 24% mana\
 \
-The Warlock\'92s	-cumulative: +16% int, +8% mana, +8% magic chance and effect and resist, +8% shadow damage, if complete: +50% int, +33% magic chance and effect and resist, +30% shadow damage, +16% curse chance and effect, +28% mana\
+The Warlock\'92s	-cumulative: 16% int, 8% mana, 8% magic cast/effect/resist, 8% shadow damage, if complete: 50% int, 33% magic cast/effect/resist, 30% shadow damage, 16% curse cast and effect, 28% mana\
 18\
 \
 \
@@ -368,11 +464,11 @@ The Warlock\'92s	-cumulative: +16% int, +8% mana, +8% magic chance and effect an
 \fs36 Cleric Sets
 \fs22 \
 (6)Boots/Pants/Shirt/Gloves/Robe/Wand\
-The Sage\'92s 		-cumulative: +4% cha, +4% mana, +2% magic chance and effect and resist, +2% shadow resist, if complete: +20% cha, +8% magic chance and effect and resist, +8% bless chance and effect, +8% curse resist, +18% mana, +10% shadow resist\
+The Sage\'92s 		-cumulative: 4% cha, 4% mana, 2% magic cast/effect/resist, 2% shadow resist, if complete: 20% cha, 8% magic cast/effect/resist, 8% bless cast/effect, 8% curse resist, 18% mana, 10% shadow resist\
 \
-The Shaman\'92s	-cumulative: +8% cha, +6% mana, +4% magic chance and effect and resist, +4% shadow resist, if complete: +33% cha, +16% magic chance and effect and resist, +13% bless chance and effect, +16% curse resist, +24% mana, +20% shadow resist\
+The Shaman\'92s	-cumulative: 8% cha, 6% mana, 4% magic cast/effect/resist, 4% shadow resist, if complete: 33% cha, 16% magic cast/effect/resist, 13% bless cast and effect, 16% curse resist, 24% mana, 20% shadow resist\
 \
-The Oracle\'92s 		-cumulative: +16% cha, +8% mana, +8% magic chance and effect and resist, +8% shadow resist, if complete: +50% cha, +33% magic chance and effect and resist, +18% bless chance and effect, +33% curse resist, +28% mana, +30% shadow resist\
+The Oracle\'92s 		-cumulative: 16% cha, 8% mana, 8% magic cast/effect/resist, 8% shadow resist, if complete: 50% cha, 33% magic cast/effect/resist, 18% bless cast /effect, 33% curse resist, 28% mana, 30% shadow resist\
 18\
 \
 \
@@ -380,11 +476,11 @@ The Oracle\'92s 		-cumulative: +16% cha, +8% mana, +8% magic chance and effect a
 \fs36 Bard Sets
 \fs22 \
 (7)Boots/Pants/Shirt/Gloves/Vest/Sword/Instrument\
-The Balladeer\'92s	-cumulative: +4% cha, +4% int, +4% mana, +2% magic chance and effect and resist, if complete: +20% cha, +20% int, +8% magic chance and effect and resist, +18% mana\
+The Balladeer\'92s	-cumulative: 4% cha, 4% int, 4% mana, 2% magic cast/effect/resist, if complete: 20% cha, 20% int, 8% magic cast/effect/resist, 18% mana\
 \
-The Troubadour\'92s 	-cumulative: +8% cha, +8% int, +6% mana, +5% magic chance and effect and resist, if complete: +33% cha, +33% int, +16% magic chance and effect and resist, +24% mana\
+The Troubadour\'92s 	-cumulative: 8% cha, 8% int, 6% mana, 5% magic cast/effect/resist, if complete: 33% cha, 33% int, 16% magic cast/effect/resist, 24% mana\
 \
-The Muse\'92s		-cumulative: +13% cha, +13% int, +8% mana, +10% magic chance and effect and resist, if complete: +50% cha, +50% int, +28% magic chance and effect and resist, +28% mana\
+The Muse\'92s		-cumulative: 13% cha, 13% int, 8% mana, 10% magic cast/effect/resist, if complete: 50% cha, 50% int, 28% magic cast/effect/resist, 28% mana\
 21\
 \
 \
@@ -392,19 +488,19 @@ The Muse\'92s		-cumulative: +13% cha, +13% int, +8% mana, +10% magic chance and 
 \fs36 Knight Sets
 \fs22 \
 (8)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm/Aventail\
-The Cavalier\'92s 	-cumulative: +1% health, +2% str, +2% spd, +1% power, if complete: +20% str, +13% spd, +6% magic resist, +10% curse resist, +2% critical, +5% power, +10% health\
+The Cavalier\'92s 	-cumulative: 1% health, 2% str, 2% spd, 1% power, if complete: 20% str, 13% spd, 6% magic resist, 10% curse resist, 2% critical, 5% power, 10% health\
 \
-The Champion\'92s 	-cumulative: +1% health, +4% str, +3% spd, +1% critical, +1% power, +1% magic resist, if complete: +33% str, +18% spd, +8% magic resist, +20% curse resist, +3% critical, +6% power, +13% health\
+The Champion\'92s 	-cumulative: 1% health, 4% str, 3% spd, 1% critical, 1% power, 1% magic resist, if complete: 33% str, 18% spd, 8% magic resist, 20% curse resist, 3% critical, 6% power, 13% health\
 \
-The Paladin\'92s		-cumulative: +2% health, +6% str, +4% spd, +1% critical, +2% power, +2% magic resist, if complete: +50% str, +26% spd, +10% magic resist, +30% curse resist, +4% critical, +7% power, +16% health\
+The Paladin\'92s		-cumulative: 2% health, 6% str, 4% spd, 1% critical, 2% power, 2% magic resist, if complete: 50% str, 26% spd, 10% magic resist, 30% curse resist, 4% critical, 7% power, 16% health\
 \
-The Berserker\'92s	-cumulative: +2% health, +8% str, +5% spd, +2% critical, +2% power, +3% magic resist, if complete: +70% str, +33% spd, +12% magic resist, +40% curse resist, +5% critical, +8% power, +20% health\
+The Berserker\'92s	-cumulative: 2% health, 8% str, 5% spd, 2% critical, 2% power, 3% magic resist, if complete: 70% str, 33% spd, 12% magic resist, 40% curse resist, 5% critical, 8% power, 20% health\
 \
-The Rosewood	-cumulative: +3% health, +10% str, +6% spd, +2% critical, +3% power, +4% magic resist, if complete: +100% str, +50% spd, +14% magic resist, +50% curse resist, +6% critical, +9% power, +24% health\
+The Rosewood	-cumulative: 3% health, 10% str, 6% spd, 2% critical, 3% power, 4% magic resist, if complete: 100% str, 50% spd, 14% magic resist, 50% curse resist, 6% critical, 9% power, 24% health\
 \
-The Dragonslayer\'92s	-cumulative: +3% health, +13% str, +8% spd, +3% critical, +3% power, +5% magic resist, if complete: +133% str, +70% spd, + 16% magic resist, +60% curse resist, +7% critical, +10% power, +24% health\
+The Dragonslayer\'92s	-cumulative: 3% health, 13% str, 8% spd, 3% critical, 3% power, 5% magic resist, if complete: +133% str, 70% spd, +16% magic resist, 60% curse resist, 7% critical, 10% power, 24% health\
 \
-The Eventide Rider -cumulative: +3% health, +10% str, +5% spd, +2% critical, +4% power, 2% resist, +3% resist, +10% curse resist, 4% curse on damage, +2% shadow damage, if complete: +133% str, +70% spd, + 16% magic resist, +20% curse resist, +26% curse on damage, +7% critical, +10% power, +20% health, +14% shadow damage\
+The Eventide Rider -cumulative: 3% health, 10% str, 5% spd, 2% critical, 4% power, 2% resist, 3% resist, 10% curse resist, 4% curse on damage, 2% shadow damage, if complete: +133% str, 70% spd, + 16% magic resist, 20% curse resist, 26% curse on damage, 7% critical, 10% power, 20% health, 14% shadow damage\
 56\
 \
 \
@@ -412,17 +508,17 @@ The Eventide Rider -cumulative: +3% health, +10% str, +5% spd, +2% critical, +4%
 \fs36 Archer Sets
 \fs22 \
 (6)Boots/Pants/Shirt/Bracers/Vest/(Projectile Weapon)\
-The Hunter\'92s		-cumulative: +8% acc, +4% str, +4% spd, +1% magic resist, +1% critical, if complete: +20% acc, +15% str, +15% spd, +2% magic resist, +4% critical, 2% power\
+The Hunter\'92s		-cumulative: 8% acc, 4% str, 4% spd, 1% magic resist, 1% critical, if complete: 20% acc, 15% str, 15% spd, 2% magic resist, 4% critical, 2% power\
 \
-The Sure Shot	-cumulative: +10% acc, +6% str, +6% spd, +2% magic resist, +2% critical, if complete: +33% acc, +28% str, +28% spd, +4% magic resist, +6% critical, 4% power\
+The Sure Shot	-cumulative: 10% acc, 6% str, 6% spd, 2% magic resist, 2% critical, if complete: 33% acc, 28% str, 28% spd, 4% magic resist, 6% critical, 4% power\
 \
-The Marksman\'92s	-cumulative: +13% acc, +10% str, +10% spd, +3% magic resist, +3% critical, if complete: +50% acc, +36% str, +36 spd, +8% magic resist, +8% critical, 6% power\
+The Marksman\'92s	-cumulative: 13% acc, 10% str, 10% spd, 3% magic resist, 3% critical, if complete: 50% acc, 36% str, +36 spd, 8% magic resist, 8% critical, 6% power\
 \
-The Deadeye		-cumulative: +16% acc, +13% str, +13% spd, +4% magic resist, +4% critical, if complete: +70% acc, +50% str, +50% spd, +16% magic resist, +13% critical, 8% power\
+The Deadeye		-cumulative: 16% acc, 13% str, 13% spd, 4% magic resist, 4% critical, if complete: 70% acc, 50% str, 50% spd, 16% magic resist, 13% critical, 8% power\
 \
-The Dusk Ranger	-cumulative: +12% acc, +6% str, +6% spd, +1% magic resist, +5% critical, +8% curse resist, +8% curse on damage, +3% shadow damage, if complete: +50% acc, +50% str, +50% spd, +8% magic resist, +20% critical, +50% curse resist, +33% curse on damage, +18% shadow damage\
+The Dusk Ranger	-cumulative: 12% acc, 6% str, 6% spd, 1% magic resist, 5% critical, 8% curse resist, 8% curse on damage, 3% shadow damage, if complete: 50% acc, 50% str, 50% spd, 8% magic resist, 20% critical, 50% curse resist, 33% curse on damage, 18% shadow damage\
 \
-The Venom Bow	-cumulative: +12% acc, +6% str, +6% spd, +1% magic resist, +3% critical, +8% poison on damage, if complete: +50% acc, +50% str, +50% spd, +8% magic resist, +20% critical, +33% poison on damage\
+The Venom Bow	-cumulative: 12% acc, 6% str, 6% spd, 1% magic resist, 3% critical, 8% poison on damage, if complete: 50% acc, 50% str, 50% spd, 8% magic resist, 20% critical, 33% poison on damage\
 36\
 \
 \
@@ -430,15 +526,15 @@ The Venom Bow	-cumulative: +12% acc, +6% str, +6% spd, +1% magic resist, +3% cri
 \fs36 Beastmaster Sets
 \fs22 \
 (8)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm/(Melee Weapon)\
-The Critter Channeler\'92s 	-cumulative: +1% health, +2% str, +1% acc, +1% spd, +2% int, -5% animal damage, +1% magic resist, if complete: +10% str, +8% acc, +8% spd, +8% int, -8% animal damage, +2% magic resist, +10% health\
+The Critter Channeler\'92s 	-cumulative: 1% health, 2% str, 1% acc, 1% spd, 2% int, -5% animal damage, 1% magic resist, if complete: 10% str, 8% acc, 8% spd, 8% int, -8% animal damage, 2% magic resist, 10% health\
 \
-The Mammalian Head 	-cumulative: +2% health, +3% str, +2% acc, +2% spd, +3% int, -6% animal damage, +1% magic resist, if complete: +15% str, +10% acc, +10% spd, +10% int, -13% animal damage, +2% magic resist, +12% health\
+The Mammalian Head 	-cumulative: 2% health, 3% str, 2% acc, 2% spd, 3% int, -6% animal damage, 1% magic resist, if complete: 15% str, 10% acc, 10% spd, 10% int, 13% animal damage, 2% magic resist, 12% health\
 \
-The Savage Taskmaster\'92s	-cumulative: +3% health, +4% str, +3% acc, +3% spd, +4% int, -7% animal damage, +2% magic resist, if complete: +20% str, +13% acc, +13% spd, +13% int, -18% animal damage, +4% magic resist, +14% health\
+The Savage Taskmaster\'92s	-cumulative: 3% health, 4% str, 3% acc, 3% spd, 4% int, -7% animal damage, 2% magic resist, if complete: 20% str, 13% acc, 13% spd, 13% int, 18% animal damage, 4% magic resist, 14% health\
 \
-The Monster Overseer\'92s	-cumulative: +4% health, +5% str, +4% acc, +4% spd, +5% int, -8% animal damage, +3% magic resist, if complete: +25% str, +18% acc, +18% spd, +18% int, -24% animal damage, +8% magic resist, +16% health\
+The Monster Overseer\'92s	-cumulative: 4% health, 5% str, 4% acc, 4% spd, 5% int, -8% animal damage, 3% magic resist, if complete: 25% str, 18% acc, 18% spd, 18% int, 24% animal damage, 8% magic resist, 16% health\
 \
-The Beast Ruler\'92s		-cumulative: +5% health, +6% str, +5% acc, +5% spd, +6% int, -9% animal damage, +4% magic resist, if complete: +30% str, +24% acc, +24% spd, +24% int, -28% animal damage, +16% magic resist, +18% health\
+The Beast Ruler\'92s		-cumulative: 5% health, 6% str, 5% acc, 5% spd, 6% int, -9% animal damage, 4% magic resist, if complete: 30% str, 24% acc, 24% spd, 24% int, 28% animal damage, 16% magic resist, 18% health\
 40\
 \
 \
