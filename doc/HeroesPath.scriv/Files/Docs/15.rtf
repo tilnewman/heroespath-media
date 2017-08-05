@@ -10,7 +10,8 @@
 Most of the images were originally saved in photoshop as GIFs, but I\'92ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I\'92ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been successful.  Below is an analysis of the tools follow by a conclusion for how to use them.\
 \
 \
-\ul OptiPNG\ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ul \ulc0 OptiPNG\ulnone \
 This app is good, but grayscale and palette reduction features are not fully implemented making this useless for me.\
 \
 \
@@ -49,17 +50,19 @@ This is a windows only multi-format (HUGE list of supported file types) lossless
 \
 \
 \ul PNG Conclusions\
-\ulnone Use PNGQuant for the lossy first-pass to reduce the color count to a desired value, and then FileOptimizer (which employs PNGWolf) to finish.\
+\ulnone Use Photoshop or PNGQuant for the lossy first-pass to reduce the color count to a desired value (usually 16, that is the color count for all item and creature images), and then use FileOptimizer (which employs PNGWolf, among many others) to finish.\
 \
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs32 Reducing JPG Files
+\fs32 \cf0 Reducing JPG Files
 \fs22 \
 \
 Some photo-style full-color images are just better served by the JPG format, and Photoshop\'92s JPG compression leaves a lot to be desired.\
 \
-\ul TinyJPG\ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ul \ulc0 TinyJPG\ulnone \
 This is a website, and it does reduce the number of colors in your original (lossy-compression) (technically), but the results look great.  It is meant for web image compression and works perfectly in that domain.  I think in most cases this is a solid choice for the \'91first step\'92 tool.\
 \
 \ul JPEGmini\ulnone \
@@ -69,5 +72,5 @@ This tool has a free version that allows 20 compressions a day.  It\'92s a simpl
 This app is really a web development tool that focuses on doing everything for you.  Shame.  If you take the time to turn off everything it tries to on the side, this can shrink JPG files remarkably.  The best part is, it\'92s lossless.\
 \
 \ul JPG Conclusions\ulnone \
-If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compressor, use FileOptimizer, or if you really want to move fast, CodeKit.\
+If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compressor, use FileOptimizer.\
 }
