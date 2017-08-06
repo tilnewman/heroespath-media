@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="24">
-            <Title>Armor Ratings</Title>
-            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
-
-clothesCloth=104
-clothesSoftLeather=120
-clothesHardLeather=136
-
-armoredLesserSoftLeather=233
-armoredLesserSteel=532
-armoredLesserDiamond=682
-
-armoredGreaterSoftLeather=296
-armoredGreaterSteel=832
-armoredGreaterDiamond=1021
-
-So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
-
-2017-6-20
-</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="32">
             <Title>Herbs</Title>
@@ -520,8 +502,50 @@ There are many more ways that an item can vary apart from the material it is mad
 
 Each of your characters has forty-four Traits that can be effected by enchantments.  All Traits are percentage bonuses.  For example, if your character normally has 20 Strength, but also has an enchanted item that provides a 5% Strength Trait Bonus, then your character will have 21 Strength total.  In the Inventory screen, press the ‘A’ key to see all of a character’s Traits, including all the bonuses to those Traits gained from the sum of all enchantments.  Below is a list of all possible Traits:
 
-StrengthAccuracyCharmLuckSpeedIntelligenceManaArmor Rating
-Magic/Alchemy Chance 	-A percent bonus to the chance that a magic Spell, Song, or Alchemy will be successful.  (Read more about Alchemy below)Magic Effect 			-A percent bonus to the amount of change that a magic Spell, Song, or Alchemy will have.Magic Resistance 		-A percent resistance to the amount of change that a magic Spell, Song, or Alchemy will have.Encounter Chance 		-A percent bonus to the chance that the party will encounter a hostile party of creatures to fight.  (less is better)Surprise Chance		-A percent bonus to the chance that an encounter will surprise your party, giving the enemy an advantage.  (less is better)Find Religious Items ChanceFind Magic Items ChanceFind Coins BonusBackstab Chance 		-A percent bonus to the chance that a Thief character’s attack will a knife or dagger will become a backstab attack.Health Gained on Melee Damage	   -A special (rare) percent bonus that allows your character to gain health when dealing melee damage to an enemy.Health Gained on All Damage.   	-A special (rare) percent bonus that allows your character to gain health when dealing any damage to an enemy.Animal Damage Resistance	-A percent resistance to the amount of damage that animal creatures deal to your character.  Fist Damage BonusMelee Damage BonusProjectile Damage BonusDamage BonusPoison On Melee Hit Chance	-Adds a percent chance that a melee hit will do more than just damage the enemy, it will also poison that enemy.Poison On Hit Chance		-Adds a percent chance that combat damage will do more than just damage the enemy, it will also poison that enemy.Panic On Spell Hit Chance		-Adds a percent chance that successful spells cast at an enemy will also panic that enemy.Curse Cast Chance			-A percent bonus to the chance that cursing an enemy will work, whether from a spell or magical song.Curse Cast Effect			-A percent bonus to the amount of harm that a successful curse will have.Curse Resistance			-A percent resistance to the amount of harm that being cursed will have on your character.Curse On Hit Chance		-Adds a percent chance that successful combat attacks will more than damage the enemy, they will curse the enemy.Bless Cast ChanceBless Cast EffectBless Resist				-A percent change to the amount of good being blessed will do to a character.  (less is better)Power Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Power Hit.Critical Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Critical Hit.Fire Damage BonusFire ResistanceFrost Damage BonusFrost ResistanceHonor Damage BonusHonor ResistanceShadow Damage BonusShadow Resistance
+Strength
+Accuracy
+Charm
+Luck
+Speed
+Intelligence
+Mana
+Armor Rating
+Magic/Alchemy Chance 	-A percent bonus to the chance that a magic Spell, Song, or Alchemy will be successful.  (Read more about Alchemy below)
+Magic Effect 			-A percent bonus to the amount of change that a magic Spell, Song, or Alchemy will have.
+Magic Resistance 		-A percent resistance to the amount of change that a magic Spell, Song, or Alchemy will have.
+Encounter Chance 		-A percent bonus to the chance that the party will encounter a hostile party of creatures to fight.  (less is better)
+Surprise Chance		-A percent bonus to the chance that an encounter will surprise your party, giving the enemy an advantage.  (less is better)
+Find Religious Items Chance
+Find Magic Items Chance
+Find Coins Bonus
+Backstab Chance 		-A percent bonus to the chance that a Thief character’s attack will a knife or dagger will become a backstab attack.
+Health Gained on Melee Damage	   -A special (rare) percent bonus that allows your character to gain health when dealing melee damage to an enemy.
+Health Gained on All Damage.   	-A special (rare) percent bonus that allows your character to gain health when dealing any damage to an enemy.
+Animal Damage Resistance	-A percent resistance to the amount of damage that animal creatures deal to your character.  
+Fist Damage Bonus
+Melee Damage Bonus
+Projectile Damage Bonus
+Damage Bonus
+Poison On Melee Hit Chance	-Adds a percent chance that a melee hit will do more than just damage the enemy, it will also poison that enemy.
+Poison On Hit Chance		-Adds a percent chance that combat damage will do more than just damage the enemy, it will also poison that enemy.
+Panic On Spell Hit Chance		-Adds a percent chance that successful spells cast at an enemy will also panic that enemy.
+Curse Cast Chance			-A percent bonus to the chance that cursing an enemy will work, whether from a spell or magical song.
+Curse Cast Effect			-A percent bonus to the amount of harm that a successful curse will have.
+Curse Resistance			-A percent resistance to the amount of harm that being cursed will have on your character.
+Curse On Hit Chance		-Adds a percent chance that successful combat attacks will more than damage the enemy, they will curse the enemy.
+Bless Cast Chance
+Bless Cast Effect
+Bless Resist				-A percent change to the amount of good being blessed will do to a character.  (less is better)
+Power Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Power Hit.
+Critical Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Critical Hit.
+Fire Damage Bonus
+Fire Resistance
+Frost Damage Bonus
+Frost Resistance
+Honor Damage Bonus
+Honor Resistance
+Shadow Damage Bonus
+Shadow Resistance
 
 With so many Traits, the choice of which item is best for a character can get confusing.  To make the decision simple and clear, there is a comparison feature in the Inventory Screen.  Select an item from both the equipped and unequipped list boxes, and then press the ‘X’ Key.  Two Trait lists will appear side-by-side for easy comparison.  The first list on the left will show the character’s traits as they are, and the second list on the right will show what that character’s Traits would be if the items were reversed, that is, if the unequipped item was equipped in the other’s place.
 
@@ -752,88 +776,90 @@ If item is NOT Material: for weapons 50% &lt;Type&gt; damage, for armor: 13% &lt
 
 Unique Items
 Basilisk Tonge -If held:  8% magic cast, 13%/13% magic effect/resist, if used: turns creatures to stone, combat only, one use
-Berserker’s Beard -If held: -33% int, -16% cha, 25% melee damage, +8% encounter, 18% magic resist
+Berserker’s Beard -If held: -33% int, -16% cha, 25% melee damage, 8% encounter, 18% magic resist
 Bishop’s Hanky -If held: 8% lck, 13% int, 18% cha, 8%/16%/16% magic cast/effect/resist, 16%/28% bless cast/effect, 22% curse resist
 Bloody Dragon Scale -If held: 50% animal resist, 10% find coin, 10% find magic, -26% cha 
 Bottle of Banshee Screams -If held: -20% cha, -20% int, -6% encounter, if used: panics enemies, ten uses
 Burial Shroud -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist
 Chimera Bone -If held: 18% magic resist, -50% cha, 13% int, 8% find magic
-Cobra Tooth -If held and NOT flying: 16% melee damage , 36% poison
-Copper Troll -If held:  13% str, -16% cha, -6% encounter
-Crystal Cat -If held: 13% spd, 10% lck, -3% encounter
+Cobra Tooth -If held: 16% melee damage , 36% poison on all damage
+Copper Troll -If held:  24% str, -24% cha, -6% encounter
+Crystal Cat -If held: 24% spd, 18% lck, -3% encounter
 Demon Diary -If held: 13% shadow damage, 33% shadow resist, 22%/33%/33% curse cast/effect/resist
 Dove Blood Vial -If used: removes all poison/disease/dazed type conditions, ten uses
 Dragon Tooth Whistle -If used: panics flying enemy creatures
-Fanatic’s Flag -If held: 13% str, 8% spd, -20% cha, 6% encounter, 8% surprised
-Ghost Sheet -If equipped:  10% armor, 10% magic resist, -6% spd, -2% encounter
-Giant Owl Eye -If held:  16% acc, 8% spd, 6% critical, +8% projectile damage, -8% surprise
-Griffin Feather -If held: 16% spd, 10% str, 13% projectile damage, allows flying
+Fanatic’s Flag -If held: 18% str, 13% spd, -28% cha, 8% encounter, 6% surprised
+Ghost Sheet -If equipped:  13% armor, 13% magic resist, -13% spd, -6% encounter
+Giant Owl Eye -If held:  18% acc, 13% spd, 6% critical, 8% projectile damage, -8% surprise
+Griffin Feather -If held: 18% spd, 13% str, 13% projectile damage, allows flying
 Hangman’s Noose -If held: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage
 Hawk Eye -If held: 16% acc, 10% spd, 6% critical, +10% projectile damage, -6% surprised
-Hobgoblin Nose -If held: -26% cha, 13% lck, -12% surprised, 13% magic resist
+Hobgoblin Nose -If held: -26% cha, 13% lck, -10% surprised, 13% magic resist
 Horn of the Horde -If equipped:  +13% str, -8% encounter, -8% surprise, if used: Daunts or Panics enemies
 Imp Tail -Whip, if equipped: 20% melee damage, 13% spd
 Islander Headdress -If equipped: 16% cha, 13% mana, 8%/18% magic cast/resist, 18% curse resist, 13% find religious, -8% encounter, 20% shadow resist
 Mad Rat Juju -If held: 16% cha, 33% int, 33% spd, -18% animal resist
 Magic Horseshoe -If held: 18% lck, 4% find religious, 8% find magic, 16% find coin
-Mendicant Ring -If equipped: -16% cha, 13% find coins, 8% find magic, 18% find religious
+Mendicant Ring -If equipped: -18% cha, 16% find coins, 8% find magic, 18% find religious
 Minotaur Hide -If held: 33% animal resist, 16% str, 6% power, -28% cha, -16% int
 Monk’s Ring -If equipped: 6%/13% magic cast/resist, 18% int, 18% cha, 13% find coins, 28% curse resist
 Mourner’s Mask -If equipped: -33% cha, 16%/33%/50% curse cast/effect/resist, 28% shadow resist
 Panther Paw -If held: 18% spd, 13% str, 13% animal resist
-Priest’s Ring -If equipped:  8%/18% magic cast/resist, 18% cha, 18% mana, 20% str, 13% bless cast, 26% bless effect
+Priest’s Ring -If equipped:  8%/18% magic cast/resist, 18% cha, 18% mana, 13% bless cast, 26% bless effect
 Rascal Mask -If equipped: 22% lck, 18% cha, 8% find magic, 16% find coin
 Rattlesnake Tail -If held: 16% spd, +8% encounter
-Raven Claw -If held and flying: 13% str, 13% acc, 18% projectile damage
-Reaper Scythe -Actual weapon, if held: 33% curse effect/resist, if attack with succeeds: health gain 1/4 damage
+Raven Claw -If held: 13% str, 13% acc, 18% projectile damage
+Reaper Scythe -Actual weapon, health gain 1/4 damage
 Regal Captain’s Flag -If held: 8% str, 8% cha, -6% encounter, +8% surprised, 8% magic resist
 Royal Scout Spyglass -If held: 16% acc, -12% surprised
 Shade Cloak -If equipped: 33% armor, 26% magic resist, -20% spd, -6% encounter
+Shaman Rainmaker -If held: 16% cha, 8% encounter, 13% find magic, 8%/18% magic cast/effect, 8% bless, if used: 10% mana, infinite uses
 Shark Tooth Necklace -If equipped: 13% str, 18% melee damage
-Siren’s Conch -If held: 8%/13% magic cast/effect, 13% cha, if used: casts the “Drown” spell on target enemy
+Siren’s Conch -If held: 8%/13% magic cast/effect, 13% cha
 Specter Chains -If held:  18% str, -6% encounter, if used:  panics enemies, infinite uses
-Specter Robe -If equipped: 20% armor, 18% magic resist, -13% spd, -4% encounter
+Specter Robe -If equipped: 20% armor, 18% magic resist, -13% spd, -8% encounter
 Sprinter’s Legtie -If equipped: 22% spd, -8% str
-Tribal Flag -If held: -16% cha, +6% encounter, +8% surprised
+Tribal Flag -If held: -16% cha, 6% encounter, 8% surprised
 Vampire’s Tooth Necklace -If equipped: 13% cha, health gain 1/4 all damage, 28% curse resist 
 Vulture Gizzard -If used: cures poison, three uses
-Warhorse Marionette -If held: 18% str, 20% armor, -13% spd, 8% power, -16% int, very heavy
+Warhorse Marionette -If held: 22% str, 22% armor, -13% spd, 13% power, -16% int, very heavy
 Weasel Totem -If held: 28% spd, 18% lck, -6% encounter
 Wolfen Fur -If held: 28% animal resist, 16% spd, -16% cha, -13% int
 Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses
-[{50}]
+[{51}]
+
+Viper Fang Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -13% cha, 500% fists damage, 16% melee poison
+
+Scorpion Stinger Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -18% cha, 1000% fists damage, 22% melee poison
+
+Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist, if used: panics enemies, infinite uses
+
+Evil Rabbit’s Foot -If held: -66% lck, 6% surprised, 6% encounter, -6% find magic, -66%/-66%/66% bless cast/effect/resist, 66%/666%/666% curse cast/effect/resist, -66% animal resist
 
 Sepulture Decoration 	-If held: 33% shadow resist, 8% find magic, 13% find religious
 Mortuary Ornament 	-If held: 66% shadow resist, 13% find magic, 26% find religious
-Friar’s Chronicle		-If held: 33% bless cast, 6% shadow resist, 8% cha, 8% mana, 6% find religious, bless without items
-Saint’s Journal		-If held: 33% bless effect, 8% shadow resist, 13% cha, 13% mana, 8% find religious, bless without items
-Holy Epic			-If held: 66%/66% bless cast/effect, 16% shadow resist, 18% cha, 18% mana, 16% find religious, bless without items
-Funeral Record 		-If held: 33% curse cast, 4% shadow resist, -4% cha, 4% int, 4% find religious, 6% mana, curse without items
-Requiem Register		-If held: 33% curse effect, 6% shadow resist, -8% cha, 8% int, 6% find religious, 8% mana, curse without items
-Macabre Manuscript 	-If held: 33% curse resist, 8% shadow resist, -16% cha, 16% int, 8% find religious, 10% mana, curse without items
-Last Rites Scroll		-If held: 17%/17%/17% curse cast/effect/resist, 12% shadow resist, -22% cha, 22% int, 12% find religious, 16% mana, curse without items
+Friar’s Chronicle		-If held: 33% bless cast, 16% shadow resist, 13% cha, 13% mana, 6% find religious, bless without items
+Saint’s Journal		-If held: 33% bless effect, 22% shadow resist, 18% cha, 18% mana, 8% find religious, bless without items
+Holy Epic			-If held: 66%/80% bless cast/effect, 28% shadow resist, 24% cha, 22% mana, 16% find religious, bless without items
+Funeral Record 		-If held: 33% curse cast, 13% shadow resist, -13% cha, 13% int, 8% find religious, 13% mana, curse without items
+Requiem Register		-If held: 33% curse effect, 18% shadow resist, -18% cha, 18% int, 10% find religious, 18% mana, curse without items
+Macabre Manuscript 	-If held: 33% curse resist, 24% shadow resist, -22% cha, 22% int, 13% find religious, 22% mana, curse without items
+Last Rites Scroll		-If held: 16%/33%/33% curse cast/effect/resist, 28% shadow resist, -28% cha, 28% int, 16% find religious, 26% mana, curse without items
 
-Commander’s Cape &lt;of Honor&gt;(2) 	-If equipped: 13% str, 13% armor, 13% curse resist
-General’s Cape &lt;of Honor&gt;(2) 		-If equipped: 18% str, 16% armor, 24% curse resist
-King’s Cape &lt;of Honor&gt;(2) 		-If equipped: 25% str, 22% armor, 33% curse resist
+Razor Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: 18% melee damage
 
-Trickster Pouch 	-If equipped: 8% find coin, 4% find magic, 10% lck, 18% cha
-Scoundrel Sack 	-If equipped: 13% find coin, 6% find magic, 15% lck, 6% backstab
-Swindler’s Bag 	-If equipped: 18% find coin, 8% find magic, 20% lck, 4% critical
+Commander’s Cape &lt;of Honor&gt;(2) 	-If equipped: 18% str, 18% armor, 24% curse resist
+General’s Cape &lt;of Honor&gt;(2) 		-If equipped: 24% str, 24% armor, 28% curse resist
+King’s Cape &lt;of Honor&gt;(2) 		-If equipped: 30% str, 30% armor, 33% curse resist
+
+Trickster Pouch 	-If equipped: 13% find coin, 8% find magic, 16% lck, 18% cha
+Scoundrel Sack 	-If equipped: 18% find coin, 8% find magic, 18% lck, 6% backstab
+Swindler’s Bag 	-If equipped: 22% find coin, 8% find magic, 22% lck, 5% critical
 
 Pixie Bell 			-If used: 10% mana, removes conditions dazed/asleep-natural
 Crystal Chimes 		-If used: 15% mana, removes conditions dazed/asleep-natural/daunted
 Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/daunted/panic, heavy
-
-Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist, if used: panics enemies, infinite uses
-
-Viper Fang Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -13% cha, +500% fists damage, 16% melee poison
-Scorpion Stinger Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -18% cha, +1000% fists damage, 22% melee poison
-
-Evil Rabbit’s Foot -If held: -36% lck, 4% surprised, 6% encounter, -13% find magic, -80%/-666%/666% bless cast/effect/resist, 80%/666%/666% curse cast/effect/resist, -100% animal resist
-
-Shaman Rainmaker -If held: 16% cha, +8% encounter, 13% find magic, 8%/18% magic cast/effect, 8% bless, if used: 10% mana, infinite uses
-[25]
+[28]
 {22}
 
 &lt;Metal&gt; War Trumpet(7) -If used: 3% + material based +% Panic enemies, then if not,  13% + material based +% Daunt enemies
@@ -850,7 +876,7 @@ Bleeding &lt;Material&gt;(18) Trophy -If held: 3x material based -% lck, 3x mate
 
 Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 10% + 5x material based +% curse effect and resist, material based +% find religious, curse without items
 
-&lt;Metal/Gem&gt;(14) Druid Leaf -If equipped: 10% + 3x material based +% cha an int, 2x material based +% mana, 1/2x material based +% magic cast and find religious, material based +% magic effect, material based +% magic resist
+&lt;Metal/Gem&gt;(14) Druid Leaf -If equipped: 10% + 3x material based +% cha an int, 2x material based +% mana, 1/2x/1x/1x material based +% magic cast/effect/resist, 1/2x material based +% find religious
 
 &lt;Material&gt;[147](18) Hobo Ring -If equipped: material based +% find coins, 1/4x material based +% find religious, 1/2x material based +% find magic
 
@@ -868,34 +894,17 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 &lt;Metal/Gem&gt; Turtle Shell -If held: 3x material based +% armor, very heavy
 &lt;Material&gt; Jeweled Armband &lt;of Type&gt;(90) -If equipped: 2x material based +% armor,
 &lt;Material&gt; Mana Amulet &lt;of Type&gt;(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect
-&lt;Material&gt; Razor Fingerclaw &lt;of Fire/Frost/Shadow&gt;(72) -If equipped: 2x material based +% melee damage
-[284]
+[212]
 {5}
 
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Pin        -If equipped: 1x material based +% stat
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Signet   -If held:         2x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Charm  -If equipped: 3x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Bracelet -If equipped: 4x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Brooch  -If equipped: 5x material based +% stat
-[324]
+[540]
 {3}
 
-&lt;Material&gt; Titan’s Foot Pin 		-If equipped: 22% + material based +% str
-&lt;Material&gt; King’s Quiver Pin 		-If equipped: 22% + material based +% acc
-&lt;Material&gt; Jeweled Nymph Pin 		-If equipped: 22% + material based +% cha
-&lt;Material&gt; Leprechaun Clover Pin 	-If equipped: 22% + material based +% lck
-&lt;Material&gt; Hourglass Pin			-If equipped: 22% + material based +% spd
-&lt;Material&gt; Arcane Tome Pin 		-If equipped: 22% + material based +% int
-[90]
-{6}
-
-&lt;Material&gt; Brawn Ring &lt;of Type&gt;(90) -If equipped: 14% + 2x material based +% str
-&lt;Material&gt; Target Ring &lt;of Type&gt;(90) 	-If equipped: 14% + 2x material based +% acc
-&lt;Material&gt; Dryad Ring &lt;of Type&gt;(90) 	-If equipped: 14% + 2x material based +% cha
-&lt;Material&gt; Cat Ring &lt;of Type&gt;(90) 	-If equipped: 14% + 2x material based +% lck
-&lt;Material&gt; Ferret Ring &lt;of Type&gt;(90) 	-If equipped: 14% + 2x material based +% spd
-&lt;Material&gt; Sage Ring &lt;of Type&gt;(90) 	-If equipped: 14% + 2x material based +% int
-[882]
-(540)
-{6}
 
 
 Normal Equipment
@@ -921,11 +930,9 @@ Diabolic 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 33% str, -
 [114940]
 (800)
 
-
 Dancing &lt;(swords)&gt;&lt;of Fire/Frost/Honor/Shadow&gt;[8085](55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc
 [8085]
 (55)
-
 
 Marauder &lt;(swords)&gt;&lt;of Fire/Frost/Shadow&gt;[8085](44/1) 16% str, 13% acc, 5% critical
 [8085]
@@ -1036,7 +1043,7 @@ Charlatan’s Vest &lt;of Fire/Frost/Shadow&gt;(4)         -Actual Vest, if equi
 [3240]
 (96)
 
-&lt;Bone/Obsidian/Stone/Metal&gt;[135] Mugger Dagger &lt;of Fire/Frost/Shadow&gt;[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab
+&lt;Bone/Obsidian/Stone/Metal&gt;[135] Mugger’s Dagger &lt;of Fire/Frost/Shadow&gt;[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab
 
 &lt;Bone/Obsidian/Stone/Metal&gt;[56] Thief Dagger &lt;of Fire/Frost/Shadow&gt;[540](16)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck
 
@@ -1845,6 +1852,27 @@ Cover:							[42]
 
 AllArmor							[354]</Text>
         </Document>
+        <Document ID="24">
+            <Title>Armor Ratings</Title>
+            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
+
+clothesCloth=104
+clothesSoftLeather=120
+clothesHardLeather=136
+
+armoredLesserSoftLeather=233
+armoredLesserSteel=532
+armoredLesserDiamond=682
+
+armoredGreaterSoftLeather=296
+armoredGreaterSteel=832
+armoredGreaterDiamond=1021
+
+So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
+
+2017-6-20
+</Text>
+        </Document>
         <Document ID="8">
             <Title>Towns</Title>
             <Text>Towns:
@@ -1864,9 +1892,6 @@ Barrow Inn
 Black Candle Inn
 Aven’s Rest Inn
 </Text>
-        </Document>
-        <Document ID="17">
-            <Title>dev</Title>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
