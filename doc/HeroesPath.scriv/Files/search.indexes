@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="17">
-            <Title>dev</Title>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns:
+
+Mudgate
+Thornberry
+Trolleyville
+Bridgeway
+Riverton
+
+
+
+Inns:
+
+Oak Room Inn
+Barrow Inn
+Black Candle Inn
+Aven’s Rest Inn
+</Text>
         </Document>
         <Document ID="32">
             <Title>Herbs</Title>
@@ -551,7 +568,7 @@ With so many Traits, the choice of which item is best for a character can get co
 
 Some items belong to a Set.  All items belonging to a Set are magical, enchanted to have special bonuses that you get from equipping one item, and then even bigger bonuses you get after equipping all of the items in the Set.  Items belonging to a Set can be identified by ‘The’ in their names.  For example, Thieves have a set called ‘The Assassin’s’, and the Boots belonging to that Set are named ‘The Assassin’s Boots’.  The Assassin’s Set has seven items to collect in all: Boots, Pants, Shirt, Gloves, Cloak, Dagger, and Lock Picks.  The special bonus for the complete Set will not take effect until all items in the Set are equipped.  It is perfectly fine to wear items belonging to non-matching Sets.  The individual bonuses for those items will still take effect even though they are non-matching.
 
-Cleric’s and Sorcerer’s require an enchanted item to cast spells with, typically a wand.  When the game begins, they start out with simple wooden wands that have the minimal required enchantment to cast spells with.  Keep an eye out for other more powerful items with bonuses to mana, stats, and even to the chance that a spell is cast or resisted.  Here are some items that enable casting spells, listed in order of rarity and desirability:  wand, shard, orb, scepter.  There are rare items that are even more powerful, some only available upon completion of quests.
+Cleric’s and Sorcerer’s require an enchanted item to cast spells with, typically a wand.  When the game begins, they start out with simple wooden wands that have the minimal required enchantment to cast spells with.  Keep an eye out for other more powerful items with bonuses to mana, stats, and even to the chance that a spell is cast or resisted.  Here are some items that enable casting spells, listed in order of rarity and desirability:  wand, shard, staff, orb, scepter.  There are rare items that are even more powerful, some only available upon completion of quests.
 
 Bard’s require a musical instrument in order to play magical songs.  There are many different musical instruments that can be found during your adventures.
 
@@ -767,8 +784,8 @@ Magic/Bless/Curse Effect is the magnitude of effect created by the caster.  Effe
 Magic/Bless/Curse Resist is the magnitude of effect absorbed by the target.  Resist means: “from the perspective of the target/receiver”.  Magic Resist will not effect helpful magic.
 
 
-Types
-There are four item Types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  Only equipment (items that can be equipped) can be typed.  If an item’s name ends in one of the eight qualifying type names: “of &lt;Fire/Frost Honor/Shadow&gt;”, and it is equipped, then it confers Type based bonuses, specified below:
+Elemental Types
+There are four item Elemental Types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  Only equipment (items that can be equipped) can be typed.  If an item’s name ends in one of the eight qualifying type names: “of &lt;Fire/Frost Honor/Shadow&gt;”, and it is equipped, then it confers Type based bonuses, specified below:
 
 If item is &lt;Material&gt;: for weapons: 10% + 5x material based +% &lt;Type&gt; damage, for armor: 4% + 1/1.5x material based +% &lt;Type&gt; resist
 If item is NOT Material: for weapons 50% &lt;Type&gt; damage, for armor: 13% &lt;Type&gt; resist
@@ -828,9 +845,9 @@ Wolfen Fur -If held: 28% animal resist, 16% spd, -16% cha, -13% int
 Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses
 [{51}]
 
-Viper Fang Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -13% cha, 500% fists damage, 16% melee poison
-
-Scorpion Stinger Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -18% cha, 1000% fists damage, 22% melee poison
+Razor Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4)                   -If equipped: -13% cha, 500% fists damage, 13% melee damage
+Viper Fang Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4)           -If equipped: -16% cha, 500% fists damage, 16% melee damage, 13% melee poison
+Scorpion Stinger Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -18% cha, 500% fists damage, 18% melee damage, 18% melee poison
 
 Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist, if used: panics enemies, infinite uses
 
@@ -845,8 +862,6 @@ Funeral Record 		-If held: 33% curse cast, 13% shadow resist, -13% cha, 13% int,
 Requiem Register		-If held: 33% curse effect, 18% shadow resist, -18% cha, 18% int, 10% find religious, 18% mana, curse without items
 Macabre Manuscript 	-If held: 33% curse resist, 24% shadow resist, -22% cha, 22% int, 13% find religious, 22% mana, curse without items
 Last Rites Scroll		-If held: 16%/33%/33% curse cast/effect/resist, 28% shadow resist, -28% cha, 28% int, 16% find religious, 26% mana, curse without items
-
-Razor Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: 18% melee damage
 
 Commander’s Cape &lt;of Honor&gt;(2) 	-If equipped: 18% str, 18% armor, 24% curse resist
 General’s Cape &lt;of Honor&gt;(2) 		-If equipped: 24% str, 24% armor, 28% curse resist
@@ -906,14 +921,12 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 {3}
 
 
-
 Normal Equipment
 &lt;(weapons)&gt;(40/1)[5747] &lt;of Type&gt;(5)(200)
 &lt;(all armor)&gt;(38/9)[2098] &lt;of Type&gt;(5)(200)
 [7845]
 (400)
 {78}
-
 
 
 Named Equipment
@@ -962,7 +975,7 @@ Soldier’s &lt;(typical armor)&gt;&lt;of Fire/Frost&gt;[6258](90/7)	-If equippe
 
 Warden’s	&lt;Shortsword[147]/Bascinet Helm[107]/Buckler[107]/(plain armor)[252]&gt;(6/6)[613] 5% str, 5% armor, -3% surprise
 Prince’s	&lt;Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]&gt;(7/7)[512] 8% str, 8% armor
-Ranger	&lt;Cutlass[147]/Kettle Helm[107]/(Mail armor)[252]/Cloak[3]&gt;(6/6)[519] 6% str, 8% acc, 4% armor
+Ranger	&lt;Longbow?/(Plain Armor)[252]/Cloak[3]&gt;(6/6)[?] 6% str, 8% acc, 4% armor
 Samurai	&lt;Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]&gt;(6/6)[157] 10% str, 10% acc, 2% critical
 Thor’s		&lt;Broadsword[147]/Great Helm[107]/Pavis Shield[107]/(typed armor)[1834]&gt;(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power
 Nile		&lt;Falcata[147]/Buckler[107]/Leather Helm[1]/Plain Bracer[1]&gt;(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical
@@ -975,7 +988,6 @@ Fiery &lt;(weapons)&gt;(40/1)		-If equipped: 66% fire damage
 [17241]
 (120)
 
-
 Charred &lt;(typical armor)&gt;(30/7) -If equipped: 8% fire resist
 [2086]
 (30)
@@ -985,7 +997,6 @@ Winter &lt;(weapons)&gt;(40/1)	-If equipped: 33% frost damage
 Frigid &lt;(weapons)&gt;(40/1)		-If equipped: 66% frost damage
 [17241]
 (120)
-
 
 Chill &lt;(typical armor)&gt;(30/7)	-If equipped: 8% frost resist
 Frozen &lt;(typical armor)&gt;(30/7)	-If equipped: 13% frost resist
@@ -1031,7 +1042,7 @@ Betrayer &lt;(weapons)&gt;(40/1)	-If equipped: 80% shadow damage, 18% curse on m
 
 Imposter’s Robe &lt;of Fire/Frost/Shadow&gt;(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise
 Pickpocket Robe &lt;of Fire/Frost/Shadow&gt;(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise
-Burglar’s Cloak &lt;of Fire/Frost/Shadow&gt;(4)        -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
+Burglar Cloak &lt;of Fire/Frost/Shadow&gt;(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
 Mountebank Cloak &lt;of Fire/Frost/Shadow&gt;(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha
 Charlatan’s Vest &lt;of Fire/Frost/Shadow&gt;(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha
 [60]
@@ -1054,7 +1065,6 @@ Charlatan’s Vest &lt;of Fire/Frost/Shadow&gt;(4)         -Actual Vest, if equi
 Focus &lt;(projectile weapons)&gt;[882]&lt;of Fire/Frost/Honor/Shadow&gt;[4410](30) -If equipped: 18% acc, 13% str, 16% projectile damage
 [4410]
 (30)
-
 
 
 Items used to cast Bless or Curse
@@ -1089,15 +1099,19 @@ Petrified Snake -Wand, if equipped: 10% mana, 8%/16% magic effect/resist, 33% po
 
 Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist
 
-&lt;Gem&gt; Shard (7) -Wand, if equipped: 11% + 1/2x material based +% mana, 1/2x material based +% magic effect, 1/4x material based +% magic cast
+&lt;Material&gt; Wand -Wand, if equipped: 11% + 1/2x material based +% mana
 
-&lt;Gem&gt; Orb (9) -Wand, if equipped: 12% + material based +% mana, material based +% magic effect, 1/2x material based +% magic cast
+&lt;Gem&gt; Shard (7) -Wand, if equipped: 11% + 1/2x material based +% mana, 1/2x material based +% magic effect
+
+&lt;Material&gt; Staff (7) -Wand, if equipped: 11% + 1/2x material based +% mana, 11% + 1/2x material based +% magic effect, 5% + 1/4x material based +% magic cast
+
+&lt;Gem&gt; Orb (9) -Wand, if equipped: 12% + material based +% mana, material based +% magic effect, 11% + 1/2x material based +% magic cast
 
 &lt;Material&gt; Scepter(26) -Wand, if equipped: 14% + 2x material based +% mana, 2x material based +% magic effect, material based +% magic cast
 
-Magic Icicle -Wand, if equipped: 18% mana, 18% magic effect, 13% magic cast, 50% Freeze spell chance, spell “Freeze” without mana
+Magic Icicle -Wand, if equipped: 18% mana, 18% magic effect, 13% magic cast, 75% Frost Damage, 75% Frost Resist
 
-Golem Finger -Wand, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50% Turn to Stone spell chance, spell “Turn to Stone” without mana
+Golem Finger -Wand, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50%/50%/50%/50% Fire/Frost/Honor/Shadow Resist
 
 Unicorn Horn -Wand, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist
 
@@ -1215,7 +1229,7 @@ The Eventide Rider -cumulative: 3% health, 10% str, 5% spd, 2% critical, 4% powe
 
 
 Archer Sets
-(6)Boots/Pants/Shirt/Bracers/Vest/(Projectile Weapon)
+(7)Boots/Pants/Shirt/Bracers/Vest/Gloves/MailCoif
 The Hunter’s		-cumulative: 8% acc, 4% str, 4% spd, 1% magic resist, 1% critical, if complete: 20% acc, 15% str, 15% spd, 2% magic resist, 4% critical, 2% power
 
 The Sure Shot	-cumulative: 10% acc, 6% str, 6% spd, 2% magic resist, 2% critical, if complete: 33% acc, 28% str, 28% spd, 4% magic resist, 6% critical, 4% power
@@ -1231,7 +1245,7 @@ The Venom Bow	-cumulative: 12% acc, 6% str, 6% spd, 1% magic resist, 3% critical
 
 
 Beastmaster Sets
-(8)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm/(Melee Weapon)
+(7)Boots/Pants/Shirt/Bracers/Gauntlets/Shield/Helm
 The Critter Channeler’s 	-cumulative: 1% health, 2% str, 1% acc, 1% spd, 2% int, 5% animal resist, 1% magic resist, if complete: 10% str, 8% acc, 8% spd, 8% int, 8% animal resist, 2% magic resist, 10% health
 
 The Mammalian Head 	-cumulative: 2% health, 3% str, 2% acc, 2% spd, 3% int, 6% animal resist, 1% magic resist, if complete: 15% str, 10% acc, 10% spd, 10% int, 13% animal resist, 2% magic resist, 12% health
@@ -1606,7 +1620,7 @@ The real question is how much more compressed this can get if the best of the ab
 
 
 PNGQuant
-This command line util can be installed with “brew install pngquant”, and it can shrink files really well.  Running PNGWolf or FileOptimizer afterwards it is a good idea, shaving approx 200-20000 more bytes depending.  Beware never to set the quality (Q) setting to less then 100 (perfect) because it has a nasty habit of dithering poorly, adding speckles in the pure white/transparent areas where there should be none.  However, you CAN use this tool as an effective first-pass compressor to reduce the color count instead of Photoshop.  Here is the command line for that:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
+This command line util can be installed with “brew install pngquant”, and it can shrink files really well, really fast.  Running PNGWolf or FileOptimizer afterwards it is a good idea, shaving approx 200-20000 more bytes depending.  Beware never to set the quality (Q) setting to less then 100 (perfect) because it has a nasty habit of dithering poorly, adding speckles in the pure white/transparent areas where there should be none.  However, you CAN use this tool as an effective first-pass compressor to reduce the color count instead of Photoshop.  Here is the command line for that:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
 
 pngquant -s 1 --skip-if-larger --strip --ext .png -f &lt;insert color count here&gt; *.png
 
@@ -1616,7 +1630,9 @@ pngquant -s 1 -Q 100-100 --skip-if-larger --strip --ext .png -f *.png
 
 
 FileOptimizer
-This is a windows only multi-format (HUGE list of supported file types) lossless compressor that uses a multi-pass approach.  For example, for PNGs, FileOptimizer employs PNGWolf, pngOut, Leanify, ECT, TruePNG, and many more.  It does the job of using all the apps I’ve described above (and many more) in the correct order, automatically.  This is a great app that does just what I need, in one step.  The only problems are (1) that it takes a LONG time on PNG files, and (2) the code is not parallelized so it doesn’t use all processors efficiently.  Still, it rocks and I’m tempted to let it run on the entire Heroes’ Path image set.  It is running away on the PC in my room on my entire photo library right now…
+This is a windows only multi-format (HUGE list of supported file types) lossless compressor that uses a multi-pass approach.  For example, for PNGs, FileOptimizer employs PNGWolf, pngOut, Leanify, ECT, TruePNG, and others.  It does the job of using all the apps I’ve described above (and many more), but the real advantage is that it performs them in the correct order.  This is a great app that does just what I need, in one step.  The only problems are (1) that it takes a LONG time on PNG files, and (2) the code is not parallelized so it doesn’t use the processor efficiently.  Still, it rocks, and I’m tempted to let it run on the entire Heroes’ Path image set.  (I eventually did using multiple windows XP VMs…)  It is running away on the PC in my room on my entire photo library right now…
+
+Uh oh…. It seems that SFML is having a problem displaying some images compressed with FileOptimizer, the images look erratic and strange.  I re-did the compression pass on roughly 80 files that didn’t display properly, and
 
 
 PNG Conclusions
@@ -1873,25 +1889,8 @@ So a civilian in plain clothes will have about 100-150, a minimally armored crea
 2017-6-20
 </Text>
         </Document>
-        <Document ID="8">
-            <Title>Towns</Title>
-            <Text>Towns:
-
-Mudgate
-Thornberry
-Trolleyville
-Bridgeway
-Riverton
-
-
-
-Inns:
-
-Oak Room Inn
-Barrow Inn
-Black Candle Inn
-Aven’s Rest Inn
-</Text>
+        <Document ID="17">
+            <Title>dev</Title>
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
