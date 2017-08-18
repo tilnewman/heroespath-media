@@ -529,7 +529,7 @@ If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compres
         <Document ID="41">
             <Title>Traits</Title>
             <Text>Traits
-All Traits are percent values that either provide a bonus or penalty to some attribute, stat, or likelihood that something will happen.  Knowing what the different Traits are will help educate players in some aspects of the game.  The complete list of Traits is below:
+All 44 Traits are percent values that either provide a bonus or penalty to some attribute, stat, or likelihood that something will happen.  Knowing what the different Traits are will help educate players in what is possible in the game.
 
 
 Strength
@@ -547,45 +547,111 @@ Armor Rating
 	A bonus to the armor rating of a character.
 
 Magic Cast
-	A bonus to the chance that a spell will work.
+	A bonus to the chance that a spell or song will have its desired effect.
 
 Magic Effect
-	A bonus to how 
+	A bonus to how much of an effect a spell or song will have.
+
 Magic Resist
+	A bonus to how much of a spell or song’s effect is resisted.
+
 Encounter
+	A bonus to the chance that the party will encounter a band of enemies.
+
 Surprise
+	A bonus to the chance the a band of encountered enemies will surprise the party and start combat at an advantage.
+
 Find Religious
+	A bonus to the chance of finding magical items with religious significance.
+
 Find Magic
+	A bonus to the chance of finding magical items.
+
 Find Coins
+	A bonus to the amount of coins found after combat.
+
 Backstab
+	A bonus to the chance that a Thief’s attack will be a successful backstab attack.
+
 Health Gain Melee
+	The percent amount of health gained from melee combat damage.	
 Health Gain All
+	The percent amount of health gained from all kinds of combat damage.
+
 Animal Resist
+	The percent amount of damage from animals that is resisted.
+
 Damage Bonus Fist
+	A bonus to the amount of damage attacking with fists produces.
+
 Damage Bonus Melee
+	A bonus to the amount of damage all melee attacks produce.
+
 Damage Bonus Projectile
+	A bonus to the amount of damage all projectile attacks produce.
+
 Damage Bonus All
+	A bonus to the amount of damage produced during any combat attack.
+
 Poison On Melee
+	A bonus to the chance that an enemy will be poisoned when damaged by a melee attack.
+
 Poison On All Damage
+	A bonus to the chance that an enemy will be poisoned when damaged by any attack.
+
 Panic On Spell
+	The percent chance that an enemy targeted by a spell will be panicked.
+
 Curse Cast
+	A bonus to the chance that curse will be successful.
+
 Curse Effect
+	A bonus to the amount of effect a curse has.
+
 Curse Resist
+	A bonus to the amount resisted of a curse’s effect.
+
 Curse On Damage
+	The percent chance that an enemy will be cursed when damaged during combat.
+
 Bless Cast
+	A bonus to the chance that a bless will be successful.
+
 Bless Effect
+	A bonus to the amount of effect that a bless has.
+
 Bless Resist
+	The percent of a bless’ effect that is resisted.
+
 Power Hit
+	A bonus to the chance that an attack will be a power hit.
+
 Critical Hit
+	A bonus to the chance that an attack will be a critical hit.
+
 Fire Damage
+	The percent of extra fire damage that will be added when damaging an enemy.
+
 Fire Resist
+	The percent of fire damage that will be resisted.
+
 Frost Damage
+	The percent of extra frost damage that will be added when damaging an enemy.
+
 Frost Resist
+	The percent of frost damage that will be resisted.
+
 Honor Damage
+	The percent of extra honor damage that will be added when damaging an enemy.
+
 Honor Resist
+	The percent of honor damage that will be resisted.
+
 Shadow Damage
+	The percent of extra shadow damage that will be added when damaging an enemy.
+
 Shadow Resist
-</Text>
+	The percent of shadow damage that will be resisted.</Text>
         </Document>
         <Document ID="8">
             <Title>Towns</Title>
