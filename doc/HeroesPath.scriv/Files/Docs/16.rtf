@@ -4,21 +4,36 @@
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 \ul \ulc0 \CocoaLigature0 Visual Studio\
-\ulnone I added the following extra warning flags to each project in the solution:\
+\f0\fs48 \cf0 \CocoaLigature0 Static Analysis
+\fs20 \
+\
+\
+
+\fs36 Visual Studio
+\fs20 \
+
+\fs22 I added the following extra warning flags to each project in the solution:\
 /w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 \
 \
 The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.\
-\
+
+\fs20 \
 \ul \
 \
-CPPCheck\ulnone \
-This is a great tool.  Use it.  Simple, comprehensive, and it doesn\'92t give false positives.  Use it in MacOS natively, as easy as \'93brew install cppcheck\'94, then \'93cppcheck -j 7  --enable=all ../heroespath-src/src\'93.  Note the space between the \'93-j\'94 and the \'937\'94, unlike make.\
+
+\fs36 \ulnone CPPCheck
+\fs20 \
+
+\fs22 This is a great tool.  Use it.  Simple, comprehensive, and it doesn\'92t give false positives.  Use it in MacOS natively, as easy as \'93brew install cppcheck\'94, then \'93cppcheck -j 7  --enable=all ../heroespath-src/src\'93.  Note the space between the \'93-j\'94 and the \'937\'94, unlike make.
+\fs20 \
 \
 \
 \
-\ul Valgrind\ulnone \
-The undisputed heavyweight champion of runtime analysis.  Use it.\
+
+\fs36 Valgrind
+\fs20 \
+
+\fs22 The undisputed heavyweight champion of runtime analysis.  Use it.\
 \
 Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.\
 \
@@ -31,19 +46,28 @@ Here is the command line for running Valgrind:\
 valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath\
 \
 Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.\
+
+\fs20 \
 \
 \
-\
-\ul PVS-Studio\ulnone \
-I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:\
+
+\fs36 PVS-Studio
+\fs20 \
+
+\fs22 I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:\
 \
 ~/src/heroespath-build-vs find . -name *.suppress -exec cp \{\} ~/src/heroespath-src/pvs-studio-suppressions/ \\;\
 (and then check-in the newly updated suppressions files in ~/src/heroespath-src)\
 \
+
+\fs20 \
 \
-\
-\ul Flint++\ulnone \
-Facebook\'92s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.\
+
+\fs36 Flint++
+\fs20 \
+
+\fs22 Facebook\'92s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
+\fs20 \
 \
 \
 \

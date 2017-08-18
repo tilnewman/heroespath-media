@@ -1,614 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="8">
-            <Title>Towns</Title>
-            <Text>Towns:
-
-Mudgate
-Thornberry
-Trolleyville
-Bridgeway
-Riverton
-
-
-
-Inns:
-
-Oak Room Inn
-Barrow Inn
-Black Candle Inn
-Aven’s Rest Inn
-</Text>
-        </Document>
-        <Document ID="32">
-            <Title>Herbs</Title>
-        </Document>
-        <Document ID="25">
-            <Title>manual</Title>
-        </Document>
-        <Document ID="18">
-            <Title>game design</Title>
-        </Document>
-        <Document ID="10">
-            <Title>Introduction</Title>
-            <Text>The world of Etan suffers.
-
-It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
-
-There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
-
-After a raiding party decimated the city guard and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to walk the path of heroes and fight back against the dark tide.
-
-The town sorcerer, Rayliny Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They take turns at watch during the night by the fire, and agree to find Hallistar at daybreak.</Text>
-        </Document>
-        <Document ID="33">
-            <Title>Alchemy</Title>
-            <Text>Alchemy
-There are 32 potions and 32 herbs that can be mixed together with each other, and with special items, to create new potions, powders, and even new items.  Some highly valued items can only be acquired as the result of alchemy.  Some quests can only be completed by creating potions, powders, or items through alchemy.  Players will not be forced to engage in alchemy, but information provided during play will tempt players to attempt alchemy to acquire valuable potions, powders, and items.  Alchemy can only be attempted by players with a magic mortar and pestle.  Alchemy is more likely to be successful, the higher the player’s intelligence, and the higher the player’s % magic effect.  Whether or not the alchemy is successful, all herbs, potions, and items used in the attempt are destroyed.
-
-
-Potions
-Potions take the form of drinkable tonic/poison (or the non-descriptive liquor/brew/drink/infusion), or a usable rub/balm/salve/ointment/cream/mash, or acid.  Acids are both drinkable and usable, but no matter which way you choose to apply it, it’s gonna hurt…  Potions cause effects just as they are, without being the result of alchemy.
-
-Name		Form		Permanent	Effects
-
-
-Herbs
-Herbs take the form of either a flower/grass/vine/stem/leaf/root/seed.  Each herb has an amount that is defined by a use count.  Herbs are all edible, and must be eaten to trigger whatever their result is, be that something beneficial or harmful.  Herbs cause effects just as they are, without being the result of alchemy.
-
-Name 		Form		Permanent 	Effects
-
-
-
-Form Combination Rules
-Herbs mixed only with other herbs always produce a powder blend in a bag/sack/sachet/pouch.
-Drinkable potions mixed with anything else always result in another drinkable potion.
-A liquor mixed with anything else always results in either another liquor, drink, or brew.
-Useable potions (not drinkable) mixed with others or herbs always result in another non-drinkable potion.
-
-
-Possible Reactions
-
-Conditions
-Inspire/Fortify/Clear/Bewilder/Dismay/Terrify/Poison/Cure the mind (Heroic/Bold/Dazed/Daunted/Panic/Poison)
-
-Permanent or Temporary Enchantment
-+/- % of normal &lt;stat&gt;
-+/- % of normal mana
-+/- % armor rating
-+/- % magic cast
-+/- % magic effect
-+/- % find religious
-+/- % find magic
-+/- % find coins
-+/- % backstab
-+/- % health gain of melee damage
-+/- % health gain of all damage
-+/- % melee damage
-+/- % projectile damage
-+/- % all damage
-+/- % fists damage
-+/- % poison melee
-+/- % poison all
-+/- % panic on spell
-+/- % curse chance
-+/- % curse cast
-+/- % curse effect
-+/- % curse resist
-+/- % bless cast
-+/- % bless effect
-+/- % bless resist
-+/- % encounter
-+/- % surprise
-+/- % power hit
-+/- % critical hit
-+/- % animal damage (usually negative)
-+/- % fire damage
-+/- % fire resist
-+/- % frost damage
-+/- % frost resist
-+/- % honor damage
-+/- % honor resist
-+/- % shadow damage
-+/- % shadow resist
-Allows casting curse or bless without items
-Allows flying during combat
-
-
-Recipes
-Todo
-</Text>
-        </Document>
-        <Document ID="26">
-            <Title>Combat</Title>
-            <Text>Manual:
-Each creature takes a turn in the order of who has the greatest Speed attribute.
-
-The Attack option will automatically choose a target enemy creature, usually whoever has the lowest relative health, while the Fight option allows you to specify which enemy creature to target.
-
-To select an enemy to fight, press the ‘F’ key and then click an enemy once.  Your characters are limited to fighting enemies near you, unless they are flying.
-
-To fly, press the ‘Y’ key, and an animation of a flapping wing will be displayed on the character who is flying.
-
-To see a summary view with detailed information about a creature on the battlefield, click on it once.
-
-To switch to the Inventory, press ‘I’, or double-click one of your characters.  The Inventory Screen contains all the information about your characters.
-
-Sometimes a character will have multiple weapons to choose from.  To switch between weapons, press the ‘C’ key.
-
-The Enter key will automatically attack, block, or skip a character’s turn, in that order, depending on which are possible.
-
-Pressing the spacebar or clicking the mouse can be used to skip past messages when you want to speed up combat.
-
-If a character runs away or dies, it will not receive experience from the battle, even if you win the fight.
-
-Sometimes a creature cannot move past enemies on the battlefield if there are too many blocking the way, or if some of those creatures are taking the blocking action, but flying creatures can always advance or retreat.
-
-
-Hints
-Whoever advances to meet an opponent is then at risk of being attacked by that opponent, so it is often wiser to wait and let your enemies advance upon you.
-
-Tap the Enter key repeatedly to speed up combat.
-
-If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
-
-Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.
-
-When a creature is healed and regains all health, it removes the Dazed, Daunted, and Panic conditions.
-
-If a creature is hit with more than twice their maximum health, they will immediately die.
-
-If under a natural sleep during combat, being hit will wake the creature up.
-
-It is easier to pounce on an enemy that is Dazed, and it always works if they are Tripped, Asleep, or Unconscious.
-
-Choose whether or not to fly carefully.  For example, if you have two dragons, flying can make them less vulnerable but it might make the remaining Beastmaster (or other character) more vulnerable.
-
-The Lift spell removes the Tripped condition, but it will also remove the Pounced condition.
-
-Cleric’s spell casting should be carefully considered.  On the one hand, you will want your Cleric to contribute to winning the fight, but on the other hand, you will want to save their mana for healing.
-
-Prioritize so that you first attack the enemies that are the greatest threats.  Eliminate spellcasters, archers, and high-ranking enemies first.
-
-If a particular enemy is curious or causing you problems, remember that you can click on it once and see a summary of its condition and equipment.</Text>
-        </Document>
-        <Document ID="19">
-            <Title>Maps</Title>
-            <Text>Use the Tiled app:  http://www.mapeditor.org/
-
-Start a new map with these options:
-	Orthogonal
-	CSV
-	Right Down
-
-	Width: 40
-	Height: 40
-	or
-	Width: 20
-	Height:20
-
-#x# of tiles is up to you depending on how big you want the map.  There is no limit.  You can change your mind later and resize the map at any time.
-
-When saving your map, always use the .tmx file type.  This will save in XML with CSV data fields.
-
-Use layers carefully, and save often.  Tiled will not save automatically.
-
-Chose a name for your layers that includes the following keywords so the game engine knows what to do with them: (not case sensitive)
-	ground - everything that the player is drawn on top of
-	object - everything that is drawn on top of the player
-	collision - contains rectangles that define where the player cannot walk
-	shadow - contains only shadows cast by objects (and drawn on top of the player)
-
-For example, a map may have the following layer names:
-	ground
-	ground
-	ground grass
-	dirt patches on ground
-	ground stone path
-	tree objects
-	all other objects
-	collisions
-	shadows
-
-NOTE:  Multiple layers with the same name works fine.
-
-Tileset images that contain the keyword "shadow" in their name will be altered by the game engine.  They will be erased except for the shadows themselves.  So collect shadow tiles together in their own Tileset images, and use only them to place shadow tiles on the map.
-
-The RGB color (75, 99, 127) is the default background color.  ALL Tileset images that contain that color  will have it changed to transparent by the game engine.
-
-The layers will be drawn in order from bottom to the top as listed in the Tiled app.
-
-The tiles will be drawn in order until the first is encountered that came from an image that contained the keyword 'object', and then the player will be drawn before that tile.
-
-Because of this, it is wise to draw tiles on layers exclusively.  That is, give each layer a singular purpose and a fitting name with the appropriate keyword, then choose a tileset image for that layer and only place tiles from that tilset on that layer.  For example, don't place tiles from an 'objects' image on a layer named 'ground'.  In such a case, when the game engine reaches the object tile, it will start drawing all subsequent tiles on top of the player, even if they are ground tiles.  So keep layers exclusive to tile images.
-
-</Text>
-        </Document>
-        <Document ID="11">
-            <Title>Titles</Title>
-            <Text>	 BattlesSurvived,    	//(knights only)
-            HealthGiven,        	//(clerics only)
-            HealthTraded,       	//(clerics only)
-	 DodgedStanding,   //(all roles)
-            DodgedFlying,       	//(all roles)
-            BeastRoars,         	//(beasts only)
-	 LocksPicked,        	//(all roles)
-	 SongsPlayed,        //(bards only)
-	 SpiritsLifted,      	//(bards only)
-            BackstabsHits,      	//(thieves only)
-            ProjectileHits,     	//(all roles)
-            SpellsCast,         	//(all except knights)
-	 EnemiesFaced,      //(all roles)
-	 TurnsInFlight,      	//(all roles)
-	 MoonHowls,          	//(wolfens only)
-	 PackActions,        	//(wolfens only)
-	 BeastMindLinks,   	//(beastmasters only)
-	 MeleeHits,          	//(all roles)
-	 BreathAttackHits,   //(dragons only)
-
-
-
-Protector Of Thornberry
-Standing bravely against the Goblin hoards alongside the Thornberry town guards has earned you this title.  The townsfolk will recognize you and may even give you favorable prices and other benefits.
-
-
-After dodging many melee attacks, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
-DODGER_SPTR;		Your dodging skills are just starting to develop through initial experiences in combat.
-FASTFOOT_SPTR;       	Your feet are significantly faster.
-NIMBLEFOOT_SPTR;	You are more dexterous and light on your feet.
-SWIFTFOOT_SPTR;    	Your ability to dodge on foot is significantly increased.
-MELEEMOVER_SPTR;    	You have learned the rhythm of melee combat after long experience.
-MELEEGRACE_SPTR;	Your melee dodging skills have become graceful.
-MELEEDANCER_SPTR; 	Watching you fight is like watching a dancer.
-MELEESHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you were.
-
-
-After dodging many attacks while flying, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
-SKYDODGER_SPTR;	Your dodging skills are just starting to develop through initial experiences in combat.
-FASTWING_SPTR;		Your wings move significantly faster.
-NIMBLEWING_SPTR;	You are more dexterous in the air.
-SWIFTWING_SPTR;	Your ability to dodge in flight is significantly increased.
-SKYMOVER_SPTR;	You have learned the rhythm of aerial combat after long experience.
-GRACEWING_SPTR;	Your aerial dodging skills have become graceful.
-SKYDANCER_SPTR;	You fight in the air with the grace of a dancer.
-SKYSHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you used to be.
-
-
-After successfully sneaking up behind enemies and stabbing them in the back, you have earned this Title and your skills have increased, making future backstab attacks easier.
-SNEAK_SPTR;			The members of your party name you Sneak after backstabbing enemies.
-STALKER_SPTR;			Your skills have progressed to the level of a Stalker.
-CREEPER_SPTR;			Your ability to get behind enemies has creeped out your fellow party members.
-SAVAGE_SPTR;			Your backstabbing skills have passed creepy and officially become savage.
-HOMICIDAL_SPTR;		Your fellow party members consider your mind deranged, obsessed with killing.
-BLOODTHIRSTY_SPTR;		You are beyond skilled at backstabbing.  You are now hungry for the feel of your blade piercing flesh.
-SHADOWWALKER_SPTR;	Enemies watching you become spooked, often looking behind at their shadow expecting to find you there.
-ASSASSIN_SPTR;			You have reached the pinnacle of achievement in the arts of stabbing enemies in the back, making you an assassin.
-
-
-You have earned this Title after surviving many battles, and your skills are increased as a reward.
-(HP-Str-Acc-Lvl)
-10     Knight of the Clashing Blade 5-1-1-0	You have transitioned from an untested Knight to a Knight who has been tested in battle.
-100   Knight of a Hundred Battles 10-2-2-0	You have survived a hundred battles.
-200   Knight of the Piercing Blade 20-3-3-0	Your blade has become known as piercing.
-500   Knight of the Undaunted Blade 25-4-4-0	Your blade has become known as undaunted.
-1000 Knight of a Thousand Battles 30-5-5-1.  	You have survived a thousand battles.
-2000 Knight of the Feared Blade 35-6-6-1	Your blade has become known and feared.
-3000 Knight of the Realm 40-7-7-1		You have become a Knight of the Realm.
-5000 Knight of Etan 50-10-10-2			You have reached the ultimate rank of Knighthood.
-
-
-HealthGiven
-You have earned this Title by providing healing to others, and your skills have increased as a reward.
-(HP-Int-Lvl)
-50 	Mender			2-1-0		You are a mender of general wounds.
-200 	Healer				5-2-0		You have become known as a Healer.
-500	Blessed Hands		10-3-0		Your skilled hands are gentle and precise.
-1000	Witch Doctor			15-4-1		Mysterious magical arts are now a part of even your most basic healing.
-2000	Light of the Cure		20-5-1		Your hands glow when mending wounds.
-3000  Divine Touch			25-6-1		Your practice has reached the height of purity.
-5000	White Sage			35-7-1		You are now a member of the Order of the White Sage.
-10000 Cleric of the Covenant	50-10-2	You have reached the highest Title of Clerical healing, becoming a member of the Covenant.
-
-
-You have earned this Title by engaging in the selfless practice of trading your own health for the health of others, and your skills have increased as a reward.
-(Cha-Int-HP-Lvl)
-50 	Hands of Charity		(1-1-2  -0)	Your hands are seen as special by the party, known for the charitable giving of health.
-100	Hands of Love		(2-2-4  -0)	Your unbiased love for others in need has earned you this Title.
-200	Hands of Devotion		(3-3-8  -0)	Your devotion to others in need has earned you this Title.
-400	Hands of Nobility		(4-4-12-0)	Your hands are seen as more than just healing, but noble.
-800	Hands of Sacrifice		(5-5-16-0)	Your self-sacrificing nature has earned you this Title.
-1500	The Selfless Hand		(6-6-20-1)	You are known for a selfless devotion to those in need.
-2500	The Incorruptible Hand	(7-7-24-1)	Your healing motives are pure and righteous.
-4000	The Bleeding Palm		(10-10-30-2)	You have earned the highest Title possible for giving your own health to others.  You are a member of the order of the Bleeding Palm.
-
-
-You have earned this Title by roaring at enemies in combat and making them retreat, and your skills have increased as a reward.
-(Str-HP-Lvl)
-10	HowlingStray			(1-2-0)	You have become known as a howling stray creature.
-30	HowlingBully 		(2-4-0)	Your roar bullies enemies around the battlefield.
-50	HowlingWildling		(3-8-0)	You are now a willing, howling during battle.
-100	SnarlingCreature		(4-12-0)	Your enemies see you as a snarling creature.
-200	SnarlingBeast		(5-16-0)	You have grown into a true snarling beast of a creature.
-400	SnarlingFiend		(6-20-0)	Your roar is known far and wide, earning you the reputation as a fiend.
-1000	RagingMonster		(8-24-1)	You have become a raging monster.
-2000	RagingHorror		(10-30-2)	You have become a raging horror.
-
-
-You have earned this Title by picking locks successfully, and your skills have increased as a reward.
-(Lck-Spd-HP-Lvl)
-10	Prowler		(1-1-2-0)	Your fellow party members see you as sneaky and suspect.
-50	PickPocket		(2-2-4-0)	You have become ruthless and swift of hand.
-100	CatBurglar		(3-3-8-0)	You have become known for your burgling skills.
-200	Clincher		(4-4-12-0)	You have earned the Title of Clincher among your fellow thieves.
-500	Picker			(5-5-16-0)	You are an experienced lock picker.
-1000	SafeCracker		(6-6-20-1)	You are an official safe cracker.
-2000	LockTickler		(8-8-30-1)	You have an almost unreal ability to tickle locks open.
-5000	LockBane		(10-10-50-2)	You have reached the height of lock picking ability.
-
-
-SongsPlayed
-You have earned this Title by playing many songs, and your skills have increased as a reward.
-(Cha-Int-Lck-HP-Lvl)
-10	Versifier		(1-1-1-5-0)		You have become known for your singing, even if you fumble at times.
-50	Player			(2-2-1-10-0)		You are skilled enough to be considered a player of all instruments.
-100	Balladeer		(3-3-2-15-0)		You have become skilled with basic songs.
-200	Minstrel		(4-4-2-20-0)		You are a fine singer and composer of lyrics.
-500	Instrumentalist	(5-5-3-25-0)		Your playing of instruments has reached a professional level.
-1000	Soloist		(6-6-3-30-1)		Your have become renewed for your ability to play solos.
-2000	Artiste			(8-8-5-50-1)		You are an artist extraordinaire. 
-5000	Virtuoso		(10-10-10-60-2)	You have reached the height of musical talent.
-
-
-SpiritsLifted
-You have earned this Title by lifting the spirits of your fellow party members during battle, and your skills have increased as a reward.
-(Cha-Int-Lck-HP-Lvl)
-50	BardOfTheTrippingToes		(1-1-0-2-0)		Your fumbling dances lift the parties spirits.
-100	BardOfTheMerryMelody		(2-2-0-4-0)		Your happy tunes are a welcome and uplifting to your fellow party members.
-200	BardOfTheWhimsicalWord	(3-3-1-8-0)		You have become skilled at impromptu rhyming. 
-500	BardOfTheCarolingChorus	(4-4-1-12-0)		Your singing ability has reached respectable status.
-1000	BardOfTheBouncingBallad	(5-5-2-16-0)		Your ballads are inspiriting and invigorating.
-2000	BardOfTheDancingDitty		(6-6-2-20-0)		Your swift-footed dancing livens up your music and the party.
-3000	BardOfTheEnchantedEar		(7-7-3-24-1)		Magic is now a part of your music and enchants all that hear you.
-5000	BardOfTheAracneAria		(10-10-5-50-2)	You have reached the height of music making and can easily lift the spirits of the party.
-
-
-Projectile Hits
-You have earned this Title by hitting the enemy you targeted with a projectile weapon, and your skills have increased as a reward.
-(Acc-Lck-Str-Lvl)
-20	Targeter		(1-1-1-0)	Your targeting abilities are starting to develop.
-50	SteadfastFlyer	(2-2-1-0)	Your aim with projectiles has become steadfast. 
-100	DeadEye		(3-3-2-0)	You have earned the nickname Dead-Eye by your fellow party members.
-500	DeadCenter		(4-4-2-0)	When your projectiles hit, they always seems to hit the center of their mark.
-1000	SureSail		(5-5-3-0)	Your skills with all projectile weapons has become professional.
-2000	SureShot		(6-6-3-0)	Your ability to hit critically with projectile weapons has significantly increased.
-3000	PerfectHit		(8-8-4-0)	Your aim with projectile weapons is legendary.
-5000	EnchantedAim	(10-10-5-1)	Your use of projectile weapons is now magical, hitting your mark with a touch of the arcane.
-
-
-Spells Cast
-You have earned this Title by successfully casting many spells, and your skills have increased as a reward.
-(Int-Lck-HP-Lvl)
-20	Magus	(1-1-2-0)		Your spell casting skills are just starting to develop.
-50	Charmer	(2-2-4-0)		You can readily charm enemies with your craft.
-100	Diviner	(3-3-8-0)		Your magic now comes from a pure place inside you.
-200	Enchanter	(4-4-12-0)		You have reached the status of an Enchanter.
-500	Conjurer	(5-5-16-0)		You can now summon other creatures with your powers.
-1000	Shaman	(6-6-20-1)		You have unlocked the strange powers of voodoo.
-2000	Wizard	(8-8-30-1)		The party now considers you a full-fledged Wizard.
-5000	Warlock	(10-10-50-2)		You have reached the ultimate level of spell casting skill.
-
-
-EnemiesFaced
-You have earned this Title by facing many enemies in mortal combat, and your skills have increased as a reward.
-(Str-Int-Lck-HP-Lvl)
-20 	Undaunted	(0-0-1-5-0)		
-50	Daring		(1-1-2-10-0)
-100	Bold		(2-2-3-15-0)
-200	Brave		(3-3-4–20-0)
-500	Valorous	(4-4-5-25-0)
-1000	Valiant	(5-5-6-30-0)
-2000	Lionhearted	(6-6-8-35-0)
-3000	Heroic		(8-8-10-40-1)
-5000	Fearless	(10-10-10-50-2)
-
-
-MoonHowls
-You have earned this Title through many moon howls, and your skills have increased as a reward.
-(Str-Lck-HP-Lvl)
-10	PawOfTheLunarPup		(1-1-5-0)
-20	PawOfTheYoungHowler		(2-2-10-0)
-50	PawOfTheNightSky			(3-3-15-0)
-100	PawOfTheMidnightWail		(4-4-20-0)
-200	PawOfTheTwilightMoon		(5-5-25-1)
-300	PawOfTheCelestialCry		(6-6-30-1)
-400	PawOfTheGlowingOrb		(8-8-40-1)
-500	PawOfTheCrescentLegion		(10-10-50-2)
-
-
-TurnsInFlight
-You have earned this Title by spending many turns flying in the air, and your skills have increased as a reward.
-(Spd-Lck-Lvl)
-50	WindGlider		(1-1-0)
-100	LightFeather		(2-2-0)
-200	FreeFlyer		(3-3-0)
-500	SteadyWing		(4-4-0)
-1000	EverSoar		(5-5-0)
-2000	SkySail		(6-6-1)
-3000	Aerialist		(8-8-1)
-5000	FeatherDancer	(10-10-2)
-
-
-PackActions
-You have earned this Title after completing many Wolfen Pack actions during combat, and your skills have increased as a reward.
-(Str-Spd-HP-Lvl)
-20	PackFollower	(1-1-5-0)
-50	PackMember		(2-2-10-0)
-100	PackTasker		(3-3-15-0)
-200	PackCharger		(4-4-20-0)
-300	PackNobel		(5-5-25-0)
-400	PackLeader		(6-6-30-0)
-500	PackAlpha		(8-8-40-1)
-1000 	PackElder		(10-10-50-2)
-
-
-BeastMindLinks
-You have earned this Title after successfully linking your mind with a beast, and your skills have increased as a reward.
-(Int-Lck-HP-Lvl)
-20	CritterClairvoyant		(1-1-5-0)
-50	AnimalAnimator		(2-2-10-0)
-100	FriendOfTheFeral		(3-3-15-0)
-200	WillOfTheWild		(4-4-20-0)
-300	CreatureChanneler		(5-5-25-0)
-400	BeastTaskmaster		(6-6-30-1)
-500	MonsterManipulator		(8-8-40-1)
-1000	MammalianMaster		(10-10-50-2)
-
-
-MeleeHits
-You have earned this Title after successfully hitting enemies in combat, and your skills have increased as a reward.
-(Acc-Str-HP-Lvl)
-20	Brawler				(1-1-5-0)
-50	WildSwing				(2-2-10-0)
-100	HavocSmasher			(3-3-15-0)
-200	SureStroke				(4-4-20-0)
-500	Warrior				(5-5-25-0)
-1000	EverMark				(6-6-30-1)
-2000	MeleeMaster				(7-7-40-1)
-3000	SteadyStriker			(8-8-50-1)
-5000	OrderOfTheSteadyBlade		(10-10-80-2)
-
-
-FlyingAttackHits
-You have earned this Title after successfully attacking enemies while flying, and your skills have increased as a reward.
-(Str-Acc-Int-HP-Lvl)
-20	DragonOfTheUnblinkingEye		(1-1-0-5-0)
-50	DragonOfTheCurlingClaw			(2-2-1-10-0)
-100	DragonOfTheDaggerTooth			(3-3-2-15-0)
-200	DragonOfTheForebodingGaze		(4-4-3-20-0)
-500	DragonOfTheUnbreakableScale		(5-5-4-25-0)
-1000	DragonOfTheDreadedBreath		(6-6-5-30-1)
-2000	DragonOfTheArcaneWing			(8-8-8-40-1)
-5000	DragonOfTheNightmareSky		(10-10-10-50-2)
-</Text>
-        </Document>
-        <Document ID="34">
-            <Title>Items</Title>
-            <Text>All items are made with specific materials, but some materials are more desirable than others.  Some materials carry bonuses, enchantments, a certain number of uses, or other special powers.  Here is a list of common materials, in order of rarity and power, from least to most:
-
-Bone
-Stone
-Obsidian
-Tin
-Bronze
-Iron
-Steel
-Jade
-Amethyst
-Emerald
-Pearl
-Ruby
-Lazuli
-Silver
-Sapphire
-Gold
-Platinum
-Diamond
-
-There are many more ways that an item can vary apart from the material it is made of.  Most significantly, an item an be magical, that is, enchanted to give the creature holding or equipping it percent bonuses to various Traits.  Read more about Traits in the paragraph below.  For example, an item might be enchanted to increase your armor rating Trait by a certain percentage.  There are also items that will provide bonuses or perform amazing effects when used.  For example, one of the items you can find in your adventures are Spider Eggs, that when used, will summon Giant Spider creatures to fight for your party during combat.  Magical or enchanted items have a star ‘*’ at the end of their names.  In the inventory screen, hover the mouse over an item to reveal all the details about it, including all of its enchantments.
-
-Each of your characters has forty-four Traits that can be effected by enchantments.  All Traits are percentage bonuses.  For example, if your character normally has 20 Strength, but also has an enchanted item that provides a 5% Strength Trait Bonus, then your character will have 21 Strength total.  In the Inventory screen, press the ‘A’ key to see all of a character’s Traits, including all the bonuses to those Traits gained from the sum of all enchantments.  Below is a list of all possible Traits:
-
-Strength
-Accuracy
-Charm
-Luck
-Speed
-Intelligence
-Mana
-Armor Rating
-Magic/Alchemy Chance 	-A percent bonus to the chance that a magic Spell, Song, or Alchemy will be successful.  (Read more about Alchemy below)
-Magic Effect 			-A percent bonus to the amount of change that a magic Spell, Song, or Alchemy will have.
-Magic Resistance 		-A percent resistance to the amount of change that a magic Spell, Song, or Alchemy will have.
-Encounter Chance 		-A percent bonus to the chance that the party will encounter a hostile party of creatures to fight.  (less is better)
-Surprise Chance		-A percent bonus to the chance that an encounter will surprise your party, giving the enemy an advantage.  (less is better)
-Find Religious Items Chance
-Find Magic Items Chance
-Find Coins Bonus
-Backstab Chance 		-A percent bonus to the chance that a Thief character’s attack will a knife or dagger will become a backstab attack.
-Health Gained on Melee Damage	   -A special (rare) percent bonus that allows your character to gain health when dealing melee damage to an enemy.
-Health Gained on All Damage.   	-A special (rare) percent bonus that allows your character to gain health when dealing any damage to an enemy.
-Animal Damage Resistance	-A percent resistance to the amount of damage that animal creatures deal to your character.  
-Fist Damage Bonus
-Melee Damage Bonus
-Projectile Damage Bonus
-Damage Bonus
-Poison On Melee Hit Chance	-Adds a percent chance that a melee hit will do more than just damage the enemy, it will also poison that enemy.
-Poison On Hit Chance		-Adds a percent chance that combat damage will do more than just damage the enemy, it will also poison that enemy.
-Panic On Spell Hit Chance		-Adds a percent chance that successful spells cast at an enemy will also panic that enemy.
-Curse Cast Chance			-A percent bonus to the chance that cursing an enemy will work, whether from a spell or magical song.
-Curse Cast Effect			-A percent bonus to the amount of harm that a successful curse will have.
-Curse Resistance			-A percent resistance to the amount of harm that being cursed will have on your character.
-Curse On Hit Chance		-Adds a percent chance that successful combat attacks will more than damage the enemy, they will curse the enemy.
-Bless Cast Chance
-Bless Cast Effect
-Bless Resist				-A percent change to the amount of good being blessed will do to a character.  (less is better)
-Power Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Power Hit.
-Critical Hit Chance			-A percent bonus to the chance that a successful combat attack will be a Critical Hit.
-Fire Damage Bonus
-Fire Resistance
-Frost Damage Bonus
-Frost Resistance
-Honor Damage Bonus
-Honor Resistance
-Shadow Damage Bonus
-Shadow Resistance
-
-With so many Traits, the choice of which item is best for a character can get confusing.  To make the decision simple and clear, there is a comparison feature in the Inventory Screen.  Select an item from both the equipped and unequipped list boxes, and then press the ‘X’ Key.  Two Trait lists will appear side-by-side for easy comparison.  The first list on the left will show the character’s traits as they are, and the second list on the right will show what that character’s Traits would be if the items were reversed, that is, if the unequipped item was equipped in the other’s place.
-
-Some items belong to a Set.  All items belonging to a Set are magical, enchanted to have special bonuses that you get from equipping one item, and then even bigger bonuses you get after equipping all of the items in the Set.  Items belonging to a Set can be identified by ‘The’ in their names.  For example, Thieves have a set called ‘The Assassin’s’, and the Boots belonging to that Set are named ‘The Assassin’s Boots’.  The Assassin’s Set has seven items to collect in all: Boots, Pants, Shirt, Gloves, Cloak, Dagger, and Lock Picks.  The special bonus for the complete Set will not take effect until all items in the Set are equipped.  It is perfectly fine to wear items belonging to non-matching Sets.  The individual bonuses for those items will still take effect even though they are non-matching.
-
-Cleric’s and Sorcerer’s require an enchanted item to cast spells with, typically a wand.  When the game begins, they start out with simple wooden wands that have the minimal required enchantment to cast spells with.  Keep an eye out for other more powerful items with bonuses to mana, stats, and even to the chance that a spell is cast or resisted.  Here are some items that enable casting spells, listed in order of rarity and desirability:  wand, shard, staff, orb, scepter.  There are rare items that are even more powerful, some only available upon completion of quests.
-
-Bard’s require a musical instrument in order to play magical songs.  There are many different musical instruments that can be found during your adventures.
-
-There are four elemental powers in Etan: Fire, Frost, Honor, and Shadow.  Every weapon and attack spell has the ability to cause extra elemental damage, and every piece of armor (and some other enchanted items) can help you characters resist elemental damage.  Look for items whose named end with of Fire, of Frost, of Honor, and of Shadow, or a combination such as of Shadow and Fire, etc.  These magic items carry elemental damage and resistance bonuses.
-
-Some magical items are named, and they have enchantments with bonuses that are common to those names.  For example, the ‘Winter’ name may be seen in front of a weapon’s name, meaning it has the ‘Winter’ enchantment, which is a +33% to the Trait ‘Frost Damage’.
-
-With all the various Materials, Traits, and Names, there are roughly a third of a million different items in the game!
-</Text>
-        </Document>
-        <Document ID="27">
-            <Title>Combat Over</Title>
-            <Text>Victory!
-Congratulations, your party has beaten all enemies on the field of battle and emerged victorious.  Will you search for loot?
-
-
-Death Strikes!
-The dangers of Etan have claimed another party of adventurers.  All of your characters have been incapacitated or killed, but all is not lost.  Your saved games remain and can be loaded at any time.  Click YES to restart from your last save, or click NO to quit.
-
-
-Defeat!
-You have run from battle, and as a consequence, you will earn no experience and loot no treasure.</Text>
-        </Document>
         <Document ID="12">
-            <Title>Code Problems</Title>
-            <Text>“Do as I say, not as I do.”
+            <Title>Code Smell</Title>
+            <Text>Code Smell
+“Do as I say, not as I do.”
 
 
 I have fallen into the bad habit of using boost::shared_ptr for everything.
-This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
+This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr use-count semantics, but in the end, this well intentioned design simply turned into an excuse to use shared_ptr that was not sufficient.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
 
 Update:  2017-3-27
-I went ahead and changed all boost::shared_ptr to std::shared_ptr, but there are still too many in use.
+I went ahead and changed all boost::shared_ptr to std::shared_ptr, but that doesn’t address the problem of them being used in the first place.
+
+Update: 2017-8-10
+Since the last pass reading this document, I have removed almost all of the shared_ptrs.
 
 
 All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.
 I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
 
 Update, 2017-5-20:
-I went ahead and fixed this in all of the factory classes, which in my case are not really factories by ‘warehouses’.
+I went ahead and fixed this in all of the factory classes, which in my case are not really factories but ‘warehouses’.
 
 
 I need to start using make_shared() and make_unique().
@@ -627,7 +40,7 @@ I have not been using brace initialization, and I should.
 The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.
 
 
-I have places in the code where class functions return references to local members causing dangling.
+I have places in the code where class functions return references to local members risking dangling.
 These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.
 
 
@@ -639,10 +52,6 @@ I made function names start with a capital letter.
 I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
 
 
-My singletons use shared_ptr.
-All my singletons use shared_ptrs for the instance pointer.  This was a (flawed) design decision made early on when I was shared_ptr happy.  I should take the time to change this.
-
-
 I miss-use the singleton pattern.
 I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.  The smell isn’t that bad.
 
@@ -651,61 +60,64 @@ I set no limit on line lengths.
 I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I’ll try and change my style from here on out to limit to 100 characters per line.
 
 
-I haven’t been consisted with my usage of brackets.
+I haven’t been consistent with my usage of brackets.
 I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
 
 
 Use of float instead of double.
-No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.
+No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.  There are only a handful of places where I use doubles, and these are intentional.
+
+
+Types in variable names.
+For some reason I felt the need to put “Vec” at the end of vector names.  I think was originally an alternative to using the postfix “List”, but it became pervasive and foolish.
+
+
 </Text>
         </Document>
-        <Document ID="35">
-            <Title>When Combat Is Over</Title>
-            <Text>When Combat is Over
+        <Document ID="21">
+            <Title>Audio Compression</Title>
+            <Text>Audio Compression
+Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
 
-When combat is over, your party will often find a stash of treasure left behind by the creatures you concurred in a chest or lockbox.  These are often locked, and if so, they often have traps waiting to spring that will harm or even kill.  You can choose which member of your party will attempt to pick the lock without setting off the trap.  You should choose whoever has the greatest luck, usually your Thief.  Your Thief should never be caught adventuring without their trusty Lock Picks.  There are many different Lock Pick items to be found in Etan, explore far and wide to find the best one you can.
-</Text>
+The OGG file format is used for all audio, with the quality set to 5 of 10.  I did listening tests and found this quality setting to be the lowest where I could not hear distortion.
+ </Text>
         </Document>
-        <Document ID="28">
-            <Title>Rank Class</Title>
-            <Text>As your characters advance into higher ranks, they also advance through general levels of skill called classes.  As you can see in the lists below, Wolfens reach Elder status sooner than Dragons, but in the end, dragons are more powerful.  As your beasts progress in class, you will notice their roars becoming stronger and louder.  Advances in class also bring bonuses to stats and new abilities.
+        <Document ID="4">
+            <Title>Races</Title>
+            <Text>
+Race
+Each of your characters is of a certain Race.  Race determines more than just what you look like, it also effects your starting stats.  You should choose your Race and Role to work well together.
 
-Humanoid:
-1-3 Novice
-4-6 Trainee
-7-12 Skilled
-13-25 Expert
-26-49 Master
-50+ GrandMaster
 
-Wolfen:
-1-2 Pup
-3-9 Juvenile
-10-19 Adult
-20-39 Noble
-40-79 Highborn
-80+ Elder
+Human
+Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
 
-Dragon:
-1-2 Hatchling
-3-9 Whelp
-10-19 Fledgling
-20-34 Juvenile
-35-54 Adult
-55-69 Wyrm
-71-99 Skycaster
-100+ Elder
+
+Gnome
+Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like them, but they make excellent Thieves, and parties without a Thief on their side will regret it.
+
+
+Pixie
+The Pixie is a tiny winged creature from the ancient world, but a few are still known to exist.  Their obvious lack of strength is more than made up for by their other significant advantages, including speed to keep their fragile bodies away from the melee.  They are the most intelligent race, making excellent Sorcerers and Clerics.  Pixies speak their own language, and sing so well they even make good Bards.
+
+
+Wolfen
+The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
+
+
+Dragon
+The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
 </Text>
         </Document>
         <Document ID="13">
             <Title>Build Times</Title>
-            <Text>Notes:
-All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.
-In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+            <Text>Build Times
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.  In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+
 Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
 Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
 Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
-The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work…)
+The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work, but oh well…)
 
 
 
@@ -757,9 +169,979 @@ On 2017-3-31 (after includes overhaul of 2017-3-29)
 Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
 Executable size: 4.9MB</Text>
         </Document>
+        <Document ID="5">
+            <Title>Roles</Title>
+            <Text>Role
+Each character in your party has a profession or specialty, designated by their Role.  There are ten Roles to choose from.
+
+
+Beastmaster
+Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
+
+
+Sorcerer
+The Sorcerer is a role that is completely devoted to magic.  They specialize in all the arcane arts except for healing.  They are useless with weapons, and may be weak in the beginning, but in higher ranks they are a dominating presence to be reckoned with.  A Sorcerer’s primary attribute is intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
+
+
+Cleric
+The Cleric is religious leader, focused on the magic of nature and all the various healing arts.  They are almost as devoted to magic as the Sorcerer, and over time will learn powerful spells of all kinds.  Most groups of adventurers find the restorative powers of the Cleric to be essential.  Having considerable charm also makes the Cleric ideal for negotiations, bartering, and diplomacy.  Primary attributes are charm and intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
+
+
+Knight
+Your adventures will be fraught with battle, and there is where a Knight will serve your party well.  They may not be the brightest of companions, but they make up for it by keeping your party safe.  Knights can use the widest variety of weapons and armor.  They are the only role that gains no magical abilities as they progress in rank.  All roles have the opportunity to be granted titles that provide special bonuses and abilities, and Knights have more titles to be earned than any other role.  A Knight’s primary attributes are strength and accuracy, but consider speed as well to assist in dodging attacks.
+
+
+Archer
+The Archer’s best friends are his bow, and his accuracy using it.  While an Archer can swing a sword if they need to, they get special bonuses for using projectile weapons, such as slings, blowpipes, and of course, the bow and arrow.  Having an Archer is essential for the many flying enemies you will face.  The primary attributes of an Archer are accuracy and strength, but don’t discount speed and luck when using a bow...
+
+
+Bard
+The Bard is a jack of many trades.  They may not be the fastest, but they weave the arts of a Cleric, the spells of a Sorcerer, and sometimes even the brawn of a Knight into one role.  Most of their skill lies in magical song that aids their fellow adventurers and hampers would be dangers.  Due to their talents being spread out, Bards may not be powerful in the beginning, and inexperienced players may struggle to guide them in the early ranks.  Intelligence and Charm are most important to a Bard, but also consider strength if you want them to be warriors as well.
+
+
+Thief
+They are deplorable criminals, but every group of adventurers needs a Thief.  There will be locked doors and chests to pick open, and the need to steal back what is taken.  Some adventures are simply not available to a party without a Thief.  Luck and Speed are the Thief’s primary attributes, but also consider intelligence for the magic that will come with higher rank.
+
+
+Wolfen
+There is only one possible role for a Wolfen, and that is to be their loyal but vicious selves.  They grow into powerful beasts that crave the magic of moon and starlight.  Their growl will strike fear into all, and send the weaker fleeing for their lives.  But it is never wise to run from a Wolfen, because they love to chase down, trip, and devour enemies with valuables.  Consider strength and speed when crafting a Wolfen, but don’t forget intelligence for the magic that comes with higher rank.  Also consider the many advantages of having multiple Wolfens in your party.  A pack of Wolfens work together...
+
+
+Firebrand
+Firebrands are the classic bright red fire breathers of dragon legend.  There is magic in the fire that escapes their mouths, and it can do far more than just burn, such as destroying an enemy’s weapons and armor.  As rank increases, Firebrand dragons will also learn a few spells of their own.  Primary attributes are strength and intelligence.  While they will eventually learn to fly, consider a high speed attribute to dodge attacks.
+
+
+Sylavin
+The Sylavin dragon is a more thoughtful creature than the Firebrand.  They can do more damage to a single opponent, but lack the ability to attack multiple foes at once.  They are blue-green in color, and breathe a toxic stream of freezing mist instead of fire.  They learn powerful breath attacks slower than the Firebrand, but learn to fly faster.  Sylavin dragons learn many unusual powers as rank increases, and are more versatile than the Firebrands.  Primary attributes are intelligence and strength, but as with any dragon, speed is useful for dodging attacks.
+</Text>
+        </Document>
+        <Document ID="22">
+            <Title>Songs</Title>
+            <Text>Songs
+For the beta, the only instrument available to Bards will be a special Lute whose back can be struck like a drum.  This allows me to have sound effects for Songs that are either short acoustic plucking guitar notes or a short bongo-like drum roll.
+
+
+Rally Drum
+Attempts to embolden all party members, removing fear and doubt, and conferring the Undaunted Condition upon them.
+How many party members become Undaunted depends on the Bard’s Charm, Intelligence, and Rank.
+
+Spirit Resonance
+All magical party members gain Mana through magical music.
+How much Mana is gained depends on the Bard’s Charm, Intelligence, and Rank.
+
+Rousing Rhythm
+Wakes party members from Natural Sleep, and removes the Dazed and Unconscious Conditions.
+The chance that a Condition is removed depends on the Bard’s Charm, Intelligence, and Rank.
+
+Trip Beat
+Confuses the feet of your enemies, causing them to fall over, bestowing the Tripped Condition.
+The chance that each single enemy is Tripped depends on that creature’s Intelligence, Rank, and on the drumming Bard’s Charm, Intelligence, and Rank.
+
+Panic Strings
+Attempts to scare all enemies, giving them the Panic Condition.
+The chance that each single enemy is Panicked depends on that creature’s Intelligence, Rank, and on the drumming Bard’s Charm, Intelligence, and Rank.
+
+Lullaby
+Attempts to put all enemies into a magical sleep.
+The chance that each single enemy is slept depends on that creature’s Intelligence, Rank, and on the playing Bard’s Charm, Intelligence, and Rank.
+
+
+Dirge
+Carol
+Chant
+Anthem
+Aria
+Ballad
+Ditty
+Lyric
+Tune
+</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Stats</Title>
+            <Text>Stats
+
+
+Strength
+Simply a measure of how strong you are.  How strong an adventurer is primarily determines how much damage is dealt during combat, but strength also effects many other things.  For example, strength determines how much you can carry, what kinds of weapons you can use, and how much health you start out with.  The Strength attribute is primarily a concern for Knights and Archers, but also for Beastmasters and Bards if they are not Pixies.
+
+
+Accuracy
+How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you craft for fighting.
+
+
+Luck
+Luck is applied in almost every endeavor, but Thieves are primarily focused on Luck in their underhanded trade.  Spell casters also benefit from Luck.
+
+
+Charm
+How pleasant looking and diplomatic a character is.  Having higher Charm in a party as a whole will make beneficial, non-combat, encounters more likely.  Charm is also useful in everyday negotiations, such as buying and selling goods.  Clerics and Bards need Charm far more than any other roles.
+
+
+Speed
+How fast and dexterous the adventurer is.  This attribute will help with avoiding melee attacks, but is also important for a Thief’s slight of hand.
+
+
+Intelligence
+A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
+</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Item Materials</Title>
+            <Text>Materials
+There are many materials, but only 16 in the Core Set:  bone, stone, obsidian, pearl, 7 metals, and 7 gems.  Only Core materials participate in providing bonus for items that vary by material.  Below is the list of Core materials in order of worth/rarity/significance/magical-effect.  Those in parens are not part of the Core Set.  Next to each Core material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of Core materials, and the number of uses possible is the bonus number assigned to that material.  An S in front of a material means it is part of the special set: bone, stone, obsidian, pearl.  An M in front of a material means it is a Core metal.  An G in front of a material means it is a Core gemstone material.
+
+-	(Cloth)
+-	(Hide)
+-	(Soft Leather)
+-	(Hard Leather)
+-	(Plant)
+-	(Claw)
+-	(Scale)
+-	(Horn)
+S	Bone		1
+-	(Tooth)
+-	(Wood)
+S	Stone		2
+S	Obsidian	3
+M	Tin		4
+M	Bronze	5
+M	Iron		6
+M	Steel		7
+G   	Jade		8		
+G	Amethyst	9
+G	Emerald	10
+S	Pearl		11
+G	Ruby		12
+G	Lazuli	13
+M	Silver		14
+G	Sapphire	15
+M	Gold		16
+M	Platinum	17
+G	Diamond	18
+</Text>
+        </Document>
+        <Document ID="14">
+            <Title>Spells</Title>
+            <Text>Spells
+
+Sparks
+Sprays a single enemy with a shower of molten sparks causing minimal damage.
+This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.
+
+
+Bandage
+Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.
+This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is learned, there is little reason to ever use this spell again.
+
+
+Sleep
+Puts a single enemy into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.
+
+
+Blanket
+Puts multiple enemies into a natural sleep.
+Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.  Which enemies are effected is random, but the number and likelihood of success both increase with Rank, so this spell remains useful for the whole game.
+
+
+Awaken
+Revives a single character from unconsciousness or sleep.
+Only affects one character.  This can be used to wake a character from either a natural or magical sleep.
+
+
+Wake Horn
+Blasts a magical 
+
+
+Trip
+Knocks a single enemy off of their feet and rolls them onto their back, reducing their stats and forcing them to waste a turn getting back up. 
+Only affects one enemy.  Some creatures take more than one turn to get up once flipped onto their back.
+
+
+Lift
+Returns a single tripped character to their feet without having to waste a turn getting up.
+Some creatures take more than one turn to get back on their feet, so this spell is more useful to some races than others.
+
+
+Daze
+Causes a single enemy to become dazed, reducing their stats, for one or more turns.
+It can take multiple turns to wake from being dazed naturally without intervening.
+
+
+Frighten
+Scares a single enemy, reducing their stats.
+It can take multiple turns to recover from being scared.
+
+
+Clear Mind
+Removes the Dazed and or Frightened condition from a single character.
+It can take multiple turns for a creature to recover from being Dazed or Frightened without intervening.
+
+
+Poison
+Poisons a single enemy, causing a reduction of stats and the loss of a small amount of health each turn.
+Some creatures can poison your characters just by attacking them during combat, such as poisonous snakes and Sylavin dragons.
+
+
+Antidote
+Cures the poisoned condition from a single character.
+This spell works whether the poisoning was natural or magical.
+
+
+Poison Cloud
+Attempts to poison a number of enemies, reducing their stats and causing a small amount of damage each turn.  The number of creatures effected depends on the caster’s intelligence and Rank.
+Some creatures breathe a poisonous cloud that can effect your characters in the same way as this spell.</Text>
+        </Document>
+        <Document ID="40">
+            <Title>Coding Reminders</Title>
+            <Text>Coding Reminders
+
+Remember to use constexpr and delegating constructors
+
+Class names should be nouns, and should avoid: Manager, Processor, Data, Info, Object, Part, Entity.
+
+“Every comment is a failure to explain yourself in code.”
+
+Instead of making a comment to explain a complex conditional,  make a well-named function.
+
+&lt; = &gt;, “Less is more.”
+
+C++14 introduced generic lambdas, use them.
+
+Prefer std::vector over std::list almost always, but default to using std::array first.  (It can be optimized away…)
+</Text>
+        </Document>
+        <Document ID="23">
+            <Title>Conditions</Title>
+            <Text>Conditions
+
+Good
+No ailments.
+
+Unconscious
+Alive, but unresponsive, and vulnerable to attack.
+
+Dazed
+Temporarily unable to act, and vulnerable to attack.
+
+Poisoned
+Poison has infected the bloodstream draining health over time.
+
+Tripped
+Knocked down and vulnerable to attack.  Must spend a turn getting back up.
+
+Stone
+Turned to stone.
+
+Dead
+Dead, and beyond the skill of most healers.
+
+AsleepNatural
+In a calm natural sleep that can be interrupted by being hit or even when hearing a beast roar.
+
+AsleepMagical
+In a deep magical sleep that cannot be interrupted by hearing beast roars or even by being hit.
+
+Panicked
+Crippled with fear.  Stats are significantly reduced.
+
+Daunted
+Discouraged and disheartened.  Minor reductions to some stats.
+
+Bold
+Emboldened  and heartened.  Moderate increases to stats.
+
+Heroic
+Fearless and invigorated.  All stats are significantly increased.
+
+Pounced
+Knocked over and held down by a beast.  Stats are significantly reduced.</Text>
+        </Document>
+        <Document ID="32">
+            <Title>Herbs</Title>
+        </Document>
+        <Document ID="15">
+            <Title>Image Compression</Title>
+            <Text>Image Compression
+
+PNG
+Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I’ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been very successful.  Below is an analysis of the tools followed by a conclusion for how to use them.
+
+
+OptiPNG
+This app is good, but grayscale and palette reduction features are not fully implemented making this useless for me.
+
+
+PNGReWrite
+This app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line tools for pngrewrite.  The little bit added to most files makes this not an option for me.
+
+
+PNGWolf
+Lossless PNG file compressor that only optimizes the filters, and does not strip metadata or reduce colors, etc.  It is really intended as a ‘last step’ in the compression process to squeeze the last few bytes out.  The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That Windows app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the windows batch file to use for pngwolf:
+
+for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
+
+
+Photoshop
+The version of Photoshop I have has the ‘Export for Web’ feature still built-in, but it is label ‘Legacy’.  Still, it works better than any other export options I could find.  Set it for PNG-8, grayscale, 16 colors, dither smooth, no metadata, and the file size is very small.  After doing this to all creature GIFs (starting at 2,911,202 bytes), the result was a total of 1,604,504 bytes.  Not bad.  About half the size.
+
+The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble…
+
+
+PNGQuant
+This command line util can be installed with “brew install pngquant”, and it can shrink files really well, really fast.  Running PNGWolf or FileOptimizer afterwards it is a good idea, shaving approx 200-20000 more bytes depending.  Beware never to set the quality (Q) setting to less then 100 (perfect) because it has a nasty habit of dithering poorly, adding speckles in the pure white/transparent areas where there should be none.  However, you CAN use this tool as an effective first-pass compressor to reduce the color count instead of Photoshop.  Here is the command line for that:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
+
+pngquant -s 1 --skip-if-larger --strip --ext .png -f &lt;insert color count here&gt; *.png
+
+Here is the command line for lossless compression:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
+
+pngquant -s 1 -Q 100-100 --skip-if-larger --strip --ext .png -f *.png
+
+
+FileOptimizer
+This is a windows only multi-format (HUGE list of supported file types) lossless compressor that uses a multi-pass approach.  For example, for PNGs, FileOptimizer employs PNGWolf, pngOut, Leanify, ECT, TruePNG, and others.  It does the job of using all the apps I’ve described above (and many more), but the real advantage is that it performs them in the correct order.  This is a great app that does just what I need, in one step.  The only problems are (1) that it takes a LONG time on PNG files, and (2) the code is not parallelized so it doesn’t use the processor efficiently.  Still, it rocks, and I’m tempted to let it run on the entire Heroes’ Path image set.  (I eventually did using multiple windows XP VMs…)  It is running away on the PC in my room on my entire photo library right now…
+
+Uh oh…. It seems that SFML is having a problem displaying some images compressed with FileOptimizer, the images look erratic and strange.  I re-did the compression pass on roughly 80 files that didn’t display properly, and
+
+
+PNG Conclusions
+Use Photoshop or PNGQuant for the lossy first-pass to reduce the color count to a desired value (usually 16, that is the color count for all item and creature images), and then use FileOptimizer (which employs PNGWolf, among many others) to finish.
+
+
+
+JPEG
+Some photo-style full-color images are just better served by the JPG format, and Photoshop’s JPG compression leaves a lot to be desired.
+
+TinyJPG
+This is a website, and it does reduce the number of colors in your original (lossy-compression) (technically), but the results look great.  It is meant for web image compression and works perfectly in that domain.  I think in most cases this is a solid choice for the ‘first step’ tool.
+
+JPEGmini
+This tool has a free version that allows 20 compressions a day.  It’s a simple straightforward drag-and-drop app that does a good job.  Good, not great.  CodeKit beats it, by far.  Skip this tool.
+
+CodeKit
+This app is really a web development tool that focuses on doing everything for you.  Shame.  If you take the time to turn off everything it tries to on the side, this can shrink JPG files remarkably.  The best part is, it’s lossless.
+
+JPEG Conclusions
+If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compressor, use FileOptimizer.
+</Text>
+        </Document>
+        <Document ID="41">
+            <Title>Traits</Title>
+            <Text>Traits
+All Traits are percent values that either provide a bonus or penalty to some attribute, stat, or likelihood that something will happen.  Knowing what the different Traits are will help educate players in some aspects of the game.  The complete list of Traits is below:
+
+
+Strength
+Accuracy
+Charm
+Luck
+Speed
+Intelligence
+	A bonus to the value of a stat.
+
+Mana
+	A bonus to the amount of mana a character has.
+
+Armor Rating
+	A bonus to the armor rating of a character.
+
+Magic Cast
+	A bonus to the chance that a spell will work.
+
+Magic Effect
+	A bonus to how 
+Magic Resist
+Encounter
+Surprise
+Find Religious
+Find Magic
+Find Coins
+Backstab
+Health Gain Melee
+Health Gain All
+Animal Resist
+Damage Bonus Fist
+Damage Bonus Melee
+Damage Bonus Projectile
+Damage Bonus All
+Poison On Melee
+Poison On All Damage
+Panic On Spell
+Curse Cast
+Curse Effect
+Curse Resist
+Curse On Damage
+Bless Cast
+Bless Effect
+Bless Resist
+Power Hit
+Critical Hit
+Fire Damage
+Fire Resist
+Frost Damage
+Frost Resist
+Honor Damage
+Honor Resist
+Shadow Damage
+Shadow Resist
+</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Towns</Title>
+            <Text>Towns
+
+
+Mudgate
+	Barrow Inn
+
+Thornberry
+	Black Candle Inn
+
+Trolleyville
+	?
+
+Bridgeway
+	Aven’s Rest Inn
+
+Riverton
+	The Oak Room Inn
+
+
+
+
+
+
+</Text>
+        </Document>
+        <Document ID="24">
+            <Title>Armor Ratings</Title>
+            <Text>Armor Ratings
+
+Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with, as of 2017-6-20:
+
+clothesCloth=104
+clothesSoftLeather=120
+clothesHardLeather=136
+
+armoredLesserSoftLeather=233
+armoredLesserSteel=532
+armoredLesserDiamond=682
+
+armoredGreaterSoftLeather=296
+armoredGreaterSteel=832
+armoredGreaterDiamond=1021
+
+So a civilian in plain clothes will have an armor rating of about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
+</Text>
+        </Document>
+        <Document ID="33">
+            <Title>Alchemy</Title>
+            <Text>Alchemy
+There are 32 potions and 32 herbs that can be mixed together with each other to create new concoctions.  This process of mixing potions and herbs is called Alchemy.  The results from Alchemy can be applied to items to enchant them, but this is not considered Alchemy.  Some highly valued items can only be created this way.  Some quests can only be completed through Alchemy or item enchantment.  Players will not be forced to engage in Alchemy to win the game, but information provided during play will tempt them.  Alchemy can only be performed by players with a magic mortar and pestle item.  Alchemy never fails.  It always results in a new concoction with properties based on the ingredients.  Some combinations result in a special, named, concoction that is more than the sum of its parts.  These combinations are called recipes.  Some recipes will be given to the player in the manual, and some are only revealed while adventuring.
+
+Potions
+Potions take the form of a drinkable tonic, poison, liquor, brew, drink, or infusion, or a usable rub, balm, salve, ointment, cream, mash.  There are also potions that are acids.  Acids are both drinkable and usable, but no matter which way you choose to apply it, it’s gonna hurt…  Each Potion has effects that can be applied even before they are mixed in Alchemy.
+
+Name		Form		Permanent	Effects
+
+
+Herbs
+Herbs take the form of either a flower, grass, vine, stem, leaf, root, or seed.  Each herb has an amount that is defined by a use count.  Herbs are all edible and must be eaten to trigger whatever their effect is, whether beneficial or harmful.  Each Herb has effects that can be applied by eating them even before they are mixed in Alchemy.
+
+Name 		Form		Permanent 	Effects
+
+
+
+Form Combination Rules
+Herbs mixed only with other herbs always produce a powder blend in a bag/sack/sachet/pouch.
+Drinkable potions mixed with anything else always result in another drinkable potion.
+A liquor mixed with anything else always results in either another liquor, drink, or brew.
+Potions that are not drinkable, when mixed with other potions or herbs always result in another non-drinkable form.
+
+
+Possible Reactions
+
+Conditions
+Hero/Embolden/Daze/Daunt/Panic/Poison
+
+Permanent or Temporary Enchantment
++/- % Trait (see Traits)
+Allows casting curse or bless without items
+Allows flying during combat
+
+
+Recipes
+Todo
+</Text>
+        </Document>
+        <Document ID="16">
+            <Title>Static Analysis</Title>
+            <Text>Static Analysis
+
+
+Visual Studio
+I added the following extra warning flags to each project in the solution:
+/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 
+
+The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.
+
+
+
+CPPCheck
+This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/src“.  Note the space between the “-j” and the “7”, unlike make.
+
+
+
+Valgrind
+The undisputed heavyweight champion of runtime analysis.  Use it.
+
+Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.
+
+Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.
+
+Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:
+cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src
+
+Here is the command line for running Valgrind:
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath
+
+Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
+
+
+
+PVS-Studio
+I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:
+
+~/src/heroespath-build-vs find . -name *.suppress -exec cp {} ~/src/heroespath-src/pvs-studio-suppressions/ \;
+(and then check-in the newly updated suppressions files in ~/src/heroespath-src)
+
+
+
+Flint++
+Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
+
+
+
+
+
+
+</Text>
+        </Document>
+        <Document ID="9">
+            <Title>CharacterCreationHelp</Title>
+            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+
+If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
+
+Classic
+
+Knight
+Archer
+Bard
+Thief
+Cleric
+Sorcerer
+
+
+
+Pet
+
+Knight
+Beastmaster
+Dragon or Wolfen
+Bard
+Thief
+Cleric
+
+
+
+Wing
+
+Beastmaster
+Firebrand Dragon
+Sylavin Dragon
+Sorcerer or Bard
+Thief
+Cleric
+
+
+
+Howler
+
+Beastmaster
+Wolfen
+Wolfen
+Wolfen
+Thief
+Cleric
+
+
+To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+</Text>
+        </Document>
+        <Document ID="25">
+            <Title>manual</Title>
+        </Document>
+        <Document ID="34">
+            <Title>Items</Title>
+            <Text>Items
+
+
+Materials
+All items are made with specific materials, but some materials are more desirable than others.  Some materials carry bonuses, enchantments, a certain number of uses, or other special powers.  Here is a list of common materials, in order of rarity and power, from least to most:
+
+Bone
+Stone
+Obsidian
+Tin
+Bronze
+Iron
+Steel
+Jade
+Amethyst
+Emerald
+Pearl
+Ruby
+Lazuli
+Silver
+Sapphire
+Gold
+Platinum
+Diamond
+
+There are many more ways that an item can vary apart from the material it is made of.  Most significantly, an item an be magical, that is, enchanted to give the creature holding or equipping it percent bonuses to various Traits.  Read more about Traits in the paragraph below.  For example, an item might be enchanted to increase your armor rating Trait by a certain percentage.  There are also items that will provide bonuses or perform amazing effects when used.  For example, one of the items you can find in your adventures are Spider Eggs, that when used, will summon Giant Spider creatures to fight for your party during combat.  Magical or enchanted items have a star ‘*’ at the end of their names.  In the inventory screen, hover the mouse over an item to reveal all the details about it, including all of its enchantments.
+
+
+Enchanted Items
+Each of your characters has forty-four Traits that can be effected by enchanted items.  All Traits are percentage bonuses.  For example, if your character normally has 20 Strength, but also has an enchanted item that provides a 5% Strength Trait Bonus, then your character will have 21 Strength total.  In the Inventory screen, press the ‘A’ key to see all of a character’s Traits, including all the bonuses to those Traits gained from the sum of all enchantments.  See Traits.
+
+With so many Traits, the choice of which item is best for a character can get confusing.  To make the decision simple and clear, there is a comparison feature in the Inventory Screen.  Select an item from both the equipped and unequipped list boxes, and then press the ‘X’ Key.  Two Trait lists will appear side-by-side for easy comparison.  The first list on the left will show the character’s traits as they are, and the second list on the right will show what that character’s Traits would be if the items were reversed, that is, if the unequipped item was equipped in the other’s place.
+
+
+Item Sets
+Some items belong to a Set.  All items belonging to a Set are magical, enchanted to have special bonuses that you get from equipping one item, and then even bigger bonuses you get after equipping all of the items in the Set.  Items belonging to a Set can be identified by ‘The’ in their names.  For example, Thieves have a set called ‘The Assassin’s’, and the Boots belonging to that Set are named ‘The Assassin’s Boots’.  The Assassin’s Set has seven items to collect in all: Boots, Pants, Shirt, Gloves, Cloak, Dagger, and Lock Picks.  The special bonus for the complete Set will not take effect until all items in the Set are equipped.  It is perfectly fine to wear items belonging to non-matching Sets.  The individual bonuses for those items will still take effect even though they are non-matching.
+
+
+Wands
+Cleric’s and Sorcerer’s require an enchanted item to cast spells with, typically a wand.  When the game begins, they start out with simple wooden wands that have the minimal required enchantment to cast spells with.  Keep an eye out for other more powerful items with bonuses to mana, stats, and even to the chance that a spell is cast or resisted.  Here are some items that enable casting spells, listed in order of rarity and desirability:  wand, shard, staff, orb, scepter.  There are rare items that are even more powerful, some only available upon completion of quests.
+
+
+Musical Instruments
+Bard’s require a musical instrument in order to play magical songs.  There are many different musical instruments that can be found during your adventures.
+
+
+Elemental Types
+There are four elemental powers in Etan: Fire, Frost, Honor, and Shadow.  Every weapon and attack spell has the ability to cause extra elemental damage, and every piece of armor (and some other enchanted items) can help you characters resist elemental damage.  Look for items whose named end with of Fire, of Frost, of Honor, and of Shadow, or a combination such as of Shadow and Fire, etc.  These magic items carry elemental damage and resistance bonuses.
+
+
+Named Items
+Some magical items are named, and they have enchantments with bonuses that are common to those names.  For example, the ‘Winter’ name may be seen in front of a weapon’s name, meaning it has the ‘Winter’ enchantment, which is a +33% to the Trait ‘Frost Damage’.
+
+
+
+With all the various Materials, Enchantments, Names, and Elemental types, there are roughly a half-million different items in the game!
+</Text>
+        </Document>
+        <Document ID="17">
+            <Title>dev</Title>
+        </Document>
+        <Document ID="26">
+            <Title>Combat</Title>
+            <Text>Combat
+
+Each creature takes a turn in the order of who has the greatest Speed stat.
+
+The Attack option will automatically choose a target enemy creature, usually whoever has the lowest relative health, while the Fight option allows you to specify which enemy creature to target.  When you want to pick which enemy to fight yourself, press the ‘F’ key and then click on an enemy once.  Your characters are limited to fighting enemies near you, unless they are flying.
+
+To fly, press the ‘Y’ key.  An animated flapping wing will be displayed on any creature who is flying.
+
+To see a summary view with detailed information about a creature on the battlefield, click on it once.
+
+To switch to the Inventory, press ‘I’, or double-click one of your characters.  The Inventory Screen contains all the information about your characters.
+
+Sometimes a character will have multiple weapons to choose from.  To switch between weapons, press the ‘X’ key.
+
+The Enter key will automatically attack, block, or skip a character’s turn, in that order, depending on which are possible.  If you want to speed up combat and use all default actions, keep pressing the Enter key.  Pressing the spacebar or clicking the mouse can be used to skip past messages when you want to speed up combat.
+
+If a character runs away or dies, it will not receive experience from the battle, even if you win the fight.
+
+Sometimes a creature cannot move past enemies on the battlefield if there are too many blocking the way, or if some of those creatures are blocking, but flying creatures can always advance or retreat.
+
+
+Hints
+Whoever advances to meet an opponent is then at risk of being attacked by that opponent, so it is often wiser to wait and let your enemies come to you.
+
+If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
+
+Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.
+
+When a creature is healed and regains all health, it removes the Dazed, Daunted, and Panic conditions.
+
+If a creature is hit with more than twice their maximum health, they will immediately die.
+
+If under a natural sleep during combat, being hit will wake the creature up.
+
+It is easier to pounce on an enemy that is Dazed, and it always works if they are Tripped, Asleep, or Unconscious.
+
+Choose whether or not to fly carefully.  For example, if you have two dragons, flying can make them less vulnerable but it might make the remaining Beastmaster (or other characters) more vulnerable.
+
+The Lift spell removes the Tripped condition, but it will also remove the Pounced condition.
+
+Cleric’s spell casting should be carefully considered.  On the one hand, you will want your Cleric to contribute to winning the fight, but on the other hand, you will want to save their mana for healing.
+
+Prioritize so that you first attack the enemies that are the greatest threats.  Eliminate spellcasters, archers, and high-ranking enemies first.
+
+If a particular enemy is curious or causing you problems, remember that you can click on it once and see a summary of its condition and equipment.
+</Text>
+        </Document>
+        <Document ID="35">
+            <Title>When Combat Is Over</Title>
+            <Text>When Combat is Over
+
+When combat is over, your party will often find a stash of treasure left behind by the creatures you concurred in a chest or lockbox.  These are often locked, and if so, they often have traps waiting to spring that will harm your characters or even kill them.  You can choose which member of your party will attempt to pick the lock without setting off the trap.  You should choose whoever has the greatest luck, usually your Thief.  Your Thief should never be caught adventuring without their trusty Lock Picks.  There are many different Lock Pick items to be found in Etan, explore far and wide to find the best one you can.
+</Text>
+        </Document>
+        <Document ID="18">
+            <Title>game design</Title>
+        </Document>
+        <Document ID="27">
+            <Title>Combat Over</Title>
+            <Text>Victory!
+Congratulations, your party has beaten all enemies on the field of battle and emerged victorious.  Will you search for loot?
+
+
+Death Strikes!
+The dangers of Etan have claimed another party of adventurers.  All of your characters have been incapacitated or killed, but all is not lost.  Your saved games remain and can be loaded at any time.  Click YES to restart from your last save, or click NO to quit.
+
+
+Defeat!
+You have run from battle, and as a consequence, you will earn no experience and loot no treasure.</Text>
+        </Document>
+        <Document ID="19">
+            <Title>Maps</Title>
+            <Text>Maps
+
+Use the Tiled app:  http://www.mapeditor.org/
+
+Start a new map with these options:
+	Orthogonal
+	CSV
+	Right Down
+
+	Width: 40
+	Height: 40
+	or
+	Width: 20
+	Height:20
+
+#x# of tiles is up to you depending on how big you want the map.  There is no limit.  You can change your mind later and resize the map at any time.
+
+When saving your map, always use the .tmx file type.  This will save in XML with CSV data fields.
+
+Use layers carefully, and save often.  Tiled will not save automatically.
+
+Chose a name for your layers that includes the following keywords so the game engine knows what to do with them: (not case sensitive)
+	ground - everything that the player is drawn on top of
+	object - everything that is drawn on top of the player
+	collision - contains rectangles that define where the player cannot walk
+	shadow - contains only shadows cast by objects (and drawn on top of the player)
+
+For example, a map may have the following layer names:
+	ground
+	ground
+	ground grass
+	dirt patches on ground
+	ground stone path
+	tree objects
+	all other objects
+	collisions
+	shadows
+
+NOTE:  Multiple layers with the same name works fine.
+
+Tileset images that contain the keyword "shadow" in their name will be altered by the game engine.  They will be erased except for the shadows themselves.  So collect shadow tiles together in their own Tileset images, and use only them to place shadow tiles on the map.
+
+The RGB color (75, 99, 127) is the default background color.  ALL Tileset images that contain that color  will have it changed to transparent by the game engine.
+
+The layers will be drawn in order from bottom to the top as listed in the Tiled app.
+
+The tiles will be drawn in order until the first is encountered that came from an image that contained the keyword 'object', and then the player will be drawn before that tile.
+
+Because of this, it is wise to draw tiles on layers exclusively.  That is, give each layer a singular purpose and a fitting name with the appropriate keyword, then choose a tileset image for that layer and only place tiles from that tilset on that layer.  For example, don't place tiles from an 'objects' image on a layer named 'ground'.  In such a case, when the game engine reaches the object tile, it will start drawing all subsequent tiles on top of the player, even if they are ground tiles.  So keep layers exclusive to tile images.
+
+</Text>
+        </Document>
+        <Document ID="28">
+            <Title>Rank Class</Title>
+            <Text>Rank Class
+As your characters advance into higher ranks, they also advance through general levels of skill called Rank Classes.  As you can see in the lists below, Wolfens reach Elder status sooner than Dragons, but in the end, dragons are more powerful.  As your beasts progress in Rank Class, you will notice their roars becoming stronger and louder.  Advances in class also bring bonuses to stats and the acquisition of new abilities.
+
+
+Humanoid
+1-3 Novice
+4-6 Trainee
+7-12 Skilled
+13-25 Expert
+26-49 Master
+50+ GrandMaster
+
+
+Wolfen
+1-2 Pup
+3-9 Juvenile
+10-19 Adult
+20-39 Noble
+40-79 Highborn
+80+ Elder
+
+
+Dragon
+1-2 Hatchling
+3-9 Whelp
+10-19 Fledgling
+20-34 Juvenile
+35-54 Adult
+55-69 Wyrm
+71-99 Skycaster
+100+ Elder
+</Text>
+        </Document>
+        <Document ID="37">
+            <Title>Equipment Types</Title>
+            <Text>Equipment
+
+
+Weapons
+
+Staffs:2
+	Staff/Quarterstaff
+[147/294]
+
+
+Knives:4
+	Small/Large Knife/Dagger
+[147/588]
+
+
+Swords:11
+            Shortsword
+            Gladius
+            Cutlass
+            Falcata
+            Rapier
+            Saber
+            Broadsword
+            Longsword
+            Knightlysword
+            Flamberg
+            Claymore
+[147/1617]
+
+
+Axes:4
+            Handaxe
+            Sickle
+            Battleaxe
+            Waraxe
+[147/588]
+
+
+Clubs:4
+            Spiked
+            Maul
+            Mace
+            Warhammer
+[147/588]
+
+
+Whips:3
+            Bullwhip		[no variable primary, standard 14 secondary]
+            Flail			[147]
+            MaceAndChain	[147]
+[variable,308]
+
+
+Projectiles:6
+            Blowpipe
+            Sling
+            Shortbow
+            Longbow
+            Crossbow
+            CompositeBow
+[147/882]
+
+
+Bladed Staffs:6
+            ShortSpear
+            Spear
+            Scythe
+            Pike
+            Partisan
+            Halberd
+[147/882]
+
+[5747]
+40 weapons
+
+
+
+Armor
+
+Pants/Boots/Shirt/Bracer/Aventail/Gauntlets[205]:6
+Armor Base Types:4
+            Plain
+            Mail
+            Scale
+            Plate
+
+[978] 18 typed combinations
+[1230] 24 combinations
+
+
+Shields:4
+            Buckler
+            Kite
+            Heater
+            Pavis
+[107/428]
+
+
+Helms:6
+            Leather
+            MailCoif
+            Kettle
+            Archers
+            Bascinet
+            Great
+[107/428]
+
+
+[1834] typed
+[2086] typical
+30 typical combinations
+8 typical pieces
+
+
+Covers:4
+            Cape
+            Vest
+            Robe
+            Cloak
+[12]
+
+
+[1846] typed
+[2098] all
+38 all combinations
+9 all pieces</Text>
+        </Document>
         <Document ID="29">
             <Title>Items</Title>
-            <Text>Limits/Rules
+            <Text>Items
+There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier’s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow).  
+
+Limits/Rules
 Item Set cumulative bonuses apply to every item owned in the set AFTER the first.  So cumulative bonuses are granted starting with the second item equipped.
 
 Only one Fingerclaw per hand (arm in the code) may be equipped at a time.
@@ -842,14 +1224,12 @@ Vulture Gizzard -If used: cures poison, three uses
 Warhorse Marionette -If held: 22% str, 22% armor, -13% spd, 13% power, -16% int, very heavy
 Weasel Totem -If held: 28% spd, 18% lck, -6% encounter
 Wolfen Fur -If held: 28% animal resist, 16% spd, -16% cha, -13% int
-Zombie Seeds -If used: summons a Ghoul creature to fight for the party, ten uses
-[{51}]
+Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist
+[{52}]
 
 Razor Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4)                   -If equipped: -13% cha, 500% fists damage, 13% melee damage
 Viper Fang Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4)           -If equipped: -16% cha, 500% fists damage, 16% melee damage, 13% melee poison
 Scorpion Stinger Fingerclaw &lt;of Fire/Frost/Shadow&gt;(4) -If equipped: -18% cha, 500% fists damage, 18% melee damage, 18% melee poison
-
-Wraith Talisman -If held: -16% cha, 8% find magic, 8%/13%/13% magic cast/effect/resist, 13%/33%/33% curse cast/effect/resist, if used: panics enemies, infinite uses
 
 Evil Rabbit’s Foot -If held: -66% lck, 6% surprised, 6% encounter, -6% find magic, -66%/-66%/66% bless cast/effect/resist, 66%/666%/666% curse cast/effect/resist, -66% animal resist
 
@@ -874,7 +1254,7 @@ Swindler’s Bag 	-If equipped: 22% find coin, 8% find magic, 22% lck, 5% critic
 Pixie Bell 			-If used: 10% mana, removes conditions dazed/asleep-natural
 Crystal Chimes 		-If used: 15% mana, removes conditions dazed/asleep-natural/daunted
 Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/daunted/panic, heavy
-[28]
+[27]
 {22}
 
 &lt;Metal&gt; War Trumpet(7) -If used: 3% + material based +% Panic enemies, then if not,  13% + material based +% Daunt enemies
@@ -1339,456 +1719,6 @@ Totals:
 {335}
 [332420] or [333444] if you add 32x32 alchemy mixes</Text>
         </Document>
-        <Document ID="21">
-            <Title>Audio Compression</Title>
-            <Text>Music and sound effects audio files are normalized to -3db in Audacity.  There is an exception for audio that is supposed to be more quiet or soft, in those cases the files are normalized to -8db.
-
-The OGG file format is used for all audio, with the quality set to 5 of 10.
- </Text>
-        </Document>
-        <Document ID="14">
-            <Title>Spells</Title>
-            <Text>Sparks
-Sprays a single enemy with a shower of molten sparks causing minimal damage.
-This is the first attack spell that any magic user learns.  It only effects one enemy.  This spell is quickly replaced by learning better attack spells, but everyone has to start somewhere.
-
-
-Bandage
-Wraps a single character’s worst wounds in magical bandages causing a minor increase of health.
-This is the first healing spell that any magic user learns.  Only effects one character.  Once a better healing spell is learned, there is little reason to ever use this spell again.
-
-
-Sleep
-Puts a single enemy into a natural sleep.
-Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.
-
-
-Blanket
-Puts multiple enemies into a natural sleep.
-Creatures in a natural sleep will be woken up if hit by attacks, damaging spells, or if a beast roars.  Which enemies are effected is random, but the number and likelihood of success both increase with Rank, so this spell remains useful for the whole game.
-
-
-Awaken
-Revives a single character from unconsciousness or sleep.
-Only affects one character.  This can be used to wake a character from either a natural or magical sleep.
-
-
-Wake Horn
-Blasts a magical 
-
-
-Trip
-Knocks a single enemy off of their feet and rolls them onto their back, reducing their stats and forcing them to waste a turn getting back up. 
-Only affects one enemy.  Some creatures take more than one turn to get up once flipped onto their back.
-
-
-Lift
-Returns a single tripped character to their feet without having to waste a turn getting up.
-Some creatures take more than one turn to get back on their feet, so this spell is more useful to some races than others.
-
-
-Daze
-Causes a single enemy to become dazed, reducing their stats, for one or more turns.
-It can take multiple turns to wake from being dazed naturally without intervening.
-
-
-Frighten
-Scares a single enemy, reducing their stats.
-It can take multiple turns to recover from being scared.
-
-
-Clear Mind
-Removes the Dazed and or Frightened condition from a single character.
-It can take multiple turns for a creature to recover from being Dazed or Frightened without intervening.
-
-
-Poison
-Poisons a single enemy, causing a reduction of stats and the loss of a small amount of health each turn.
-Some creatures can poison your characters just by attacking them during combat, such as poisonous snakes and Sylavin dragons.
-
-
-Antidote
-Cures the poisoned condition from a single character.
-This spell works whether the poisoning was natural or magical.
-
-
-Poison Cloud
-Attempts to poison a number of enemies, reducing their stats and causing a small amount of damage each turn.  The number of creatures effected depends on the caster’s intelligence and Rank.
-Some creatures breathe a poisonous cloud that can effect your characters in the same way as this spell.</Text>
-        </Document>
-        <Document ID="4">
-            <Title>Races</Title>
-            <Text>Human - Humans are a versatile race.  They are slightly stronger and more accurate with weapons, making them natural Archers, but they are a solid choice for other roles as well.  However, Humans lack the magical spark that brings luck, so they seldom make good Thieves.
-
-Gnome - Gnomes may be short and lack strength, but they have deceptively fast hands.  They are known to be grumpy, but the touch of magic that runs through their veins makes them luckier than any other race.  You may not like them, but they make excellent Thieves, and parties without a Thief on their side will regret it.
-
-Pixie - The Pixie is a tiny winged creature from the ancient world, but a few are still known to exist.  Their obvious lack of strength is more than made up for by their other significant advantages, including speed to keep their fragile bodies away from the melee.  They are the most intelligent race, making excellent Sorcerers and Clerics.  Pixies speak their own language, and sing so well they even make good Bards.
-
-Wolfen - The Wolfen are relatives of Dire Wolves, but magic fuels their strength and senses.  They gain significant special abilities as they progress in rank.  They may be weak in the beginning, an difficult to raise, but for those willing to put in the required time and care they grow into fearsome allies.  As with Dragons, having a Wolfen in your party means most innkeepers will turn you away, but the advantages often out-weigh the trouble of camping outside.  In fact, having a Wolfen in your party is an excellent way to prevent being surprised by dangers in the wilderness.  One of your adventurers must be a Beastmaster to have a Wolfen in your party.
-
-Dragon - The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
-</Text>
-        </Document>
-        <Document ID="37">
-            <Title>Equipment Types</Title>
-            <Text>Staffs:2
-	Staff/Quarterstaff
-[147/294]
-
-
-Knives:4
-	Small/Large Knife/Dagger
-[147/588]
-
-
-Swords:11
-            Shortsword
-            Gladius
-            Cutlass
-            Falcata
-            Rapier
-            Saber
-            Broadsword
-            Longsword
-            Knightlysword
-            Flamberg
-            Claymore
-[147/1617]
-
-
-Axes:4
-            Handaxe
-            Sickle
-            Battleaxe
-            Waraxe
-[147/588]
-
-
-Clubs:4
-            Spiked
-            Maul
-            Mace
-            Warhammer
-[147/588]
-
-
-Whips:3
-            Bullwhip		[no variable primary, standard 14 secondary]
-            Flail			[147]
-            MaceAndChain	[147]
-[variable,308]
-
-
-Projectiles:6
-            Blowpipe
-            Sling
-            Shortbow
-            Longbow
-            Crossbow
-            CompositeBow
-[147/882]
-
-
-Bladed Staffs:6
-            ShortSpear
-            Spear
-            Scythe
-            Pike
-            Partisan
-            Halberd
-[147/882]
-
-[5747]
-40 weapons
-
-
-
-Pants/Boots/Shirt/Bracer/Aventail/Gauntlets[205]:6
-Armor Base Types:4
-            Plain
-            Mail
-            Scale
-            Plate
-
-[978] 18 typed combinations
-[1230] 24 combinations
-
-
-Shields:4
-            Buckler
-            Kite
-            Heater
-            Pavis
-[107/428]
-
-
-Helms:6
-            Leather
-            MailCoif
-            Kettle
-            Archers
-            Bascinet
-            Great
-[107/428]
-
-
-[1834] typed
-[2086] typical
-30 typical combinations
-8 typical pieces
-
-
-Covers:4
-            Cape
-            Vest
-            Robe
-            Cloak
-[12]
-
-
-[1846] typed
-[2098] all
-38 all combinations
-9 all pieces</Text>
-        </Document>
-        <Document ID="22">
-            <Title>Songs</Title>
-            <Text>For the beta, the only instrument available to Bards will be a special Lute whose back can be struck like a drum.  This allows me to have sound effects for Songs that are either short acoustic plucking guitar notes or a short bongo-like drum roll.
-
-
-Rally Drum
-Attempts to embolden all party members, removing fear and doubt, and conferring the Undaunted Condition upon them.
-How many party members become Undaunted depends on the Bard’s Charm, Intelligence, and Rank.
-
-Spirit Resonance
-All magical party members gain Mana through magical music.
-How much Mana is gained depends on the Bard’s Charm, Intelligence, and Rank.
-
-Rousing Rhythm
-Wakes party members from Natural Sleep, and removes the Dazed and Unconscious Conditions.
-The chance that a Condition is removed depends on the Bard’s Charm, Intelligence, and Rank.
-
-Trip Beat
-Confuses the feet of your enemies, causing them to fall over, bestowing the Tripped Condition.
-The chance that each single enemy is Tripped depends on that creature’s Intelligence, Rank, and on the drumming Bard’s Charm, Intelligence, and Rank.
-
-Panic Strings
-Attempts to scare all enemies, giving them the Panic Condition.
-The chance that each single enemy is Panicked depends on that creature’s Intelligence, Rank, and on the drumming Bard’s Charm, Intelligence, and Rank.
-
-Lullaby
-Attempts to put all enemies into a magical sleep.
-The chance that each single enemy is slept depends on that creature’s Intelligence, Rank, and on the playing Bard’s Charm, Intelligence, and Rank.
-
-
-Dirge
-Carol
-Chant
-Anthem
-Aria
-Ballad
-Ditty
-Lyric
-Tune
-</Text>
-        </Document>
-        <Document ID="15">
-            <Title>Image Compression</Title>
-            <Text>Reducing PNG files
-
-Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I’ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been successful.  Below is an analysis of the tools follow by a conclusion for how to use them.
-
-
-OptiPNG
-This app is good, but grayscale and palette reduction features are not fully implemented making this useless for me.
-
-
-PNGReWrite
-This app either adds a little to the file size compared to OptiPNG or reduces it by an order of magnitude in some rare cases.  I ran pngrewrite on the output of OptiPNG for all creature images and found so few of the files reduced that the little extra added on to the majority of files was the dominant factor, making the total size of all files larger than the results of OptiPNG.  Still, it does catch some cases where less than 256 colors are required and significantly reduce those file sizes.  There are no command line tools for pngrewrite.  The little bit added to most files makes this not an option for me.
-
-
-PNGWolf
-Lossless PNG file compressor that only optimizes the filters, and does not strip metadata or reduce colors, etc.  It is really intended as a ‘last step’ in the compression process to squeeze the last few bytes out.  The author only provides source, but if you google for a binary you can find one posted to a messageboard.  That Windows app was able to shave 75-750 bytes off of the results of pngrewrite, but the reduction in file size might only be the amount that pngrewrite adds on compared to OptiPNG.  Here is the windows batch file to use for pngwolf:
-
-for %%X in (*.png) do (pngwolf.exe --max-stagnate-time=10 --7zip-mpass=15 --7zip-mmc=258 --7zip-mfb=258 --zlib-level=9 --in=%%X --out=%%X)
-
-
-Photoshop
-The version of Photoshop I have has the ‘Export for Web’ feature still built-in, but it is label ‘Legacy’.  Still, it works better than any other export options I could find.  Set it for PNG-8, grayscale, 16 colors, dither smooth, no metadata, and the file size is very small.  After doing this to all creature GIFs (starting at 2,911,202 bytes), the result was a total of 1,604,504 bytes.  Not bad.  About half the size.
-
-The real question is how much more compressed this can get if the best of the above apps is applied, PNGWolf.  It looks like PNGWolf is taking off 200-500 bytes per file.  That may not be worth the trouble…
-
-
-PNGQuant
-This command line util can be installed with “brew install pngquant”, and it can shrink files really well, really fast.  Running PNGWolf or FileOptimizer afterwards it is a good idea, shaving approx 200-20000 more bytes depending.  Beware never to set the quality (Q) setting to less then 100 (perfect) because it has a nasty habit of dithering poorly, adding speckles in the pure white/transparent areas where there should be none.  However, you CAN use this tool as an effective first-pass compressor to reduce the color count instead of Photoshop.  Here is the command line for that:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
-
-pngquant -s 1 --skip-if-larger --strip --ext .png -f &lt;insert color count here&gt; *.png
-
-Here is the command line for lossless compression:  (This will overwrite/replace files in-place, if they end up smaller.)  (Note the --strip option that will remove all metadata.)
-
-pngquant -s 1 -Q 100-100 --skip-if-larger --strip --ext .png -f *.png
-
-
-FileOptimizer
-This is a windows only multi-format (HUGE list of supported file types) lossless compressor that uses a multi-pass approach.  For example, for PNGs, FileOptimizer employs PNGWolf, pngOut, Leanify, ECT, TruePNG, and others.  It does the job of using all the apps I’ve described above (and many more), but the real advantage is that it performs them in the correct order.  This is a great app that does just what I need, in one step.  The only problems are (1) that it takes a LONG time on PNG files, and (2) the code is not parallelized so it doesn’t use the processor efficiently.  Still, it rocks, and I’m tempted to let it run on the entire Heroes’ Path image set.  (I eventually did using multiple windows XP VMs…)  It is running away on the PC in my room on my entire photo library right now…
-
-Uh oh…. It seems that SFML is having a problem displaying some images compressed with FileOptimizer, the images look erratic and strange.  I re-did the compression pass on roughly 80 files that didn’t display properly, and
-
-
-PNG Conclusions
-Use Photoshop or PNGQuant for the lossy first-pass to reduce the color count to a desired value (usually 16, that is the color count for all item and creature images), and then use FileOptimizer (which employs PNGWolf, among many others) to finish.
-
-
-
-Reducing JPG Files
-
-Some photo-style full-color images are just better served by the JPG format, and Photoshop’s JPG compression leaves a lot to be desired.
-
-TinyJPG
-This is a website, and it does reduce the number of colors in your original (lossy-compression) (technically), but the results look great.  It is meant for web image compression and works perfectly in that domain.  I think in most cases this is a solid choice for the ‘first step’ tool.
-
-JPEGmini
-This tool has a free version that allows 20 compressions a day.  It’s a simple straightforward drag-and-drop app that does a good job.  Good, not great.  CodeKit beats it, by far.  Skip this tool.
-
-CodeKit
-This app is really a web development tool that focuses on doing everything for you.  Shame.  If you take the time to turn off everything it tries to on the side, this can shrink JPG files remarkably.  The best part is, it’s lossless.
-
-JPG Conclusions
-If you need a lossy first-pass tool, use TinyJPG.  After, for a lossless compressor, use FileOptimizer.
-</Text>
-        </Document>
-        <Document ID="5">
-            <Title>Roles</Title>
-            <Text>Beastmaster -  Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
-
-Sorcerer - The Sorcerer is a role that is completely devoted to magic.  They specialize in all the arcane arts except for healing.  They are useless with weapons, and may be weak in the beginning, but in higher ranks they are a dominating presence to be reckoned with.  A Sorcerer’s primary attribute is intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
-
-Cleric - The Cleric is religious leader, focused on the magic of nature and all the various healing arts.  They are almost as devoted to magic as the Sorcerer, and over time will learn powerful spells of all kinds.  Most groups of adventurers find the restorative powers of the Cleric to be essential.  Having considerable charm also makes the Cleric ideal for negotiations, bartering, and diplomacy.  Primary attributes are charm and intelligence, but also consider speed for dodging attacks.  Luck never hurts a spell caster either...
-
-Knight - Your adventures will be fraught with battle, and a Knight will serve your party well.  They may not be the brightest of companions, but they make up for it by keeping your party safe.  Knights can use the widest variety of weapons and armor.  They are the only role that gains no magical abilities as they progress in rank.  All roles have the opportunity to be granted titles that provide special bonuses and abilities, and Knights have more titles to be earned than any other role.  A Knight’s primary attributes are strength and accuracy, but consider speed as well to assist in dodging attacks.
-
-Archer - The Archer’s best friends are his bow, and his accuracy using it.  While an Archer can swing a sword if they need to, they get special bonuses for using projectile weapons, such as slings, blowpipes, and of course, the bow and arrow.  Having an Archer is essential for the many flying enemies you will face.  The primary attributes of an Archer are accuracy and strength, but don’t discount speed and luck when using a bow...
-
-Bard - The Bard is a jack of many trades.  They may not be the fastest, but they weave the arts of a Cleric, the spells of a Sorcerer, and sometimes even the brawn of a Knight into one role.  Most of their skill lies in magical song that aids their fellow adventurers and hampers would be dangers.  Due to their talents being spread out, Bards may not be powerful in the beginning, and inexperienced players may struggle to guide them in the early ranks.  Intelligence and Charm are most important to a Bard, but also consider strength if you want them to be warriors as well.
-
-Thief - They are deplorable criminals, but every group of adventurers benefits from a Thief in their midst.  There will be locked doors and chests to pick open, and the need to steal back what is taken.  Some adventures are simply not available to a party without a Thief.  Luck and Speed are the Thief’s primary attributes, but also consider intelligence for the magic that will come with higher rank.
-
-Wolfen - There is only one possible role for a Wolfen, and that is to be their loyal but vicious selves.  They grow into powerful beasts that crave the magic of moon and starlight.  Their growl will strike fear into all, and send the weaker fleeing for their lives.  But it is never wise to run from a Wolfen, because they love to chase down, trip, and devour enemies with valuables.  Consider strength and speed when crafting a Wolfen, but don’t forget intelligence for the magic that comes with higher rank.  Also consider the many advantages of having multiple Wolfens in your party.  A pack of Wolfens work together...
-
-Firebrand - Firebrands are the classic bright red fire breathers of dragon legend.  There is magic in the fire that escapes their mouths, and it can do far more than just burn, such as destroying an enemy’s weapons and armor.  As rank increases, Firebrand dragons will also learn a few spells of their own.  Primary attributes are strength and intelligence.  While they will eventually learn to fly, consider a high speed attribute to dodge attacks.
-
-Sylavin -  The Sylavin dragon is a more thoughtful creature than the Firebrand.  They can do more damage to a single opponent, but lack the ability to attack multiple foes at once.  They are blue-green in color, and breathe a toxic stream of freezing mist instead of fire.  They learn powerful breath attacks slower than the Firebrand, but learn to fly faster.  Sylavin dragons learn many unusual powers as rank increases, and are more versatile than the Firebrands.  Primary attributes are intelligence and strength, but as with any dragon, speed is useful for dodging attacks.
-</Text>
-        </Document>
-        <Document ID="6">
-            <Title>Stats</Title>
-            <Text>Strength - Simply a measure of how strong you are.  How strong an adventurer is primarily determines how much damage is dealt during combat, but strength also effects many other things.  For example, strength determines how much you can carry, what kinds of weapons you can use, and how much health you start out with.  The Strength attribute is primarily a concern for Knights and Archers, but also for Beastmasters and Bards if they are not Pixies.
-
-Accuracy - How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you craft for fighting.
-
-Luck - Luck is applied in almost every endeavor, but Thieves are primarily focused on Luck in their underhanded trade.  Spell casters also benefit from Luck.
-
-Charm - How pleasant looking and diplomatic a character is.  Having higher Charm in a party as a whole will make beneficial, non-combat, encounters more likely.  Charm is also useful in everyday negotiations, such as buying and selling goods.  Clerics and Bards need Charm far more than any other roles.
-
-Speed - How fast and dexterous the adventurer is.  This attribute will help with avoiding melee attacks, but is also important for a Thief’s slight of hand.
-
-Intelligence - A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
-</Text>
-        </Document>
-        <Document ID="23">
-            <Title>Conditions</Title>
-            <Text>Good
-No ailments.
-
-Unconscious
-Alive, but unresponsive, and vulnerable to attack.
-
-Dazed
-Temporarily unable to act, and vulnerable to attack.
-
-Poisoned
-Poison has infected the bloodstream draining health over time.
-
-Tripped
-Knocked down and vulnerable to attack.  Must spend a turn getting back up.
-
-Stone
-Turned to stone.
-
-Dead
-Dead, and beyond the skill of most healers.
-
-AsleepNatural
-In a calm natural sleep that can be interrupted by being hit or even when hearing a beast roar.
-
-AsleepMagical
-In a deep magical sleep that cannot be interrupted by hearing beast roars or even by being hit.
-
-Panicked
-Crippled with fear.  Stats are significantly reduced.
-
-Daunted
-Discouraged and disheartened.  Minor reductions to some stats.
-
-Bold
-Emboldened  and heartened.  Moderate increases to stats.
-
-Heroic
-Fearless and invigorated.  All stats are significantly increased.
-
-Pounced
-Knocked over and held down by a beast.  Stats are significantly reduced.</Text>
-        </Document>
-        <Document ID="16">
-            <Title>Static Analysis</Title>
-            <Text>Visual Studio
-I added the following extra warning flags to each project in the solution:
-/w14254 /w14263 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14640 /w14826 /w14905 /w14906 /w14928 
-
-The /analyze flag produces a lot of repeated noise, but it did find a few bugs in my codebase.
-
-
-
-CPPCheck
-This is a great tool.  Use it.  Simple, comprehensive, and it doesn’t give false positives.  Use it in MacOS natively, as easy as “brew install cppcheck”, then “cppcheck -j 7  --enable=all ../heroespath-src/src“.  Note the space between the “-j” and the “7”, unlike make.
-
-
-
-Valgrind
-The undisputed heavyweight champion of runtime analysis.  Use it.
-
-Valgrind on MacOS (10.12 as of 2017-5-20) is a nightmare.  The brew package rejects it as incompatible, which is wise.  Building the latest Valgrind source, with a small patch found online, gets Valgrind built and installed, but then it crashes when trying to run.  I found mention of this online, and a specific svn repo revision with a patch that was supposed to get it mostly functional, but this failed to build.  I have given up on trying to make valgrind work on MacOS as of 2017-5-20, but I'll check back in every month or so for an official fix and release.
-
-Valgrind on Linux works, but only if built from the latest source with the "./configure --enable-only64bit" option.  At the time of this writing (2017-5-20), the latest version of the Valgrind source code is 3.12.0, and it works fine in the Ubuntu VM I have running.
-
-Heroes' Path needs to be configured/built with special compile flags for gcc that enable debugging and eliminate optimizations:
-cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src
-
-Here is the command line for running Valgrind:
-valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath
-
-Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
-
-
-
-PVS-Studio
-I was able to use the trial and did find some bugs with it.  This is a massive pro tool with lots to offer, but the cost is ridiculous.  They do offer a way to use the tool for free if your project is open source -you have to say so in every cpp file with a special comment.  I decided that pvs-studio was worth it and have added the special comments.  The root CMakeLists.txt file now has code to copy the pvs-studio suppressions files per project to their correct locations.  This means that after every run of pvs-studio were suppressions are added, the following must occur:
-
-~/src/heroespath-build-vs find . -name *.suppress -exec cp {} ~/src/heroespath-src/pvs-studio-suppressions/ \;
-(and then check-in the newly updated suppressions files in ~/src/heroespath-src)
-
-
-
-Flint++
-Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use it.  I like it just as much as CPPCheck and will make it a part of my regular set of static analysis tools.
-
-
-
-
-
-
-</Text>
-        </Document>
         <Document ID="39">
             <Title>Alchemy</Title>
             <Text>
@@ -1797,151 +1727,290 @@ Combinations:
 
 </Text>
         </Document>
-        <Document ID="31">
-            <Title>Item Materials</Title>
-            <Text>There are many materials, but only 16 in the “Core Set”.  (bone, stone, obsidian, pearl, 7 metals, 7 gems).  Only Core Set materials participate in providing bonus for items that vary by material.  This is the list in order of worth/rarity/significance/magic-effect.  Those in parens are not part of the core set.  Next to each core set material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of “Core Set” materials, and the number of uses possible is the bonus number assigned to that material.
+        <Document ID="10">
+            <Title>Introduction</Title>
+            <Text>Introduction
 
--	(Cloth)
--	(Hide)
--	(Soft Leather)
--	(Hard Leather)
--	(Plant)
--	(Claw)
--	(Scale)
--	(Horn)
-B	Bone		1
--	(Tooth)
--	(Wood)
-	Stone		2
--	Obsidian	3
-M	Tin		4
-M	Bronze	5
-M	Iron		6
-M	Steel		7
-G   	Jade		8		
-G	Amethyst	9
-G	Emerald	10
--	Pearl		11
-G	Ruby		12
-G	Lazuli	13
-M	Silver		14
-G	Sapphire	15
-M	Gold		16
-M	Platinum	17
-G	Diamond	18
+The world of Etan suffers.
 
+It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
 
-Equipment Primary Weapon Materials:		Stone/Bone/Obsidian, Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[11]
+There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
 
-Equipment Primary Shield Materials:		Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[8]
+After a raiding party decimated the city guard, and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to fight back against the dark tide, to walk the path of heroes.
 
-Equipment Primary Helm Material:
-	Leather						SoftLeather/HardLeather[2][28]
-     	MailCoif						Bronze/Iron/Steel[3][42]
-     	Kettle							Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[8][107]
-      	Archers						Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[8][107]
-       	Bascinet						Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[8][107]
-       	Great							Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[8][107]
-
-Equipment Primary Gauntlets/Pants/Boots/Shirt/Bracer/Aventail:
-	Plain	3						Cloth/SoftLeather/HardLeather[42]
-	Mail	3 						Bronze/Iron/Steel[42]
-        	Scale	1 						Scale[14]
-      	Plate	8 						Bronze/Iron/Steel, Jade/Emerald/Ruby/Sapphire/Diamond[107]
-[163] typed
-[205] all
-
-Equipment Primary Cover:				Cloth/SoftLeather/HardLeather
-
-Equipment Secondary Materials:			Blood, Bone/Obsidian/Pearl, Silver/Gold/Platinum, (Gem)[14]
-
-—
-
-Weapons:							no duplicate pri/sec, so…[147]
-
-—
-
-Shield:							no duplicate pri/sec, so…[107]
-Helm:							no duplicate pri/sec, so…[498]
-Gauntlets/Pants/Boots/Shirt/Bracer/Aventail:	no duplicate pri/sec, so…[163][205]
-Cover:							[42]
-
-AllArmor							[354]</Text>
+The town sorcerer, Torren Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They agree to find Hallistar at daybreak, and take turns keeping watch by the light of the fire…</Text>
         </Document>
-        <Document ID="24">
-            <Title>Armor Ratings</Title>
-            <Text>Based on the current settings in the game data file where armor ratings for each item are stored, and the current values of material armor rating bonuses, here are some helpful general armor ratings for a creature armored with…
-
-clothesCloth=104
-clothesSoftLeather=120
-clothesHardLeather=136
-
-armoredLesserSoftLeather=233
-armoredLesserSteel=532
-armoredLesserDiamond=682
-
-armoredGreaterSoftLeather=296
-armoredGreaterSteel=832
-armoredGreaterDiamond=1021
-
-So a civilian in plain clothes will have about 100-150, a minimally armored creature will have about 250-500, while a well armored creature will have about 300-800.  Don’t forget that skin has a rank bonus, so that could add a max of about 50-100.  The best material for armor (highest bonus) is diamond, which adds about 200 compared to steel.
-
-2017-6-20
-</Text>
-        </Document>
-        <Document ID="17">
-            <Title>dev</Title>
-        </Document>
-        <Document ID="9">
-            <Title>CharacterCreationHelp</Title>
-            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
-
-If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
-
-Classic
-
-Knight
-Archer
-Bard
-Thief
-Cleric
-Sorcerer
+        <Document ID="11">
+            <Title>Titles</Title>
+            <Text>Titles
+A Title is something a character can earn during your adventures through great deeds or by accomplishing quests.  Each Title is more than just an acknowledgment of an accomplishment, Titles also come with bonuses to stats and other Traits.
 
 
 
-Pet
-
-Knight
-Beastmaster
-Dragon or Wolfen
-Bard
-Thief
-Cleric
-
-
-
-Wing
-
-Beastmaster
-Firebrand Dragon
-Sylavin Dragon
-Sorcerer or Bard
-Thief
-Cleric
-
-
-
-Howler
-
-Beastmaster
-Wolfen
-Wolfen
-Wolfen
-Thief
-Cleric
+	 BattlesSurvived,    	//(knights only)
+            HealthGiven,        	//(clerics only)
+            HealthTraded,       	//(clerics only)
+	 DodgedStanding,   //(all roles)
+            DodgedFlying,       	//(all roles)
+            BeastRoars,         	//(beasts only)
+	 LocksPicked,        	//(all roles)
+	 SongsPlayed,        //(bards only)
+	 SpiritsLifted,      	//(bards only)
+            BackstabsHits,      	//(thieves only)
+            ProjectileHits,     	//(all roles)
+            SpellsCast,         	//(all except knights)
+	 EnemiesFaced,      //(all roles)
+	 TurnsInFlight,      	//(all roles)
+	 MoonHowls,          	//(wolfens only)
+	 PackActions,        	//(wolfens only)
+	 BeastMindLinks,   	//(beastmasters only)
+	 MeleeHits,          	//(all roles)
+	 BreathAttackHits,   //(dragons only)
 
 
-To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+
+Protector Of Thornberry
+Standing bravely against the Goblin hoards alongside the Thornberry town guards has earned you this title.  The townsfolk will recognize you and may even give you favorable prices and other benefits.
+
+
+After dodging many melee attacks, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
+DODGER_SPTR;		Your dodging skills are just starting to develop through initial experiences in combat.
+FASTFOOT_SPTR;       	Your feet are significantly faster.
+NIMBLEFOOT_SPTR;	You are more dexterous and light on your feet.
+SWIFTFOOT_SPTR;    	Your ability to dodge on foot is significantly increased.
+MELEEMOVER_SPTR;    	You have learned the rhythm of melee combat after long experience.
+MELEEGRACE_SPTR;	Your melee dodging skills have become graceful.
+MELEEDANCER_SPTR; 	Watching you fight is like watching a dancer.
+MELEESHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you were.
+
+
+After dodging many attacks while flying, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
+SKYDODGER_SPTR;	Your dodging skills are just starting to develop through initial experiences in combat.
+FASTWING_SPTR;		Your wings move significantly faster.
+NIMBLEWING_SPTR;	You are more dexterous in the air.
+SWIFTWING_SPTR;	Your ability to dodge in flight is significantly increased.
+SKYMOVER_SPTR;	You have learned the rhythm of aerial combat after long experience.
+GRACEWING_SPTR;	Your aerial dodging skills have become graceful.
+SKYDANCER_SPTR;	You fight in the air with the grace of a dancer.
+SKYSHADOW_SPTR;	Your ability to get out of the way of an attacker is almost unreal.  Enemies attacking you often find only a shadow of where you used to be.
+
+
+After successfully sneaking up behind enemies and stabbing them in the back, you have earned this Title and your skills have increased, making future backstab attacks easier.
+SNEAK_SPTR;			The members of your party name you Sneak after backstabbing enemies.
+STALKER_SPTR;			Your skills have progressed to the level of a Stalker.
+CREEPER_SPTR;			Your ability to get behind enemies has creeped out your fellow party members.
+SAVAGE_SPTR;			Your backstabbing skills have passed creepy and officially become savage.
+HOMICIDAL_SPTR;		Your fellow party members consider your mind deranged, obsessed with killing.
+BLOODTHIRSTY_SPTR;		You are beyond skilled at backstabbing.  You are now hungry for the feel of your blade piercing flesh.
+SHADOWWALKER_SPTR;	Enemies watching you become spooked, often looking behind at their shadow expecting to find you there.
+ASSASSIN_SPTR;			You have reached the pinnacle of achievement in the arts of stabbing enemies in the back, making you an assassin.
+
+
+You have earned this Title after surviving many battles, and your skills are increased as a reward.
+(HP-Str-Acc-Lvl)
+10     Knight of the Clashing Blade 5-1-1-0	You have transitioned from an untested Knight to a Knight who has been tested in battle.
+100   Knight of a Hundred Battles 10-2-2-0	You have survived a hundred battles.
+200   Knight of the Piercing Blade 20-3-3-0	Your blade has become known as piercing.
+500   Knight of the Undaunted Blade 25-4-4-0	Your blade has become known as undaunted.
+1000 Knight of a Thousand Battles 30-5-5-1.  	You have survived a thousand battles.
+2000 Knight of the Feared Blade 35-6-6-1	Your blade has become known and feared.
+3000 Knight of the Realm 40-7-7-1		You have become a Knight of the Realm.
+5000 Knight of Etan 50-10-10-2			You have reached the ultimate rank of Knighthood.
+
+
+HealthGiven
+You have earned this Title by providing healing to others, and your skills have increased as a reward.
+(HP-Int-Lvl)
+50 	Mender			2-1-0		You are a mender of general wounds.
+200 	Healer				5-2-0		You have become known as a Healer.
+500	Blessed Hands		10-3-0		Your skilled hands are gentle and precise.
+1000	Witch Doctor			15-4-1		Mysterious magical arts are now a part of even your most basic healing.
+2000	Light of the Cure		20-5-1		Your hands glow when mending wounds.
+3000  Divine Touch			25-6-1		Your practice has reached the height of purity.
+5000	White Sage			35-7-1		You are now a member of the Order of the White Sage.
+10000 Cleric of the Covenant	50-10-2	You have reached the highest Title of Clerical healing, becoming a member of the Covenant.
+
+
+You have earned this Title by engaging in the selfless practice of trading your own health for the health of others, and your skills have increased as a reward.
+(Cha-Int-HP-Lvl)
+50 	Hands of Charity		(1-1-2  -0)	Your hands are seen as special by the party, known for the charitable giving of health.
+100	Hands of Love		(2-2-4  -0)	Your unbiased love for others in need has earned you this Title.
+200	Hands of Devotion		(3-3-8  -0)	Your devotion to others in need has earned you this Title.
+400	Hands of Nobility		(4-4-12-0)	Your hands are seen as more than just healing, but noble.
+800	Hands of Sacrifice		(5-5-16-0)	Your self-sacrificing nature has earned you this Title.
+1500	The Selfless Hand		(6-6-20-1)	You are known for a selfless devotion to those in need.
+2500	The Incorruptible Hand	(7-7-24-1)	Your healing motives are pure and righteous.
+4000	The Bleeding Palm		(10-10-30-2)	You have earned the highest Title possible for giving your own health to others.  You are a member of the order of the Bleeding Palm.
+
+
+You have earned this Title by roaring at enemies in combat and making them retreat, and your skills have increased as a reward.
+(Str-HP-Lvl)
+10	HowlingStray			(1-2-0)	You have become known as a howling stray creature.
+30	HowlingBully 		(2-4-0)	Your roar bullies enemies around the battlefield.
+50	HowlingWildling		(3-8-0)	You are now a willing, howling during battle.
+100	SnarlingCreature		(4-12-0)	Your enemies see you as a snarling creature.
+200	SnarlingBeast		(5-16-0)	You have grown into a true snarling beast of a creature.
+400	SnarlingFiend		(6-20-0)	Your roar is known far and wide, earning you the reputation as a fiend.
+1000	RagingMonster		(8-24-1)	You have become a raging monster.
+2000	RagingHorror		(10-30-2)	You have become a raging horror.
+
+
+You have earned this Title by picking locks successfully, and your skills have increased as a reward.
+(Lck-Spd-HP-Lvl)
+10	Prowler		(1-1-2-0)	Your fellow party members see you as sneaky and suspect.
+50	PickPocket		(2-2-4-0)	You have become ruthless and swift of hand.
+100	CatBurglar		(3-3-8-0)	You have become known for your burgling skills.
+200	Clincher		(4-4-12-0)	You have earned the Title of Clincher among your fellow thieves.
+500	Picker			(5-5-16-0)	You are an experienced lock picker.
+1000	SafeCracker		(6-6-20-1)	You are an official safe cracker.
+2000	LockTickler		(8-8-30-1)	You have an almost unreal ability to tickle locks open.
+5000	LockBane		(10-10-50-2)	You have reached the height of lock picking ability.
+
+
+SongsPlayed
+You have earned this Title by playing many songs, and your skills have increased as a reward.
+(Cha-Int-Lck-HP-Lvl)
+10	Versifier		(1-1-1-5-0)		You have become known for your singing, even if you fumble at times.
+50	Player			(2-2-1-10-0)		You are skilled enough to be considered a player of all instruments.
+100	Balladeer		(3-3-2-15-0)		You have become skilled with basic songs.
+200	Minstrel		(4-4-2-20-0)		You are a fine singer and composer of lyrics.
+500	Instrumentalist	(5-5-3-25-0)		Your playing of instruments has reached a professional level.
+1000	Soloist		(6-6-3-30-1)		Your have become renewed for your ability to play solos.
+2000	Artiste			(8-8-5-50-1)		You are an artist extraordinaire. 
+5000	Virtuoso		(10-10-10-60-2)	You have reached the height of musical talent.
+
+
+SpiritsLifted
+You have earned this Title by lifting the spirits of your fellow party members during battle, and your skills have increased as a reward.
+(Cha-Int-Lck-HP-Lvl)
+50	BardOfTheTrippingToes		(1-1-0-2-0)		Your fumbling dances lift the parties spirits.
+100	BardOfTheMerryMelody		(2-2-0-4-0)		Your happy tunes are a welcome and uplifting to your fellow party members.
+200	BardOfTheWhimsicalWord	(3-3-1-8-0)		You have become skilled at impromptu rhyming. 
+500	BardOfTheCarolingChorus	(4-4-1-12-0)		Your singing ability has reached respectable status.
+1000	BardOfTheBouncingBallad	(5-5-2-16-0)		Your ballads are inspiriting and invigorating.
+2000	BardOfTheDancingDitty		(6-6-2-20-0)		Your swift-footed dancing livens up your music and the party.
+3000	BardOfTheEnchantedEar		(7-7-3-24-1)		Magic is now a part of your music and enchants all that hear you.
+5000	BardOfTheAracneAria		(10-10-5-50-2)	You have reached the height of music making and can easily lift the spirits of the party.
+
+
+Projectile Hits
+You have earned this Title by hitting the enemy you targeted with a projectile weapon, and your skills have increased as a reward.
+(Acc-Lck-Str-Lvl)
+20	Targeter		(1-1-1-0)	Your targeting abilities are starting to develop.
+50	SteadfastFlyer	(2-2-1-0)	Your aim with projectiles has become steadfast. 
+100	DeadEye		(3-3-2-0)	You have earned the nickname Dead-Eye by your fellow party members.
+500	DeadCenter		(4-4-2-0)	When your projectiles hit, they always seems to hit the center of their mark.
+1000	SureSail		(5-5-3-0)	Your skills with all projectile weapons has become professional.
+2000	SureShot		(6-6-3-0)	Your ability to hit critically with projectile weapons has significantly increased.
+3000	PerfectHit		(8-8-4-0)	Your aim with projectile weapons is legendary.
+5000	EnchantedAim	(10-10-5-1)	Your use of projectile weapons is now magical, hitting your mark with a touch of the arcane.
+
+
+Spells Cast
+You have earned this Title by successfully casting many spells, and your skills have increased as a reward.
+(Int-Lck-HP-Lvl)
+20	Magus	(1-1-2-0)		Your spell casting skills are just starting to develop.
+50	Charmer	(2-2-4-0)		You can readily charm enemies with your craft.
+100	Diviner	(3-3-8-0)		Your magic now comes from a pure place inside you.
+200	Enchanter	(4-4-12-0)		You have reached the status of an Enchanter.
+500	Conjurer	(5-5-16-0)		You can now summon other creatures with your powers.
+1000	Shaman	(6-6-20-1)		You have unlocked the strange powers of voodoo.
+2000	Wizard	(8-8-30-1)		The party now considers you a full-fledged Wizard.
+5000	Warlock	(10-10-50-2)		You have reached the ultimate level of spell casting skill.
+
+
+EnemiesFaced
+You have earned this Title by facing many enemies in mortal combat, and your skills have increased as a reward.
+(Str-Int-Lck-HP-Lvl)
+20 	Undaunted	(0-0-1-5-0)		
+50	Daring		(1-1-2-10-0)
+100	Bold		(2-2-3-15-0)
+200	Brave		(3-3-4–20-0)
+500	Valorous	(4-4-5-25-0)
+1000	Valiant	(5-5-6-30-0)
+2000	Lionhearted	(6-6-8-35-0)
+3000	Heroic		(8-8-10-40-1)
+5000	Fearless	(10-10-10-50-2)
+
+
+MoonHowls
+You have earned this Title through many moon howls, and your skills have increased as a reward.
+(Str-Lck-HP-Lvl)
+10	PawOfTheLunarPup		(1-1-5-0)
+20	PawOfTheYoungHowler		(2-2-10-0)
+50	PawOfTheNightSky			(3-3-15-0)
+100	PawOfTheMidnightWail		(4-4-20-0)
+200	PawOfTheTwilightMoon		(5-5-25-1)
+300	PawOfTheCelestialCry		(6-6-30-1)
+400	PawOfTheGlowingOrb		(8-8-40-1)
+500	PawOfTheCrescentLegion		(10-10-50-2)
+
+
+TurnsInFlight
+You have earned this Title by spending many turns flying in the air, and your skills have increased as a reward.
+(Spd-Lck-Lvl)
+50	WindGlider		(1-1-0)
+100	LightFeather		(2-2-0)
+200	FreeFlyer		(3-3-0)
+500	SteadyWing		(4-4-0)
+1000	EverSoar		(5-5-0)
+2000	SkySail		(6-6-1)
+3000	Aerialist		(8-8-1)
+5000	FeatherDancer	(10-10-2)
+
+
+PackActions
+You have earned this Title after completing many Wolfen Pack actions during combat, and your skills have increased as a reward.
+(Str-Spd-HP-Lvl)
+20	PackFollower	(1-1-5-0)
+50	PackMember		(2-2-10-0)
+100	PackTasker		(3-3-15-0)
+200	PackCharger		(4-4-20-0)
+300	PackNobel		(5-5-25-0)
+400	PackLeader		(6-6-30-0)
+500	PackAlpha		(8-8-40-1)
+1000 	PackElder		(10-10-50-2)
+
+
+BeastMindLinks
+You have earned this Title after successfully linking your mind with a beast, and your skills have increased as a reward.
+(Int-Lck-HP-Lvl)
+20	CritterClairvoyant		(1-1-5-0)
+50	AnimalAnimator		(2-2-10-0)
+100	FriendOfTheFeral		(3-3-15-0)
+200	WillOfTheWild		(4-4-20-0)
+300	CreatureChanneler		(5-5-25-0)
+400	BeastTaskmaster		(6-6-30-1)
+500	MonsterManipulator		(8-8-40-1)
+1000	MammalianMaster		(10-10-50-2)
+
+
+MeleeHits
+You have earned this Title after successfully hitting enemies in combat, and your skills have increased as a reward.
+(Acc-Str-HP-Lvl)
+20	Brawler				(1-1-5-0)
+50	WildSwing				(2-2-10-0)
+100	HavocSmasher			(3-3-15-0)
+200	SureStroke				(4-4-20-0)
+500	Warrior				(5-5-25-0)
+1000	EverMark				(6-6-30-1)
+2000	MeleeMaster				(7-7-40-1)
+3000	SteadyStriker			(8-8-50-1)
+5000	OrderOfTheSteadyBlade		(10-10-80-2)
+
+
+FlyingAttackHits
+You have earned this Title after successfully attacking enemies while flying, and your skills have increased as a reward.
+(Str-Acc-Int-HP-Lvl)
+20	DragonOfTheUnblinkingEye		(1-1-0-5-0)
+50	DragonOfTheCurlingClaw			(2-2-1-10-0)
+100	DragonOfTheDaggerTooth			(3-3-2-15-0)
+200	DragonOfTheForebodingGaze		(4-4-3-20-0)
+500	DragonOfTheUnbreakableScale		(5-5-4-25-0)
+1000	DragonOfTheDreadedBreath		(6-6-5-30-1)
+2000	DragonOfTheArcaneWing			(8-8-8-40-1)
+5000	DragonOfTheNightmareSky		(10-10-10-50-2)
 </Text>
         </Document>
     </Documents>
