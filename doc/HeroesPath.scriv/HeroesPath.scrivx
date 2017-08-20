@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-08-18 13:20:40 -0700" ModID="E18FA0F5-4297-419B-841A-157D8DD94C76">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2017-08-20 08:12:34 -0700" ModID="2D715EAF-4966-49F5-9BF5-F7BAE9787BC7">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 19:11:28 -0700" Modified="2016-09-30 19:11:28 -0700">
             <Title>Draft</Title>
@@ -209,14 +209,14 @@
                                 <TextSelection>849,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="40" UUID="700B2AB7-29D7-4874-ADB9-5CD77EC00B01" Type="Text" Created="2017-08-15 08:29:16 -0700" Modified="2017-08-18 09:11:01 -0700">
+                        <BinderItem ID="40" UUID="700B2AB7-29D7-4874-ADB9-5CD77EC00B01" Type="Text" Created="2017-08-15 08:29:16 -0700" Modified="2017-08-20 08:12:34 -0700">
                             <Title>Coding Reminders</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>18,0</TextSelection>
+                                <TextSelection>286,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -434,7 +434,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 18:49:05 -0800" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="428" Characters="2389" Date="2017-08-18 12:47:27 -0700"></PreviousSession>
+        <PreviousSession Words="7" Characters="45" Date="2017-08-20 08:09:59 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

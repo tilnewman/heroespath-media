@@ -396,20 +396,17 @@ Some creatures breathe a poisonous cloud that can effect your characters in the 
         <Document ID="40">
             <Title>Coding Reminders</Title>
             <Text>Coding Reminders
-
-Remember to use constexpr and delegating constructors
-
-Class names should be nouns, and should avoid: Manager, Processor, Data, Info, Object, Part, Entity.
+“&lt; = &gt;”
 
 “Every comment is a failure to explain yourself in code.”
 
-Instead of making a comment to explain a complex conditional,  make a well-named function.
+Instead of making a comment to explain a complex conditional, make a well-named function.
 
-&lt; = &gt;, “Less is more.”
+You are always forgetting vector::reserve, constexpr, delegating constructors, and generic lambdas…stop that.
 
-C++14 introduced generic lambdas, use them.
+Class names should be nouns, and should avoid: Manager, Processor, Data, Info, Object, Part, Entity.
 
-Prefer std::vector over std::list almost always, but default to using std::array first.  (It can be optimized away…)
+Prefer std::vector, but default to using std::array first.  (It can be optimized away…)
 </Text>
         </Document>
         <Document ID="23">
