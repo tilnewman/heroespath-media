@@ -1511,11 +1511,11 @@ Focus &lt;(projectile weapons)&gt;[882]&lt;of Fire/Frost/Honor/Shadow&gt;[4410](
 
 
 Items used to cast Bless or Curse
-Allows/consumed when casting the spell “Bless” or “Curse”, material based spell use count
+Allows casting the spell “Bless” or “Curse”, item is consumed upon use, material based use count
 Bless items have 3% encounter, 3% bless effect
 Curse items have -3% lck, 3% curse effect
-&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Noble&gt; Effigy(Doll)/Doll/Figurine/Statuette(Figurine)/Puppet/Bust
-&lt;Material&gt; Eyed &lt;Cult/Damned/Grim/Voodoo/Bloody/Macabre&gt; Effigy(Doll)/Doll/Figurine/Statuette(Figurine)/Puppet/Dried Head
+&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Noble&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet/Marionette(Puppet)/Bust
+&lt;Material&gt; Eyed &lt;Cult/Damned/Grim/Voodoo/Bloody/Macabre&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet /Marionette(Puppet)/Dried Head
 [1296]
 {12}
 
