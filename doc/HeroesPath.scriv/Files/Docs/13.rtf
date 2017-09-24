@@ -6,16 +6,24 @@
 
 \f0\fs48 \cf0 Build Times
 \fs22 \ul \
-\ulnone All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.  In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ulnone All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7 and 16 GB of 1600MHz DDR3 RAM:\
+clang	(-j7)				1:26	6MB\
+VS17					?	?\
+gcc (-j4 )in Parallels Ubuntu VM	5:20 	6.2MB\
+VS17 in Parallels Win VM		5:00	3.3MB (with 2.25MB of libs, for a total of 5.5MB)\
+-2017-9-11 with a line count of 135,614 (118,156 without comments)\
 \
-Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.\
-Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.\
-Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.\
+VS17 makes a slightly smaller executable than clang.\
+ViS17 running in Parallels takes almost exactly 3.33x as long to build as clang.\
+VS17 is slowed by ? when running in a Parallels VM.\
+\
 The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work, but oh well\'85)\
 \
 \
 \
-\ul This run was the first time trial of Visual Studio NOT running in Parallels.\ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \ul \ulc0 This run was the first time trial of Visual Studio NOT running in Parallels.\ulnone \
 Visual Studio\
 Release Mode\
 Boost Version 1.61.0\
@@ -36,8 +44,8 @@ Build Time:  4:40\
 Executable size: 2.77MB\
 \
 \
-\ul This run was the first time trial of LLVM.\ulnone \
-GCC front-end to Clang, which is a font-end to LLVM\
+\ul This run was the first time trial of clang.\ulnone \
+GCC front-end to clang, which is a font-end to clang\
 Apple LLVM version 8.0.0 (clang-800.0.42.1)\
 Target is x86_64-apple-darwin16.4.0\
 With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded\

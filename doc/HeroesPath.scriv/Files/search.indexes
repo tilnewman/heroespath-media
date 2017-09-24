@@ -8,7 +8,7 @@
 
 
 I have fallen into the bad habit of using boost::shared_ptr for everything.
-This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr use-count semantics, but in the end, this well intentioned design simply turned into an excuse to use shared_ptr that was not sufficient.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
+This is bad for performance because shared_ptr’s ref count increment/decrement is atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging because I end up with less control over the end-of-life times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr semantics, but in the end, this well intentioned design simply turned into an excuse to use shared_ptr that was not sufficient.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine’s primary update/draw loop.
 
 Update:  2017-3-27
 I went ahead and changed all boost::shared_ptr to std::shared_ptr, but that doesn’t address the problem of them being used in the first place.
@@ -17,59 +17,77 @@ Update: 2017-8-10
 Since the last pass reading this document, I have removed almost all of the shared_ptrs.
 
 
-All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.
-I’ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn’t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can’t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.
-
-Update, 2017-5-20:
-I went ahead and fixed this in all of the factory classes, which in my case are not really factories but ‘warehouses’.
-
 
 I need to start using make_shared() and make_unique().
 I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
 
+Update, 2017-8-19:
+Many cases have been changed, but an overhaul to search for all new’s and replace them has not yet been done.
 
-I need to use “using” instead of “typedef”
-I’ll change my behavior now, and will change existing code as I stumble upon it.  As of May 2017, I think all uses have been replaced.
 
 
 I need to use auto for stack vars and non-virtual function return types.
 I’ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.
 
 
+
 I have not been using brace initialization, and I should.
 The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn’t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I’ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.
 
 
-I have places in the code where class functions return references to local members risking dangling.
-These need to be changed into functions that return data via reference parameter.  I don’t know of a good way to search for this, so I’ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them…I’ll put it on my TODO list.  This isn’t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.
-
 
 I used a trailing underscore to indicate a member variable instead of the prefix m_.
-I had a reason for doing this, but it must have been a stupid one because…seriously, why break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
+I had a reason for doing this, but it must have been a stupid one because I can’t remember what it was.  There is no excuse for breaking such a universally adopted style.  At this point there is simply too much code in the codebase, and I’m fearful of such a sweeping regex replace.  I’ll probably start changing the style in new classes.  I’ll keep the style consistent within a compilation unit.
 
 
 I made function names start with a capital letter.
-I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
+I had a reason for doing this, but it must have been a stupid one, because, again, I can’t remember what it was.  There is no excuse to break such universal style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I’ll just keep on as I have been to keep the style consistent.
 
 
-I miss-use the singleton pattern.
-I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.  The smell isn’t that bad.
+
+I’m using singletons.
+I have used singletons whenever I needed a ‘manager-of-resources’ or ‘collection-of-similar-operations’ type class.  The engine code is even conducive to passing manager references around because of how the Stage classes act as collectors of resources, but I didn’t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I’m not to going to bother and continue to use the singletons as I have been.
+
 
 
 I set no limit on line lengths.
-I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I’ll try and change my style from here on out to limit to 100 characters per line.
+I was spoiled early in my career and never got in the habit of limiting line length, but there is no excuse good enough.  Now there is too much code to go back and change.  I’ll change my style to limit on 100 characters per line from here on.  I should be using clang-format everywhere, but I had problems getting it to work…  I’ll fix code as I find it.
+
 
 
 I haven’t been consistent with my usage of brackets.
-I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
+I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using Allman brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I’ll put them back as I find them.
 
-
-Use of float instead of double.
-No, I didn’t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.  There are only a handful of places where I use doubles, and these are intentional.
 
 
 Types in variable names.
-For some reason I felt the need to put “Vec” at the end of vector names.  I think was originally an alternative to using the postfix “List”, but it became pervasive and foolish.
+For some reason I felt the need to put “Vec” at the end of vector names and “Enum” at the end of enum names, etc.  I think this was originally an alternative to using the postfix “List”, but it became pervasive and in the end, silly.
+
+
+
+Lack of Unit Tests
+There are reasons why a lot of the game code is not unit testable, but there is no excuse for not setting up a unit testing framework from the beginning and using it as much as possible.  I’m adding unit tests as I go, as of September 2017.
+
+
+
+Testability
+I think in an effort to give functions useful names and clear responsibilities, I fail to limit those responsibilities so the result is easily testable.  I need to get better at making smaller functions with limited parameters that are easily unit testable.
+
+
+
+Boolean Function Parameters
+I use Boolean function parameters everywhere, and I need to stop.  My modus-operandi is to add a boolean flag to functions wherever possible to make a function more versatile, but versatility does not equal simplicity or testability…
+
+
+
+begin() and end()
+I haven’t been using them and as a default I should.  I’ll change now but there are a lot of them lying around.
+
+
+
+Override
+I haven’t been using the override keyword.  I’ll start now but there is a ton of code that doesn’t use it.
+
 
 
 </Text>
@@ -112,11 +130,17 @@ The Dragons of Etan start out as vicious flightless lizards about half the size 
         <Document ID="13">
             <Title>Build Times</Title>
             <Text>Build Times
-All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.  In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7 and 16 GB of 1600MHz DDR3 RAM:
+clang	(-j7)				1:26	6MB
+VS17					?	?
+gcc (-j4 )in Parallels Ubuntu VM	5:20 	6.2MB
+VS17 in Parallels Win VM		5:00	3.3MB (with 2.25MB of libs, for a total of 5.5MB)
+-2017-9-11 with a line count of 135,614 (118,156 without comments)
 
-Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.
-Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.
-Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.
+VS17 makes a slightly smaller executable than clang.
+ViS17 running in Parallels takes almost exactly 3.33x as long to build as clang.
+VS17 is slowed by ? when running in a Parallels VM.
+
 The overhaul to reduce include files shortened build times by 10-20 seconds.  (disappointing for 2-3 days of work, but oh well…)
 
 
@@ -142,8 +166,8 @@ Build Time:  4:40
 Executable size: 2.77MB
 
 
-This run was the first time trial of LLVM.
-GCC front-end to Clang, which is a font-end to LLVM
+This run was the first time trial of clang.
+GCC front-end to clang, which is a font-end to clang
 Apple LLVM version 8.0.0 (clang-800.0.42.1)
 Target is x86_64-apple-darwin16.4.0
 With roughly 4gigs of RAM available since Parallels was running with Windows 10 with Visual Studio sfml-gui loaded
@@ -767,7 +791,7 @@ Heroes' Path needs to be configured/built with special compile flags for gcc tha
 cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src
 
 Here is the command line for running Valgrind:
-valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath &lt;stage&gt;
 
 Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.
 
@@ -967,6 +991,123 @@ When combat is over, your party will often find a stash of treasure left behind 
         </Document>
         <Document ID="18">
             <Title>game design</Title>
+        </Document>
+        <Document ID="44">
+            <Title>Treasure Traps</Title>
+            <Text>
+Where trap damage is randomly selected to be D, and the average party rank is R, total trap damage is: D + rand(1, square_root(D) * square_root(R - 1))
+
+
+1
+2-6
+trap-pop.ogg	
+The lock bursts in the lock picker’s hands!
+1
+3-8
+trap-metal-bang.ogg
+A metal spike pops out from the []!
+1-3
+4-9
+trap-metal.ogg
+Sharp metal pieces burst out and tear through the party!
+
+
+
+
+1-3
+6-12
+trap-splutter.ogg
+The lock oozes with toxic black sludge!
+3-6
+8-14
+trap-splat-dunk.ogg
+Green slime spits out from holes in the []!
+
+
+
+
+2-4
+6-12
+trap-bang.ogg
+The lock detonates!
+3-6
+8-16
+trap-boom.ogg
+The [] blows apart!
+4-6
+10-20
+trap-chung-splutter.ogg
+The [] explodes!
+
+
+
+
+1
+8-14
+trap-fire.ogg
+The lock becomes scalding and burns the lock picker!
+1-3
+10-15
+trap-inferno.ogg
+The whole [] erupts into a raging inferno!
+4-6
+15-20
+trap-fireball.ogg
+A fireball engulfs the party!
+
+
+
+
+6
+(5+x*3)-(10+x*5)
+trap-chiaowahh.ogg
+An evil ghostly yellow/green/blue/red light shines from the [] searing the party!
+
+
+
+
+1-3
+12-18
+trap-gas-exhale.ogg
+Noxious gas hisses from vents in the []! 
+2-6
+16-24
+trap-gas-leak.ogg
+A deadly chemical mist escapes!
+
+
+
+
+1-2
+8-14
+trap-sparks-hiss.ogg
+Sparks spray out from the []!
+2-4
+12-24
+trap-sparks-ahh.ogg
+A torrent of molten metal showers the party!
+
+
+
+
+1
+25-50
+trap-spirit-short-hiss.ogg
+A spectral skeleton hand reaches out and strikes at the lock picker!
+
+
+
+
+2-4
+30-60
+trap-ghost2.ogg
+The raging ghost of a drowned/murdered adventurer/soldier/child/witch/pirate/(creature fought) emerges and 'bites the party with ghostly fangs'/'slashes the party with ghostly claws’!
+4-6
+
+40-80
+trap-ghost1.ogg
+Spirits/Specters/Phantoms/Phantasms/Wraiths emerge and tear through the party!
+</Text>
         </Document>
         <Document ID="27">
             <Title>Combat Over</Title>
@@ -1222,11 +1363,11 @@ Only ONE may be equipped at a time:
 
 Duplicate items do not combine bonuses.
 
-Magic/Bless/Curse Cast is the chance that a cast spell/song/alchemy is successful or not.  Cast means: “from the perspective of the caster/sender”.  Note, that most sorcerer’s spells work every time, and so Magic Cast does nothing, but most magical bard song’s do not always work, so Magic Cast is applied.
+Magic/Bless/Curse Cast changes the chance that a cast spell/song/alchemy is successful.  Cast means: “from the perspective of the attempting caster/sender”.  Note, that most sorcerer’s spells work every time, and so Magic Cast does nothing in almost all of those cases, but most magical bard songs do not always work, so Magic Cast is applied in almost all of those cases.
 
-Magic/Bless/Curse Effect is the magnitude of effect created by the caster.  Effect means:  “from the perspective of the creator/maker”.
+Magic/Bless/Curse Effect changes the magnitude of effect created by the spell that is successfully cast.  Effect means:  “from the perspective of the creator/maker of the effect”.
 
-Magic/Bless/Curse Resist is the magnitude of effect absorbed by the target.  Resist means: “from the perspective of the target/receiver”.  Magic Resist will not effect helpful magic.
+Magic/Bless/Curse Resist charges the magnitude of effect absorbed by the target of a spell that is successful.  Resist means: “from the perspective of the target/receiver” of the spell.  Magic Resist will not alter helpful magic.  So players will want their Magic/Bless/Curse Resist to be high so that enemy spells cast on them have less of an effect, but it will not impede the effect of helpful spells, such as another player character Cleric’s healing spell.
 
 
 Elemental Types

@@ -13,7 +13,7 @@
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 \ul \ulc0 I have fallen into the bad habit of using boost::shared_ptr for everything.\ulnone \
-This is bad for performance because shared_ptr\'92s ref count increment/decrement is also atomic, which is just slowing that I don\'92t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr use-count semantics, but in the end, this well intentioned design simply turned into an excuse to use shared_ptr that was not sufficient.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine\'92s primary update/draw loop.\
+This is bad for performance because shared_ptr\'92s ref count increment/decrement is atomic, which is just slowing that I don\'92t need.  This is also bad for clarity/debugging because I end up with less control over the end-of-life times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr semantics, but in the end, this well intentioned design simply turned into an excuse to use shared_ptr that was not sufficient.  The end-of-life problem might actually be causing some of the mysterious slow passes through the engine\'92s primary update/draw loop.\
 \
 Update:  2017-3-27\
 I went ahead and changed all boost::shared_ptr to std::shared_ptr, but that doesn\'92t address the problem of them being used in the first place.\
@@ -22,59 +22,77 @@ Update: 2017-8-10\
 Since the last pass reading this document, I have removed almost all of the shared_ptrs.\
 \
 \
-\ul All of my factories should be returning unique_ptrs, or keeping unique_ptrs and returning raw const pointers.\ulnone \
-I\'92ll change my behavior now, and will look into changing some managers/factories in the wild.  I did come across one case where I couldn\'92t switch from shared_ptr to unique_ptr, and that was where the factory had a particular instance that was not created but shared.  In that case, you can\'92t have two different types of pointers for a type out in the wild, so they all were kept as shared_ptrs.\
-\
-Update, 2017-5-20:\
-I went ahead and fixed this in all of the factory classes, which in my case are not really factories but \'91warehouses\'92.\
-\
 \
 \ul I need to start using make_shared() and make_unique().\ulnone \
 I\'92ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.\
 \
+Update, 2017-8-19:\
+Many cases have been changed, but an overhaul to search for all new\'92s and replace them has not yet been done.\
 \
-\ul I need to use \'93using\'94 instead of \'93typedef\'94\
-\ulnone I\'92ll change my behavior now, and will change existing code as I stumble upon it.  As of May 2017, I think all uses have been replaced.\ul \
-\
+\ul \
 \
 I need to use auto for stack vars and non-virtual function return types.\
 \ulnone I\'92ll change my behavior now, but there are too many to change in the wild, and no good way to automate it.\
+\
 \
 \
 \ul I have not been using brace initialization, and I should.\ulnone \
 The benefits of curly brace initialization, or aggregate initialization, such as preventing of narrowing and illegal inits, out-way the possible problems, such as types with initializer list constructors.  Unfortunately, I didn\'92t have this in mind when starting to write the code.  So almost all of the code uses value initialization (parens).  I\'92ll change my behavior but will not go back and re-write the older code.  So expect to see a mix of initialization types.\
 \
 \
-\ul I have places in the code where class functions return references to local members risking dangling.\ulnone \
-These need to be changed into functions that return data via reference parameter.  I don\'92t know of a good way to search for this, so I\'92ll change them as I stumble into them in the wild.  I suppose I could write some kind of regular expression to find them\'85I\'92ll put it on my TODO list.  This isn\'92t such a big problem because I am pretty disciplined about my use of returned resources.  As of May 2017, all but two or three cases exist, and those cases that do still exist need to be that way.  Usage is disciplined enough to make it safe.\
-\
 \
 \ul I used a trailing underscore to indicate a member variable instead of the prefix m_.\ulnone \
-I had a reason for doing this, but it must have been a stupid one because\'85seriously, why break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I\'92ll just keep on as I have been to keep the style consistent.\
+I had a reason for doing this, but it must have been a stupid one because I can\'92t remember what it was.  There is no excuse for breaking such a universally adopted style.  At this point there is simply too much code in the codebase, and I\'92m fearful of such a sweeping regex replace.  I\'92ll probably start changing the style in new classes.  I\'92ll keep the style consistent within a compilation unit.\
 \
 \
 \ul I made function names start with a capital letter.\ulnone \
-I had a reason for doing this, but it must have been a stupid one, again.  There is no excuse to break such a normative style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I\'92ll just keep on as I have been to keep the style consistent.\
+I had a reason for doing this, but it must have been a stupid one, because, again, I can\'92t remember what it was.  There is no excuse to break such universal style.  At this point there is simply too much code in the codebase, making the change unfeasible.  I\'92ll just keep on as I have been to keep the style consistent.\
 \
 \
-\ul I miss-use the singleton pattern.\ulnone \
-I have used singletons whenever I needed a \'91manager-of-resources\'92 or \'91collection-of-similar-operations\'92 type class.  That by itself is not really a problem.  The problem is that I use these singletons as global access points which is rightly bad code smell, seeing as I should have instead been passing around pointers or references to these objects where needed.  The engine code is even conducive to passing these classes around because of how the Stage classes act as collectors/managers of resources, but I didn\'92t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I\'92m not to going to bother and continue to use the singletons as I have been.  The smell isn\'92t that bad.\
+\
+\ul I\'92m using singletons.\ulnone \
+I have used singletons whenever I needed a \'91manager-of-resources\'92 or \'91collection-of-similar-operations\'92 type class.  The engine code is even conducive to passing manager references around because of how the Stage classes act as collectors of resources, but I didn\'92t think of that soon enough.  Now there are scattered uses of singletons all over the codebase that would require too much work to change into proper passing or Acquire() Release() semantics.  So I\'92m not to going to bother and continue to use the singletons as I have been.\
+\
 \
 \
 \ul I set no limit on line lengths.\ulnone \
-I was spoiled early in my career and never got in the habit, and I should have.  Now there is too much code to go back and change.  I\'92ll try and change my style from here on out to limit to 100 characters per line.\
+I was spoiled early in my career and never got in the habit of limiting line length, but there is no excuse good enough.  Now there is too much code to go back and change.  I\'92ll change my style to limit on 100 characters per line from here on.  I should be using clang-format everywhere, but I had problems getting it to work\'85  I\'92ll fix code as I find it.\
+\
 \
 \
 \ul I haven\'92t been consistent with my usage of brackets.\ulnone \
-I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I\'92ll put them back as I find them.\
+I was consistently using the Allman style, then, for some stupid reason, I switched to not using brackets for single indented lines.  I have since switched back to always using Allman brackets but there is a lot of code out there where they are missing.  Too much to go back and fix it all now.  I\'92ll put them back as I find them.\
 \
-\
-\ul Use of float instead of double.\ulnone \
-No, I didn\'92t do any profiling that told me floats were faster.  SFML uses floats for everything, and my use of SFML is so pervasive that I decided early on to always use float instead of double.  There are only a handful of places where I use doubles, and these are intentional.\
 \
 \
 \ul Types in variable names.\ulnone \
-For some reason I felt the need to put \'93Vec\'94 at the end of vector names.  I think was originally an alternative to using the postfix \'93List\'94, but it became pervasive and foolish.\
+For some reason I felt the need to put \'93Vec\'94 at the end of vector names and \'93Enum\'94 at the end of enum names, etc.  I think this was originally an alternative to using the postfix \'93List\'94, but it became pervasive and in the end, silly.\
+\
+\
+\
+\ul Lack of Unit Tests\
+\ulnone There are reasons why a lot of the game code is not unit testable, but there is no excuse for not setting up a unit testing framework from the beginning and using it as much as possible.  I\'92m adding unit tests as I go, as of September 2017.\
+\
+\
+\
+\ul Testability\ulnone \
+I think in an effort to give functions useful names and clear responsibilities, I fail to limit those responsibilities so the result is easily testable.  I need to get better at making smaller functions with limited parameters that are easily unit testable.\
+\
+\
+\
+\ul Boolean Function Parameters\ulnone \
+I use Boolean function parameters everywhere, and I need to stop.  My modus-operandi is to add a boolean flag to functions wherever possible to make a function more versatile, but versatility does not equal simplicity or testability\'85\
+\
+\
+\
+\ul begin() and end()\
+\ulnone I haven\'92t been using them and as a default I should.  I\'92ll change now but there are a lot of them lying around.\
+\
+\
+\
+\ul Override\ulnone \
+I haven\'92t been using the override keyword.  I\'92ll start now but there is a ton of code that doesn\'92t use it.\
+\
 \
 \
 }

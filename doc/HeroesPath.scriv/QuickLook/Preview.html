@@ -198,6 +198,36 @@ Item Set cumulative bonuses apply to every item owned in the set AFTER the first
 <p class="binderItem"><strong>Alchemy</strong><br/>Alchemy<br/>
 There are 32 potions and 32 herbs that can be mixed together with each other to create new concoctions.  This process of mixing potions and herbs is called Alchemy.  The results from Alchemy can be applied to items to enchant them, but this is not considered Alchemy.  Some highly valued items can only be created this way.  Some quests can only be completed through Alchemy or item enchantment.  Players will not be forced to engage in Alchemy to win the game, but information provided durin...</p>
 </li>
+<li>
+<p class="binderItem"><strong>Treasure Traps</strong><br/><br/>
+Where trap damage is randomly selected to be D, and the average party rank is R, total trap damage is: D + rand(1, square_root(D) * square_root(R - 1))<br/>
+<br/>
+<br/>
+1<br/>
+2-6<br/>
+trap-pop.ogg <br/>
+The lock bursts in the lock picker’s hands!<br/>
+1<br/>
+3-8<br/>
+trap-metal-bang.ogg<br/>
+A metal spike pops out from the []!<br/>
+1-3<br/>
+4-9<br/>
+trap-metal.ogg<br/>
+Sharp metal pieces burst out and tear through the party!<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+1-3<br/>
+6-12<br/>
+trap-splutter.ogg<br/>
+The lock oozes with toxic black sludge!<br/>
+3-6<br/>
+8-14<br/>
+trap-splat-dunk.ogg<br/>
+Green slime spits out from holes in the...</p>
+</li>
 </ul>
 <hr/>
 <li>
@@ -239,12 +269,16 @@ This app is good, but grayscale and palette reduction features are not fully imp
 </li>
 <li>
 <p class="binderItem"><strong>Build Times</strong><br/>Build Times<br/>
-All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7, and 16 GB of 1600MHz DDR3 RAM.  In short:  LLVM= 2:34, VS17=3:26, VS17 in Parallels=4:40.<br/>
+All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7 and 16 GB of 1600MHz DDR3 RAM:<br/>
+clang (-j7)    1:26 6MB<br/>
+VS17     ? ?<br/>
+gcc (-j4 )in Parallels Ubuntu VM 5:20  6.2MB<br/>
+VS17 in Parallels Win VM  5:00 3.3MB (with 2.25MB of libs, for a total of 5.5MB)<br/>
+-2017-9-11 with a line count of 135,614 (118,156 without comments)<br/>
 <br/>
-Visual Studio 17 makes a significantly smaller executable than LLVM 8.1.0, almost half the size.<br/>
-Visual Studio 17 running in Parallels takes almost exactly twice as long to build as LLVM 8.1.0.<br/>
-Visual Studio 17 is slowed by 1:14 or 36% when running in Parallels.<br/>
-The overhaul to reduce include files shortened build...</p>
+VS17 makes a slightly smaller executable than clang.<br/>
+ViS17 running in Parallels takes almost exactly 3.33x as long to build as clang.<br/>
+VS17 is slo...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Code Smell</strong><br/>Code Smell<br/>
@@ -252,7 +286,7 @@ The overhaul to reduce include files shortened build...</p>
 <br/>
 <br/>
 I have fallen into the bad habit of using boost::shared_ptr for everything.<br/>
-This is bad for performance because shared_ptr’s ref count increment/decrement is also atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging (and performance) because I have less control over the end-of-life of resources and they can be de-allocated at unclear or un-opportune times.  In the beginning, I had a vision for how the engine used resour...</p>
+This is bad for performance because shared_ptr’s ref count increment/decrement is atomic, which is just slowing that I don’t need.  This is also bad for clarity/debugging because I end up with less control over the end-of-life times.  In the beginning, I had a vision for how the engine used resources that worked perfectly with shared_ptr semantics, but in the end, this well intent...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Maps</strong><br/>Maps<br/>

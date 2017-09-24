@@ -43,7 +43,7 @@ Heroes' Path needs to be configured/built with special compile flags for gcc tha
 cmake -G "Unix Makefiles" -DVALGRIND_BUILD=on ../heroespath-src/src\
 \
 Here is the command line for running Valgrind:\
-valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath\
+valgrind --leak-check=full --gen-suppressions=all --suppressions=../../heroespath-src/valgrind/valgrind-suppressions.txt -v ./HeroesPath <stage>\
 \
 Valgrind's Memcheck tool will find a multitude of 'still reachable' blocks, but after spending an hour reviewing them they all were caused by sfml/mesa/libgl libraries so there seems to be nothing I can do about it.  I'm just going to ignore that result unless it suddenly looks higher than it usually does, and then, god help me for having to go through it all again.\
 
