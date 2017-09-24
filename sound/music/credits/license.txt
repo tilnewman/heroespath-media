@@ -1,11 +1,4 @@
-credits-1.ogg
-Posted to OpenGameArt.org by marcelofg55 (Marcelo Fernandez) as “pyc.wav” under the CC-BY-SA-4.0 license.
-http://creativecommons.org/licenses/by-sa/4.0/
-Marcelo Fernandez WebSite: http://www.marcelofernandezmusic.com
-Marcelo Fernandez SoundCloud: http://soundcloud.com/marcelofernandezmusic
-Marcelo Fernandez Facebook Page: http://www.facebook.com/marcelofernandezmusic
-
-credits-2.ogg
+credits.ogg
 Posted to OpenGameArt.org by ceninan as “Radakan”, crediting “Janne Hanhisuanto” for the original work, released under the CC-BY-SA 3.0 license.
 http://creativecommons.org/licenses/by/3.0/
 When using it, please attribute as "Janne Hanhisuanto for Radakan".
