@@ -1,5 +1,7 @@
 All files found on various free/open websites under the Public Domain.  (CC0 1.0)  (No Copyright)
 http://creativecommons.org/licenses/by/1.0/
 
+Except for trap.png, which was based on "Locked chest" by Lorc under CC BY 3.0, a part of the game-icons.net collection.
+
 2017-7-18
 zTn
