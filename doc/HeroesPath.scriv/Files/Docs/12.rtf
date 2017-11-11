@@ -94,5 +94,6 @@ I use Boolean function parameters everywhere, and I need to stop.  My modus-oper
 I haven\'92t been using the override keyword.  I\'92ll start now but there is a ton of code that doesn\'92t use it.\
 \
 \
-\
+\ul Primitive Obsession and a Lack of Strong Types\ulnone \
+I have used the \'93using\'94 keyword plenty to name my own types, but not in a way that creates strong types.  For example, stats::Trait_t is used in everywhere and it smells.  Also, the use of Hungarian notation for the \'93_t\'94 is a smell in itself, but I have a reason for it:  I capitalize the first letter of functions (another smell) so the \'93_t\'94 is useful.  Anyway, I\'92ve started a process for using strong types with a type wrapper called \'93StrongType\'94 and \'93StrongNumericType\'94, but I\'92m not sure if I will ever go back and use it in all the places I should have.  A lack of strong types is definitely a smell in this codebase.\
 }
