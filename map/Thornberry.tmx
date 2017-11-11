@@ -2488,7 +2488,6 @@
   <object id="296" x="3909" y="2470" width="67" height="47"/>
   <object id="298" x="221" y="3466" width="48" height="164"/>
   <object id="299" x="3663" y="2267" width="25" height="33"/>
-  <object id="300" x="3676" y="2288" width="1"/>
  </objectgroup>
  <objectgroup name="Doors">
   <object id="274" x="960" y="3440" width="78" height="113"/>
