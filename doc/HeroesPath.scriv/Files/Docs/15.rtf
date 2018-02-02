@@ -9,16 +9,20 @@
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs22 \cf0 Note, all images are 16 color, except for animation images.  \
+\fs22 \cf0 Note, all black and white PNG images have been reduced to 16 color palettes.  (so that includes all creature and items images, etc.)  \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \fs32 \cf0 \
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \fs36 \cf0 The White Border Problem\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \fs22 \cf0 Sometimes the game engine inverts the images of creatures and items.  After inverting, there is a white outline or halo around the thing depicted.  This is a natural part of the gray smoothing pixels being turned white.  It is hardly noticeable, and so I don\'92t consider it a big deal.  I just live with it.  However, some images after inversion have a white border around the edges of the image, like a frame.  This is due to non-black pixels around the edges of the image.  These are so faint that I didn\'92t notice them when creating the images in Photoshop.  I still don\'92t know what I did that caused this, but there were hundreds of images with this problem so it must have been something systemic.  Anyway, re-touching each effected image manually in Photoshop would have taken too long, so I made the decision to force a pure black border around all creature and item images.  I wrote code that set the black border and reserved the images, then re-compressed them.  So all item and creature images have a single-pixel black border.\
+\
+There is code in the testing stage that checks all creature and item images for the outline problem.  Run the testing stage and then grep the log for \'93outline\'94.  That will show you a log line for each creature or item image that has an off-black border that may not be visible to the naked eye.  There is also code in the testing stage that will put a black single-pixel border on all creature or item images and then re-save each one.  After this re-save, don\'92t forget to reduce each file\'92s palette down to 16 colors using PNGQuant (see below), and then re-compress the files with FileOptimizer (see below).\
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \fs36 \cf0 \

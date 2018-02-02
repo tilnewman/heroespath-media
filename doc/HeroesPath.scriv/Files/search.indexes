@@ -487,10 +487,14 @@ Knocked over and held down by a beast.  Stats are significantly reduced.</Text>
             <Title>Image Compression</Title>
             <Text>Image Compression
 
-Note, all images are 16 color, except for animation images.  
+Note, all black and white PNG images have been reduced to 16 color palettes.  (so that includes all creature and items images, etc.)  
+
 
 The White Border Problem
 Sometimes the game engine inverts the images of creatures and items.  After inverting, there is a white outline or halo around the thing depicted.  This is a natural part of the gray smoothing pixels being turned white.  It is hardly noticeable, and so I don’t consider it a big deal.  I just live with it.  However, some images after inversion have a white border around the edges of the image, like a frame.  This is due to non-black pixels around the edges of the image.  These are so faint that I didn’t notice them when creating the images in Photoshop.  I still don’t know what I did that caused this, but there were hundreds of images with this problem so it must have been something systemic.  Anyway, re-touching each effected image manually in Photoshop would have taken too long, so I made the decision to force a pure black border around all creature and item images.  I wrote code that set the black border and reserved the images, then re-compressed them.  So all item and creature images have a single-pixel black border.
+
+There is code in the testing stage that checks all creature and item images for the outline problem.  Run the testing stage and then grep the log for “outline”.  That will show you a log line for each creature or item image that has an off-black border that may not be visible to the naked eye.  There is also code in the testing stage that will put a black single-pixel border on all creature or item images and then re-save each one.  After this re-save, don’t forget to reduce each file’s palette down to 16 colors using PNGQuant (see below), and then re-compress the files with FileOptimizer (see below).
+
 
 PNG
 Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I’ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been very successful.  Below is an analysis of the tools followed by a conclusion for how to use them.
