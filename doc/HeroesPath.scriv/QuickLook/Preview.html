@@ -260,12 +260,10 @@ The OGG file format is used for all audio, with the quality set to 5 of 10.  I d
 <li>
 <p class="binderItem"><strong>Image Compression</strong><br/>Image Compression<br/>
 <br/>
-PNG<br/>
-Most of the images were originally saved in photoshop as GIFs, but I’ve become aware that PNG was designed to be a better replacement for GIF, and is potentially more efficient.  I’ve since converted all GIFs to PNGs.  Use of tools to optimize my PNGs for file size have been very successful.  Below is an analysis of the tools followed by a conclusion for how to use them.<br/>
+Note, all creature images are 16 color, and all item images are 256 color.  <br/>
 <br/>
-<br/>
-OptiPNG<br/>
-This app is good, but grayscale and palette reduction features are not fully implemented maki...</p>
+The White Border Problem<br/>
+Sometimes the game engine inverts the images of creatures and items.  After inverting, there is a white outline or halo around the thing depicted.  This is a natural part of the gray smoothing pixels being turned white.  It is hardly noticeable, and so I don’t consider it a big deal.  I just live with it.  However, some images after inversion have a white border around the ed...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Build Times</strong><br/>Build Times<br/>
