@@ -487,7 +487,7 @@ Knocked over and held down by a beast.  Stats are significantly reduced.</Text>
             <Title>Image Compression</Title>
             <Text>Image Compression
 
-Note, all creature images are 16 color, and all item images are 256 color.  
+Note, all images are 16 color, except for animation images.  
 
 The White Border Problem
 Sometimes the game engine inverts the images of creatures and items.  After inverting, there is a white outline or halo around the thing depicted.  This is a natural part of the gray smoothing pixels being turned white.  It is hardly noticeable, and so I don’t consider it a big deal.  I just live with it.  However, some images after inversion have a white border around the edges of the image, like a frame.  This is due to non-black pixels around the edges of the image.  These are so faint that I didn’t notice them when creating the images in Photoshop.  I still don’t know what I did that caused this, but there were hundreds of images with this problem so it must have been something systemic.  Anyway, re-touching each effected image manually in Photoshop would have taken too long, so I made the decision to force a pure black border around all creature and item images.  I wrote code that set the black border and reserved the images, then re-compressed them.  So all item and creature images have a single-pixel black border.
