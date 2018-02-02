@@ -125,7 +125,7 @@ The Wolfen are relatives of Dire Wolves, but magic fuels their strength and sens
 
 
 Dragon
-The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain special magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
+The Dragons of Etan start out as vicious flightless lizards about half the size of a horse, but they grow into sky dwelling terrors.  As with Wolfens, having a Dragon in your party means few innkeepers will let you stay in their rooms, but the advantages often out-weigh the trouble of camping outside.  There are two types of Dragons available to join your party, Firebrand and Sylavin.  The differences between them become more apparent as they progress through the ranks, and gain magical abilities.  One of your adventurers must be a Beastmaster to have a Dragon in your party.
 </Text>
         </Document>
         <Document ID="13">
@@ -201,7 +201,7 @@ Each character in your party has a profession or specialty, designated by their 
 
 
 Beastmaster
-Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmaster gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
+Beastmasters allow you to include animals, such as Wolfens and Dragons, in your party.  They may be rough around the edges, but a Beastmaster’s spiritual link with animals is useful in many ways.  They can also be good fighters in the melee.  As they progress in rank, Beastmasters gain magical abilities that interact with the animals both in, and out, of your party.  This is why intelligence is the primary attribute a Beastmaster is concerned with, followed closely by strength.  Secondary attributes to consider would be accuracy and speed.
 
 
 Sorcerer
@@ -213,15 +213,15 @@ The Cleric is religious leader, focused on the magic of nature and all the vario
 
 
 Knight
-Your adventures will be fraught with battle, and there is where a Knight will serve your party well.  They may not be the brightest of companions, but they make up for it by keeping your party safe.  Knights can use the widest variety of weapons and armor.  They are the only role that gains no magical abilities as they progress in rank.  All roles have the opportunity to be granted titles that provide special bonuses and abilities, and Knights have more titles to be earned than any other role.  A Knight’s primary attributes are strength and accuracy, but consider speed as well to assist in dodging attacks.
+Your adventures will be fraught with battle, and that is when a Knight will serve your party well.  They may not be the brightest of companions, but they make up for it by keeping your party safe.  Knights can use the widest variety of weapons and armor.  They are the only role that gains no magical abilities as they progress in rank.  All roles have the opportunity to be granted titles that provide special bonuses and abilities, and Knights have more titles to be earned than any other role.  A Knight’s primary attributes are strength and accuracy, but consider speed as well to assist in dodging attacks.
 
 
 Archer
-The Archer’s best friends are his bow, and his accuracy using it.  While an Archer can swing a sword if they need to, they get special bonuses for using projectile weapons, such as slings, blowpipes, and of course, the bow and arrow.  Having an Archer is essential for the many flying enemies you will face.  The primary attributes of an Archer are accuracy and strength, but don’t discount speed and luck when using a bow...
+The Archer’s best friends are his bow, and his accuracy using it.  While an Archer can swing a sword if they need to, they get special bonuses for using projectile weapons, such as slings, blowpipes, and of course, the bow and arrow.  Having an Archer is helpful for fighting flying enemies.  The primary attributes of an Archer are accuracy and strength, but don’t discount speed and luck when using a bow...
 
 
 Bard
-The Bard is a jack of many trades.  They may not be the fastest, but they weave the arts of a Cleric, the spells of a Sorcerer, and sometimes even the brawn of a Knight into one role.  Most of their skill lies in magical song that aids their fellow adventurers and hampers would be dangers.  Due to their talents being spread out, Bards may not be powerful in the beginning, and inexperienced players may struggle to guide them in the early ranks.  Intelligence and Charm are most important to a Bard, but also consider strength if you want them to be warriors as well.
+The Bard is a jack of many trades.  They may not be the fastest, but they weave the arts of a Cleric, the spells of a Sorcerer, and sometimes even the brawn of a Knight into one role.  Most of their skill lies in magical song that aid their fellow adventurers and hamper enemies.  Due to their talents being spread out, Bards may not be powerful in the beginning, and inexperienced players may struggle to guide them in the early ranks.  Intelligence and Charm are most important to a Bard, but also consider strength if you want them to be warriors as well.
 
 
 Thief
@@ -229,7 +229,7 @@ They are deplorable criminals, but every group of adventurers needs a Thief.  Th
 
 
 Wolfen
-There is only one possible role for a Wolfen, and that is to be their loyal but vicious selves.  They grow into powerful beasts that crave the magic of moon and starlight.  Their growl will strike fear into all, and send the weaker fleeing for their lives.  But it is never wise to run from a Wolfen, because they love to chase down, trip, and devour enemies with valuables.  Consider strength and speed when crafting a Wolfen, but don’t forget intelligence for the magic that comes with higher rank.  Also consider the many advantages of having multiple Wolfens in your party.  A pack of Wolfens work together...
+There is only one possible role for a Wolfen, and that is to be their loyal but vicious selves.  They grow into powerful beasts that crave the magic of moon and starlight.  Their growl will strike fear into your enemies, and send the weak fleeing for their lives.  But it is never wise to run from a Wolfen, because they love to chase down, trip, and then devour.  Consider strength and speed when crafting a Wolfen, but don’t forget intelligence for the magic that comes with higher rank.  Also consider the many advantages of having multiple Wolfens in your party.  A pack of Wolfens work together...
 
 
 Firebrand
@@ -292,7 +292,7 @@ Simply a measure of how strong you are.  How strong an adventurer is primarily d
 
 
 Accuracy
-How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you craft for fighting.
+How carefully and successfully a character aims weapons in combat.  This is not just for Archers, but for any weapon.  Archers are most concerned with Accuracy, but also any other adventurer you create for fighting.
 
 
 Luck
@@ -308,13 +308,13 @@ How fast and dexterous the adventurer is.  This attribute will help with avoidin
 
 
 Intelligence
-A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
+A measure of mental toughness and quick mindedness.  Intelligence is primarily useful to spell casters and Beastmasters, but it helps almost all roles in higher ranks with the magical abilities they will develop in higher ranks.  Knights are the only Role that do not develop magical abilities over time, so they have little need for Intelligence.
 </Text>
         </Document>
         <Document ID="31">
             <Title>Item Materials</Title>
             <Text>Materials
-There are many materials, but only 16 in the Core Set:  bone, stone, obsidian, pearl, 7 metals, and 7 gems.  Only Core materials participate in providing bonus for items that vary by material.  Below is the list of Core materials in order of worth/rarity/significance/magical-effect.  Those in parens are not part of the Core Set.  Next to each Core material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of Core materials, and the number of uses possible is the bonus number assigned to that material.  An S in front of a material means it is part of the special set: bone, stone, obsidian, pearl.  An M in front of a material means it is a Core metal.  An G in front of a material means it is a Core gemstone material.
+There are many materials, but only 16 in the Core Set:  bone, stone, obsidian, pearl, 7 metals, and 7 gems.  Only these Core materials provide bonuses for items that vary by material.  Below is the list of Core materials in order of worth/rarity/significance/magical-effect.  Those in parens are not part of the Core Set.  Next to each Core material is the bonus assigned to it.  If, for example, an item can be used X times based on the material it is made of, then it can only be made of Core materials, and the number of uses possible is the bonus number assigned to that material.  An S in front of a material means it is part of the special set: bone, stone, obsidian, pearl.  An M in front of a material means it is a Core metal.  An G in front of a material means it is a Core gemstone.
 
 -	(Cloth)
 -	(Hide)
@@ -427,7 +427,7 @@ Some creatures breathe a poisonous cloud that can effect your characters in the 
 
 Instead of making a comment to explain a complex conditional, make a well-named function.
 
-You are always forgetting vector::reserve, constexpr, delegating constructors, and generic lambdas…stop that.
+You are always forgetting vector::reserve, constexpr, and delegating constructors…stop that.
 
 Class names should be nouns, and should avoid: Manager, Processor, Data, Info, Object, Part, Entity.
 
@@ -683,14 +683,14 @@ Shadow Resist
 Mudgate
 	Barrow Inn
 
+
 Thornberry
 	Black Candle Inn
 
-Trolleyville
-	?
 
 Bridgeway
 	Aven’s Rest Inn
+
 
 Riverton
 	The Oak Room Inn
@@ -726,18 +726,52 @@ So a civilian in plain clothes will have an armor rating of about 100-150, a min
         <Document ID="33">
             <Title>Alchemy</Title>
             <Text>Alchemy
-There are 32 potions and 32 herbs that can be mixed together with each other to create new concoctions.  This process of mixing potions and herbs is called Alchemy.  The results from Alchemy can be applied to items to enchant them, but this is not considered Alchemy.  Some highly valued items can only be created this way.  Some quests can only be completed through Alchemy or item enchantment.  Players will not be forced to engage in Alchemy to win the game, but information provided during play will tempt them.  Alchemy can only be performed by players with a magic mortar and pestle item.  Alchemy never fails.  It always results in a new concoction with properties based on the ingredients.  Some combinations result in a special, named, concoction that is more than the sum of its parts.  These combinations are called recipes.  Some recipes will be given to the player in the manual, and some are only revealed while adventuring.
+There are 32 potions and 32 herbs that can be mixed together with each other to create new concoctions.  This process of mixing potions and herbs is called Alchemy.  The results from Alchemy can be applied to items to enchant them, but this is not considered Alchemy.  Some highly valued items can only be created this way.  Some quests can only be completed through Alchemy or item enchantment.  Players will not be forced to engage in Alchemy to win the game, but it is a way to gain advantage, so information provided during play will remind and tempt.  Alchemy can only be performed by players with a magic mortar and pestle item.  Alchemy never fails.  It always results in a new concoction with properties based on the ingredients.  Some combinations result in a special, named, concoction that is more than the sum of its parts.  These combinations are called recipes.  Some recipes will be given to the player in the manual, and some are only revealed while adventuring.
 
 Potions
 Potions take the form of a drinkable tonic, poison, liquor, brew, drink, or infusion, or a usable rub, balm, salve, ointment, cream, mash.  There are also potions that are acids.  Acids are both drinkable and usable, but no matter which way you choose to apply it, it’s gonna hurt…  Each Potion has effects that can be applied even before they are mixed in Alchemy.
 
 Name		Form		Permanent	Effects
+Critter Cream
+Creature’s Cup
+Brigand Brew
+Barbarian’s Blend
+Mirky Mix
+Sister Spit
+Brawler Brandy
+Swill Swig
+Wet Willow
+Savage Soup
+Dazzling Dose
+Gut Guzzle
+Festering Ferment
+Toxic Tonic
+Life Liquor
+Poetic Poison
+Jester Juice
+Sinister Spirits
+Dungeon Dew
+Gargoyle Gargle
+Imp’s Infusion
+Dark Drown
+Black Bitter
+Dragon Drool
+Evil Elixir
+Devil’s Drop
+Rigor Remedy
+Demon Dance
+Torment Tincture
+Djinn Drink
+Ancient Antidote
+Never Nectar
+
 
 
 Herbs
 Herbs take the form of either a flower, grass, vine, stem, leaf, root, or seed.  Each herb has an amount that is defined by a use count.  Herbs are all edible and must be eaten to trigger whatever their effect is, whether beneficial or harmful.  Each Herb has effects that can be applied by eating them even before they are mixed in Alchemy.
 
 Name 		Form		Permanent 	Effects
+TODO
 
 
 
@@ -760,7 +794,7 @@ Allows flying during combat
 
 
 Recipes
-Todo
+TODO
 </Text>
         </Document>
         <Document ID="16">
@@ -818,12 +852,13 @@ Facebook’s C++ checker is simple to use, fast to run, and easy to setup.  Use 
         </Document>
         <Document ID="9">
             <Title>CharacterCreationHelp</Title>
-            <Text>You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+            <Text>Character Creation
 
-If you are new to the game, there are four recommended sets of Roles that are known to be effective and fun to play.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
+You play Heroes’ Path with a group of six adventurers called a party.  This screen is for creating characters one at a time to be in your party.  The first thing to do is decide what Roles you want a character to be.  Role is simply a character’s occupation, or type.  You should choose the combination of Roles in your party carefully, so they work well together as a team.
+
+If you are new to the game, there are four recommended combinations of Roles that are known to be effective.  (Note that a Beastmaster is required if you want a Dragon or Wolfen in your party.)
 
 Classic
-
 Knight
 Archer
 Bard
@@ -834,7 +869,6 @@ Sorcerer
 
 
 Pet
-
 Knight
 Beastmaster
 Dragon or Wolfen
@@ -845,7 +879,6 @@ Cleric
 
 
 Wing
-
 Beastmaster
 Firebrand Dragon
 Sylavin Dragon
@@ -856,7 +889,6 @@ Cleric
 
 
 Howler
-
 Beastmaster
 Wolfen
 Wolfen
@@ -865,7 +897,7 @@ Thief
 Cleric
 
 
-To make a character, first select the Role and Race.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are crafting.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return and make more characters.
+To make a character, first select the Race and Role.  Use the text descriptions to guide you. Then hold down the space bar to summon a random set of attributes.  Drag the attributes up and down to customize them for the adventurer you are creating.  Use the attribute description text on the right side of the screen to guide you.  If you don’t like the attribute values you have, simply hold down the space bar again to randomly summon more.  Finally, give your character a name and then click the Create button.  Once you have created all the characters you need, click the Next button.  You can always return to this screen and make more characters later.
 </Text>
         </Document>
         <Document ID="25">
@@ -920,11 +952,11 @@ Bard’s require a musical instrument in order to play magical songs.  There are
 
 
 Elemental Types
-There are four elemental powers in Etan: Fire, Frost, Honor, and Shadow.  Every weapon and attack spell has the ability to cause extra elemental damage, and every piece of armor (and some other enchanted items) can help you characters resist elemental damage.  Look for items whose named end with of Fire, of Frost, of Honor, and of Shadow, or a combination such as of Shadow and Fire, etc.  These magic items carry elemental damage and resistance bonuses.
+There are four elemental powers in Etan: Fire, Frost, Honor, and Shadow.  Every weapon and attack spell has the ability to cause extra elemental damage, and every piece of armor (and some other enchanted items) can help you characters resist elemental damage.  Look for items whose named end with ‘of Fire’, ‘of Frost’, ‘of Honor’, and ‘of Shadow’, or a combination such as ‘of Shadow and Fire’, etc.  These magic items carry elemental damage and resistance bonuses.
 
 
 Named Items
-Some magical items are named, and they have enchantments with bonuses that are common to those names.  For example, the ‘Winter’ name may be seen in front of a weapon’s name, meaning it has the ‘Winter’ enchantment, which is a +33% to the Trait ‘Frost Damage’.
+Some magical items are named, and they have enchantments with bonuses that are common to those names.  For example, the name ‘Winter’ may be seen in front of a weapon’s name, meaning it has the ‘Winter’ enchantment, which is a +33% to the Trait ‘Frost Damage’.
 
 
 
@@ -940,7 +972,7 @@ With all the various Materials, Enchantments, Names, and Elemental types, there 
 
 Each creature takes a turn in the order of who has the greatest Speed stat.
 
-The Attack option will automatically choose a target enemy creature, usually whoever has the lowest relative health, while the Fight option allows you to specify which enemy creature to target.  When you want to pick which enemy to fight yourself, press the ‘F’ key and then click on an enemy once.  Your characters are limited to fighting enemies near you, unless they are flying.
+The Attack option will automatically choose a target enemy creature, usually whoever has the lowest relative health.  The Fight option allows you to specify which enemy creature to target.  When you want to pick which enemy to fight yourself, press the ‘F’ key and then click an enemy once.  Your characters are limited to fighting enemies near you, unless they are flying.
 
 To fly, press the ‘Y’ key.  An animated flapping wing will be displayed on any creature who is flying.
 
@@ -954,19 +986,19 @@ The Enter key will automatically attack, block, or skip a character’s turn, in
 
 If a character runs away or dies, it will not receive experience from the battle, even if you win the fight.
 
-Sometimes a creature cannot move past enemies on the battlefield if there are too many blocking the way, or if some of those creatures are blocking, but flying creatures can always advance or retreat.
+Sometimes a creature cannot move past enemies on the battlefield if there are too many in the way, or if some of those creatures are Blocking, but flying creatures can always advance or retreat.
 
 
 Hints
 Whoever advances to meet an opponent is then at risk of being attacked by that opponent, so it is often wiser to wait and let your enemies come to you.
 
-If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy.
+If an enemy’s armor is absorbing the damage from your attacks, try tripping that enemy before attacking.
 
 Sometimes when a creature is hit very hard he/she will become dazed, tripped, or daunted.
 
 When a creature is healed and regains all health, it removes the Dazed, Daunted, and Panic conditions.
 
-If a creature is hit with more than twice their maximum health, they will immediately die.
+If a creature is hit with more than twice their maximum health, they will die.
 
 If under a natural sleep during combat, being hit will wake the creature up.
 
@@ -987,7 +1019,7 @@ If a particular enemy is curious or causing you problems, remember that you can 
             <Title>When Combat Is Over</Title>
             <Text>When Combat is Over
 
-When combat is over, your party may find a items left behind that your concurred enemies wore or that they had stashed in a locked chest or lockbox.  These are often boobytrapped to deter thieves.  Upon finding a chest or lockbox, you can either leave it alone or attempt to pick the lock without springing the trap.  Choose wisely, because traps are dangerous and can kill entire parties.  You will have the option of choosing who in your party will attempt to pick the lock.  You should choose whoever has the greatest Luck stat, typically your Thief.  Your Thief should never be caught adventuring without their trusty Lock Picks.  There are many different Lock Pick items to be found in Etan, explore far and wide to find the best one you can.
+When combat is over, your party may find a items left behind that your concurred enemies wore or that they had stashed in a locked chest.  These are often boobytrapped to deter thieves.  Upon finding a chest, you can either leave it alone or attempt to pick the lock without springing the trap.  Choose wisely, because traps are dangerous and can kill entire parties.  You will have the option of choosing who in your party will attempt to pick the lock.  You should choose whoever has the greatest Luck stat, typically your Thief.  Your Thief should never be caught adventuring without their trusty Lock Picks.  There are many different Lock Pick items to be found in Etan, explore far and wide to find the best one you can.
 </Text>
         </Document>
         <Document ID="18">
@@ -1180,7 +1212,7 @@ Because of this, it is wise to draw tiles on layers exclusively.  That is, give 
         <Document ID="28">
             <Title>Rank Class</Title>
             <Text>Rank Class
-As your characters advance into higher ranks, they also advance through general levels of skill called Rank Classes.  As you can see in the lists below, Wolfens reach Elder status sooner than Dragons, but in the end, dragons are more powerful.  As your beasts progress in Rank Class, you will notice their roars becoming stronger and louder.  Advances in class also bring bonuses to stats and the acquisition of new abilities.
+As your characters advance into higher ranks, they also advance through general levels of skill called Rank Classes.  As you can see in the lists below, Wolfens reach Elder status sooner than Dragons, but in the end, dragons are more powerful.  As your beasts progress in Rank Class, you will notice their roars becoming stronger and louder.  Advances in Rank Class also brings bonuses to stats and the acquisition of new abilities.
 
 
 Humanoid
@@ -1351,7 +1383,7 @@ Item Set cumulative bonuses apply to every item owned in the set AFTER the first
 
 Only one Fingerclaw per hand (arm in the code) may be equipped at a time.
 
-Only ONE may be equipped at a time:
+Only ONE of the following item types may be equipped at a time:
 	Whistle
 	Necklace
 	Beard
@@ -1727,7 +1759,7 @@ Villain’s Viol 				-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/1
 
 Puritan’s Pipe and Tabor 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items
 
-Hannibal’s Hurdy-Gurdy 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast and effect, 50% curse, curse without items
+Hannibal’s Hurdy-Gurdy 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast/effect, 50% curse, curse without items
 
 Satyr’s Lyre 				-Instrument, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin
 22
@@ -1860,7 +1892,7 @@ Wet Willow
 Savage Soup
 Dazzling Dose
 Gut Guzzle
-Fester Ferment
+Festering Ferment
 Toxic Tonic
 Life Liquor
 Poetic Poison
@@ -1940,18 +1972,16 @@ The world of Etan suffers.
 
 It is the year 1302 after the second moon appeared in the sky, and once again there is a change in the heavens.  The stars shine so bright that they can often be seen during the full light of day, but they bring no comfort.  Instead, their wrath screams down in meteors causing destruction and death from above.
 
-There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of the city walls.
+There is trouble from below as well.  Raiders and vicious beasts, once rare, are now common in the countryside surrounding the village of Thornberry, where &lt;human/gnome&gt; call home.  Some risk the dangers outside and flee, bound for what they hope are safer lands far away.  Others, such as &lt;Pixies/beastmasters&gt;, come from their homes in the wilderness to stay within the relative safety of Thornberry’s city walls.
 
 After a raiding party decimated the city guard, and nearly had their way with the town, &lt;cleric/bard/knight/Sorcerer/Beastmaster/archer/human&gt; decided it was time to take action.  He/She set a bonfire and called on the willing to stand with him/her.  But only &lt;non-beast-count&gt; others arrived.  That night they took an oath before the flames to band together, to take a stand, to fight back against the dark tide, to walk the path of heroes.
 
-The town sorcerer, Torren Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They agree to find Hallistar at daybreak, and take turns keeping watch by the light of the fire…</Text>
+The town sorcerer, Torren Hallistar, is said to have made a discovery regarding the mysterious meteor showers.  Everyone agrees that learning from Hallistar is the best way to begin.  They agree to find Hallistar at daybreak, and take turns keeping watch by the light of the fire.  They had no idea that evil eyes were already watching.</Text>
         </Document>
         <Document ID="11">
             <Title>Titles</Title>
             <Text>Titles
 A Title is something a character can earn during your adventures through great deeds or by accomplishing quests.  Each Title is more than just an acknowledgment of an accomplishment, Titles also come with bonuses to stats and other Traits.
-
-
 
 	 BattlesSurvived,    	//(knights only)
             HealthGiven,        	//(clerics only)
@@ -1976,7 +2006,7 @@ A Title is something a character can earn during your adventures through great d
 
 
 Protector Of Thornberry
-Standing bravely against the Goblin hoards alongside the Thornberry town guards has earned you this title.  The townsfolk will recognize you and may even give you favorable prices and other benefits.
+By standing bravely against the goblin hoards has earned you this title.  The townsfolk will recognize you and may even give you favorable prices or other benefits.
 
 
 After dodging many melee attacks, you have earned this Title and your skills have increased, making it easier to dodge future attacks.
