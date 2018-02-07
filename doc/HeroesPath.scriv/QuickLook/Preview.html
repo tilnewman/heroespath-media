@@ -267,6 +267,16 @@ The White Border Problem<br/>
 Sometimes the game engine inverts the images of creatures and items.  After inverting, there is a white outline or halo around the thing depicted.  This is a natural part of the gray smoothing pixels being turned white.  It is hardly noticeable, and so I don’t consider it a big deal.  I just live with it.  However, so...</p>
 </li>
 <li>
+<p class="binderItem"><strong>Git</strong><br/><br/>
+To revert back to a previous commit, use:<br/>
+ git revert --no-commit <rev after target>..HEAD <br/>
+<br/>
+This will create and stage local changes that undo everything before the target revision.  You can commit those changes to undo all those commits before the target rev, or you can do the following to get back to where you were:<br/>
+<br/>
+(unstage changes)  git reset HEAD<br/>
+(kill changes)  git checkout .</p>
+</li>
+<li>
 <p class="binderItem"><strong>Build Times</strong><br/>Build Times<br/>
 All builds recorded below were run on my MacBookPro with a 2.2 GHz Intel Core i7 and 16 GB of 1600MHz DDR3 RAM:<br/>
 clang (-j7)    1:26 6MB<br/>

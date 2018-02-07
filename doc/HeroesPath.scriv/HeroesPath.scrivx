@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-02-02 12:24:53 -0700" ModID="279753D9-C518-44A0-BC1E-A13665B197FF">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-02-06 09:43:03 -0700" ModID="F7A6ACEE-594C-4990-BF11-5818B7E109AF">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 20:11:28 -0600" Modified="2016-09-30 20:11:28 -0600">
             <Title>Draft</Title>
@@ -183,6 +183,16 @@
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>155,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="46" UUID="C7F30548-777E-41A7-A85A-DB736DA7EC64" Type="Text" Created="2018-02-06 09:36:21 -0700" Modified="2018-02-06 09:43:03 -0700">
+                            <Title>Git</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>388,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="13" UUID="F897BE73-56B7-46B8-948A-A3D1C6AC07BF" Type="Text" Created="2017-03-29 12:42:08 -0600" Modified="2017-09-24 15:24:34 -0600">
@@ -459,7 +469,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 19:49:05 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="327" Characters="1811" Date="2018-02-02 12:20:16 -0700"></PreviousSession>
+        <PreviousSession Words="66" Characters="388" Date="2018-02-06 09:36:15 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
