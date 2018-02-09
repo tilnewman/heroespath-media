@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="40" tileheight="40" nextobjectid="235">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/ground.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/tile/ground-old.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="193" name="mountain" tilewidth="40" tileheight="40" tilecount="192" columns="16">
   <image source="../image/tile/mountain.png" trans="4b637f" width="640" height="480"/>
