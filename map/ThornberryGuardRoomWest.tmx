@@ -4,16 +4,16 @@
   <image source="../image/tile/ground.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="193" name="interior-walls-1" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/InteriorWalls1.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/tile/interior-wall-normal.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="337" name="interior-walls-2" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/InteriorWalls2.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/tile/interior-wall-shoddy.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="481" name="interior-shadows" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/InteriorShadows.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/tile/interior-shadow.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="625" name="objects" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/InteriorObjects.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/tile/interior-object.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <layer name="ground-black" width="50" height="50">
   <data encoding="csv">
