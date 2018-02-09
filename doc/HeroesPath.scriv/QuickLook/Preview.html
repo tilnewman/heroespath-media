@@ -268,13 +268,21 @@ Sometimes the game engine inverts the images of creatures and items.  After inve
 </li>
 <li>
 <p class="binderItem"><strong>Git</strong><br/><br/>
-To revert back to a previous commit, use:<br/>
+To revert all files back to a previous commit, use:<br/>
  git revert --no-commit <rev after target>..HEAD <br/>
 <br/>
 This will create and stage local changes that undo everything before the target revision.  You can commit those changes to undo all those commits before the target rev, or you can do the following to get back to where you were:<br/>
 <br/>
 (unstage changes)  git reset HEAD<br/>
-(kill changes)  git checkout .</p>
+(kill changes)  git checkout .<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+To revert some specific files back to a previous commit, use:<br/>
+ git checkout <rev desired> -- fil...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Build Times</strong><br/>Build Times<br/>

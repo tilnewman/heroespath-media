@@ -1385,14 +1385,23 @@ Covers:4
         <Document ID="46">
             <Title>Git</Title>
             <Text>
-To revert back to a previous commit, use:
+To revert all files back to a previous commit, use:
 	git revert --no-commit &lt;rev after target&gt;..HEAD 
 
 This will create and stage local changes that undo everything before the target revision.  You can commit those changes to undo all those commits before the target rev, or you can do the following to get back to where you were:
 
 (unstage changes)		git reset HEAD
 (kill changes)		git checkout .
-</Text>
+
+
+
+
+
+
+To revert some specific files back to a previous commit, use:
+	git checkout &lt;rev desired&gt; -- file1/to/restore file2/to/restore
+
+This will create and stage local changes that undo everything before the target revision.  </Text>
         </Document>
         <Document ID="29">
             <Title>Items</Title>
