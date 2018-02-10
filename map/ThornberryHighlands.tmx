@@ -1579,13 +1579,13 @@
   <object id="561" x="-6" y="3935" width="320" height="115"/>
  </objectgroup>
  <objectgroup name="transitions">
-  <object id="562" x="3926" y="3383" width="127" height="586">
+  <object id="562" x="3834" y="3383" width="219" height="586">
    <properties>
     <property name="level" value="Thornberry"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
-  <object id="563" x="3797" y="3530" width="84" height="199">
+  <object id="563" x="3731" y="3504" width="84" height="199">
    <properties>
     <property name="level" value="Thornberry"/>
     <property name="type" value="entry"/>

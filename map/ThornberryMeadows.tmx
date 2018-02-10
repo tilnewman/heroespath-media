@@ -1078,13 +1078,13 @@
   <object id="234" x="948.905" y="2043.8" width="2189.78" height="1150.71"/>
  </objectgroup>
  <objectgroup name="transitions">
-  <object id="210" x="1893" y="-26" width="387" height="147">
+  <object id="210" x="1893" y="-26" width="387" height="228.58">
    <properties>
     <property name="level" value="Thornberry"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
-  <object id="211" x="1989" y="207" width="145" height="133">
+  <object id="211" x="1980.41" y="241.35" width="145" height="133">
    <properties>
     <property name="level" value="Thornberry"/>
     <property name="type" value="entry"/>
