@@ -3114,7 +3114,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="npc-walk-bounds">
+ <objectgroup name="walk-bounds">
   <object id="420" type="0" x="3082" y="3538" width="412" height="120"/>
   <object id="422" type="0" x="3354" y="3538" width="140" height="382"/>
   <object id="423" type="0" x="3083" y="3538" width="138" height="384"/>
