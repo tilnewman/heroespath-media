@@ -1,0 +1,28 @@
+Most of these LPC-style character sprite sheets were created by the "LPC Character Generator - Idris Edition" at http://idrisdev.net/LPCGenerator.  All of this art is licensed under CC-BY-SA 3.0.
+
+Other sources of LPC character images include:
+
+Nila122
+opengameart.org/content/lpc-clothes-and-hair
+CC-BY-SA 3.0
+Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+Nila122
+opengameart.org/content/lpc-aprons
+CC-BY-SA 3.0
+
+Nila122
+opengameart.org/content/more-lpc-clothes-and-hair
+CC-BY-SA 3.0
+
+Wulax (Johannes Sjölund)
+opengameart.org/content/lpc-medieval-fantasy-character-sprites
+CC-BY-SA 3.0
+
+Nemisys
+opengameart.org/content/lpc-white-beard
+CC-BY-SA 3.0
+Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+2018-2-15
+zTn
