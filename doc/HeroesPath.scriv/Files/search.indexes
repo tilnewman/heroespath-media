@@ -2106,25 +2106,90 @@ Skin Color:
 Settings that should be used to make unique NPCs.
 	- Nose: Big, and Button
 	- Ear: Big, and Elven
- 	- Hair: Longhawk, Messy1, Messy2, Mohawk, Shorthawk
+ 	- Hair: Shorthawk, Longhawk, Messy1, Messy2, Mohawk
 	- Hair Color: Dark Blonde (only for males with plain hair style), Green, Red
 	- Skin Color: Tanned (this color just seems to stand out)
-	- Legs:  red pants instead of magenta
+	- Legs:  Red pants instead of Magenta
 	- Cape &amp; Cape Clip
 	- Hat
+	- Tiara (Hat) (female only)
 	- Jacket
+	- Hat Cloak Hood
+
 
 LPC Character Patterns
 
-“Warrior”:
+Warriors:
 	- Sex=male [1]
-	- Skin &amp; Hair: [9]
-		* Light Skin: body=light/tanned2, hair=plain_blonde/plain_brunette/plain_raven [6]
+	- Skin &amp; Hair: [6]
+		* Light Skin: body=light, hair=plain_blonde/plain_brunette/plain_raven [6]
 		* Dark Skin: body=dark, hair=plain_raven/plain_brunette/plain_white [3]
-	- “Leather”=armor=chest_leather&amp;legs=pants_magenta&amp;=shoes_brown
-		“poor”=
-		“” 
+	
+	- “Plate”: armor=chest_plate&amp;greaves=metal&amp;shoes=boots_metal&amp;arms=plate
+		* (Uses all Skin&amp;Hair combinations from above, so 6 each.)
+		* ManAtArms
+		* Gladiator	shoulders=leather
 
+	- “Plate-Soldier”: hat=chain
+		* (Can’t see hair, so only 2 each.)
+		* Sergeant 	
+		* Major		shoulders=leather
+
+	- “Plate-Knight”: gloves=metal&amp;hat=helmet_metal
+		* (Can’t see skin or hair, so only 1.)
+		
+
+	- “Leather”: armor=chest_leather&amp;legs=pants_magenta
+		* ((Uses all Skin&amp;Hair combinations from above, so 6 each.))
+		* Poor
+		* Thug		shoulders=leather
+		* Circus1		bracers=leather
+		* Thug2		shoulders=leather&amp;bracers=leather
+		-
+		* IronArms	arms=plate
+		* IronRich	arms=plate&amp;shoulders=leather
+		-
+		* Private1	mail=chain
+		* Private2	mail=chain&amp;shoulders=leather
+		* Private3	mail=chain&amp;bracers=leather
+		* Private4	mail=chain&amp;shoulders=leather&amp;bracers=leather
+		-
+		* Common1		greaves=metal
+		* Common2		greaves=metal&amp;shoulders=leather
+		* Circus2		greaves=metal&amp;bracers=leather
+		* Common3		greaves=metal&amp;shoulders=leather&amp;bracers=leather
+		-
+	- “Leather-Soldier”:   =shoes_brown&amp;hat=chain
+		* (Can’t see hair, so only 2 each.)
+		* Specialist1	shoulders=leather
+		* Specialist2	shoulders=leather&amp;bracers=leather
+		-
+		* Corporal1	arms=plate
+		* Corporal2	arms=plate&amp;shoulders=leather
+		-
+		* Private1st1	mail=chain
+		* Private1st2	mail=chain&amp;shoulders=leather
+		* Private1st3	mail=chain&amp;bracers=leather
+		* Private1st4	mail=chain&amp;shoulders=leather&amp;bracers=leather
+		-
+		* Priavte2nd1	greaves=metal
+		* Priavte2nd2	greaves=metal&amp;shoulders=leather
+		* Priavte2nd3	greaves=metal&amp;bracers=leather
+		* Priavte2nd4	greaves=metal&amp;shoulders=leather&amp;bracers=leather
+
+Commoners:
+
+	- “Monk”:
+	 	* (I came up with 16 of these.  All bald with robe skirt, dark or tanned2, various belts and bracers.)
+
+	- “Girl”: sex=female&amp;clothes=gown&amp;gown-underdress=1&amp;eyes=green&amp;body=light
+	 	* Hair: loose_,ponytail2_,unkempt_,princess_
+		
+	- “Woman”: sex=female&amp;body=light&amp;clothes=gown&amp;gown-underdress=1&amp;gown-overskirt=1
+		* Hair: pixie_,shoulderl_,shoulderr_,swoop_			
+	- “Maid”: 
+
+	- “Rags”
 </Text>
         </Document>
         <Document ID="39">
