@@ -1986,6 +1986,147 @@ Totals:
 {335}
 [332420] or [333444] if you add 32x32 alchemy mixes</Text>
         </Document>
+        <Document ID="47">
+            <Title>Character Images</Title>
+            <Text>Character Images
+
+LPC
+I need the largest variety of both player and non-player character images/animations as I can get, and I found a treasure trove of decent looking assets created by the Liberated Pixel Cup (LPC) community, at http://lpc.opengameart.org.  All LPC assets are released under CC-BY 3.0, so no worries there.  
+
+There are even web apps that will create sprite sheets for you, with an amazing level of variety: http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator, and http://idrisdev.net/LPCGenerator.  The Idris app is newer and claims to have fix some things, but non of it’s “Sara” images work and I always end up using Gaurav’s instead.
+
+
+LPC-Converter App
+I created a utility (appbase/lpc-converter) that will convert the sprite sheet images created by these sites into a 512x512 texture of only the animations I need for Heroes’ Path.  After FileOptimizer shrinks these PNG texture files down they are only 14k each.  I ended up with animation cells for standing, walking, give/take, fighting, casting, blinking, and dead.  Only walking and the give/take animations have multiple cells/frames.  Here is a cheatsheet or key image that defines what the cells in these texture images are:
+
+#
+
+
+Here is the code that also helps define what each cell is used for:
+
+switch (POSE)
+        {
+            case Pose::Standing:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 9 }; }
+                    case su::Direction::Right: { return { 25 }; }
+                    case su::Direction::Up:    { return { 1 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 17 }; }
+                }
+            }
+            case Pose::Walking:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 10,11,12,13,14,15,16,41 }; }
+                    case su::Direction::Right: { return { 26,27,28,29,30,31,32,57 }; }
+                    case su::Direction::Up:    { return { 2,3,4,1,6,7,8 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 18,19,20,17,22,23,24 }; }
+                }
+            }
+            case Pose::GiveTake:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 42,43,44,45,46 }; }
+                    case su::Direction::Right: { return { 58,59,60,61,62 }; }
+                    case su::Direction::Up:    { return { 34,35,36,37,38 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 50,51,52,53,54 }; }
+                }
+            }
+            case Pose::Fight:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 47 }; }
+                    case su::Direction::Right: { return { 63 }; }
+                    case su::Direction::Up:    { return { 39 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 55 }; }
+                }
+            }
+            case Pose::Cast:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 48 }; }
+                    case su::Direction::Right: { return { 64 }; }
+                    case su::Direction::Up:    { return { 40 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 56 }; }
+                }
+            }
+            case Pose::Blink:
+            {
+                switch (DIRECTION)
+                {
+                    case su::Direction::Left:  { return { 5 }; }
+                    case su::Direction::Right: { return { 21 }; }
+                    case su::Direction::Up:    { return { 1 }; }
+                    case su::Direction::Down: 
+                    case su::Direction::Count:
+                    default:                   { return { 33 }; }
+                }
+            }
+            case Pose::Dead:
+            case Pose::Count:
+            default:                           { return { 49 }; }
+        }
+
+
+LPC Character Combinations
+There are too many possible combinations of LPC character assets to just sit down and create all the ones I need.  I’ve decided not to implement code in the game engine to randomly create combinations, so I’ll need to document some combinations here to keep track.
+
+Settings to Ignore:
+	Spike, Bracelet, Belt, Buckle, Necklace, Weapon, Ammo, Shield, Quiver
+
+Eye Color:
+	- The only eye colors that don’t look crazy are:  blue, brown, green, and gray.
+	- Eye color is not noticeable enough to warrant saving a distinct combination.
+
+Skin Color:
+	- Only using: Light, Dark, Tanned, and Tanned2.
+	- When the skin color is dark: (6x2=12)
+		* The only hair styles that look correct are: Plain, Bedhead, Messy1, Messy2, Mohawk, and Shorthawk.
+		* The only hair colors that look correct are: Raven (black), Whiteblonde (which comes off as light-brown), and maybe Green and Brunette
+	- When the skin color is NOT dark: (3x)
+		* Warrior: 
+		* Warrior
+
+Settings that should be used to make unique NPCs.
+	- Nose: Big, and Button
+	- Ear: Big, and Elven
+ 	- Hair: Longhawk, Messy1, Messy2, Mohawk, Shorthawk
+	- Hair Color: Dark Blonde (only for males with plain hair style), Green, Red
+	- Skin Color: Tanned (this color just seems to stand out)
+	- Legs:  red pants instead of magenta
+	- Cape &amp; Cape Clip
+	- Hat
+	- Jacket
+
+LPC Character Patterns
+
+“Warrior”:
+	- Sex=male [1]
+	- Skin &amp; Hair: [9]
+		* Light Skin: body=light/tanned2, hair=plain_blonde/plain_brunette/plain_raven [6]
+		* Dark Skin: body=dark, hair=plain_raven/plain_brunette/plain_white [3]
+	- “Leather”=armor=chest_leather&amp;legs=pants_magenta&amp;=shoes_brown
+		“poor”=
+		“” 
+
+</Text>
+        </Document>
         <Document ID="39">
             <Title>Alchemy</Title>
             <Text>
