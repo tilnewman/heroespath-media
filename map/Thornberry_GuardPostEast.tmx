@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="12">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="14">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
-  <image source="../image/tile/interior-ground.png" trans="4b637f" width="256" height="256"/>
+  <image source="../image/map-tiles/interior-ground.png" trans="4b637f" width="256" height="256"/>
  </tileset>
  <tileset firstgid="37" name="walls" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/interior-wall-normal.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/interior-wall-normal.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="181" name="objects" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/interior-object.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/interior-object.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="325" name="shadows" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/interior-shadow.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/interior-shadow.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <layer name="ground" width="50" height="50">
   <data encoding="csv">
@@ -229,8 +229,8 @@
 </data>
  </layer>
  <objectgroup name="collisions">
-  <object id="1" x="483" y="1336" width="198" height="344"/>
-  <object id="2" x="798" y="1335" width="200" height="344"/>
+  <object id="1" x="483" y="1350" width="198" height="330"/>
+  <object id="2" x="798" y="1352" width="200" height="327"/>
   <object id="3" x="633" y="1662" width="204" height="29"/>
   <object id="4" x="446" y="877" width="75" height="481"/>
   <object id="5" x="959" y="857" width="88" height="501"/>
@@ -251,5 +251,8 @@
     <property name="type" value="exit"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="animations">
+  <object id="13" name="Campfire" x="703" y="926.5" width="72" height="57"/>
  </objectgroup>
 </map>
