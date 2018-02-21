@@ -253,6 +253,6 @@
   </object>
  </objectgroup>
  <objectgroup name="animations">
-  <object id="13" name="Campfire" x="703" y="926.5" width="72" height="57"/>
+  <object id="13" name="Campfire" x="703" y="945.5" width="72" height="38"/>
  </objectgroup>
 </map>
