@@ -1,27 +1,6 @@
-open3.ogg
-Submitted to freesound.org by timpryor as “wood-creak” under the CC-BY 3.0 license.
 
-open4.ogg
-Submitted to freesound.org by slanesh as “porte-open-close” under the CC-BY 3.0 license.
-
-open5.ogg
-Submitted to freesound.org by inspectorj as “door-squeak-normal-d” under the CC-BY 3.0 license.
-
-open6.ogg
-Submitted to freesound.org by inspectorj as “door-squeak-normal-d” under the CC-BY 3.0 license.
-
-open7.ogg
-Submitted to freesound.org by inspectorj as “door-squeak-normal-c” under the CC-BY 3.0 license.
-
-open8.ogg
-Submitted to freesound.org by jarredgibb as “door-creak” under the CC-BY 3.0 license.
-
-open9.ogg
-Submitted to freesound.org by inspectorj as “door-squeak-normal-a” under the CC-BY 3.0 license.
-
-
-trap-ghost1.ogg
-trap-ghost2.ogg
+trap-ghost-1.ogg
+trap-ghost-2.ogg
 Submitted to freesound.org by freed as “pow05-f04-noise” under the CC-BY 3.0 license.
 
 trap-sparkshiss.ogg
