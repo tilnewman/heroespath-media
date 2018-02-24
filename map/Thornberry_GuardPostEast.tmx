@@ -247,6 +247,7 @@
   </object>
   <object id="9" x="681" y="1402" width="117" height="107">
    <properties>
+    <property name="doorsfx" value="Old"/>
     <property name="level" value="Thornberry"/>
     <property name="type" value="exit"/>
    </properties>

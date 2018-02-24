@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="140" height="125" tilewidth="40" tileheight="40" nextobjectid="426">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/ground-old.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map-tiles/ground-old.png" trans="4b637f" width="640" height="480"/>
   <terraintypes>
    <terrain name="GrassToDarkDirt" tile="-1"/>
    <terrain name="GrassToLightDirt" tile="-1"/>
@@ -126,58 +126,58 @@
   <tile id="173" terrain="2,,,"/>
  </tileset>
  <tileset firstgid="193" name="Building Objects Dark" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-dark.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-dark.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="337" name="Building Objects Light" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-light.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-light.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="481" name="Building Objects Dark Roof" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-dark-roof.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-dark-roof.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="625" name="Wall Objects" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-wall.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-wall.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="769" name="Building Shadows" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-shadow.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-shadow.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="913" name="Building Objects Light" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-light-roof.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-light-roof.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="1057" name="Objects" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/object.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map-tiles/object.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="1249" name="Shadows 2" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/object-shadow.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map-tiles/object-shadow.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="1441" name="Mountains" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/mountain.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map-tiles/mountain.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="1633" name="Mountain Shadows" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/mountain-shadow.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map-tiles/mountain-shadow.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="1825" name="trees1" tilewidth="40" tileheight="40" tilecount="625" columns="25">
-  <image source="../image/tile/tree-1.png" trans="000000" width="1024" height="1024"/>
+  <image source="../image/map-tiles/tree-1.png" trans="000000" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="2450" name="trees2" tilewidth="40" tileheight="40" tilecount="625" columns="25">
-  <image source="../image/tile/tree-4.png" trans="000000" width="1024" height="1024"/>
+  <image source="../image/map-tiles/tree-4.png" trans="000000" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="3075" name="trees3" tilewidth="40" tileheight="40" tilecount="625" columns="25">
-  <image source="../image/tile/tree-12.png" trans="000000" width="1024" height="1024"/>
+  <image source="../image/map-tiles/tree-12.png" trans="000000" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="3700" name="trees4" tilewidth="40" tileheight="40" tilecount="625" columns="25">
-  <image source="../image/tile/tree-8.png" trans="000000" width="1024" height="1024"/>
+  <image source="../image/map-tiles/tree-8.png" trans="000000" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="4325" name="Trees5" tilewidth="40" tileheight="40" tilecount="300" columns="25">
-  <image source="../image/tile/tree-11.png" trans="000000" width="1024" height="512"/>
+  <image source="../image/map-tiles/tree-11.png" trans="000000" width="1024" height="512"/>
  </tileset>
  <tileset firstgid="4625" name="trees10-13" tilewidth="40" tileheight="40" tilecount="625" columns="25">
-  <image source="../image/tile/tree-10-13.png" trans="000000" width="1024" height="1024"/>
+  <image source="../image/map-tiles/tree-10-13.png" trans="000000" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="5250" name="wall-shadow" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/town-wall-shadow.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/town-wall-shadow.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <tileset firstgid="5394" name="new-ground" tilewidth="40" tileheight="40" tilecount="144" columns="12">
-  <image source="../image/tile/ground.png" trans="4b637f" width="512" height="512"/>
+  <image source="../image/map-tiles/ground.png" trans="4b637f" width="512" height="512"/>
  </tileset>
  <layer name="ground" width="140" height="125">
   <data encoding="csv">
@@ -3064,7 +3064,7 @@
   <object id="416" x="2302" y="4592" width="222" height="84"/>
   <object id="418" x="2838" y="4322" width="36" height="40"/>
  </objectgroup>
- <objectgroup name="transitions" visible="0">
+ <objectgroup name="transitions">
   <object id="339" x="2500" y="4414" width="472" height="66">
    <properties>
     <property name="level" value="ThornberryMeadows"/>
@@ -3089,25 +3089,27 @@
     <property name="type" value="entry"/>
    </properties>
   </object>
-  <object id="351" x="3075.09" y="1994.07" width="91.4634" height="84.3781">
+  <object id="351" x="3075.09" y="1994.07" width="91.4634" height="66.3781">
    <properties>
+    <property name="doorsfx" value="Common"/>
     <property name="level" value="Thornberry_GuardPostWest"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
-  <object id="352" x="3512.09" y="1994.73" width="95.8293" height="82.561">
+  <object id="352" x="3512.09" y="1994.73" width="95.8293" height="66.561">
    <properties>
+    <property name="doorsfx" value="Old"/>
     <property name="level" value="Thornberry_GuardPostEast"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
-  <object id="353" x="3094.18" y="2097.1" width="55.6341" height="47.8293">
+  <object id="353" x="3092.18" y="2061.1" width="55.6341" height="47.8293">
    <properties>
     <property name="level" value="Thornberry_GuardPostWest"/>
     <property name="type" value="entry"/>
    </properties>
   </object>
-  <object id="354" x="3529" y="2089.79" width="66.1829" height="60.561">
+  <object id="354" x="3527" y="2061.79" width="66.1829" height="60.561">
    <properties>
     <property name="level" value="Thornberry_GuardPostEast"/>
     <property name="type" value="entry"/>
