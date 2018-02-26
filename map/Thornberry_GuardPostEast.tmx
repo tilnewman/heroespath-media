@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="14">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="16">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map-tiles/interior-ground.png" trans="4b637f" width="256" height="256"/>
  </tileset>
@@ -255,5 +255,9 @@
  </objectgroup>
  <objectgroup name="animations">
   <object id="13" name="Campfire" x="703" y="945.5" width="72" height="38"/>
+ </objectgroup>
+ <objectgroup name="walk-sfx">
+  <object id="14" name="Wood" type="0" x="432" y="860" width="624" height="868"/>
+  <object id="15" name="Solid" x="655" y="984" width="170" height="82"/>
  </objectgroup>
 </map>
