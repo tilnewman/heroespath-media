@@ -28,7 +28,6 @@ CC-BY-3.0
 
 door-common-open-1.ogg
 door-common-open-2.ogg
-door-common-open-3.ogg
 door-common-close-1.ogg
 door-common-close-1.ogg
 door-locked-2.ogg
