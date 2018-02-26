@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="16">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="21">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map-tiles/interior-ground.png" trans="4b637f" width="256" height="256"/>
  </tileset>
@@ -259,5 +259,12 @@
  <objectgroup name="walk-sfx">
   <object id="14" name="Wood" type="0" x="432" y="860" width="624" height="868"/>
   <object id="15" name="Solid" x="655" y="984" width="170" height="82"/>
+ </objectgroup>
+ <objectgroup name="walk-bounds">
+  <object id="16" type="0" x="562" y="1041" width="81" height="278"/>
+  <object id="17" type="0" x="564" y="1208" width="358" height="112"/>
+  <object id="18" type="0" x="562" y="1043" width="358" height="80"/>
+  <object id="19" type="0" x="819" y="1043" width="8" height="278"/>
+  <object id="20" type="0" x="905" y="1045" width="26" height="274"/>
  </objectgroup>
 </map>
