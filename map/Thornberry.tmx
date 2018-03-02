@@ -3092,7 +3092,6 @@
   <object id="351" x="3075.09" y="1994.07" width="89.4634" height="66.3781">
    <properties>
     <property name="doorsfx" value="Common"/>
-    <property name="interaction" value=""/>
     <property name="level" value="Thornberry_GuardPostWest"/>
     <property name="type" value="exit"/>
    </properties>
