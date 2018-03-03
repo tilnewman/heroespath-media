@@ -3091,14 +3091,14 @@
   </object>
   <object id="351" x="3075.09" y="1994.07" width="89.4634" height="66.3781">
    <properties>
-    <property name="doorsfx" value="Common"/>
+    <property name="doorsfx" value="DoorCommon"/>
     <property name="level" value="Thornberry_GuardPostWest"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
   <object id="352" x="3512.09" y="1994.73" width="95.8293" height="66.561">
    <properties>
-    <property name="doorsfx" value="Old"/>
+    <property name="doorsfx" value="DoorOld"/>
     <property name="level" value="Thornberry_GuardPostEast"/>
     <property name="type" value="exit"/>
    </properties>

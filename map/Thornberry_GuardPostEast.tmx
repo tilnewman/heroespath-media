@@ -151,7 +151,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup name="collisions">
+ <objectgroup name="collisions" visible="0">
   <object id="1" x="363" y="821" width="204" height="111"/>
   <object id="2" x="630" y="821" width="248" height="111"/>
   <object id="4" x="326" y="357" width="75" height="481"/>
@@ -169,20 +169,20 @@
   </object>
   <object id="9" x="538" y="880" width="117" height="60">
    <properties>
-    <property name="doorsfx" value="Old"/>
+    <property name="doorsfx" value="DoorOld"/>
     <property name="level" value="Thornberry"/>
     <property name="type" value="exit"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="animations">
+ <objectgroup name="animations" visible="0">
   <object id="13" name="Campfire" x="583" y="425.5" width="72" height="38"/>
  </objectgroup>
- <objectgroup name="walk-sfx">
+ <objectgroup name="walk-sfx" visible="0">
   <object id="14" name="Wood" type="0" x="312" y="340" width="624" height="615"/>
   <object id="15" name="Solid" x="535" y="464" width="170" height="82"/>
  </objectgroup>
- <objectgroup name="walk-bounds">
+ <objectgroup name="walk-bounds" visible="0">
   <object id="16" type="0" x="442" y="521" width="81" height="278"/>
   <object id="17" type="0" x="444" y="688" width="358" height="112"/>
   <object id="18" type="0" x="442" y="523" width="358" height="80"/>
