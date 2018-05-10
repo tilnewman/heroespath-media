@@ -1406,7 +1406,7 @@ This will create and stage local changes that undo everything before the target 
         <Document ID="29">
             <Title>Items</Title>
             <Text>Items
-There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier’s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow).  
+There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier’s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow) (8 valid combinations).  In this document, the term equipment refers to either weapons or armor.  Other items may seem like equipment, such as lock picks or wands, but they are not considered equipment in the game.
 
 Limits/Rules
 Item Set cumulative bonuses apply to every item owned in the set AFTER the first.  So cumulative bonuses are granted starting with the second item equipped.
@@ -1433,20 +1433,36 @@ Magic/Bless/Curse Effect changes the magnitude of effect created by the spell th
 Magic/Bless/Curse Resist charges the magnitude of effect absorbed by the target of a spell that is successful.  Resist means: “from the perspective of the target/receiver” of the spell.  Magic Resist will not alter helpful magic.  So players will want their Magic/Bless/Curse Resist to be high so that enemy spells cast on them have less of an effect, but it will not impede the effect of helpful spells, such as another player character Cleric’s healing spell.
 
 
-Elemental Types
-There are four item Elemental Types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  Only equipment (items that can be equipped) can be typed.  If an item’s name ends in one of the eight qualifying type names: “of &lt;Fire/Frost Honor/Shadow&gt;”, and it is equipped, then it confers Type based bonuses, specified below:
+Material Bonuses
+In the enchantments described below, you will often see “material based”.  This means that the value being described depends on the 
 
-If item is &lt;Material&gt;: for weapons: 10% + 5x material based +% &lt;Type&gt; damage, for armor: 4% + 1/1.5x material based +% &lt;Type&gt; resist
-If item is NOT Material: for weapons 50% &lt;Type&gt; damage, for armor: 13% &lt;Type&gt; resist
+
+Elemental Enchantments
+All kinds of items can be enchanted with the magic of elemental forces.  If the item is weapon or armor, then it must be equipped for the enchantment to take effect, otherwise, if the item is of some unique/misc type, then it must be worn for the enchantment to take effect.  An elemental unique/misc type item must be “wearable”, which in the code is really just another name for “equipable”.  So elemental items must be equipped to take effect.  There are four Elemental types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  If an item’s name ends in one of the eight qualifying type names: “of &lt;Fire/Frost Honor/Shadow&gt;”, and it is equipped, then it confers Type based bonuses, specified below:
+
+If item is &lt;Material&gt;:
+	weapons: 10% + 5x material based +% &lt;Element Type&gt; damage
+	armor/wearable: 4% + 1/1.5x material based +% &lt;Element Type&gt; resist
+If item is NOT Material:
+	weapons 50% &lt;Element Type&gt; damage
+	armor/wearable: 13% &lt;Element Type&gt; resist
+
+Elemental enchantments are pretty powerful, so they should be rare, with combinations being even more rare.  As of 2018-5-1, I’ve revised the lists below to reduce the number of items with Elemental enchantments accordingly.
+
+
+Enchantment Combinations
+Sets, Nameds, Uniques, and Elementals are all methods of adding a magical enchantment to items.  The only valid combinations are: Unique/Misc+Elemental and Named+Elemental.  There are of course standard weapons and armor that are also Elemental.  No item that is part of a set can be Elemental.  Set, Named, and Unique (not misc) are all mutually exclusive.
+
 
 
 Unique Items
+These are special items that each have their own unique magical enchantments.
 Basilisk Tonge -If held:  8% magic cast, 13%/13% magic effect/resist, if used: turns creatures to stone, combat only, one use
 Berserker’s Beard -If held: -33% int, -16% cha, 25% melee damage, 8% encounter, 18% magic resist
 Bishop’s Hanky -If held: 8% lck, 13% int, 18% cha, 8%/16%/16% magic cast/effect/resist, 16%/28% bless cast/effect, 22% curse resist
 Bloody Dragon Scale -If held: 50% animal resist, 10% find coin, 10% find magic, -26% cha 
 Bottle of Banshee Screams -If held: -20% cha, -20% int, -6% encounter, if used: panics enemies, ten uses
-Burial Shroud -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist
+Burial Shroud &lt;of Shadow&gt; -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist
 Chimera Bone -If held: 18% magic resist, -50% cha, 13% int, 8% find magic
 Cobra Tooth -If held: 16% melee damage , 36% poison on all damage
 Copper Troll -If held:  24% str, -24% cha, -6% encounter
@@ -1458,7 +1474,7 @@ Fanatic’s Flag -If held: 18% str, 13% spd, -28% cha, 8% encounter, 6% surprise
 Ghost Sheet -If equipped:  13% armor, 13% magic resist, -13% spd, -6% encounter
 Giant Owl Eye -If held:  18% acc, 13% spd, 6% critical, 8% projectile damage, -8% surprise
 Griffin Feather -If held: 18% spd, 13% str, 13% projectile damage, allows flying
-Hangman’s Noose -If held: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage
+Hangman’s Noose -If worn: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage
 Hawk Eye -If held: 16% acc, 10% spd, 6% critical, +10% projectile damage, -6% surprised
 Hobgoblin Nose -If held: -26% cha, 13% lck, -10% surprised, 13% magic resist
 Horn of the Horde -If equipped:  +13% str, -8% encounter, -8% surprise, if used: Daunts or Panics enemies
@@ -1511,8 +1527,8 @@ Macabre Manuscript 	-If held: 33% curse resist, 24% shadow resist, -22% cha, 22%
 Last Rites Scroll		-If held: 16%/33%/33% curse cast/effect/resist, 28% shadow resist, -28% cha, 28% int, 16% find religious, 26% mana, curse without items
 
 Commander’s Cape &lt;of Honor&gt;(2) 	-If equipped: 18% str, 18% armor, 24% curse resist
-General’s Cape &lt;of Honor&gt;(2) 		-If equipped: 24% str, 24% armor, 28% curse resist
-King’s Cape &lt;of Honor&gt;(2) 		-If equipped: 30% str, 30% armor, 33% curse resist
+General’s Cape &lt;of Honor&gt;(2) -If equipped: 24% str, 24% armor, 28% curse resist
+King’s Cape &lt;of Honor&gt;(2)  -If equipped: 30% str, 30% armor, 33% curse resist
 
 Trickster Pouch 	-If equipped: 13% find coin, 8% find magic, 16% lck, 18% cha
 Scoundrel Sack 	-If equipped: 18% find coin, 8% find magic, 18% lck, 6% backstab
@@ -1526,7 +1542,7 @@ Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/da
 
 &lt;Metal&gt; War Trumpet(7) -If used: 3% + material based +% Panic enemies, then if not,  13% + material based +% Daunt enemies
 
-&lt;Gem&gt; Jeweled Princess Veil &lt;of Honor&gt;(14) -If equipped: 4% + material based +% cha, 1/2x material based +% find magic
+&lt;Gem&gt; Jeweled Princess Veil &lt;of Honor/Shadow&gt;(14) -If equipped: 4% + material based +% cha, 1/2x material based +% find magic
 
 Dried &lt;Turtle/Frog/Toad/Lizard/Salamander/Skink/Gecko/Iguana&gt;(20) -If eaten: -10% mana, cures poison
 [41]
@@ -1546,7 +1562,7 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 
 &lt;Metal/Gem&gt;(14) Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist
 
-&lt;Material&gt;(18) Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect
+&lt;Material&gt;&lt;of Honor&gt;(18) Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect
 
 &lt;Metal/Gem&gt;(18) Cyclops Eye -If held: 1/2x material based +% critical, material based -% surprised, if used: reveals all info about an enemy creature, infinite uses
 [132]
@@ -1554,168 +1570,265 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 
 &lt;Material&gt; Magnifying Glass -If used: reveals all info about an enemy creature, combat only, material based use count
 &lt;Metal/Gem&gt; Turtle Shell -If held: 3x material based +% armor, very heavy
-&lt;Material&gt; Jeweled Armband &lt;of Type&gt;(90) -If equipped: 2x material based +% armor,
-&lt;Material&gt; Mana Amulet &lt;of Type&gt;(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect
+&lt;Material&gt; Jeweled Armband &lt;of Individual Types&gt;(90) -If equipped: 2x material based +% armor,
+&lt;Material&gt; Mana Amulet &lt;of  Individual Types&gt;(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect
 [212]
 {5}
 
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Pin        -If equipped: 1x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Signet   -If held:         2x material based +% stat
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Charm  -If equipped: 3x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Bracelet -If equipped: 4x material based +% stat
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Brooch  -If equipped: 5x material based +% stat
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Charm  -If equipped: 3x material based +% stat
 [540]
 {3}
 
 
 Normal Equipment
-&lt;(weapons)&gt;(40/1)[5747] &lt;of Type&gt;(5)(200)
-&lt;(all armor)&gt;(38/9)[2098] &lt;of Type&gt;(5)(200)
+&lt;(weapons)&gt;(40/1)[5747] &lt;see below&gt;
+            Breath / Tendrils / Fists / Bite / Claws&lt;&gt;
+            Swords
+		    Shortsword&lt;&gt;
+		     	Gladius&lt;Honor&gt;
+                		Cutlass&lt;Honor&gt;
+                		Falcata&lt;Fire&amp;Shadow&gt;
+                		Rapier&lt;Frost&amp;Fire&amp;Shadow&gt;
+                		Saber&lt;Shadow&gt;
+                		Broadsword&lt;Honor&gt;,
+                		Longsword&lt;Fire&amp;Frost&gt;,
+                		Knightlysword&lt;Frost&amp;Honor&gt;,
+                		Flamberg&lt;Fire&amp;Shadow&gt;,
+                		Claymore&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;,            Axes
+		Handaxe&lt;&gt;
+                	Sickle&lt;Shadow&gt;
+                	Battleaxe&lt;Fire|Frost&gt;
+                	Waraxe&lt;Honor|Shadow&gt;            Whips
+		Bullwhip&lt;&gt;
+                Flail&lt;Honor|Shadow&gt;
+                MaceAndChain&lt;Fire|Frost&gt;            Projectiles
+		Blowpipe&lt;&gt;
+                Sling&lt;&gt;
+                Shortbow&lt;&gt;
+                Longbow&lt;Fire|Frost&gt;
+                Crossbow&lt;Honor|Shadow&gt;
+                CompositeBow&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;            Bladed Staffs
+		ShortSpear&lt;&gt;
+                	Spear&lt;&gt;
+                	Scythe&lt;Shadow&amp;Fire&gt;
+                	Pike&lt;Frost&amp;Honor&gt;
+                	Partisan&lt;Fire&amp;Honor&gt;
+                	Halberd&lt;Fire&amp;Frost&amp;Honor&gt;            Knife&lt;of Fire&amp;Frost&amp;Honor&gt;
+	 Dagger&lt;of Fire&amp;Frost&amp;Shadow&gt;            Clubs
+		Spiked&lt;Fire&amp;Shadow&gt;
+                	Maul&lt;&gt;
+                	Mace&lt;Frost&amp;Honor&gt;
+                	Warhammer&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;            Staff&lt;Honor|Shadow&gt;            QuarterStaff&lt;Frost|Honor&gt;
+            
+&lt;(all armor)&gt;(38/9)[2098] &lt;&gt;
+	  Shields
+		Buckler&lt;&gt;
+                	Kite&lt;Frost&amp;Honor&gt;
+                	Heater&lt;Fire&amp;Shadow&gt;
+                	Pavis&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;
+
+	Helms
+		Leather&lt;&gt;
+                	MailCoif&lt;Frost&gt;
+                	Kettle&lt;Shadow&gt;
+                	Archers&lt;Honor&gt;
+                	Bascinet&lt;Fire&gt;
+                	Great&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;
+
+	 Coverings
+		Cape&lt;Honor|Shadow&gt;
+                	Vest&lt;Fire|Frost&gt;
+                	Robe&lt;&gt;
+                	Cloak&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;
+
+	Bracers/Boots/Aventail
+		Plain&lt;&gt;
+		Scale/Mail/Plate&lt;Fire|Frost&gt;
+            Gauntlets/Pants//Shirt
+		Plain&lt;&gt;
+		Scale/Mail/Plate&lt;Honor&amp;Shadow&gt;
+            Skin&lt;&gt;
 [7845]
 (400)
 {78}
 
 
-Named Equipment
-(apply only if equipped)
-Wicked 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise
+Named Equipment (Enchantments)
+	  Shield,
+		Buckler = 0,
+                	Kite,
+                	Heater,
+                	Pavis,
+            Helm,
+		Leather = 0,
+                	MailCoif,
+                	Kettle,
+                	Archers,
+                	Bascinet,
+                	Great,
+	Covering,
+		Cape = 0,
+                	Vest,
+                	Robe,
+                	Cloak,
+            Gauntlets,
+            Pants,
+            Boots,
+            Shirt,
+            Bracers,
+            Aventail,
+		Plain = 0,
+                	Mail,
+                	Scale,
+                	Plate,
+            Some weapons and armor have an enchantment, perhaps including an Elemental enchantment as well, that has made it so famous as to be given a name that is known to creatures in the game.  These enchantments, including the Elemental ones, are only applied if equipped.
+Wicked 	&lt;(POINTED weapons)&gt;&lt;of Fire|Shadow&gt;[22988](160/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise
 
-Fiendish 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise
+Fiendish 	&lt;(BLADED weapons)&gt;&lt;of Shadow&gt;[22988](160/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise
 
-Infernal	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 18% str, -22% lck, -24% cha, -24% int, 8% curse on melee, 6% critical, -26% curse resist, +3% encounter, +3% surprise
+Infernal	&lt;SWORD/Sling/Longbow/CompositeBow&gt;&lt;of Fire&amp;Shadow&gt;[22988](160/1) 18% str, -22% lck, -24% cha, -24% int, 8% curse on melee, 6% critical, -26% curse resist, +3% encounter, +3% surprise
 
-Raging 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 26% str, -24% lck, -28% cha, -28% int, 10% curse on melee, 8% critical, -33% curse resist, +4% encounter, +4% surprise
+Raging 	&lt;(CLUB weapons)&gt;&lt;&gt;[22988](160/1) 26% str, -24% lck, -28% cha, -28% int, 10% curse on melee, 8% critical, -33% curse resist, +4% encounter, +4% surprise
 
-Diabolic 	&lt;(weapons)&gt;&lt;of Fire/Frost/Shadow&gt;[22988](160/1) 33% str, -26% lck, -33% cha, -33% int, 13% curse on melee, 10% critical, -100% curse resist, +5% encounter, +5% surprise
+Diabolic 	&lt;(MELEE weapons)&gt;&lt;of Shadow&gt;[22988](160/1) 33% str, -26% lck, -33% cha, -33% int, 13% curse on melee, 10% critical, -100% curse resist, +5% encounter, +5% surprise
 [114940]
 (800)
 
-Dancing &lt;(swords)&gt;&lt;of Fire/Frost/Honor/Shadow&gt;[8085](55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc
+Dancing &lt;(swords)&gt;&lt;of Fire|Frost&gt;[8085](55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc
 [8085]
 (55)
 
-Marauder &lt;(swords)&gt;&lt;of Fire/Frost/Shadow&gt;[8085](44/1) 16% str, 13% acc, 5% critical
+Marauder &lt;(SWORD EXCEPT ShortSword/Gladius/Falcata)&gt;&lt;&gt;[8085](44/1) 16% str, 13% acc, 5% critical
 [8085]
 (44)
 
-Honest 	&lt;(all armor)&gt;[2098]&lt;of Fire/Frost&gt;(102/8)[6294] 1% acc, 1% armor, 4% bless effect, 8% shadow/honor resist
-Noble		&lt;(all armor)&gt;&lt;of Fire/Frost&gt;(102/8) 2% acc, 2% armor, 6% bless effect, -2% surprise, 13% shadow/honor resist
-Daring  	&lt;(all armor)&gt;&lt;of Fire/Frost&gt;(102/8) 3% acc, 3% armor, 8% bless effect, -2% surprise, 2% cha, 2% int, 18% shadow/honor resist
-Elite		&lt;(all armor)&gt;&lt;of Fire/Frost&gt;(102/8) 4% acc, 4% armor, 13% bless effect, -2% surprise, 3% cha, 3% int, 8% curse resist, 24% shadow/honor resist
-Valiant	&lt;(all armor)&gt;&lt;of Fire/Frost&gt;(102/8) 5% acc, 5% armor, 16% bless effect, -2% surprise, 4% cha, 4% int, 10% curse resist, 28% shadow/honor resist
-Hero’s		&lt;(all armor)&gt;&lt;of Fire/Frost&gt;(102/8) 6% acc, 6% armor, 18% bless effect, -2% surprise, 5% cha, 5% int, 13% curse resist, 4% magic resist, 33% shadow/honor resist
+Honest 	&lt;ALL armor EXCEPT Cloak/Robe&gt;[2098]&lt;of Honor&gt;(102/8)[6294] 1% acc, 1% armor, 4% bless effect, 8% shadow/honor resist
+Noble		&lt;ALL armor EXCEPT Cloak/Robe/PLAIN&gt;&lt;of Honor&gt;(102/8) 2% acc, 2% armor, 6% bless effect, -2% surprise, 13% shadow/honor resist
+Daring  	&lt;ALL armor EXCEPT Cloak/Robe/PLAIN/Buckler/Leather&gt;&lt;of Honor&gt;(102/8) 3% acc, 3% armor, 8% bless effect, -2% surprise, 2% cha, 2% int, 18% shadow/honor resist
+Elite		&lt;ALL armor EXCEPT Cloak/Robe/PLAIN/SCALE/Buckler/Leather/MailCoif/Kettle&gt;&lt;of Honor&gt;(102/8) 4% acc, 4% armor, 13% bless effect, -2% surprise, 3% cha, 3% int, 8% curse resist, 24% shadow/honor resist
+Valiant	&lt;Heater/Pavis/Bascinet/Great/PLATE/MAIL armor EXCEPT Cloak/Robe&gt;&lt;of Honor&gt;(102/8) 5% acc, 5% armor, 16% bless effect, -2% surprise, 4% cha, 4% int, 10% curse resist, 28% shadow/honor resist
+Hero’s		&lt;Pavis/Great/PLATE armor EXCEPT Cloak/Robe/Bracers/Aventail&gt;&lt;of Honor&gt;(102/8) 6% acc, 6% armor, 18% bless effect, -2% surprise, 5% cha, 5% int, 13% curse resist, 4% magic resist, 33% shadow/honor resist
 [37764]
 (612)
 
-Army &lt;(typical armor)&gt;&lt;of Fire/Frost/Honor/Shadow&gt;(150/7) 3% str, 3% spd, 3% armor
+Army &lt;SHIELD/HELM/PANTS/BOOTS/SHIRTS armor EXCEPT PLATE/Leather/MailCoif/Pavis&gt;&lt;&gt;(150/7) 3% str, 3% spd, 3% armor
 [10430]
 (150)
 
-Gladiator &lt;Buckler/Kite Shield/Great Helm/Bascinet Helm/Kettle Helm/Handaxe/Spear/Gladius/Shortsword/Falcata/Broadsword&gt;&lt;of Fire/Frost/Honor/Shadow&gt; -If equipped: 8% str, 6% spd
+Gladiator &lt;Buckler/Kite Shield/Bascinet Helm/Kettle Helm/Handaxe/ShortSpear/Spear/Gladius/Shortsword/Broadsword&gt;&lt;&gt; -If equipped: 8% str, 6% spd
 [7085]
 (55)
 
-Soldier’s &lt;(weapons)&gt;&lt;of Fire/Frost&gt;[17241](120/1) 	-If equipped: 18% str, 13% spd, 8% cha, 22% honor damage
-Soldier’s &lt;(typical armor)&gt;&lt;of Fire/Frost&gt;[6258](90/7)	-If equipped: 4% armor
+Soldier’s &lt;(ShortBow/Longbow/Broadsword/Longsword/Knightlysword/Claymore/BattleAxe/WarAxe/BladedStaffs weapons)&gt;&lt;&gt;[17241](120/1) 	-If equipped: 18% str, 13% spd, 8% cha, 22% honor damage
+
+Soldier’s &lt;SHIELD/HELM/PANTS/BOOTS/SHIRTS armor EXCEPT PLATE/Pavis&gt;&lt;&gt;[6258](90/7)	-If equipped: 4% armor
 [23499]
 (210)
 
 Warden’s	&lt;Shortsword[147]/Bascinet Helm[107]/Buckler[107]/(plain armor)[252]&gt;(6/6)[613] 5% str, 5% armor, -3% surprise
-Prince’s	&lt;Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]&gt;(7/7)[512] 8% str, 8% armor
-Ranger	&lt;Longbow?/(Plain Armor)[252]/Cloak[3]&gt;(6/6)[?] 6% str, 8% acc, 4% armor
-Samurai	&lt;Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]&gt;(6/6)[157] 10% str, 10% acc, 2% critical
-Thor’s		&lt;Broadsword[147]/Great Helm[107]/Pavis Shield[107]/(typed armor)[1834]&gt;(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power
-Nile		&lt;Falcata[147]/Buckler[107]/Leather Helm[1]/Plain Bracer[1]&gt;(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical
+Prince’s	&lt;of Honor|Shadow&gt;&lt;Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]&gt;(7/7)[512] 8% str, 8% armor
+Ranger	&lt;Shortbow/Longbow/CompositeBow/Sling/Cloak/Vest/PLAIN/[252]/Cloak[3]&gt;(6/6)[?] 6% str, 8% acc, 4% armor
+Samurai	&lt;of Honor&gt;&lt;Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]&gt;(6/6)[157] 10% str, 10% acc, 2% critical
+Thor’s		&lt;of Honor&gt;&lt;Claymore[147]/Great Helm[107]/Pavis Shield[107]/Gauntlets/PLATE/Cape[1834]&gt;(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power
+Nile		&lt;of Shadow&gt;&lt;Falcata[147]/Buckler/Kite/Leather Helm/PLAIN/Bracer/Shirt/Bracer/Cloak&gt;(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical
 [3530]
 (47)
 
-Searing &lt;(weapons)&gt;(40/1)	-If equipped: 16% fire damage
-Burning &lt;(weapons)&gt;(40/1)	-If equipped: 33% fire damage
-Fiery &lt;(weapons)&gt;(40/1)		-If equipped: 66% fire damage
+Searing &lt;BLADED weapons&gt;&lt;of Fire&gt;(40/1) -If equipped: 16% fire damage
+Burning &lt;SWORD/AXE/BLADEDSTAFF/CLUB/STAFF weapons&gt;&lt;of Fire&gt;(40/1) -If equipped: 33% fire damage
+Fiery &lt;BOW/CROSSBOW/WHIP/BLADEDSTAFF/SWORD weapons&gt;&lt;of Fire&gt;(40/1) -If equipped: 66% fire damage
 [17241]
 (120)
 
-Charred &lt;(typical armor)&gt;(30/7) -If equipped: 8% fire resist
+Charred &lt;Vest/SHIELD/HELM/GAUNTLET/SHIT/BRACER/PLAIN armor&gt;&lt;of Fire&gt;(30/7) -If equipped: 8% fire resist
 [2086]
 (30)
 
-Icy &lt;(weapons)&gt;(40/1)		-If equipped: 16% frost damage
-Winter &lt;(weapons)&gt;(40/1)	-If equipped: 33% frost damage
-Frigid &lt;(weapons)&gt;(40/1)		-If equipped: 66% frost damage
+Icy &lt;MELEE weapons&gt;&lt;of Frost&gt;(40/1) -If equipped: 16% frost damage
+Winter &lt;MELEE weapons&gt;&lt;of Frost&gt;(40/1)-If equipped: 33% frost damage
+Frigid &lt;MELEE weapons&gt;&lt;of Frost&gt;(40/1)-If equipped: 66% frost damage
 [17241]
 (120)
 
-Chill &lt;(typical armor)&gt;(30/7)	-If equipped: 8% frost resist
-Frozen &lt;(typical armor)&gt;(30/7)	-If equipped: 13% frost resist
-Arctic &lt;(typical armor)&gt;(30/7)	-If equipped: 18% frost resist
+Chill &lt;see below&gt;&lt;of Frost&gt;(30/7)-If equipped: 8% frost resist
+Frozen &lt;see below&gt;&lt;of Frost&gt;(30/7)-If equipped: 13% frost resist
+Arctic &lt;see below&gt;&lt;of Frost&gt;(30/7)-If equipped: 18% frost resist
+&lt;ALL armor EXCEPT Cape/Buckler/MailCoif/Leather/Pants/Boots/Shirt/Aventail&gt;
 [6258]
 (90)
 
-Proud &lt;(weapons)&gt;(40/1)		-If equipped: 16% honor damage
-Glory &lt;(weapons)&gt;(40/1)		-If equipped: 33% honor damage
-Pure &lt;(weapons)&gt;(40/1)		-If equipped: 66% honor damage
+Proud &lt;see below&gt;&lt;of Honor&gt;(40/1)-If equipped: 16% honor damage
+Glory &lt;see below&gt;&lt;of Honor&gt;(40/1)	-If equipped: 33% honor damage
+Pure &lt;see below&gt;&lt;of Honor&gt;(40/1)	-If equipped: 66% honor damage
+&lt;Longbow/Crossbow/CompositeBow/Staff/Quarterstaff/BLADEDSTAFF/Broadsword/Longsword/Knightlysword/Claymore/BattleAxe/WarAxe/MaceAndChain/Warhammer weapons except Spears&gt;
 [17241]
 (120)
 
-Light &lt;(all armor)&gt;(38/9)		-If equipped: 8% honor resist
-Dawn &lt;(all armor)&gt;(38/9)	-If equipped: 13% honor resist
-Sun &lt;(all armor)&gt;(38/9)		-If equipped: 18% honor resist
+Light &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 8% honor resist
+Dawn &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 13% honor resist
+Sun &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 18% honor resist
+&lt;Vest/Cape/Robe/Kite/Heater/Pavis/Archers/Bascinet/Great/GAUNTLET/PANTS/BOOTS/SHIRT/ armor EXCEPT PLAIN/SCALE&gt;
 [6294]
 (114)
 
-Gloom &lt;(weapons)&gt;(40/1)	-If equipped: 16% shadow damage
-Twilight &lt;(weapons)&gt;(40/1)	-If equipped: 33% shadow damage
-Dusk &lt;(weapons)&gt;(40/1)		-If equipped: 66% shadow damage
+Gloom &lt;see below&gt;&lt;of Shadow&gt;(40/1)-If equipped: 16% shadow damage
+Twilight &lt;see below&gt;&lt;of Shadow&gt;(40/1)-If equipped: 33% shadow damage
+Dusk &lt;see below&gt;&lt;of Shadow&gt;(40/1)	-If equipped: 66% shadow damage
+&lt;Knife/Dagger/PROJECTILES/Cutlass/Falcata/Rapier/Saber/Flamberg/Handaxe/Sickle/BattleAxe/WarAxe/WHIP/Spiked/Maul/ShortSpear/Spear/Pike/Scythe&gt;
 [17241]
 (120)
 
-Sorrow &lt;(all armor)&gt;(38/9)	-If equipped: 10% shadow resist
-Woe &lt;(all armor)&gt;(38/9)		-If equipped: 20% shadow resist
-Misery &lt;(all armor)&gt;(38/9)	-If equipped: 30% shadow resist
+Sorrow &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)-If equipped: 10% shadow resist
+Woe &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)	-If equipped: 20% shadow resist
+Misery &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)-If equipped: 30% shadow resist
 [6294]
 (114)
 
-Moon &lt;(all armor)&gt;(38/9) 	-If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist
+Moon &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9) -If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist
 [2098]
 (38)
 
-Dark &lt;(weapons)&gt;(40/1)		-If equipped: 66% shadow damage, 8% curse on melee, 4% critical, 18% str
+Dark &lt;Knife/Dagger/Sling/ShortBow/Longbow/CompositeBow/Falcata/Rapier/Flamberg/Sickle/BattleAxe/Bullwhip/Flail/MaceAndChain/Spiked/Maul/Spear/Pike/Scythe&gt;&lt;of Shadow&gt;(40/1) -If equipped: 66% shadow damage, 8% curse on melee, 4% critical, 18% str
 [5747]
 (40)
 
-Betrayer &lt;(weapons)&gt;(40/1)	-If equipped: 80% shadow damage, 18% curse on melee, 8% critical, 33% str, -33%lck, 33% curse resist
+Betrayer &lt;Dagger/Longbow/CompositeBow/Falcata/Flamberg/Sickle/MaceAndChain/Spiked/Scythe&gt;&lt;of Shadow&gt;(40/1)-If equipped: 80% shadow damage, 18% curse on melee, 8% critical, 33% str, -33%lck, 33% curse resist
 [5747]
 (40)
 
-Imposter’s Robe &lt;of Fire/Frost/Shadow&gt;(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise
-Pickpocket Robe &lt;of Fire/Frost/Shadow&gt;(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise
-Burglar Cloak &lt;of Fire/Frost/Shadow&gt;(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
-Mountebank Cloak &lt;of Fire/Frost/Shadow&gt;(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha
-Charlatan’s Vest &lt;of Fire/Frost/Shadow&gt;(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha
+Imposter’s Robe &lt;&gt;(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise
+Pickpocket Robe &lt;&gt;(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise
+Burglar Cloak &lt;&gt;(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
+Mountebank Cloak &lt;&gt;(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha
+Charlatan’s Vest &lt;&gt;(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha
 [60]
 (20)
 
-&lt;Bone/Obsidian/Stone/Metal&gt;[135] Robber’s Knife &lt;of Fire/Frost/Shadow&gt;[1080](32) -Actual weapon, if equipped: 1/2x material based +% lck
-&lt;Bone/Obsidian/Stone/Metal&gt;[135] Thug’s Knife &lt;of Fire/Frost/Shadow&gt;[1080](32)    -Actual weapon, if equipped: 10% + 1/2x material based +% lck
-&lt;Bone/Obsidian/Stone/Metal&gt;[135] Knave’s Knife&lt;of Fire/Frost/Shadow&gt;[1080](32)    -Actual weapon, if equipped: 20% + 1/2x material based +% lck
+&lt;Bone/Obsidian/Stone/Metal&gt;[135] Robber’s Knife &lt;&gt;[1080](32) -Actual weapon, if equipped: 1/2x material based +% lck
+&lt;Bone/Obsidian/Stone/Metal&gt;[135] Thug’s Knife &lt;&gt;[1080](32)    -Actual weapon, if equipped: 10% + 1/2x material based +% lck
+&lt;Bone/Obsidian/Stone/Metal&gt;[135] Knave’s Knife&lt;&gt;[1080](32)    -Actual weapon, if equipped: 20% + 1/2x material based +% lck
 [3240]
 (96)
 
-&lt;Bone/Obsidian/Stone/Metal&gt;[135] Mugger’s Dagger &lt;of Fire/Frost/Shadow&gt;[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab
+&lt;Bone/Obsidian/Stone/Metal&gt;[135] Mugger’s Dagger &lt;&gt;[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab
 
-&lt;Bone/Obsidian/Stone/Metal&gt;[56] Thief Dagger &lt;of Fire/Frost/Shadow&gt;[540](16)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck
+&lt;Bone/Obsidian/Stone/Metal&gt;[56] Thief Dagger &lt;&gt;[540](16)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck
 
-&lt;Bone/Obsidian/Stone/Metal&gt;[56] Pirate Dagger&lt;of Fire/Frost/Shadow&gt;[540](16)     -Actual weapon, if equipped: 8% + 1/2x material based +% backstab and find coin, 1/2x material based +% lck and find magic
+&lt;Bone/Obsidian/Stone/Metal&gt;[56] Pirate Dagger&lt;&gt;[540](16)     -Actual weapon, if equipped: 8% + 1/2x material based +% backstab and find coin, 1/2x material based +% lck and find magic
 [1620]
 (48)
 
-Focus &lt;(projectile weapons)&gt;[882]&lt;of Fire/Frost/Honor/Shadow&gt;[4410](30) -If equipped: 18% acc, 13% str, 16% projectile damage
+Focus &lt;(projectile weapons except Blowpipe)&gt;[882]&lt;Fire|Frost&gt;[4410](30) -If equipped: 18% acc, 13% str, 16% projectile damage
 [4410]
 (30)
 
 
 Items used to cast Bless or Curse
-Allows casting the spell “Bless” or “Curse”, item is consumed upon use, material based use count
+Some items are blessed or cursed, and if so, it will say so right in their name.  These items allows casting the spell “Bless” or “Curse” several times depending on the materials it is made of.  After casting the last time, the item is consumed, meaning that it disappears and is removed from the character’s inventory.
 Bless items have 3% encounter, 3% bless effect
 Curse items have -3% lck, 3% curse effect
 &lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Noble&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet/Marionette(Puppet)/Bust
@@ -1742,9 +1855,9 @@ Spider Eggs -If used: summons a giant spider to fight for the party, 100 uses
 
 
 Wands
-Petrified Snake -Wand, if equipped: 10% mana, 8%/16% magic effect/resist, 33% poison on damage
+Petrified Snake -Wand, Quest Item, if equipped: 10% mana, 8%/16% magic effect/resist, 33% poison on damage
 
-Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist
+Mummy Hand -Wand, Quest Item, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist
 
 &lt;Material&gt; Wand -Wand, if equipped: 11% + 1/2x material based +% mana
 
@@ -1756,23 +1869,23 @@ Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic 
 
 &lt;Material&gt; Scepter(26) -Wand, if equipped: 14% + 2x material based +% mana, 2x material based +% magic effect, material based +% magic cast
 
-Magic Icicle -Wand, if equipped: 18% mana, 18% magic effect, 13% magic cast, 75% Frost Damage, 75% Frost Resist
+Magic Icicle -Wand, Quest Item, if equipped: 18% mana, 18% magic effect, 13% magic cast, 75% Frost Damage, 75% Frost Resist
 
-Golem Finger -Wand, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50%/50%/50%/50% Fire/Frost/Honor/Shadow Resist
+Golem Finger -Wand, Quest Item, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50%/50%/50%/50% Fire/Frost/Honor/Shadow Resist
 
-Unicorn Horn -Wand, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist
+Unicorn Horn -Wand, Quest Item, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist
 
-Devil Horn -Wand, sorcerer only, if equipped: -13% cha, 13% spd, 16% int, 26% find magic, 28% mana and magic effect, 14% magic cast, 80%/80% curse cast/effect, curse without items or mana, 28% shadow damage
+Devil Horn -Wand, Quest Item, sorcerer only, if equipped: -13% cha, 13% spd, 16% int, 26% find magic, 28% mana and magic effect, 14% magic cast, 80%/80% curse cast/effect, curse without items or mana, 28% shadow damage
 
-Frozen Angel Braid -(see Set)
+Frozen Angel Braid, Quest Item -(see Set)
 
-Burning Litch Hand -(see Set)
+Burning Litch Hand, Quest Item -(see Set)
 40
 {11}
 
 
 Musical Instruments
-(Only the Drumlute has the typical varieties)
+All are Quest Items except for the DrumLute.  Only the Drumlute has the typical varieties based on materials.
 
 &lt;Gem&gt; Jeweled Drumlute 	-Instrument, if equipped:12% + material based +% mana, material based +% magic cast and effect
 &lt;Metal&gt; Reinforced Drumlute 	-Instrument, if equipped:13% + material based +% mana, material based +% magic cast and effect
@@ -1783,15 +1896,15 @@ Pearl Studded Drumlute 		-Instrument, if equipped: 13% mana, 13% cha, 13% int, 1
 
 Obsidian Adorned Drumlute 	-Instrument, if equipped: 18% mana, 18% cha, 18% int, 28% harmful magic cast, 28%/28% curse cast/effect, 18% find religious
 
-Reverend’s Recorder 		-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% helpful magic cast/effect, 25%/25% bless cast/effect, 25% curse resist, bless without items, 18% shadow resist
+Reverend’s Recorder 		-Instrument, Quest Item, if equipped: 24% mana, 13% cha, 13% int, 16%/16% helpful magic cast/effect, 25%/25% bless cast/effect, 25% curse resist, bless without items, 18% shadow resist
 
-Villain’s Viol 				-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% harmful magic cast/effect, 25%/25% curse cast/resist, curse without items, 18% shadow damage
+Villain’s Viol 				-Instrument, Quest Item, if equipped: 24% mana, 13% cha, 13% int, 16%/16% harmful magic cast/effect, 25%/25% curse cast/resist, curse without items, 18% shadow damage
 
-Puritan’s Pipe and Tabor 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items
+Puritan’s Pipe and Tabor 		-Instrument, Quest Item, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items
 
-Hannibal’s Hurdy-Gurdy 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast/effect, 50% curse, curse without items
+Hannibal’s Hurdy-Gurdy 		-Instrument, Quest Item, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast/effect, 50% curse, curse without items
 
-Satyr’s Lyre 				-Instrument, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin
+Satyr’s Lyre 				-Instrument, Quest Item, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin
 22
 {10}
 
@@ -1811,6 +1924,10 @@ Pirate’s Lock Picks		-Lock Picks, if equipped: 33% lck, 33% spd, 16% backstab,
 Ghost Finger Lock Picks	-Lock Picks, if equipped: 33% lck, 33% spd, 16% backstab, 50% curse resist
 25
 {10}
+
+
+Sets
+Some items are part of special sets that have enchantments that grow stronger as you collect and equip more of them.  If part of a Set, then no other enchantments will apply.
 
 
 Thief Sets
@@ -1984,7 +2101,24 @@ Grave Bell
 
 Totals:
 {335}
-[332420] or [333444] if you add 32x32 alchemy mixes</Text>
+[332420] or [333444] if you add 32x32 alchemy mixes
+
+
+
+
+
+Items To Add:
+——
+Herbs…we have 34 images not being used
+Potions -33 images
+Drinks -no images
+Salves -no images
+Crowns…we have 12 crown images that are not being used at all
+Hourglass we have 3 images not being used
+Medallion? No images
+Mirror, we have 10 images
+Skulls, 11 images
+Staffs, 21 images, check that they are not used by various material staffs</Text>
         </Document>
         <Document ID="47">
             <Title>Character Images</Title>
@@ -2198,6 +2332,143 @@ Commoners:
 
 Combinations:
 
+</Text>
+        </Document>
+        <Document ID="48">
+            <Title>NPC Conversations</Title>
+            <Text>Party Names: &lt;strangers/outlanders/travelers/wanderers/nomads/adventurers/&gt;
+Times of Day: &lt;day/night/morning/afternoon/evening&gt;
+WeatherAdjectives: &lt;nice/lovely/pretty/pleasant/delightful/gorgeous/beautiful/&gt;&lt;wretched/miserable/cheerless/bleak/drab/grim/dreary/dismal/gloomy&gt;
+
+
+For all occasions:
+Eh?
+&lt;Party Names&gt;&lt;?/!&gt;
+Six &lt;Party Names&gt;&lt;./,&gt; &lt;Well,/Greetings,&gt; &lt;what is it/what do you &lt;all/six&gt; want&gt;&lt;?/!&gt;
+&lt;WeatherAdjectives&gt; &lt;Morning/Afternoon/Evening&gt; &lt;Party Names&gt;&lt;./!&gt;
+&lt;Just another&gt; &lt;WeatherAdjectives&gt; &lt;Time Of Day&gt;&lt;./!&gt;
+Pleased to meet you &lt;&lt;all&gt;/, all &lt;six&gt; of you./&lt;Party Names&gt;&gt; &lt;on this &lt;WeatherAdjectives&gt; &lt;Time Of Day&gt;&gt;&lt;./!&gt;
+&lt;Greetings,/Well met&gt; &lt;Party Names&gt;&lt;./!&gt;
+&lt;Um,&gt; &lt;Huh?/What?&gt;
+Hello &lt;there&gt; &lt;Party Names&gt;&lt;./!&gt;
+&lt;Well?&gt; Out with it&lt;./!&gt;
+Yes? &lt;What?&gt;
+&lt;Greetings.&gt; What &lt;do/could&gt; &lt;all of&gt; you &lt;guys/ladies/Pixies&gt;/&lt;Party Names&gt;&gt; want?
+&lt;Well?&gt;. What now?
+&lt;Peace!&gt; I don’t have any coins&lt;./!&gt;
+[if Wolfens in party]
+	&lt;Nice/Good&gt; dog&lt;s&gt;&lt;gy/gies&gt;.  &lt;Easy &lt;boy/girl&gt;&lt;./!&gt;&gt;
+[if beasts in party]
+	&lt;That’s&gt; &lt;some/quite a&gt; pet.
+	&lt;I don’t /You don’t/Don’t&gt; see many who travel with beasts anymore.
+	Does &lt;that/your&gt; &lt;dragon/wolfen/pet&gt; bite?
+[if morning/day]Sun stay&lt;./!&gt;
+[if evening/night]Evening&lt;./!&gt;
+Me?
+Six as I’ve never seen&lt;./!&gt;
+As I live and breathe, six &lt;Party Names&gt;.
+Six &lt;greetings/hellos&gt;&lt;./!&gt;
+-
+Begone &lt;&lt;with&gt; &lt;you/all of you&gt;&lt;./!&gt;/from my sight!&gt; 
+Leave me alone &lt;&lt;you&gt; freaks&gt;&lt;./!&gt;
+Away with &lt;all six of&gt; you &lt;Party Name&gt;&lt;./!&gt;
+Beat it &lt;&lt;you&gt; freaks/all &lt;six&gt; of you&gt;&lt;./!&gt;
+&lt;Greetings.  Now&gt; Leave me alone&lt;./!&gt;
+Not &lt;right/just&gt; now.
+Not now.  &lt;Not ever&lt;./!&gt;&gt;
+Good day &lt;to &lt;all six of you/you&gt;&lt;./!&gt;
+[if beasts in party]
+	Beasts!  &lt;Help!&gt;
+	Take your &lt;wretched/disgusting/dangerous&gt; beasts somewhere else&lt;./!&gt;
+You’re not welcome here&lt;./!&gt;
+&lt;Go&gt; Bother some&lt;body/one&gt; else.
+
+
+In Cities:
+&lt;You’re&gt; not from &lt;around here/&lt;City Name&gt;&gt;, are you?
+New to &lt;City Name&gt;?
+Welcome to &lt;City Name&gt; &lt;Party Name&gt;&lt;./!&gt;
+Are you with the &lt;city/town/&lt;city name&gt;&gt; guard?
+They let you &lt;walk around/in &lt;here/&lt;City Name&gt;&gt;with &lt;that/those&gt; &lt;beast/creature/thing&gt;?
+&lt;Adjectives&gt; &lt;Time of Day&gt; &lt;here&gt; in &lt;the town/city name&gt; &lt;today&gt;.  &lt;Isn’t it?/Don’t you think?&gt;
+&lt;Adjectives&gt; &lt;Time of Day&gt; 
+&lt;I guess &lt;they/the guard/&lt;city name&gt;&gt; will let anyone &lt;in/through the gate&gt; these days&lt;./!&gt;
+[if beasts in party]
+	&lt;They/The guard&lt;s&gt;&gt; &lt;allow/let&gt; you in &lt;here/this &lt;Map Type&gt;&gt; &lt;with &lt;that/those&gt; beast&lt;s&gt;&gt;?&lt;!&gt;
+
+
+Child:
+	&lt;I’m not supposed to/I shouldn’t&gt; talk &lt;with/to&gt; &lt;strangers/&lt;Party Name&gt;&gt;&lt;./!&gt;
+	You’re not my &lt;mommy/daddy&gt;&lt;./!&gt;
+	&lt;Ma/Mom/Mother&gt;!  &lt;Strangers!/&lt;Party Name&gt;!&gt;
+	&lt;Pa/Father/Dad&gt;! &lt;Strangers!/&lt;Party Name&gt;!&gt;
+	I’m just a kid!
+	Strangers!
+		
+
+Monk:
+	Monk Stuff: &lt;the light/peace/wisdom/enlightenment/truth/nirvana&gt;
+	-
+	&lt;Peace/Enlightenment/Nirvana&gt; is &lt;a/your&gt; choice.  &lt;What &lt;have you chosen?/will you choose?&gt;/Choose wisely.&gt;
+	&lt;May&gt; &lt;Monk Stuff&gt; &lt;be with&gt; &lt;&lt;the six of&gt; you/you all&gt;.
+	Peace &lt;be with/to&gt; &lt;&lt;the six of&gt; you/you all&gt;.
+	This is a peaceful place.
+	This is a place &lt;for/of&gt; &lt;Monk Stuff&gt;.
+	You &lt;&lt;have&gt; found/&lt;speak with&gt;&gt; a humble &lt;brother/monk&gt;.
+	&lt;All are/You are &lt;all&gt;/Feel&gt; welcome &lt;here&gt;.
+	You have come to the right place.
+	Your lives have led you &lt;here/to me&gt;.  &lt;Think/Meditate&gt; on it.
+	&lt;Be/You are &lt;all&gt;&gt; welcome &lt;here&gt;.
+	Six &lt;welcome&gt; &lt;visitors/&lt;Party Names&gt;&gt;&lt;./?&gt;
+	[If all female party]  Even women are welcome here, just not to stay.
+	I see &lt;only/before me&gt; &lt;brothers/sisters/brothers and sisters&gt;.
+	I &lt;follow/seek&gt; &lt;&lt;the/a&gt; righteous/the one &lt;true&gt;&gt; &lt;path/way&gt;.
+	&lt;The/My/Our&gt; master is &lt;in/away&gt;.
+	Find &lt;peace/your true calling/your path&gt; &lt;here &lt;with us&gt;&gt; in the order.
+	&lt;Have you found/Are you &lt;looking for/seeking&gt;&gt; &lt;Monk Stuff&gt;?
+	Are you considering &lt;a&gt; life with us?
+	If I speak &lt;of &lt;Monk Stuff&gt;&gt;, will you &lt;really listen/truly hear&gt;?
+	&lt;May&gt; Our paths &lt;cross/join&gt; &lt;peacefully&gt;.
+	May &lt;Monk Stuff&gt; follow you.
+	&lt;Do you dream of &lt;Monk Stuff&gt;&lt;?&gt;
+	
+
+In taverns:
+Server: &lt;barkeep/server/server girl/&lt;/serving/tavern/bar&gt; &lt;wench/girl/maid&gt;&gt;
+Drinks: &lt;ale/drink/beer/mead/brew/swill&gt;
+DrinkAdjectives: &lt;delightful/dreadful/horrid/stinking/festering/rotting/murky/bubbling/tasteless/sour&gt;
+DrunkenNoise: &lt;Hiccup&lt;./!&gt;/Ugh./Ug./(grumble)/(mutter)&gt;
+-
+&lt;DrunkenNoise&gt; &lt;&lt;DrunkenNoise&gt;&gt; &lt;&lt;DrunkenNoise&gt;&gt;
+&lt;I’m not the/Do I look like &lt;a/the&gt;&gt; &lt;Server&gt;&lt;./!/?&gt;
+&lt;&lt;DrunkenNoise&gt;&gt; How dry I am.  &lt;&lt;DrunkenNoise&gt;&gt;  Nobody cares…  &lt;&lt;DrunkenNoise&gt;&gt;
+I&lt;‘m here to/‘d rather&gt; &lt;drink/drown my &lt;woes/sorrows&gt;&gt; alone&lt;./!&gt;
+So what do &lt;Wolfens/Dragons&gt; &lt;eat/drink&gt; &lt;anyway&lt;s&gt;&gt;?
+Your &lt;wretched&gt; &lt;animals/beasts&gt; &lt;smell/reek/stink/are stinking &lt;up&gt; &lt;the/this&gt; place &lt;up&gt;&gt;&lt;./!&gt;
+&lt;&lt;DrunkenNoise&gt;&gt; &lt;Hey&gt; &lt;Server&gt;!  &lt;&lt;DrunkenNoise&gt;&gt; Another round &lt;of &lt;Drinks&gt;&gt; for me and &lt;my &lt;six&gt; new friends/these &lt;Party Name&gt;&gt; &lt;here&gt;.  &lt;&lt;DrunkenNoise&gt;&gt;
+&lt;Why do they/They shouldn’t&gt; &lt;allow/let&gt; &lt;the likes of&gt; &lt;you &lt;folk/and your kind&gt;&gt; in here&lt;./!&gt;
+&lt;Hiccup&lt;./!&gt;&gt; Ninety-nine bottles of beer on the wall…
+Hiccup&lt;./!&gt; Does your &lt;Wolfen/Dragon&gt; &lt;fart/burp/drink ale/&lt;like/sing&gt; drinking songs/eat &lt;Pixies/Drunkards&gt;/burp &lt;bubbles/fire&gt;&gt;?
+&lt;Hiccup&lt;./!&gt;&gt;  &lt;Who’s ready for&gt; Another song!  &lt;&lt;DrunkenNoise&gt;&gt;
+&lt;Server&gt;!  &lt;&lt;DrunkenNoise&gt;&gt; &lt;More&gt; &lt;food/&lt;Drinks&gt;&gt;!
+They &lt;serve/pour&gt; &lt;real/stinking/&lt;only&gt; the &lt;best/worst/most horrid&gt;&gt; &lt;&lt;pixie/witch/golem/goblin/dragon/wolfen&gt; &lt;piss&gt;&gt; &lt;&lt;around&gt; here/in this place&gt;&lt;./!&gt;
+&lt;&lt;DrunkenNoise&gt;&gt;  Watch how much &lt;Drinks&gt; I can &lt;guzzle/drink/chug/handle/spill/piss on the floor&gt;&lt;./!&gt;  &lt;&lt;DrunkenNoise&gt;&gt;
+&lt;&lt;DrunkenNoise&gt;&gt; &lt;Server&gt;! &lt;&lt;DrunkenNoise&gt;&gt; I spilled my &lt;Drinks&gt; &lt;again&gt;&lt;./!&gt; &lt;&lt;DrunkenNoise&gt;&gt;
+&lt;&lt;DrunkenNoise&gt;&gt;  &lt;Who stole/Where’s&gt; my &lt;Drinks&gt;&lt;?/!&gt;  &lt;&lt;DrunkenNoise&gt;&gt;
+Sing &lt;&lt;louder/better&gt;&gt; &lt;all&gt; you &lt;lazy/miserable/drunken/stinking/delightful&gt; &lt;drunks/drunkards/bastards&gt;!
+Hey.  &lt;&lt;DrunkenNoise&gt;&gt; Hey &lt;you&gt;.  &lt;&lt;Yeah you.&gt;&gt; &lt;Watch me&gt; &lt;Try/Drink/Spill&gt; this &lt;&lt;Drinks&gt;&gt;.
+&lt;&lt;DrunkenNoise&gt;&gt; &lt;I think I’ve/I’ve&gt; had &lt;too much &lt;&lt;Drinks&gt;&gt;/enough &lt;&lt;Drinks&gt;&gt;&gt;.
+What are &lt;all &lt;of&gt;&gt; you looking at?&lt;!&gt;
+You &lt;Party Name&gt; talk&lt;’n/ing&gt; to me?&lt;!&gt;
+You look like you could use &lt;a &lt;drink/beer&gt;/an ale/some &lt;&lt;Drinks&gt;/of this &lt;DrinkAdjectives&gt; &lt;Drinks&gt;&gt;&gt;&lt;./!&gt;
+&lt;&lt;DrunkenNoise&gt;&gt;  Let’s have &lt;a/another&gt; &lt;drinking&gt; song!
+&lt;&lt;DrunkenNoise&gt;&gt; I’ve had too much wine women and song.  &lt;&lt;DrunkenNoise&gt;&gt; So don’t sing so loud.
+&lt;&lt;DrunkenNoise&gt;&gt; Have you heard &lt;this one/the one about the &lt;pixie/goblin/golem/dragon/wolfen/town guard/beastmaster/witch&gt; and the &lt;drunken monk/village idiot/drunken priest/dead &lt;cat/dog&gt;&gt;?
+&lt;&lt;DrunkenNoise&gt;&gt; Watch me balance this &lt;Drinks&gt; on &lt;that guy’s/my/her/your&gt; head.
+&lt;DrunkenNoise&gt; I &lt;really&gt; &lt;love/hate/pity&gt; all of you &lt;&lt;Party Name&gt;&gt;.
+&lt;DrunkenNoise&gt; &lt;Why did&gt; &lt;he/she&gt; leave me &lt;for &lt;my &lt;brother/sister/friend&gt;/&lt;that/a&gt; &lt;pixie/town guard/beastmaster/archer/knight/Cleric/…&gt;&gt;.  &lt;DrunkenNoise&gt;
+&lt;DrunkenNoise&gt; Who said that?
+&lt;&lt;DrunkenNoise&gt;&gt; Why did the &lt;&lt;drunken&gt;&gt; &lt;&lt;one legged&gt;&gt; &lt;&lt;left-handed&gt;&gt; &lt;&lt;blind&gt;&gt; &lt;&lt;idiot&gt;&gt; &lt;&lt;roles&gt;/&lt;races&gt;/town guard/&gt;&gt; cross the road?
 </Text>
         </Document>
         <Document ID="10">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-02-19 15:56:32 -0700" ModID="B6DDF8B5-3DDB-43AF-8357-BF358A0E27AC">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-05-10 10:31:55 -0600" ModID="BDB7B9D8-71F5-4027-ABE3-561169968244">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 20:11:28 -0600" Modified="2016-09-30 20:11:28 -0600">
             <Title>Draft</Title>
@@ -111,7 +111,7 @@
                                 <TextSelection>952,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="29" UUID="DD528447-7651-4BB6-9177-AEA4FDD3679D" Type="Text" Created="2017-07-22 16:26:49 -0600" Modified="2018-01-03 12:05:37 -0700">
+                        <BinderItem ID="29" UUID="DD528447-7651-4BB6-9177-AEA4FDD3679D" Type="Text" Created="2017-07-22 16:26:49 -0600" Modified="2018-05-10 10:31:55 -0600">
                             <Title>Items</Title>
                             <MetaData>
                                 <PageBreakBefore>Yes</PageBreakBefore>
@@ -119,7 +119,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>31329,431</TextSelection>
+                                <TextSelection>13260,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="33" UUID="6ACB31EE-D40F-4EA6-B9B2-70086C155C48" Type="Text" Created="2017-07-22 20:49:50 -0600" Modified="2018-01-03 12:05:46 -0700">
@@ -144,6 +144,16 @@
                                 <TextSelection>431,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
+                        <BinderItem ID="48" UUID="3E6054BE-487C-4EE5-B885-9A7C36C466D8" Type="Text" Created="2018-02-21 07:22:47 -0700" Modified="2018-02-22 12:38:28 -0700">
+                            <Title>NPC Conversations</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2389,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
                     </Children>
                 </BinderItem>
                 <BinderItem ID="17" UUID="5AB98B22-1494-4B91-8D41-9AF2B1D4F9F4" Type="Folder" Created="2017-05-22 10:41:13 -0600" Modified="2017-05-22 10:41:21 -0600">
@@ -162,7 +172,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>18,13</TextSelection>
+                                <TextSelection>686,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="21" UUID="AD196ABA-8296-4AC8-95C0-EBB1F7FE3D74" Type="Text" Created="2017-06-05 08:24:40 -0600" Modified="2017-08-18 09:51:43 -0600">
@@ -172,7 +182,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>397,0</TextSelection>
+                                <TextSelection>399,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="15" UUID="F3EBE114-3F65-46C1-BFBF-1F63049B2B69" Type="Text" Created="2017-05-19 13:55:30 -0600" Modified="2018-02-02 12:24:52 -0700">
@@ -313,7 +323,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1666,0</TextSelection>
+                                <TextSelection>849,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="28" UUID="1F9373A8-7EA7-4BF3-951B-920AF4206E0B" Type="Text" Created="2017-07-06 13:58:40 -0600" Modified="2018-01-01 09:08:47 -0700">
@@ -346,14 +356,14 @@
                                 <TextSelection>714,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="34" UUID="49585B0B-86F4-4B00-96CC-FC4A173AFDEF" Type="Text" Created="2017-07-25 15:54:59 -0600" Modified="2018-01-01 09:20:12 -0700">
+                        <BinderItem ID="34" UUID="49585B0B-86F4-4B00-96CC-FC4A173AFDEF" Type="Text" Created="2017-07-25 15:54:59 -0600" Modified="2018-05-08 09:12:49 -0600">
                             <Title>Items</Title>
                             <MetaData>
                                 <PageBreakBefore>Yes</PageBreakBefore>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>4737,0</TextSelection>
+                                <TextSelection>4676,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -479,7 +489,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 19:49:05 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="252" Characters="2020" Date="2018-02-19 06:31:30 -0700"></PreviousSession>
+        <PreviousSession Words="0" Characters="1" Date="2018-05-10 10:31:30 -0600"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

@@ -1,14 +1,139 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Calligraphic810BT-Roman;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Calligraphic810BT-Roman;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red47\green79\blue79;\red163\green21\blue21;}
+{\*\expandedcolortbl;;\csgenericrgb\c18431\c30980\c30980;\csgenericrgb\c63922\c8235\c8235;}
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \f0\fs48 \cf0 Items
 \fs36 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs22 \cf0 There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier\'92s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow).  \
+\fs22 \cf0 There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier\'92s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow) (8 valid combinations).  In this document, the term equipment refers to either weapons or armor.  Other items may seem like equipment, such as lock picks or wands, but they are not considered equipment in the game.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\fs36 \cf0 Weapons
+\fs22 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs19 \cf0 	(BodyPart)\
+    		[Claws]\
+    		[Bite]\
+    		[Fists]\
+    		[Tentacles]\
+    		[Breath]\
+    	<Melee/BodyPart>\
+\
+   	 (Staff)\
+   	 \{Quarterstaff\}\
+   	 <Melee/Staff>\
+    \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li360\pardirnatural
+\cf0     (Sword)\
+    	[Shortsword]\
+    	[Gladius]\
+   		[Cutlass]\
+    	[Falcata]\
+    	[Rapier]\
+    	[Saber]\
+    	[Broadsword]\
+    	[Longsword]\
+    	[Knightlysword]\
+    	[Flamberg]\
+   		[Claymore]\
+    <Melee/Bladed/Pointed/Sword>\
+\
+    (Axe)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\pardirnatural
+\cf0     [Handaxe]\
+    [Sickle]\
+    [Battleaxe]\
+    [Waraxe]\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li360\pardirnatural
+\cf0     <Melee/Bladed/Axe>\
+\
+    (Whip)\
+    	[Bullwhip]\
+    	[Flail]\
+    	[MaceAndChain]\
+    <Melee/Whip>\
+\
+    (Club)\
+    	[Spiked]\
+    	[Maul]\
+    	[Mace]\
+    	[Warhammer]\
+    <Melee/Club>\
+\
+    (Knife)\
+    \{Dagger\}\
+    <Melee/Bladed/Pointed/Knife>\
+\
+    (Projectile)\
+    	[Blowpipe]\
+    	[Crossbow]\
+    	[Sling]\
+    	\{Bow\}\
+    	[Shortbow]\
+    	[Longbow]\
+    	[CompositeBow]\
+    <Projectile>\
+\
+    (BladedStaff)\
+    	[Scythe]\
+    	[Pike]\
+    	[Partisan]\
+    	[Halberd]\
+    	<Melee/Bladed/Pointed/BladedStaff>\
+    	-\
+   	 	\{Spear\}\
+    	[ShortSpear]\
+    	[Spear]\
+    <Melee/Pointed/BladedStaff>\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li360\pardirnatural
+
+\f0\fs22 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\fs36 \cf0 Armor
+\fs22 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs19 \cf2 	Covering\cf0 \
+\cf2 		Cape\cf0 \
+                	\cf2 Vest\cf0 \
+                	\cf2 Robe\cf0 \
+                	\cf2 Cloak\cf0 \
+\cf2 	\
+	  Shield\cf0 \
+\cf2 		Buckler\cf0 \
+                	\cf2 Kite\cf0 \
+                	\cf2 Heater\cf0 \
+                	\cf2 Pavis\
+\cf0 \
+            \cf2 Helm\cf0 \
+		\cf2 Leather\cf0 \
+                	\cf2 MailCoif\cf0 \
+                	\cf2 Kettle\cf0 \
+                	\cf2 Archers\cf0 \
+                	\cf2 Bascinet\cf0 \
+                	\cf2 Great\cf0 \
+\cf2 	\cf0  \
+	 \cf2 Gauntlets\cf0 \
+            \cf2 Pants\cf0 \
+            \cf2 Boots\cf0 \
+            \cf2 Shirt\cf0 \
+            \cf2 Bracers\cf0 \
+            \cf2 Aventail\cf0 \
+		\cf2 Plain\cf0 \
+                	\cf2 Mail\cf0 \
+                	\cf2 Scale\cf0 \
+                	\cf2 Plate\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\f0\fs22 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
 \fs36 \cf0 \
@@ -30,7 +155,31 @@ Only ONE of the following item types may be equipped at a time:\
 	Pin\
 	Tuning Fork\
 \
-Duplicate items do not combine bonuses.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs19 \cf3 Can't equip more than one wand at a time.\
+Can't equip more than one ring per hand.\
+Can't wear helms if you have horns.
+\f0\fs22 \cf0 \
+
+\f1\fs19 \cf3 Pants/Boots, Gauntlets/Bracers are pairs of items.  You can only equip one per set of two legs/arms.\
+You can only equip one shield per arm.\
+You can equip as many helms as you have heads, and only as many aventails as already equipped helms.\
+You can\'92t equip both a robe and cloak, or a cape with either a robe or cloak, but you can equip a cape with a vest, and a vest with either a robe or cloak.\
+Only knights and warlords may equip non-simple-spear bladed staff weapons.\
+Only knights may equip plate armor.\
+Only knights may equip Pavis or Heater shields.\
+Beasts can only equip body part items.\
+Only Bards can equip musical instruments.\
+When it comes to weapons, Clerics and Sorcerers can only equip staffs, knives, daggers, whips, slings, and blowpipes.\
+When it comes to armor, Clerics and Sorcerers can only equip armor made from cloth, silk, fur, or leather.\
+Bards and Archers cannot equip WarAxes, WarHammers, or Bladed Staffs.\
+Thieves cannot equip Axes, Swords, Clubs, or two-handed weapons except for Slings and Blowpipes.\
+Body parts cannot be unequipped.\
+
+\f0\fs22 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 Duplicate items do not combine bonuses.\
 \
 Magic/Bless/Curse \ul Cast\ulnone  changes the chance that a cast spell/song/alchemy is successful.  \ul Cast means: \'93from the perspective of the attempting caster/sender\'94.\ulnone   Note, that most sorcerer\'92s spells work every time, and so Magic Cast does nothing in almost all of those cases, but most magical bard songs do not always work, so Magic Cast is applied in almost all of those cases.\
 \
@@ -41,23 +190,49 @@ Magic/Bless/Curse \ul Resist\ulnone  charges the magnitude of effect absorbed by
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs36 \cf0 Elemental Types
+\fs36 \cf0 Material Bonuses
 \fs22 \
-There are four item Elemental Types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  Only equipment (items that can be equipped) can be typed.  If an item\'92s name ends in one of the eight qualifying type names: \'93of <Fire/Frost Honor/Shadow>\'94, and it is equipped, then it confers Type based bonuses, specified below:\
-\
-If item is <Material>: for weapons: 10% + 5x material based +% <Type> damage, for armor: 4% + 1/1.5x material based +% <Type> resist\
-If item is NOT Material: for weapons 50% <Type> damage, for armor: 13% <Type> resist\
+In the enchantments described below, you will often see \'93material based\'94.  This means that the value being described depends on the \
 \
 \
 
-\fs36 Unique Items
+\fs36 Elemental Enchantments
 \fs22 \
+All kinds of items can be enchanted with the magic of elemental forces.  If the item is weapon or armor, then it must be equipped for the enchantment to take effect, otherwise, if the item is of some unique/misc type, then it must be worn for the enchantment to take effect.  An elemental unique/misc type item must be \'93wearable\'94, which in the code is really just another name for \'93equipable\'94.  So elemental items must be equipped to take effect.  There are four Elemental types: Fire, Frost, Honor, and Shadow, with eight valid combinations.  If an item\'92s name ends in one of the eight qualifying type names: \'93of <Fire/Frost Honor/Shadow>\'94, and it is equipped, then it confers Type based bonuses, specified below:\
+\
+If item is <Material>:\
+	weapons: 10% + 5x material based +% <Element Type> damage\
+	armor/wearable: 4% + 1/1.5x material based +% <Element Type> resist\
+If item is NOT Material:\
+	weapons 50% <Element Type> damage\
+	armor/wearable: 13% <Element Type> resist\
+\
+Elemental enchantments are pretty powerful, so they should be rare, with combinations being even more rare.  As of 2018-5-1, I\'92ve revised the lists below to reduce the number of items with Elemental enchantments accordingly.\
+\
+\
+
+\fs36 Enchantment Combinations
+\fs22 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 Sets, Nameds, Uniques, and Elementals are all methods of adding a magical enchantment to items.  The only valid combinations are: Unique/Misc+Elemental and Named+Elemental.  There are of course standard weapons and armor that are also Elemental.  No item that is part of a set can be Elemental.  Set, Named, and Unique (not misc) are all mutually exclusive.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\fs36 \cf0 Unique Items
+\fs22 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\i \cf0 These are special items that each have their own unique magical enchantments.
+\i0 \
 Basilisk Tonge -If held:  8% magic cast, 13%/13% magic effect/resist, if used: turns creatures to stone, combat only, one use\
 Berserker\'92s Beard -If held: -33% int, -16% cha, 25% melee damage, 8% encounter, 18% magic resist\
 Bishop\'92s Hanky -If held: 8% lck, 13% int, 18% cha, 8%/16%/16% magic cast/effect/resist, 16%/28% bless cast/effect, 22% curse resist\
 Bloody Dragon Scale -If held: 50% animal resist, 10% find coin, 10% find magic, -26% cha \
 Bottle of Banshee Screams -If held: -20% cha, -20% int, -6% encounter, if used: panics enemies, ten uses\
-Burial Shroud -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist\
+Burial Shroud <of Shadow> -Actual Cloak, If equipped: -28% cha, -16% lck, 18%/50%/50% curse cast/effect/resist, 33% shadow resist, +18% find religious, 33% bless resist\
 Chimera Bone -If held: 18% magic resist, -50% cha, 13% int, 8% find magic\
 Cobra Tooth -If held: 16% melee damage , 36% poison on all damage\
 Copper Troll -If held:  24% str, -24% cha, -6% encounter\
@@ -69,7 +244,7 @@ Fanatic\'92s Flag -If held: 18% str, 13% spd, -28% cha, 8% encounter, 6% surpris
 Ghost Sheet -If equipped:  13% armor, 13% magic resist, -13% spd, -6% encounter\
 Giant Owl Eye -If held:  18% acc, 13% spd, 6% critical, 8% projectile damage, -8% surprise\
 Griffin Feather -If held: 18% spd, 13% str, 13% projectile damage, allows flying\
-Hangman\'92s Noose -If held: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage\
+Hangman\'92s Noose -If worn: -13% cha, -28% lck, 22%/33%/33% curse cast/effect/resist, 18% shadow damage\
 Hawk Eye -If held: 16% acc, 10% spd, 6% critical, +10% projectile damage, -6% surprised\
 Hobgoblin Nose -If held: -26% cha, 13% lck, -10% surprised, 13% magic resist\
 Horn of the Horde -If equipped:  +13% str, -8% encounter, -8% surprise, if used: Daunts or Panics enemies\
@@ -129,8 +304,8 @@ Last Rites Scroll		-If held: 16%/33%/33% curse cast/effect/resist, 28% shadow re
 \pard\pardeftab720\sl360
 \cf0 Commander\'92s Cape <of Honor>(2) 	-If equipped: 18% str, 18% armor, 24% curse resist\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 General\'92s Cape <of Honor>(2) 		-If equipped: 24% str, 24% armor, 28% curse resist\
-King\'92s Cape <of Honor>(2) 		-If equipped: 30% str, 30% armor, 33% curse resist\
+\cf0 General\'92s Cape <of Honor>(2) -If equipped: 24% str, 24% armor, 28% curse resist\
+King\'92s Cape <of Honor>(2)  -If equipped: 30% str, 30% armor, 33% curse resist\
 \
 \pard\pardeftab720\sl360
 \cf0 Trickster Pouch 	-If equipped: 13% find coin, 8% find magic, 16% lck, 18% cha\
@@ -138,8 +313,8 @@ Scoundrel Sack 	-If equipped: 18% find coin, 8% find magic, 18% lck, 6% backstab
 Swindler\'92s Bag 	-If equipped: 22% find coin, 8% find magic, 22% lck, 5% critical\
 \
 Pixie Bell 			-If used: 10% mana, removes conditions dazed/asleep-natural\
-Crystal Chimes 		-If used: 15% mana, removes conditions dazed/asleep-natural/daunted\
-Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/daunted/panic, heavy\
+Crystal Chimes 		<Gem>-If used: 10% (+ material based up to 10%) mana , removes conditions dazed/asleep-natural/daunted\
+Exotic Golden Gong	-If used: 33% mana, removes conditions dazed/asleep-either/daunted/panic, heavy\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 [27]\
 \{22\}\
@@ -148,7 +323,7 @@ Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/da
 \cf0 <Metal> War Trumpet(7) -If used: 3% + material based +% Panic enemies, then if not,  13% + material based +% Daunt enemies\
 \
 \pard\pardeftab720\sl220
-\cf0 <Gem> Jeweled Princess Veil <of Honor>(14) -If equipped: 4% + material based +% cha, 1/2x material based +% find magic\
+\cf0 <Gem> Jeweled Princess Veil <of Honor/Shadow>(14) -If equipped: 4% + material based +% cha, 1/2x material based +% find magic\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 \
 Dried <Turtle/Frog/Toad/Lizard/Salamander/Skink/Gecko/Iguana>(20) -If eaten: -10% mana, cures poison\
@@ -171,9 +346,9 @@ Sanguine <Material>(18) Relic -If held: 5x material based +% curse cast, 10% + 5
 \
 <Metal>(7) Tuning Fork -If equipped: bard only, material based +% effect and cha\
 \
-<Metal/Gem>(14) Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist\
+<Material>(14) Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist\
 \
-<Material>(18) Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect\
+<Material><of Honor>(18) Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect\
 \
 <Metal/Gem>(18) Cyclops Eye -If held: 1/2x material based +% critical, material based -% surprised, if used: reveals all info about an enemy creature, infinite uses\
 [132]\
@@ -181,16 +356,14 @@ Sanguine <Material>(18) Relic -If held: 5x material based +% curse cast, 10% + 5
 \
 <Material> Magnifying Glass -If used: reveals all info about an enemy creature, combat only, material based use count\
 <Metal/Gem> Turtle Shell -If held: 3x material based +% armor, very heavy\
-<Material> Jeweled Armband <of Type>(90) -If equipped: 2x material based +% armor,\
-<Material> Mana Amulet <of Type>(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect\
+<Material> Jeweled Armband <of Individual Types>(90) -If equipped: 2x material based +% armor,\
+<Material> Mana Amulet <of  Individual Types>(90) -If equipped: 18% + material based +% mana, 1/2x material based +% magic effect\
 [212]\
 \{5\}\
 \
 <Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Pin        -If equipped: 1x material based +% stat\
-<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Signet   -If held:         2x material based +% stat\
-<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Charm  -If equipped: 3x material based +% stat\
-<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Bracelet -If equipped: 4x material based +% stat\
-<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Brooch  -If equipped: 5x material based +% stat\
+<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Brooch  -If equipped: 3x material based +% stat\
+<Material> <Fist/Feather/Mask/Key/Hourglass/Crown>(108) Charm  -If equipped: 5x material based +% stat\
 [540]\
 \{3\}\
 \
@@ -199,158 +372,251 @@ Sanguine <Material>(18) Relic -If held: 5x material based +% curse cast, 10% + 5
 
 \fs36 \cf0 Normal Equipment
 \fs22 \
-<(weapons)>(40/1)[5747] <of Type>(5)(200)\
-<(all armor)>(38/9)[2098] <of Type>(5)(200)\
+<(weapons)>(40/1)[5747] <see below>\
+            Breath / Tendrils / Fists / Bite / Claws<>\
+            Swords\
+		    Shortsword<>\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 		     	Gladius<Honor>\
+                		Cutlass<Honor>\
+                		Falcata<Fire&Shadow>\
+                		Rapier<Frost&Fire&Shadow>\
+                		Saber<Shadow>\
+                		Broadsword<Honor>,\
+                		Longsword<Fire&Frost>,\
+                		Knightlysword<Frost&Honor>,\
+                		Flamberg<Fire&Shadow>,\
+                		Claymore<Fire&Frost&Honor&Shadow>,\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0             Axes\
+		Handaxe<>\
+                	Sickle<Shadow>\
+                	Battleaxe<Fire|Frost>\
+                	Waraxe<Honor|Shadow>\
+            Whips\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 		Bullwhip<>\
+                Flail<Honor|Shadow>\
+                MaceAndChain<Fire|Frost>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0             Projectiles\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 		Blowpipe<>\
+                Sling<>\
+                Shortbow<>\
+                Longbow<Fire|Frost>\
+                Crossbow<Honor|Shadow>\
+                CompositeBow<Fire&Frost&Honor&Shadow>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0             Bladed Staffs\
+		ShortSpear<>\
+                	Spear<>\
+                	Scythe<Shadow&Fire>\
+                	Pike<Frost&Honor>\
+                	Partisan<Fire&Honor>\
+                	Halberd<Fire&Frost&Honor>\
+            Knife<of Fire&Frost&Honor>\
+	 Dagger<of Fire&Frost&Shadow>\
+            Clubs\
+		Spiked<Fire&Shadow>\
+                	Maul<>\
+                	Mace<Frost&Honor>\
+                	Warhammer<Fire&Frost&Honor&Shadow>\
+            Staff<Honor|Shadow>\
+            QuarterStaff<Frost|Honor>\
+            \
+<(all armor)>(38/9)[2098] <>\
+	  Shields\
+		Buckler<>\
+                	Kite<Frost&Honor>\
+                	Heater<Fire&Shadow>\
+                	Pavis<Fire&Frost&Honor&Shadow>\
+\
+	Helms\
+		Leather<>\
+                	MailCoif<Frost>\
+                	Kettle<Shadow>\
+                	Archers<Honor>\
+                	Bascinet<Fire>\
+                	Great<Fire&Frost&Honor&Shadow>\
+\
+	 Coverings\
+		Cape<Honor|Shadow>\
+                	Vest<Fire|Frost>\
+                	Robe<>\
+                	Cloak<Fire&Frost&Honor&Shadow>\
+\
+	Bracers/Boots/Aventail\
+		Plain<>\
+		Scale/Mail/Plate<Fire|Frost>\
+\
+            Gauntlets/Pants//Shirt\
+		Plain<>\
+		Scale/Mail/Plate<Honor&Shadow>\
+\
+            Skin<>\
 [7845]\
 (400)\
 \{78\}\
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs36 Named Equipment
-\fs18 \
-(apply only if equipped)
-\fs22 \
-Wicked 	<(weapons)><of Fire/Frost/Shadow>[22988](160/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise\
+\fs36 \cf0 Named Equipment (Enchantments)
+\f1\fs19 \
+
+\f0\i\fs18 Some weapons and armor (only weapons and armor) have an enchantment, perhaps including an Elemental enchantment as well, that has made it so famous as to be given a name that is known to creatures in the game.  These enchantments, including the Elemental ones, are only applied if equipped.
+\i0\fs22 \
+Wicked 	<(POINTED weapons)><of Fire|Shadow>[22988](160/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise\
 \
-Fiendish 	<(weapons)><of Fire/Frost/Shadow>[22988](160/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise\
+Fiendish 	<(BLADED weapons)><of Shadow>[22988](160/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise\
 \
-Infernal	<(weapons)><of Fire/Frost/Shadow>[22988](160/1) 18% str, -22% lck, -24% cha, -24% int, 8% curse on melee, 6% critical, -26% curse resist, +3% encounter, +3% surprise\
+Infernal	<SWORD/Sling/Longbow/CompositeBow><of Fire&Shadow>[22988](160/1) 18% str, -22% lck, -24% cha, -24% int, 8% curse on melee, 6% critical, -26% curse resist, +3% encounter, +3% surprise\
 \
-Raging 	<(weapons)><of Fire/Frost/Shadow>[22988](160/1) 26% str, -24% lck, -28% cha, -28% int, 10% curse on melee, 8% critical, -33% curse resist, +4% encounter, +4% surprise\
+Raging 	<(CLUB weapons)><>[22988](160/1) 26% str, -24% lck, -28% cha, -28% int, 10% curse on melee, 8% critical, -33% curse resist, +4% encounter, +4% surprise\
 \
-Diabolic 	<(weapons)><of Fire/Frost/Shadow>[22988](160/1) 33% str, -26% lck, -33% cha, -33% int, 13% curse on melee, 10% critical, -100% curse resist, +5% encounter, +5% surprise\
+Diabolic 	<(MELEE weapons)><of Shadow>[22988](160/1) 33% str, -26% lck, -33% cha, -33% int, 13% curse on melee, 10% critical, -100% curse resist, +5% encounter, +5% surprise\
 [114940]\
 (800)\
 \
-Dancing <(swords)><of Fire/Frost/Honor/Shadow>[8085](55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc\
+Dancing <(swords)><of Fire|Frost>[8085](55/1) 18% str, 18% spd, 50% curse effect, 8% critical, 16% armor, 16% acc\
 [8085]\
 (55)\
 \
 \pard\pardeftab720\sl360
-\cf0 Marauder <(swords)><of Fire/Frost/Shadow>[8085](44/1) 16% str, 13% acc, 5% critical\
+\cf0 Marauder <(SWORD EXCEPT ShortSword/Gladius/Falcata)><>[8085](44/1) 16% str, 13% acc, 5% critical\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 [8085]\
 (44)\
 \
-Honest 	<(all armor)>[2098]<of Fire/Frost>(102/8)[6294] 1% acc, 1% armor, 4% bless effect, 8% shadow/honor resist\
-Noble		<(all armor)><of Fire/Frost>(102/8) 2% acc, 2% armor, 6% bless effect, -2% surprise, 13% shadow/honor resist\
-Daring  	<(all armor)><of Fire/Frost>(102/8) 3% acc, 3% armor, 8% bless effect, -2% surprise, 2% cha, 2% int, 18% shadow/honor resist\
-Elite		<(all armor)><of Fire/Frost>(102/8) 4% acc, 4% armor, 13% bless effect, -2% surprise, 3% cha, 3% int, 8% curse resist, 24% shadow/honor resist\
-Valiant	<(all armor)><of Fire/Frost>(102/8) 5% acc, 5% armor, 16% bless effect, -2% surprise, 4% cha, 4% int, 10% curse resist, 28% shadow/honor resist\
-Hero\'92s		<(all armor)><of Fire/Frost>(102/8) 6% acc, 6% armor, 18% bless effect, -2% surprise, 5% cha, 5% int, 13% curse resist, 4% magic resist, 33% shadow/honor resist\
+Honest 	<ALL armor EXCEPT Cloak/Robe>[2098]<of Honor>(102/8)[6294] 1% acc, 1% armor, 4% bless effect, 8% shadow/honor resist\
+Noble		<ALL armor EXCEPT Cloak/Robe/PLAIN><of Honor>(102/8) 2% acc, 2% armor, 6% bless effect, -2% surprise, 13% shadow/honor resist\
+Daring  	<ALL armor EXCEPT Cloak/Robe/PLAIN/Buckler/Leather><of Honor>(102/8) 3% acc, 3% armor, 8% bless effect, -2% surprise, 2% cha, 2% int, 18% shadow/honor resist\
+Elite		<ALL armor EXCEPT Cloak/Robe/PLAIN/SCALE/Buckler/Leather/MailCoif/Kettle><of Honor>(102/8) 4% acc, 4% armor, 13% bless effect, -2% surprise, 3% cha, 3% int, 8% curse resist, 24% shadow/honor resist\
+Valiant	<Heater/Pavis/Bascinet/Great/PLATE/MAIL armor EXCEPT Cloak/Robe><of Honor>(102/8) 5% acc, 5% armor, 16% bless effect, -2% surprise, 4% cha, 4% int, 10% curse resist, 28% shadow/honor resist\
+Hero\'92s		<Pavis/Great/PLATE armor EXCEPT Cloak/Robe/Bracers/Aventail><of Honor>(102/8) 6% acc, 6% armor, 18% bless effect, -2% surprise, 5% cha, 5% int, 13% curse resist, 4% magic resist, 33% shadow/honor resist\
 [37764]\
 (612)\
 \
 \pard\pardeftab720\sl360
-\cf0 Army <(typical armor)><of Fire/Frost/Honor/Shadow>(150/7) 3% str, 3% spd, 3% armor\
+\cf0 Army <SHIELD/HELM/PANTS/BOOTS/SHIRTS armor EXCEPT PLATE/Leather/MailCoif/Pavis><>(150/7) 3% str, 3% spd, 3% armor\
 [10430]\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 (150)\
 \
 \pard\pardeftab720\sl360
-\cf0 Gladiator <Buckler/Kite Shield/Great Helm/Bascinet Helm/Kettle Helm/Handaxe/Spear/Gladius/Shortsword/Falcata/Broadsword><of Fire/Frost/Honor/Shadow> -If equipped: 8% str, 6% spd\
+\cf0 Gladiator <Buckler/Kite Shield/Bascinet Helm/Kettle Helm/Handaxe/ShortSpear/Spear/Gladius/Shortsword/Broadsword><> -If equipped: 8% str, 6% spd\
 [7085]\
 (55)\
 \
-Soldier\'92s <(weapons)><of Fire/Frost>[17241](120/1) 	-If equipped: 18% str, 13% spd, 8% cha, 22% honor damage\
-Soldier\'92s <(typical armor)><of Fire/Frost>[6258](90/7)	-If equipped: 4% armor\
+Soldier\'92s <(ShortBow/Longbow/Broadsword/Longsword/Knightlysword/Claymore/BattleAxe/WarAxe/BladedStaffs weapons)><>[17241](120/1) 	-If equipped: 18% str, 13% spd, 8% cha, 22% honor damage\
+\
+Soldier\'92s <SHIELD/HELM/PANTS/BOOTS/SHIRTS armor EXCEPT PLATE/Pavis><>[6258](90/7)	-If equipped: 4% armor\
 [23499]\
 (210)\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 \cf0 Warden\'92s	<Shortsword[147]/Bascinet Helm[107]/Buckler[107]/(plain armor)[252]>(6/6)[613] 5% str, 5% armor, -3% surprise\
-Prince\'92s	<Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]>(7/7)[512] 8% str, 8% armor\
-Ranger	<Longbow?/(Plain Armor)[252]/Cloak[3]>(6/6)[?] 6% str, 8% acc, 4% armor\
-Samurai	<Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]>(6/6)[157] 10% str, 10% acc, 2% critical\
-Thor\'92s		<Broadsword[147]/Great Helm[107]/Pavis Shield[107]/(typed armor)[1834]>(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power\
-Nile		<Falcata[147]/Buckler[107]/Leather Helm[1]/Plain Bracer[1]>(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical\
+Prince\'92s	<of Honor|Shadow><Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]>(7/7)[512] 8% str, 8% armor\
+Ranger	<Shortbow/Longbow/CompositeBow/Sling/Cloak/Vest/Cloak/PLAIN EXCEPT SHIELD/HELM>(6/6)[?] 6% str, 8% acc, 4% armor\
+Samurai	<of Honor><Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]>(6/6)[157] 10% str, 10% acc, 2% critical\
+Thor\'92s		<of Honor><Claymore[147]/Great Helm[107]/Pavis Shield[107]/Gauntlets/PLATE/Cape[1834]>(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power\
+Nile		<of Shadow><Falcata[147]/Buckler/Kite/Leather Helm/PLAIN/Bracer/Shirt/Bracer/Cloak>(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical\
 [3530]\
 (47)\
 \
-Searing <(weapons)>(40/1)	-If equipped: 16% fire damage\
-Burning <(weapons)>(40/1)	-If equipped: 33% fire damage\
-Fiery <(weapons)>(40/1)		-If equipped: 66% fire damage\
+Searing <BLADED weapons><of Fire>(40/1) -If equipped: 16% fire damage\
+Burning <SWORD/AXE/BLADEDSTAFF/CLUB/STAFF weapons><of Fire>(40/1) -If equipped: 33% fire damage\
+Fiery <BOW/CROSSBOW/WHIP/BLADEDSTAFF/SWORD weapons><of Fire>(40/1) -If equipped: 66% fire damage\
 [17241]\
 (120)\
 \
-Charred <(typical armor)>(30/7) -If equipped: 8% fire resist\
+Charred <Vest/SHIELD/HELM/GAUNTLET/SHIT/BRACER/PLAIN armor><of Fire>(30/7) -If equipped: 8% fire resist\
 [2086]\
 (30)\
 \
-Icy <(weapons)>(40/1)		-If equipped: 16% frost damage\
-Winter <(weapons)>(40/1)	-If equipped: 33% frost damage\
-Frigid <(weapons)>(40/1)		-If equipped: 66% frost damage\
+Icy <MELEE weapons><of Frost>(40/1) -If equipped: 16% frost damage\
+Winter <MELEE weapons><of Frost>(40/1)-If equipped: 33% frost damage\
+Frigid <MELEE weapons><of Frost>(40/1)-If equipped: 66% frost damage\
 [17241]\
 (120)\
 \
-Chill <(typical armor)>(30/7)	-If equipped: 8% frost resist\
-Frozen <(typical armor)>(30/7)	-If equipped: 13% frost resist\
-Arctic <(typical armor)>(30/7)	-If equipped: 18% frost resist\
+Chill <see below><of Frost>(30/7)-If equipped: 8% frost resist\
+Frozen <see below><of Frost>(30/7)-If equipped: 13% frost resist\
+Arctic <see below><of Frost>(30/7)-If equipped: 18% frost resist\
+<ALL armor EXCEPT Cape/Buckler/MailCoif/Leather/Pants/Boots/Shirt/Aventail>\
 [6258]\
 (90)\
 \
-Proud <(weapons)>(40/1)		-If equipped: 16% honor damage\
-Glory <(weapons)>(40/1)		-If equipped: 33% honor damage\
-Pure <(weapons)>(40/1)		-If equipped: 66% honor damage\
+Proud <see below><of Honor>(40/1)-If equipped: 16% honor damage\
+Glory <see below><of Honor>(40/1)	-If equipped: 33% honor damage\
+Pure <see below><of Honor>(40/1)	-If equipped: 66% honor damage\
+<Longbow/Crossbow/CompositeBow/Staff/Quarterstaff/BLADEDSTAFF/Broadsword/Longsword/Knightlysword/Claymore/BattleAxe/WarAxe/MaceAndChain/Warhammer weapons except Spears>\
 [17241]\
 (120)\
 \
-Light <(all armor)>(38/9)		-If equipped: 8% honor resist\
-Dawn <(all armor)>(38/9)	-If equipped: 13% honor resist\
-Sun <(all armor)>(38/9)		-If equipped: 18% honor resist\
+Light <see below><of Fire&Honor>(38/9)-If equipped: 10% shadow resist\
+Dawn <see below><of Fire&Honor>(38/9)-If equipped: 20% shadow resist\
+Sun <see below><of Fire&Honor>(38/9)-If equipped: 30% shadow resist\
+<Vest/Cape/Robe/Kite/Heater/Pavis/Archers/Bascinet/Great/GAUNTLET/PANTS/BOOTS/SHIRT/ armor EXCEPT PLAIN/SCALE>\
 [6294]\
 (114)\
 \
-Gloom <(weapons)>(40/1)	-If equipped: 16% shadow damage\
-Twilight <(weapons)>(40/1)	-If equipped: 33% shadow damage\
-Dusk <(weapons)>(40/1)		-If equipped: 66% shadow damage\
+Gloom <see below><of Shadow>(40/1)-If equipped: 16% shadow damage\
+Twilight <see below><of Shadow>(40/1)-If equipped: 33% shadow damage\
+Dusk <see below><of Shadow>(40/1)	-If equipped: 66% shadow damage\
+<Knife/Dagger/PROJECTILES/Cutlass/Falcata/Rapier/Saber/Flamberg/Handaxe/Sickle/BattleAxe/WarAxe/WHIP/Spiked/Maul/ShortSpear/Spear/Pike/Scythe>\
 [17241]\
 (120)\
 \
-Sorrow <(all armor)>(38/9)	-If equipped: 10% shadow resist\
-Woe <(all armor)>(38/9)		-If equipped: 20% shadow resist\
-Misery <(all armor)>(38/9)	-If equipped: 30% shadow resist\
+Sorrow <see below><of Shadow>(38/9)-If equipped: 8% honor resist\
+Woe <see below><of Shadow>(38/9)	-If equipped: 13% honor resist\
+Misery <see below><of Shadow>(38/9)-If equipped: 18% honor resist\
+<Vest/Cloak/Buckler/Kite/Heater/Leather/MailCoif/Archers/Bascinet/Gauntlets/Bracers armor EXCEPT PLAIN>\
 [6294]\
-(114)\
-\
-Moon <(all armor)>(38/9) 	-If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist\
+(114\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs19 \cf2 	
+\f0\fs22 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+\cf0 Moon <Robe/Cloak/Vest/SHIELDS/HELM/Pants/Shirt/Boots/ armor EXCEPT PLAIN/Kettle/Leather><of Shadow>(38/9) -If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist\
 [2098]\
 (38)\
 \
-Dark <(weapons)>(40/1)		-If equipped: 66% shadow damage, 8% curse on melee, 4% critical, 18% str\
+Dark <Knife/Dagger/Sling/ShortBow/Longbow/CompositeBow/Falcata/Rapier/Flamberg/Sickle/BattleAxe/Bullwhip/Flail/MaceAndChain/Spiked/Maul/Spear/Pike/Scythe><of Shadow>(40/1) -If equipped: 66% shadow damage, 8% curse on melee, 4% critical, 18% str\
 [5747]\
 (40)\
 \
-Betrayer <(weapons)>(40/1)	-If equipped: 80% shadow damage, 18% curse on melee, 8% critical, 33% str, -33%lck, 33% curse resist\
+Betrayer <Dagger/Longbow/CompositeBow/Falcata/Flamberg/Sickle/MaceAndChain/Spiked/Scythe><of Shadow>(40/1)-If equipped: 80% shadow damage, 18% curse on melee, 8% critical, 33% str, -33%lck, 33% curse resist\
 [5747]\
 (40)\
 \
-Imposter\'92s Robe <of Fire/Frost/Shadow>(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise\
-Pickpocket Robe <of Fire/Frost/Shadow>(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise\
-Burglar Cloak <of Fire/Frost/Shadow>(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise\
+Imposter\'92s Robe <>(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise\
+Pickpocket Robe <>(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise\
+Burglar Cloak <of Shadow>(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise\
 \pard\pardeftab720\sl360
-\cf0 Mountebank Cloak <of Fire/Frost/Shadow>(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha\
-Charlatan\'92s Vest <of Fire/Frost/Shadow>(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha\
+\cf0 Mountebank Cloak <of Shadow>(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha\
+Charlatan\'92s Vest <of Shadow>(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha\
 [60]\
 (20)\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
-\cf0 <Bone/Obsidian/Stone/Metal>[135] Robber\'92s Knife <of Fire/Frost/Shadow>[1080](32) -Actual weapon, if equipped: 1/2x material based +% lck\
-<Bone/Obsidian/Stone/Metal>[135] Thug\'92s Knife <of Fire/Frost/Shadow>[1080](32)    -Actual weapon, if equipped: 10% + 1/2x material based +% lck\
-<Bone/Obsidian/Stone/Metal>[135] Knave\'92s Knife<of Fire/Frost/Shadow>[1080](32)    -Actual weapon, if equipped: 20% + 1/2x material based +% lck\
+\cf0 <Bone/Obsidian/Stone/Metal>[135] Robber\'92s Knife <>[1080](32) -Actual weapon, if equipped: 1/2x material based +% lck\
+<Bone/Obsidian/Stone/Metal>[135] Thug\'92s Knife <>[1080](32)    -Actual weapon, if equipped: 10% + 1/2x material based +% lck\
+<Bone/Obsidian/Stone/Metal>[135] Knave\'92s Knife<>[1080](32)    -Actual weapon, if equipped: 20% + 1/2x material based +% lck\
 [3240]\
 (96)\
 \
-<Bone/Obsidian/Stone/Metal>[135] Mugger\'92s Dagger <of Fire/Frost/Shadow>[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab\
+<Bone/Obsidian/Stone/Metal>[135] Mugger\'92s Dagger <>[540](16) -Actual weapon, if equipped: 1/2x material based +% backstab\
 \
-<Bone/Obsidian/Stone/Metal>[56] Thief Dagger <of Fire/Frost/Shadow>[540](16)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck\
+<Bone/Obsidian/Stone/Metal>[56] Thief Dagger <>[540](16)     -Actual weapon, if equipped: 5% + 1/2x material based +% backstab and lck\
 \
-<Bone/Obsidian/Stone/Metal>[56] Pirate Dagger<of Fire/Frost/Shadow>[540](16)     -Actual weapon, if equipped: 8% + 1/2x material based +% backstab and find coin, 1/2x material based +% lck and find magic\
+<Bone/Obsidian/Stone/Metal>[56] Pirate Dagger<>[540](16)     -Actual weapon, if equipped: 8% + 1/2x material based +% backstab and find coin, 1/2x material based +% lck and find magic\
 [1620]\
 (48)\
 \
-Focus <(projectile weapons)>[882]<of Fire/Frost/Honor/Shadow>[4410](30) -If equipped: 18% acc, 13% str, 16% projectile damage\
+Focus <(projectile weapons except Blowpipe)>[882]<Fire|Frost>[4410](30) -If equipped: 18% acc, 13% str, 16% projectile damage\
 [4410]\
 (30)\
 \
@@ -359,7 +625,10 @@ Focus <(projectile weapons)>[882]<of Fire/Frost/Honor/Shadow>[4410](30) -If equi
 
 \fs36 \cf0 Items used to cast Bless or Curse
 \fs22 \
-Allows casting the spell \'93Bless\'94 or \'93Curse\'94, item is consumed upon use, material based use count\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\i \cf0 Some items are blessed or cursed, and if so, it will say so right in their name.  These items allows casting the spell \'93Bless\'94 or \'93Curse\'94 several times depending on the materials it is made of.  After casting the last time, the item is consumed, meaning that it disappears and is removed from the character\'92s inventory.
+\i0 \
 Bless items have 3% encounter, 3% bless effect\
 Curse items have -3% lck, 3% curse effect\
 <Material> Eyed <Graced/Holy/Hallowed/Divine/Sacred/Noble> Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet/Marionette(Puppet)/Bust\
@@ -368,8 +637,9 @@ Curse items have -3% lck, 3% curse effect\
 \{12\}\
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs36 Healing Items
+\fs36 \cf0 Healing Items
 \fs22 \
 <Material> Rejuvenation Goblet (8) 	-If used, 5x material based +% health and mana\
 <Material> Healing Balm Pot 		-If used: restores 16% health, use count based on material\
@@ -395,9 +665,9 @@ Curse items have -3% lck, 3% curse effect\
 
 \fs36 \cf0 Wands
 \fs22 \
-Petrified Snake -Wand, if equipped: 10% mana, 8%/16% magic effect/resist, 33% poison on damage\
+Petrified Snake -Wand, Quest Item, if equipped: 10% mana, 8%/16% magic effect/resist, 33% poison on damage\
 \
-Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist\
+Mummy Hand -Wand, Quest Item, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic on spell, 33%/33% curse effect/resist\
 \
 <Material> Wand -Wand, if equipped: 11% + 1/2x material based +% mana\
 \
@@ -409,17 +679,17 @@ Mummy Hand -Wand, if equipped: 20% mana, 16%/16% magic effect/resist, 33% panic 
 \
 <Material> Scepter(26) -Wand, if equipped: 14% + 2x material based +% mana, 2x material based +% magic effect, material based +% magic cast\
 \
-Magic Icicle -Wand, if equipped: 18% mana, 18% magic effect, 13% magic cast, 75% Frost Damage, 75% Frost Resist\
+Magic Icicle -Wand, Quest Item, if equipped: 18% mana, 18% magic effect, 13% magic cast, 75% Frost Damage, 75% Frost Resist\
 \
-Golem Finger -Wand, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50%/50%/50%/50% Fire/Frost/Honor/Shadow Resist\
+Golem Finger -Wand, Quest Item, if equipped: 24% mana, 13% magic effect, 18% magic cast, 50%/50%/50%/50% Fire/Frost/Honor/Shadow Resist\
 \
-Unicorn Horn -Wand, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist\
+Unicorn Horn -Wand, Quest Item, cleric only, if equipped: 16% cha, 13% lck, 26% find magic, 28% mana and magic effect, +14% magic cast, 80%/80% bless cast/effect, bless without items or mana, 28% shadow resist\
 \
-Devil Horn -Wand, sorcerer only, if equipped: -13% cha, 13% spd, 16% int, 26% find magic, 28% mana and magic effect, 14% magic cast, 80%/80% curse cast/effect, curse without items or mana, 28% shadow damage\
+Devil Horn -Wand, Quest Item, sorcerer only, if equipped: -13% cha, 13% spd, 16% int, 26% find magic, 28% mana and magic effect, 14% magic cast, 80%/80% curse cast/effect, curse without items or mana, 28% shadow damage\
 \
-Frozen Angel Braid -(see Set)\
+Frozen Angel Braid, Quest Item -(see Set)\
 \
-Burning Litch Hand -(see Set)\
+Burning Litch Hand, Quest Item -(see Set)\
 40\
 \{11\}\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
@@ -429,7 +699,10 @@ Burning Litch Hand -(see Set)\
 
 \fs36 \cf0 Musical Instruments
 \fs22 \
-(Only the Drumlute has the typical varieties)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\i \cf0 All are Quest Items except for the DrumLute.  Only the Drumlute has the typical varieties based on materials.
+\i0 \
 \
 <Gem> Jeweled Drumlute 	-Instrument, if equipped:12% + material based +% mana, material based +% magic cast and effect\
 <Metal> Reinforced Drumlute 	-Instrument, if equipped:13% + material based +% mana, material based +% magic cast and effect\
@@ -440,21 +713,22 @@ Pearl Studded Drumlute 		-Instrument, if equipped: 13% mana, 13% cha, 13% int, 1
 \
 Obsidian Adorned Drumlute 	-Instrument, if equipped: 18% mana, 18% cha, 18% int, 28% harmful magic cast, 28%/28% curse cast/effect, 18% find religious\
 \
-Reverend\'92s Recorder 		-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% helpful magic cast/effect, 25%/25% bless cast/effect, 25% curse resist, bless without items, 18% shadow resist\
+Reverend\'92s Recorder 		-Instrument, Quest Item, if equipped: 24% mana, 13% cha, 13% int, 16%/16% helpful magic cast/effect, 25%/25% bless cast/effect, 25% curse resist, bless without items, 18% shadow resist\
 \
-Villain\'92s Viol 				-Instrument, if equipped: 24% mana, 13% cha, 13% int, 16%/16% harmful magic cast/effect, 25%/25% curse cast/resist, curse without items, 18% shadow damage\
+Villain\'92s Viol 				-Instrument, Quest Item, if equipped: 24% mana, 13% cha, 13% int, 16%/16% harmful magic cast/effect, 25%/25% curse cast/resist, curse without items, 18% shadow damage\
 \
-Puritan\'92s Pipe and Tabor 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items\
+Puritan\'92s Pipe and Tabor 		-Instrument, Quest Item, if equipped: 28% mana, 18% cha, 18% int, 33%/33% helpful magic cast/effect, 50% bless cast/effect, bless without items\
 \
-Hannibal\'92s Hurdy-Gurdy 		-Instrument, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast/effect, 50% curse, curse without items\
+Hannibal\'92s Hurdy-Gurdy 		-Instrument, Quest Item, if equipped: 28% mana, 18% cha, 18% int, 33% harmful magic cast/effect, 50% curse, curse without items\
 \
-Satyr\'92s Lyre 				-Instrument, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin\
+Satyr\'92s Lyre 				-Instrument, Quest Item, if equipped: 33% mana, 20% cha, 20% int, 50%/50% magic cast/effect, 18% find magic, 18% find coin\
 22\
 \{10\}\
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
 
-\fs36 Lock Picks
+\fs36 \cf0 Lock Picks
 \fs22 \
 <Bone or Obsidian or Metal/Gem> Lock Picks -Lock Picks, if equipped: 12% + material based +% lck, 11% + 1/2x material based +% spd, 1/2x material based % backstab\
 \
@@ -473,7 +747,16 @@ Ghost Finger Lock Picks	-Lock Picks, if equipped: 33% lck, 33% spd, 16% backstab
 \
 \
 
-\fs36 Thief Sets
+\fs36 Sets\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\i\fs22 \cf0 Some items are part of special sets that have enchantments that grow stronger as you collect and equip more of them.  If part of a Set, then no other enchantments will apply.
+\i0 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\fs36 \cf0 Thief Sets
 \fs22 \
 (7)Boots/Pants/Shirt/Gloves/Cloak/Dagger/Lock Picks\
 The Assassin\'92s	-cumulative: 4% lck, 4% spd, 2% backstab, 2% find magic, if complete: 20% lck, 20% spd, +%5 backstab, 10% find magic, 13% find coin\
@@ -662,4 +945,22 @@ Grave Bell\
 \
 Totals:\
 \{335\}\
-[332420] or [333444] if you add 32x32 alchemy mixes}
+[332420] or [333444] if you add 32x32 alchemy mixes\
+\
+\
+\
+\
+\
+Items To Add:\
+\'97\'97\
+Herbs\'85we have 34 images not being used\
+Potions -33 images\
+Drinks -no images\
+Salves -no images\
+Crowns\'85we have 12 crown images that are not being used at all\
+Hourglass we have 3 images not being used\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 Medallion? No images\
+Mirror, we have 10 images\
+Skulls, 11 images\
+Staffs, 21 images, check that they are not used by various material staffs}
