@@ -192,7 +192,29 @@ Boost Version 1.62.0
 time make -j8
 On 2017-3-31 (after includes overhaul of 2017-3-29)
 Build Times:  2:32, 2:29, 2:33, 2:38, 2:37. (avg is 2:34)
-Executable size: 4.9MB</Text>
+Executable size: 4.9MB
+
+
+Just wanted another update:
+2018-10-9
+clang version 7.0.0 (tags/RELEASE_700/final)
+Apple LLVM version 10.0.0 (clang-1000.11.45.2)
+Target: x86_64-apple-darwin18.0.0
+c++ 4.2.1
+AppleClang Compile Flags: -DNDEBUG -O3 -lstdc++ -std=c++17 -ffast-math -DBOOST_NO_AUTO_PTR -Weverything -Wno-error -Wno-unused-command-line-argument -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-global-constructors -Wno-exit-time-destructors -Wno-padded -Wno-weak-vtables -Wno-disabled-macro-expansion -Wno-deprecated -Wno-covered-switch-default -Wno-inconsistent-missing-destructor-override
+SFML 2.5.0
+Boost version: 1.62.0 (linked statically)
+This was a build of the root of heroespath which includes the unit tests as well as the game executable.
+time make -j8
+Build Times:  4:40.6
+Executable size: 10MB
+-
+These build times and executable sizes are about double what they were.  I remember the build times went way up when I started using boost::optional everywhere.  I have no idea what made the executable so big…
+
+
+
+
+</Text>
         </Document>
         <Document ID="5">
             <Title>Roles</Title>
@@ -780,7 +802,39 @@ Herbs
 Herbs take the form of either a flower, grass, vine, stem, leaf, root, or seed.  Each herb has an amount that is defined by a use count.  Herbs are all edible and must be eaten to trigger whatever their effect is, whether beneficial or harmful.  Each Herb has effects that can be applied by eating them even before they are mixed in Alchemy.
 
 Name 		Form		Permanent 	Effects
-TODO
+Blood Root
+Oak Nose
+Yellow Dot
+Maze Bloom
+Never Lilly
+Dragon Stem
+Elf Ear
+Winter Bloom
+Green Lock
+River Sprig
+Drowners Fern
+White Leaf
+Black Tail
+Kings Weed
+Pixie Cap
+Troll Sprout 
+Witch Stand
+Brown Tip
+Hag Sprout
+Jungle Dream
+War Pick
+Oger Vein
+Trick Tree
+Jester Shade
+Blade Bud
+Maiden Grass
+Garden Steel
+Wind Raker
+Three Thorn
+Cobbler’s Mint
+Love Lace
+Grave Bell
+
 
 
 
@@ -804,7 +858,14 @@ Allows flying during combat
 
 Recipes
 TODO
-</Text>
+
+
+
+My app has lots of bitfield enums that need various supporting functions (toString(), fromString(), countSetBits(), isValid(), etc…). So I used the CRTP to make a base class with static functions for everything I need.  Everything works great, EXCEPT, I can’t get the bitwise operations to work.
+
+Why don’t operators 1 and 2 work, and allow A and B to compile?  Operators 3 and 4 work fine, and they look the same to me.  (C-style casts only used to save space)
+
+Stumped.  Please help.</Text>
         </Document>
         <Document ID="16">
             <Title>Static Analysis</Title>
@@ -966,10 +1027,6 @@ There are four elemental powers in Etan: Fire, Frost, Honor, and Shadow.  Every 
 
 Named Items
 Some magical items are named, and they have enchantments with bonuses that are common to those names.  For example, the name ‘Winter’ may be seen in front of a weapon’s name, meaning it has the ‘Winter’ enchantment, which is a +33% to the Trait ‘Frost Damage’.
-
-
-
-With all the various Materials, Enchantments, Names, and Elemental types, there are roughly a half-million different items in the game!
 </Text>
         </Document>
         <Document ID="17">
@@ -1408,6 +1465,114 @@ This will create and stage local changes that undo everything before the target 
             <Text>Items
 There are approximately half a million different items in the game.  There are 40 different types of weapons (swords/bows/etc.), 38 different pieces of armor (shields/helms/etc.), 16 different materials they can be made of or jeweled/adorned with, 60 different named enchantments (Dancing/Noble/Soldier’s/etc.), and 4 basic elemental types (Fire/Frost/Honor/Shadow) (8 valid combinations).  In this document, the term equipment refers to either weapons or armor.  Other items may seem like equipment, such as lock picks or wands, but they are not considered equipment in the game.
 
+
+Weapons
+	(BodyPart)
+    		[Claws]
+    		[Bite]
+    		[Fists]
+    		[Tentacles]
+    		[Breath]
+    	&lt;Melee/BodyPart&gt;
+
+   	 (Staff)
+   	 {Quarterstaff}
+   	 &lt;Melee/Staff&gt;
+    
+    (Sword)
+    	[Shortsword]
+    	[Gladius]
+   		[Cutlass]
+    	[Falcata]
+    	[Rapier]
+    	[Saber]
+    	[Broadsword]
+    	[Longsword]
+    	[Knightlysword]
+    	[Flamberg]
+   		[Claymore]
+    &lt;Melee/Bladed/Pointed/Sword&gt;
+
+    (Axe)
+    [Handaxe]
+    [Sickle]
+    [Battleaxe]
+    [Waraxe]
+    &lt;Melee/Bladed/Axe&gt;
+
+    (Whip)
+    	[Bullwhip]
+    	[Flail]
+    	[MaceAndChain]
+    &lt;Melee/Whip&gt;
+
+    (Club)
+    	[Spiked]
+    	[Maul]
+    	[Mace]
+    	[Warhammer]
+    &lt;Melee/Club&gt;
+
+    (Knife)
+    {Dagger}
+    &lt;Melee/Bladed/Pointed/Knife&gt;
+
+    (Projectile)
+    	[Blowpipe]
+    	[Crossbow]
+    	[Sling]
+    	{Bow}
+    	[Shortbow]
+    	[Longbow]
+    	[CompositeBow]
+    &lt;Projectile&gt;
+
+    (BladedStaff)
+    	[Scythe]
+    	[Pike]
+    	[Partisan]
+    	[Halberd]
+    	&lt;Melee/Bladed/Pointed/BladedStaff&gt;
+    	-
+   	 	{Spear}
+    	[ShortSpear]
+    	[Spear]
+    &lt;Melee/Pointed/BladedStaff&gt;
+
+
+Armor
+	Covering
+		Cape
+                	Vest
+                	Robe
+                	Cloak
+	
+	  Shield
+		Buckler
+                	Kite
+                	Heater
+                	Pavis
+
+            Helm
+		Leather
+                	MailCoif
+                	Kettle
+                	Archers
+                	Bascinet
+                	Great
+	 
+	 Gauntlets
+            Pants
+            Boots
+            Shirt
+            Bracers
+            Aventail
+		Plain
+                	Mail
+                	Scale
+                	Plate
+
+
 Limits/Rules
 Item Set cumulative bonuses apply to every item owned in the set AFTER the first.  So cumulative bonuses are granted starting with the second item equipped.
 
@@ -1423,6 +1588,24 @@ Only ONE of the following item types may be equipped at a time:
 	Brooch
 	Pin
 	Tuning Fork
+
+Can't equip more than one wand at a time.
+Can't equip more than one ring per hand.
+Can't wear helms if you have horns.
+Pants/Boots, Gauntlets/Bracers are pairs of items.  You can only equip one per set of two legs/arms.
+You can only equip one shield per arm.
+You can equip as many helms as you have heads, and only as many aventails as already equipped helms.
+You can’t equip both a robe and cloak, or a cape with either a robe or cloak, but you can equip a cape with a vest, and a vest with either a robe or cloak.
+Only knights and warlords may equip non-simple-spear bladed staff weapons.
+Only knights may equip plate armor.
+Only knights may equip Pavis or Heater shields.
+Beasts can only equip body part items.
+Only Bards can equip musical instruments.
+When it comes to weapons, Clerics and Sorcerers can only equip staffs, knives, daggers, whips, slings, and blowpipes.
+When it comes to armor, Clerics and Sorcerers can only equip armor made from cloth, silk, fur, or leather.
+Bards and Archers cannot equip WarAxes, WarHammers, or Bladed Staffs.
+Thieves cannot equip Axes, Swords, Clubs, or two-handed weapons except for Slings and Blowpipes.
+Body parts cannot be unequipped.
 
 Duplicate items do not combine bonuses.
 
@@ -1480,7 +1663,7 @@ Hobgoblin Nose -If held: -26% cha, 13% lck, -10% surprised, 13% magic resist
 Horn of the Horde -If equipped:  +13% str, -8% encounter, -8% surprise, if used: Daunts or Panics enemies
 Imp Tail -Whip, if equipped: 20% melee damage, 13% spd
 Islander Headdress -If equipped: 16% cha, 13% mana, 8%/18% magic cast/resist, 18% curse resist, 13% find religious, -8% encounter, 20% shadow resist
-Mad Rat Juju -If held: 16% cha, 33% int, 33% spd, -18% animal resist
+Mad Rat -If held: 16% cha, 33% int, 33% spd, -18% animal resist
 Magic Horseshoe -If held: 18% lck, 4% find religious, 8% find magic, 16% find coin
 Mendicant Ring -If equipped: -18% cha, 16% find coins, 8% find magic, 18% find religious
 Minotaur Hide -If held: 33% animal resist, 16% str, 6% power, -28% cha, -16% int
@@ -1535,8 +1718,8 @@ Scoundrel Sack 	-If equipped: 18% find coin, 8% find magic, 18% lck, 6% backstab
 Swindler’s Bag 	-If equipped: 22% find coin, 8% find magic, 22% lck, 5% critical
 
 Pixie Bell 			-If used: 10% mana, removes conditions dazed/asleep-natural
-Crystal Chimes 		-If used: 15% mana, removes conditions dazed/asleep-natural/daunted
-Exotic Golden Gong	-If used: 20% mana, removes conditions dazed/asleep-either/daunted/panic, heavy
+Crystal Chimes 		&lt;Gem&gt;-If used: 10% (+ material based up to 10%) mana , removes conditions dazed/asleep-natural/daunted
+Exotic Golden Gong	-If used: 33% mana, removes conditions dazed/asleep-either/daunted/panic, heavy
 [27]
 {22}
 
@@ -1560,7 +1743,7 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 
 &lt;Metal&gt;(7) Tuning Fork -If equipped: bard only, material based +% effect and cha
 
-&lt;Metal/Gem&gt;(14) Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist
+&lt;Material&gt;(14) Jeweled Ankh Necklace -If equipped: 1.5x material based +% find religious, material based +% find magic, 1/2x material based +% magic resist, material based +% curse cast, 13% + 2x material based +% curse effect and resist
 
 &lt;Material&gt;&lt;of Honor&gt;(18) Saint Cameo Pin -If equipped: material based +% cha, material based +% find magic, 1/2x material based +% magic effect, material based +% bless cast, 10% + 2x material based +% bless effect
 
@@ -1576,10 +1759,8 @@ Sanguine &lt;Material&gt;(18) Relic -If held: 5x material based +% curse cast, 1
 {5}
 
 &lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Pin        -If equipped: 1x material based +% stat
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Signet   -If held:         2x material based +% stat
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Bracelet -If equipped: 4x material based +% stat
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Brooch  -If equipped: 5x material based +% stat
-&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Charm  -If equipped: 3x material based +% stat
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Brooch  -If equipped: 3x material based +% stat
+&lt;Material&gt; &lt;Fist/Feather/Mask/Key/Hourglass/Crown&gt;(108) Charm  -If equipped: 5x material based +% stat
 [540]
 {3}
 
@@ -1598,31 +1779,39 @@ Normal Equipment
                 		Longsword&lt;Fire&amp;Frost&gt;,
                 		Knightlysword&lt;Frost&amp;Honor&gt;,
                 		Flamberg&lt;Fire&amp;Shadow&gt;,
-                		Claymore&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;,            Axes
+                		Claymore&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;,
+            Axes
 		Handaxe&lt;&gt;
                 	Sickle&lt;Shadow&gt;
                 	Battleaxe&lt;Fire|Frost&gt;
-                	Waraxe&lt;Honor|Shadow&gt;            Whips
+                	Waraxe&lt;Honor|Shadow&gt;
+            Whips
 		Bullwhip&lt;&gt;
                 Flail&lt;Honor|Shadow&gt;
-                MaceAndChain&lt;Fire|Frost&gt;            Projectiles
+                MaceAndChain&lt;Fire|Frost&gt;
+            Projectiles
 		Blowpipe&lt;&gt;
                 Sling&lt;&gt;
                 Shortbow&lt;&gt;
                 Longbow&lt;Fire|Frost&gt;
                 Crossbow&lt;Honor|Shadow&gt;
-                CompositeBow&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;            Bladed Staffs
+                CompositeBow&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;
+            Bladed Staffs
 		ShortSpear&lt;&gt;
                 	Spear&lt;&gt;
                 	Scythe&lt;Shadow&amp;Fire&gt;
                 	Pike&lt;Frost&amp;Honor&gt;
                 	Partisan&lt;Fire&amp;Honor&gt;
-                	Halberd&lt;Fire&amp;Frost&amp;Honor&gt;            Knife&lt;of Fire&amp;Frost&amp;Honor&gt;
-	 Dagger&lt;of Fire&amp;Frost&amp;Shadow&gt;            Clubs
+                	Halberd&lt;Fire&amp;Frost&amp;Honor&gt;
+            Knife&lt;of Fire&amp;Frost&amp;Honor&gt;
+	 Dagger&lt;of Fire&amp;Frost&amp;Shadow&gt;
+            Clubs
 		Spiked&lt;Fire&amp;Shadow&gt;
                 	Maul&lt;&gt;
                 	Mace&lt;Frost&amp;Honor&gt;
-                	Warhammer&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;            Staff&lt;Honor|Shadow&gt;            QuarterStaff&lt;Frost|Honor&gt;
+                	Warhammer&lt;Fire&amp;Frost&amp;Honor&amp;Shadow&gt;
+            Staff&lt;Honor|Shadow&gt;
+            QuarterStaff&lt;Frost|Honor&gt;
             
 &lt;(all armor)&gt;(38/9)[2098] &lt;&gt;
 	  Shields
@@ -1648,44 +1837,19 @@ Normal Equipment
 	Bracers/Boots/Aventail
 		Plain&lt;&gt;
 		Scale/Mail/Plate&lt;Fire|Frost&gt;
-            Gauntlets/Pants//Shirt
+
+            Gauntlets/Pants//Shirt
 		Plain&lt;&gt;
 		Scale/Mail/Plate&lt;Honor&amp;Shadow&gt;
-            Skin&lt;&gt;
+
+            Skin&lt;&gt;
 [7845]
 (400)
 {78}
 
 
 Named Equipment (Enchantments)
-	  Shield,
-		Buckler = 0,
-                	Kite,
-                	Heater,
-                	Pavis,
-            Helm,
-		Leather = 0,
-                	MailCoif,
-                	Kettle,
-                	Archers,
-                	Bascinet,
-                	Great,
-	Covering,
-		Cape = 0,
-                	Vest,
-                	Robe,
-                	Cloak,
-            Gauntlets,
-            Pants,
-            Boots,
-            Shirt,
-            Bracers,
-            Aventail,
-		Plain = 0,
-                	Mail,
-                	Scale,
-                	Plate,
-            Some weapons and armor have an enchantment, perhaps including an Elemental enchantment as well, that has made it so famous as to be given a name that is known to creatures in the game.  These enchantments, including the Elemental ones, are only applied if equipped.
+Some weapons and armor (only weapons and armor) have an enchantment, perhaps including an Elemental enchantment as well, that has made it so famous as to be given a name that is known to creatures in the game.  These enchantments, including the Elemental ones, are only applied if equipped.
 Wicked 	&lt;(POINTED weapons)&gt;&lt;of Fire|Shadow&gt;[22988](160/1) 13% str, -18% lck, -13% cha, -13% int, 3% curse on melee, 2% critical, -13% curse resist, +1% encounter, +1% surprise
 
 Fiendish 	&lt;(BLADED weapons)&gt;&lt;of Shadow&gt;[22988](160/1) 16% str, -20% lck, -18% cha, -18% int, 6% curse on melee, 4% critical, -18% curse resist, +2% encounter, +2% surprise
@@ -1731,7 +1895,7 @@ Soldier’s &lt;SHIELD/HELM/PANTS/BOOTS/SHIRTS armor EXCEPT PLATE/Pavis&gt;&lt;&
 
 Warden’s	&lt;Shortsword[147]/Bascinet Helm[107]/Buckler[107]/(plain armor)[252]&gt;(6/6)[613] 5% str, 5% armor, -3% surprise
 Prince’s	&lt;of Honor|Shadow&gt;&lt;Rapier[147]/Mail Coif[3]/Kite Shield[107]/(Mail armor)[252]/Cape[3]&gt;(7/7)[512] 8% str, 8% armor
-Ranger	&lt;Shortbow/Longbow/CompositeBow/Sling/Cloak/Vest/PLAIN/[252]/Cloak[3]&gt;(6/6)[?] 6% str, 8% acc, 4% armor
+Ranger	&lt;Shortbow/Longbow/CompositeBow/Sling/Cloak/Vest/Cloak/PLAIN EXCEPT SHIELD/HELM&gt;(6/6)[?] 6% str, 8% acc, 4% armor
 Samurai	&lt;of Honor&gt;&lt;Longsword[147]/Leather Helm[1]/(Scale armor)[6]/Cape[3]&gt;(6/6)[157] 10% str, 10% acc, 2% critical
 Thor’s		&lt;of Honor&gt;&lt;Claymore[147]/Great Helm[107]/Pavis Shield[107]/Gauntlets/PLATE/Cape[1834]&gt;(18/6)[2195] 12% str, 12% armor, 4% resist, 2% power
 Nile		&lt;of Shadow&gt;&lt;Falcata[147]/Buckler/Kite/Leather Helm/PLAIN/Bracer/Shirt/Bracer/Cloak&gt;(4/4)[256] 12% str, 12% acc, 8% armor, (20% melee poison), 16% curse resist, 1% critical
@@ -1768,9 +1932,9 @@ Pure &lt;see below&gt;&lt;of Honor&gt;(40/1)	-If equipped: 66% honor damage
 [17241]
 (120)
 
-Light &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 8% honor resist
-Dawn &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 13% honor resist
-Sun &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 18% honor resist
+Light &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 10% shadow resist
+Dawn &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 20% shadow resist
+Sun &lt;see below&gt;&lt;of Fire&amp;Honor&gt;(38/9)-If equipped: 30% shadow resist
 &lt;Vest/Cape/Robe/Kite/Heater/Pavis/Archers/Bascinet/Great/GAUNTLET/PANTS/BOOTS/SHIRT/ armor EXCEPT PLAIN/SCALE&gt;
 [6294]
 (114)
@@ -1782,13 +1946,14 @@ Dusk &lt;see below&gt;&lt;of Shadow&gt;(40/1)	-If equipped: 66% shadow damage
 [17241]
 (120)
 
-Sorrow &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)-If equipped: 10% shadow resist
-Woe &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)	-If equipped: 20% shadow resist
-Misery &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9)-If equipped: 30% shadow resist
+Sorrow &lt;see below&gt;&lt;of Shadow&gt;(38/9)-If equipped: 8% honor resist
+Woe &lt;see below&gt;&lt;of Shadow&gt;(38/9)	-If equipped: 13% honor resist
+Misery &lt;see below&gt;&lt;of Shadow&gt;(38/9)-If equipped: 18% honor resist
+&lt;Vest/Cloak/Buckler/Kite/Heater/Leather/MailCoif/Archers/Bascinet/Gauntlets/Bracers armor EXCEPT PLAIN&gt;
 [6294]
-(114)
-
-Moon &lt;(all armor)&gt;&lt;of Shadow&gt;(38/9) -If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist
+(114
+	
+Moon &lt;Robe/Cloak/Vest/SHIELDS/HELM/Pants/Shirt/Boots/ armor EXCEPT PLAIN/Kettle/Leather&gt;&lt;of Shadow&gt;(38/9) -If equipped: 18% health, -18% cha, 18% armor, 33% shadow resist, 33% curse resist
 [2098]
 (38)
 
@@ -1802,9 +1967,9 @@ Betrayer &lt;Dagger/Longbow/CompositeBow/Falcata/Flamberg/Sickle/MaceAndChain/Sp
 
 Imposter’s Robe &lt;&gt;(4)       -Actual Robe, if equipped: 10% lck, 3% backstab, 5% find coin,   5% find magic, -5% surprise
 Pickpocket Robe &lt;&gt;(4)       -Actual Robe, if equipped: 13% lck, 4% backstab, 8% find coin,   6% find magic, -6% surprise
-Burglar Cloak &lt;&gt;(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
-Mountebank Cloak &lt;&gt;(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha
-Charlatan’s Vest &lt;&gt;(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha
+Burglar Cloak &lt;of Shadow&gt;(4)          -Actual Cloak, if equipped: 18% lck, 5% backstab, 10% find coin, 8% find magic, -8% surprise
+Mountebank Cloak &lt;of Shadow&gt;(4) -Actual Cloak, if equipped: 21% lck, 6% backstab, 8% find coin,   4% find magic, +18% cha
+Charlatan’s Vest &lt;of Shadow&gt;(4)         -Actual Vest, if equipped: 13% lck, 3% backstab, 6% find coin,   3% find magic, +24% cha
 [60]
 (20)
 
@@ -1828,10 +1993,10 @@ Focus &lt;(projectile weapons except Blowpipe)&gt;[882]&lt;Fire|Frost&gt;[4410](
 
 
 Items used to cast Bless or Curse
-Some items are blessed or cursed, and if so, it will say so right in their name.  These items allows casting the spell “Bless” or “Curse” several times depending on the materials it is made of.  After casting the last time, the item is consumed, meaning that it disappears and is removed from the character’s inventory.
+Some items are blessed or cursed, and if so, it will say so right in their name.  These items allows casting the spell “Bless” or “Curse” (by using) several times depending on the materials it is made of.  After casting the last time, the item is consumed, meaning that it disappears and is removed from the character’s inventory.
 Bless items have 3% encounter, 3% bless effect
 Curse items have -3% lck, 3% curse effect
-&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Noble&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet/Marionette(Puppet)/Bust
+&lt;Material&gt; Eyed &lt;Graced/Holy/Hallowed/Divine/Sacred/Noble&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet/Marionette(Puppet)
 &lt;Material&gt; Eyed &lt;Cult/Damned/Grim/Voodoo/Bloody/Macabre&gt; Doll/Effigy(Doll)/Figurine/Statuette(Figurine)/Puppet /Marionette(Puppet)/Dried Head
 [1296]
 {12}
@@ -1890,7 +2055,7 @@ All are Quest Items except for the DrumLute.  Only the Drumlute has the typical 
 &lt;Gem&gt; Jeweled Drumlute 	-Instrument, if equipped:12% + material based +% mana, material based +% magic cast and effect
 &lt;Metal&gt; Reinforced Drumlute 	-Instrument, if equipped:13% + material based +% mana, material based +% magic cast and effect
 
-Bone Drumlute 			-Instrument, if equipped: 13% mana, 13% cha, 13% int, 18% harmful magic cast, 18%/18% curse cast/effect
+Bone Weapons 			-Instrument, if equipped: 13% mana, 13% cha, 13% int, 18% harmful magic cast, 18%/18% curse cast/effect
 
 Pearl Studded Drumlute 		-Instrument, if equipped: 13% mana, 13% cha, 13% int, 18% helpful magic cast, 18%/18% bless cast/effect
 
