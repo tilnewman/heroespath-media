@@ -380,6 +380,19 @@ I need the largest variety of both player and non-player character images/animat
 <br/>
 There are even web apps that will create sprite sheets for you, with an amazing level of variety: http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator, and...</p>
 </li>
+<li>
+<p class="binderItem"><strong>Collision Detection</strong><br/>2018-11-11<br/>
+<br/>
+Naive is a loop over all Coll rects<br/>
+Quad is a QuadTree implementation that I wrote<br/>
+Grid is a Tile or Grid based implementation that I wrote<br/>
+<br/>
+-What I learned<br/>
+Switching from floats to ints actually improved the speed of both Quad and Grid<br/>
+The first time you use any method takes unusually long, so cut that first one out if you can. (Cache locality I think…)<br/>
+Be sure to test both: never hitting a collision and when almost always hitting collisions.<br/>
+Be sure to test both: a small guard room...</p>
+</li>
 </ul>
 <hr/>
 <li>

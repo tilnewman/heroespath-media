@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-10-09 10:09:31 -0600" ModID="B9B4F14E-7095-4D18-B84B-29282D8FEFE4">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="Ziesches-MacBook-Pro" Modified="2018-11-11 12:57:48 -0700" ModID="87FE483E-8CAE-4481-8A69-3B2FA4223288">
     <Binder>
         <BinderItem ID="0" UUID="2ACE8496-0F84-4374-90FB-3DB159954880" Type="DraftFolder" Created="2016-09-30 20:11:28 -0600" Modified="2016-09-30 20:11:28 -0600">
             <Title>Draft</Title>
@@ -111,7 +111,7 @@
                                 <TextSelection>952,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="29" UUID="DD528447-7651-4BB6-9177-AEA4FDD3679D" Type="Text" Created="2017-07-22 16:26:49 -0600" Modified="2018-05-15 09:46:44 -0600">
+                        <BinderItem ID="29" UUID="DD528447-7651-4BB6-9177-AEA4FDD3679D" Type="Text" Created="2017-07-22 16:26:49 -0600" Modified="2018-11-11 11:19:17 -0700">
                             <Title>Items</Title>
                             <MetaData>
                                 <PageBreakBefore>Yes</PageBreakBefore>
@@ -119,7 +119,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>40365,365</TextSelection>
+                                <TextSelection>29272,72</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="33" UUID="6ACB31EE-D40F-4EA6-B9B2-70086C155C48" Type="Text" Created="2017-07-22 20:49:50 -0600" Modified="2018-06-29 13:00:57 -0600">
@@ -172,7 +172,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>686,0</TextSelection>
+                                <TextSelection>3267,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="21" UUID="AD196ABA-8296-4AC8-95C0-EBB1F7FE3D74" Type="Text" Created="2017-06-05 08:24:40 -0600" Modified="2017-08-18 09:51:43 -0600">
@@ -205,14 +205,14 @@
                                 <TextSelection>143,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="13" UUID="F897BE73-56B7-46B8-948A-A3D1C6AC07BF" Type="Text" Created="2017-03-29 12:42:08 -0600" Modified="2018-10-09 10:09:31 -0600">
+                        <BinderItem ID="13" UUID="F897BE73-56B7-46B8-948A-A3D1C6AC07BF" Type="Text" Created="2017-03-29 12:42:08 -0600" Modified="2018-11-07 13:08:42 -0700">
                             <Title>Build Times</Title>
                             <MetaData>
                                 <PageBreakBefore>Yes</PageBreakBefore>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>3217,0</TextSelection>
+                                <TextSelection>2218,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="12" UUID="1204E295-9697-4CEF-903D-EEDCC3F2F09D" Type="Text" Created="2017-03-11 09:36:05 -0700" Modified="2017-10-12 09:12:32 -0600">
@@ -263,6 +263,16 @@
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>5404,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="49" UUID="E6002D3E-254E-49CE-A2D0-D0936F323D58" Type="Text" Created="2018-11-11 12:30:50 -0700" Modified="2018-11-11 12:57:48 -0700">
+                            <Title>Collision Detection</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>0,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>625,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -461,7 +471,7 @@
         </Collection>
         <Collection Type="RecentSearch" ID="a16d34a6-cc26-47e2-9d0f-f051a0c821e7" Color="0.922 0.91 0.98">
             <Title>Search Results</Title>
-            <SearchSettings Operator="Exact" Type="All" CaseSensitive="No">?</SearchSettings>
+            <SearchSettings Operator="RegEx" Type="All" CaseSensitive="No">litch</SearchSettings>
         </Collection>
     </Collections>
     <LabelSettings>
@@ -489,7 +499,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No" Deadline="2017-01-08 19:49:05 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="155" Characters="1004" Date="2018-10-09 10:08:46 -0600"></PreviousSession>
+        <PreviousSession Words="200" Characters="1138" Date="2018-11-11 12:30:37 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="11.9906" RightMargin="11.9906" TopMargin="11.9906" BottomMargin="11.9906" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

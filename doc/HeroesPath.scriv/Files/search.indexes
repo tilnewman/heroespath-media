@@ -209,11 +209,13 @@ time make -j8
 Build Times:  4:40.6
 Executable size: 10MB
 -
-These build times and executable sizes are about double what they were.  I remember the build times went way up when I started using boost::optional everywhere.  I have no idea what made the executable so big…
+These build times and executable sizes are about double what they were.  I remember the build times went way up when I started using boost::optional everywhere.  I have no idea what made the executable so big…must have been the switch to linking boost statically
 
 
-
-
+2018-11-7 (after enum overhaul, build times dropped by 40sec and 0.8MB)
+4:00
+9.2MB
+On windows10 parallels vm: 11:07 and 4.9MB
 </Text>
         </Document>
         <Document ID="5">
@@ -2044,7 +2046,7 @@ Devil Horn -Wand, Quest Item, sorcerer only, if equipped: -13% cha, 13% spd, 16%
 
 Frozen Angel Braid, Quest Item -(see Set)
 
-Burning Litch Hand, Quest Item -(see Set)
+Burning Lich Hand, Quest Item -(see Set)
 40
 {11}
 
@@ -2634,6 +2636,35 @@ You look like you could use &lt;a &lt;drink/beer&gt;/an ale/some &lt;&lt;Drinks&
 &lt;DrunkenNoise&gt; &lt;Why did&gt; &lt;he/she&gt; leave me &lt;for &lt;my &lt;brother/sister/friend&gt;/&lt;that/a&gt; &lt;pixie/town guard/beastmaster/archer/knight/Cleric/…&gt;&gt;.  &lt;DrunkenNoise&gt;
 &lt;DrunkenNoise&gt; Who said that?
 &lt;&lt;DrunkenNoise&gt;&gt; Why did the &lt;&lt;drunken&gt;&gt; &lt;&lt;one legged&gt;&gt; &lt;&lt;left-handed&gt;&gt; &lt;&lt;blind&gt;&gt; &lt;&lt;idiot&gt;&gt; &lt;&lt;roles&gt;/&lt;races&gt;/town guard/&gt;&gt; cross the road?
+</Text>
+        </Document>
+        <Document ID="49">
+            <Title>Collision Detection</Title>
+            <Text>2018-11-11
+
+Naive is a loop over all Coll rects
+Quad is a QuadTree implementation that I wrote
+Grid is a Tile or Grid based implementation that I wrote
+
+-What I learned
+Switching from floats to ints actually improved the speed of both Quad and Grid
+The first time you use any method takes unusually long, so cut that first one out if you can. (Cache locality I think…)
+Be sure to test both: never hitting a collision and when almost always hitting collisions.
+Be sure to test both: a small guard room map and the big thornberry map.
+Is it worth looking at timings that exclude the outliers?  (Maybe exclude the outer 1-10%?)
+
+Here are some nanosecond times that I got from the thornberry map:
+
+Grid x350 [116, 1200, 16661] (1297) (sum=420069)
+Quad x350 [134, 1218, 12928] (863) (sum=426440)
+Naive x350 [779, 1912, 16884] (2048) (sum=669397)
+
+Grid x400 [131, 1120, 13675] (760) (sum=448325)
+Quad x400 [346, 1604, 13641] (1061) (sum=641849)
+Naive x400 [742, 1665, 17789] (1513) (sum=666054) 	
+Grid x350 [102, 1260, 13255] (840) (sum=441334)
+Quad x350 [346, 1555, 20972] (1370) (sum=544303)
+Naive x350 [711, 1801, 22619] (2000) (sum=630479)
 </Text>
         </Document>
         <Document ID="10">

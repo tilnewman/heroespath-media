@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset0 Calligraphic810BT-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\pardirnatural
+
+\f0\fs22 \cf0 2018-11-11\
+\
+Naive is a loop over all Coll rects\
+Quad is a QuadTree implementation that I wrote\
+Grid is a Tile or Grid based implementation that I wrote\
+\
+-What I learned\
+Switching from floats to ints actually improved the speed of both Quad and Grid\
+The first time you use any method takes unusually long, so cut that first one out if you can. (Cache locality I think\'85)\
+Be sure to test both: never hitting a collision and when almost always hitting collisions.\
+Be sure to test both: a small guard room map and the big thornberry map.\
+Is it worth looking at timings that exclude the outliers?  (Maybe exclude the outer 1-10%?)\
+\
+Here are some nanosecond times that I got from the thornberry map:\
+\
+Grid x350 [116, 1200, 16661] (1297) (sum=420069)\
+Quad x350 [134, 1218, 12928] (863) (sum=426440)\
+Naive x350 [779, 1912, 16884] (2048) (sum=669397)\
+\
+Grid x400 [131, 1120, 13675] (760) (sum=448325)\
+Quad x400 [346, 1604, 13641] (1061) (sum=641849)\
+Naive x400 [742, 1665, 17789] (1513) (sum=666054) 	\
+Grid x350 [102, 1260, 13255] (840) (sum=441334)\
+Quad x350 [346, 1555, 20972] (1370) (sum=544303)\
+Naive x350 [711, 1801, 22619] (2000) (sum=630479)\
+}
