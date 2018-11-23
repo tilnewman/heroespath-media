@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" nextobjectid="21">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextobjectid="21">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map-tiles/interior-ground.png" trans="4b637f" width="256" height="256"/>
  </tileset>
@@ -161,7 +161,7 @@
   <object id="11" x="723" y="625" width="36" height="40"/>
  </objectgroup>
  <objectgroup name="transitions">
-  <object id="8" x="540" y="723" width="117" height="115">
+  <object id="8" x="579" y="766" width="41" height="36">
    <properties>
     <property name="level" value="Thornberry"/>
     <property name="type" value="entry"/>
