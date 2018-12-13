@@ -1,0 +1,22 @@
+large-paper-gold.png
+large-paper-green.png
+These images are based on free textures from darkwood67 on deviantart.com:
+http://darkwood67.deviantart.com/gallery/
+http://darkwood67.deviantart.com/art/brown-age-136811979
+The images were color reduced and optimized for size.
+
+wood.png
+This image was found in the “RPG GUI contruction kit v1.0” by Lamoot, released under CC-BY 3.0.
+(Note from Lamoot:  All images used in the process are self made or from public domain sources.)
+Found at OpenGameArt.org
+http://creativecommons.org/licenses/by/3.0/
+The images were cropped and saved into a new PNG file by zTn.
+The image was color reduced and optimized for size.
+
+
+All other images created by zTn and are released under the Public Domain.  (CC0 1.0)  (No Copyright)
+http://creativecommons.org/publicdomain/zero/1.0/
+
+
+2017-7-19
+zTn

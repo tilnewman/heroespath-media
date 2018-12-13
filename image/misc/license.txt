@@ -1,4 +1,16 @@
-All files are original work by zTn, released under the Public Domain. (CC0 1.0) (No Copyright)
+logos.png
+This file contains a collection of logos released under the Public Domain. (CC0 1.0) (No Copyright) by various individuals and organizations.
+
+trap.png
+Is based on "Locked chest" by Lorc under CC BY 3.0, a part of the game-icons.net collection.
+
+gui-elements.png
+Posted on OpenGameArt.org by Lamoot as “RPG GUI contruction kit v1.0” under the CC-BY 3.0 license.
+Original author used only original work images or images from public domain sources.
+http://creativecommons.org/licenses/by/3.0/
+The images were cropped, re-organized, and saved into a new PNG file by zTn.
+
+All other files are original work by zTn, released under the Public Domain. (CC0 1.0) (No Copyright)
 http://creativecommons.org/publicdomain/zero/1.0/
 
 2017-5-13
