@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="40" tileheight="40" nextobjectid="235">
  <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/ground-old.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map/ground-old.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="193" name="mountain" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/mountain.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map/mountain.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="385" name="mountain-shadow" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/mountain-shadow.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map/mountain-shadow.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="577" name="objects" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/object.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map/object.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="769" name="object-shadows" tilewidth="40" tileheight="40" tilecount="192" columns="16">
-  <image source="../image/tile/object-shadow.png" trans="4b637f" width="640" height="480"/>
+  <image source="../image/map/object-shadow.png" trans="4b637f" width="640" height="480"/>
  </tileset>
  <tileset firstgid="961" name="trees13b" tilewidth="40" tileheight="40" tilecount="57" columns="19">
-  <image source="../image/tile/tree-13b.png" trans="4b637f" width="768" height="128"/>
+  <image source="../image/map/tree-13b.png" trans="4b637f" width="768" height="128"/>
  </tileset>
  <layer name="Ground1" width="100" height="100">
   <data encoding="csv">
