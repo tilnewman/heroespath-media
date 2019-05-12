@@ -15,7 +15,7 @@
  <tileset firstgid="469" name="door" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map/interior-door.png" trans="4b637f" width="256" height="256"/>
  </tileset>
- <layer id="1" name="ground" width="30" height="30">
+ <layer id="1" name="ground" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -49,7 +49,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="2" name="walls" width="30" height="30">
+ <layer id="2" name="walls" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -83,7 +83,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="3" name="objects-1" width="30" height="30">
+ <layer id="3" name="objects-1" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -117,7 +117,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="4" name="shadows-1" width="30" height="30">
+ <layer id="4" name="shadows-1" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -151,7 +151,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="5" name="objects-2" width="30" height="30">
+ <layer id="5" name="objects-2" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -185,7 +185,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="6" name="shadows-2" width="30" height="30">
+ <layer id="6" name="shadows-2" width="30" height="30" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -244,10 +244,10 @@
  </objectgroup>
  <objectgroup id="9" name="animations">
   <object id="10" name="Campfire" x="524.521" y="374.911" width="110.727" height="51.089"/>
-  <object id="12" name="Candle-Flame-Pixel" x="563" y="537" width="13" height="16"/>
-  <object id="21" name="Candle-Flame-Pixel" x="573.5" y="531" width="13" height="16"/>
-  <object id="22" name="Candle-Flame-Pixel" x="574.5" y="541" width="13" height="16"/>
-  <object id="23" name="Candle-Flame-Pixel" x="584.5" y="536" width="13" height="16"/>
+  <object id="12" name="CandleFlamePixel" x="563" y="537" width="13" height="16"/>
+  <object id="21" name="CandleFlamePixel" x="573.5" y="531" width="13" height="16"/>
+  <object id="22" name="CandleFlamePixel" x="574.5" y="541" width="13" height="16"/>
+  <object id="23" name="CandleFlamePixel" x="584.5" y="536" width="13" height="16"/>
  </objectgroup>
  <objectgroup id="10" name="walk-sfx" visible="0">
   <object id="15" name="Wood" type="0" x="260" y="268" width="660" height="652"/>
