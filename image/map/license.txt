@@ -7,7 +7,7 @@ http://creativecommons.org/licenses/by/3.0/
 The tree image shadows were changed, and then used to make map tiles.
 
 Daniel Cook’s Map Tiles
-www.lostgarden.com/2006/07/more-free-game-graphics.html
+https://lostgarden.home.blog/2006/07/08/more-free-game-graphics/
 Found at OpenGameArt.org
 CC-BY 3.0
 http://creativecommons.org/licenses/by/3.0/

@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextobjectid="21">
- <tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
+ 
+
+
+
+
+<tileset firstgid="1" name="ground" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map/interior-ground.png" trans="4b637f" width="256" height="256"/>
  </tileset>
+
+
+
+
  <tileset firstgid="37" name="walls" tilewidth="40" tileheight="40" tilecount="144" columns="12">
   <image source="../image/map/interior-wall-normal.png" trans="4b637f" width="512" height="512"/>
  </tileset>
@@ -15,6 +24,7 @@
  <tileset firstgid="469" name="doors" tilewidth="40" tileheight="40" tilecount="36" columns="6">
   <image source="../image/map/interior-door.png" trans="4b637f" width="256" height="256"/>
  </tileset>
+
  <layer name="ground" width="30" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
